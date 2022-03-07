@@ -561,3 +561,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 911.868234 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(43113f19953e3d54ea17d059b0fb1d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(43113f19953e3d54ea17d059b0fb1d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a779714f956572f7d2da3aa17812f0') in 0.011732 seconds 
+  Import took 0.019111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.590766 seconds.
+  path: Assets/Scenes/Testing
+  artifactKey: Guid(dfdd7d67b160e9047b21007ab65b6d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Testing using Guid(dfdd7d67b160e9047b21007ab65b6d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6858c355f88428c211d482029ccd567') in 0.007600 seconds 
+  Import took 0.013256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.774823 seconds.
+  path: Assets/_Developers
+  artifactKey: Guid(1ca2960a6fab828459b0bd81ba7ddd44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Developers using Guid(1ca2960a6fab828459b0bd81ba7ddd44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c68a18c6c0adb3f3ad68cd20a32f02') in 0.007531 seconds 
+  Import took 0.013591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.302687 seconds.
+  path: Assets/_Developers/Dededec
+  artifactKey: Guid(11dca58c99e7459489ddba5aaf969595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Developers/Dededec using Guid(11dca58c99e7459489ddba5aaf969595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da867b4a6e110606017f2cc962d877e') in 0.008827 seconds 
+  Import took 0.014273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.805373 seconds.
+  path: Assets/_Developers/Alcaval
+  artifactKey: Guid(a3b4171dee8abe14b8ba14103daa42b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Developers/Alcaval using Guid(a3b4171dee8abe14b8ba14103daa42b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca210d756abce70de3ea8ac957cbc76') in 0.007604 seconds 
+  Import took 0.012721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.051072 seconds.
+  path: Assets/_Developers/Dededec/TestCamera.unity
+  artifactKey: Guid(b1b5361837670974aabba0186e2c1185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Developers/Dededec/TestCamera.unity using Guid(b1b5361837670974aabba0186e2c1185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3aa2ec3c1fb2cc8392410cb45dd2c7') in 0.042192 seconds 
+  Import took 0.047893 seconds .
+
