@@ -15,10 +15,17 @@ namespace TFMEsada
         #region Fields
 
         [SerializeField] private Transform _pivotPoint;
+        [SerializeField] private PixelatedCamera _cameraOptions;
         
         #endregion
 
         #region LifeCycle
+
+        private void Awake() 
+        {
+            _cameraOptions.mode = PixelatedCamera.PixelScreenMode.Scale;
+            _cameraOptions.screenScaleFactor = 4;
+        }
 
         void Update()
         {
