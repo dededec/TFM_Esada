@@ -1,23 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace TFMEsada
 {
     /// <summary>  
-	/// Brief summary of what the class does
+	/// Class that controls the chair behaviour and shows where it has to move
 	/// </summary>
     public class ChairBehaviour : MonoBehaviour
     {
         #region Fields
-      
-        // [Tooltip("Public variables set in the Inspector, should have a Tooltip")]
-        /// <summary>  
-	    /// They should also have a summary
-	    /// </summary>
-        // public static string Ejemplo;
-	  
-	    // private float _ejemplo;
+
+        // Transform that stores the player position
+        [SerializeField] private Transform _playerPos;
+
+        // NavMeshAgent of the chair
+        private NavMeshAgent _navMeshAgent;
 	  
 	    #endregion
 	  
@@ -28,8 +27,14 @@ namespace TFMEsada
 	    #endregion
 	 
 	    #region LifeCycle
-	  
-        // Start, OnAwake, Update, etc
+
+        private void Awake() {
+            _navMeshAgent = GetComponent<NavMeshAgent>();
+        }
+
+        void Update() {
+            _navMeshAgent.destination = _playerPos.transform.position;
+        }
       
         #endregion
 
