@@ -12,11 +12,8 @@ namespace TFMEsada
     {
         #region Fields
 
-        // Transform that stores the player position
-        [SerializeField] private Transform _playerPos;
-
-        // NavMeshAgent of the chair
-        private NavMeshAgent _navMeshAgent;
+        // Current state in the stateMachine
+        public State _currentState;
 	  
 	    #endregion
 	  
@@ -28,22 +25,28 @@ namespace TFMEsada
 	 
 	    #region LifeCycle
 
-        private void Awake() {
-            _navMeshAgent = GetComponent<NavMeshAgent>();
-        }
-
         void Update() {
-            _navMeshAgent.destination = _playerPos.transform.position;
+            RunStateMachine();
         }
       
         #endregion
 
-	    #region Public Methods
-	   
-        #endregion
-
         #region Private Methods
-	   
+	    
+        // Runs the stateMachine constantly so the agent, turn off to stop agent
+        private void RunStateMachine(){
+            State newState = _currentState?.RunCurrentState();
+
+            if(newState != null){
+                changeState(newState);
+            }
+        }
+
+        // Assigns the new state of the stateMachine to the current one
+        private void changeState(State newState){
+            _currentState = newState;
+        }
+
         #endregion
     }
 }
