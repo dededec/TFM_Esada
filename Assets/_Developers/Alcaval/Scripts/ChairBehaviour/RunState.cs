@@ -57,6 +57,12 @@ namespace TFMEsada
             }
         }
 
+        private void OnTriggerExit(Collider other) {
+            if(other.tag == "Player"){
+                inAttackRangePlayer = false;
+            }
+        }
+
         #endregion
     }
 }

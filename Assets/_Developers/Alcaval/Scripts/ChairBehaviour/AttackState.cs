@@ -32,28 +32,13 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {
-            if(inAttackRange){
-                StartCoroutine(AttackCoroutine(2f));
-                return _idleState;
-            }else{
-                return _runState;
-            }
+            StartCoroutine(AttackCoroutine(3f));
+            return _runState;
         }
 
         #endregion
 
         #region Private Methods
-        private void OnTriggerExit(Collider other) {
-            inAttackRange = false;
-        }
-
-        private void OnTriggerStay(Collider other) {
-            inAttackRange = true;
-        }
-
-        private void OnTriggerEnter(Collider other) {
-            inAttackRange = true;
-        }
         
         #endregion
 
@@ -61,6 +46,7 @@ namespace TFMEsada
 
         IEnumerator AttackCoroutine(float s){
             yield return new WaitForSeconds(s);
+            Debug.Log("Get atacado");
         }
 
         #endregion
