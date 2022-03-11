@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 82209bdbdd7ac7f418d5e84137e7158b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+  generateWrapperCode: 1
+  wrapperCodePath: Assets/_Developers/Dededec/Scripts/Input/IAA_Player.cs
+  wrapperClassName: 
+  wrapperCodeNamespace: TFMEsada
