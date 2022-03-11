@@ -12,27 +12,22 @@ namespace TFMEsada
         #region Fields
 
         // States: Here you can have all the states that this state state could go to
-        private RunState _runState;
+        [SerializeField] private RunState _runState;
 
         // Variable that lets us and the script know if the agent is inRange of the player
-        public bool inRangePlayer{set; get;}
+        public bool inRangePlayer{ set; get; }
 
-        #endregion
-
-        #region LifeCycle
-
-        private void Start() {
-            _runState = gameObject.transform.parent.GetComponentInChildren<RunState>();
-        }
-      
         #endregion
 
         #region Public Methods
         public override State RunCurrentState()
         {
-            if(inRangePlayer){
+            if(inRangePlayer)
+            {
                 return _runState;
-            }else{
+            }
+            else
+            {
                 return this;
             }
         }
@@ -41,8 +36,10 @@ namespace TFMEsada
 
         #region Private Methods
 
-        private void OnTriggerEnter(Collider other) {
-            if(other.tag == "Player"){
+        private void OnTriggerEnter(Collider other) 
+        {
+            if(other.tag == "Player")
+            {
                 StartCoroutine(PursuingCoroutine(2f));
             }
         }
@@ -51,7 +48,8 @@ namespace TFMEsada
 
         #region Coroutines
 
-        IEnumerator PursuingCoroutine(float s){
+        IEnumerator PursuingCoroutine(float s)
+        {
             yield return new WaitForSeconds(s);
             inRangePlayer = true;
         }

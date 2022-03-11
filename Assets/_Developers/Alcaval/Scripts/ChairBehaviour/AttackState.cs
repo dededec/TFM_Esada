@@ -13,29 +13,26 @@ namespace TFMEsada
 
         // States: Here you can have all the states that this state
         //         state could go to
-        private IdleState _idleState;
-        private RunState _runState;
+        [SerializeField] private IdleState _idleState;
+        [SerializeField] private RunState _runState;
+        [SerializeField] private Animator animator;
 
+        // Flag that controls whether you have finished an attack or not
         public bool finishedAttacking;
 
-        #endregion
-
-        #region LifeCycle
-
-        private void Start() {
-            _runState = gameObject.transform.parent.GetComponentInChildren<RunState>();
-            _idleState = gameObject.transform.parent.GetComponentInChildren<IdleState>();
-        }
-      
         #endregion
 
         #region Public Methods
         public override State RunCurrentState()
         {
-            StartCoroutine(AttackCoroutine(3f));
             if(finishedAttacking){
+                finishedAttacking = false;
+                print("aqui?");
+                print(_runState);
                 return _runState;
             }
+            StartCoroutine(AttackCoroutine(0f));
+            finishedAttacking = true;
             return this;
         }
 
@@ -47,9 +44,10 @@ namespace TFMEsada
 
         #region Coroutines
 
-        IEnumerator AttackCoroutine(float s){
+        IEnumerator AttackCoroutine(float s)
+        {
             yield return new WaitForSeconds(s);
-            Debug.Log("Get atacado");
+            animator.SetTrigger("attack");
             finishedAttacking = true;
         }
 

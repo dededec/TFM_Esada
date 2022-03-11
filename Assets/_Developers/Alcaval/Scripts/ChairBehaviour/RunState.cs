@@ -16,7 +16,7 @@ namespace TFMEsada
         [SerializeField] private Transform _playerPos;
 
         // States: Here you can have all the states that this state state could go to
-        private AttackState _attackState;
+        [SerializeField] private AttackState _attackState;
 
         // Variable that lets us and the script know if the agent is inAttackRange of the player
         public bool inAttackRangePlayer{set; get;}
@@ -28,9 +28,9 @@ namespace TFMEsada
 
         #region LifeCycle
 
-        private void Start() {
+        private void Start() 
+        {
             _navMeshAgent = GetComponentInParent<NavMeshAgent>();
-            _attackState = gameObject.transform.parent.GetComponentInChildren<AttackState>();
         }
       
         #endregion
@@ -38,10 +38,14 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
-            if(inAttackRangePlayer){
+            if(inAttackRangePlayer)
+            {
                 _navMeshAgent.isStopped = true;
                 return _attackState;
-            }else{
+            }
+            else
+            {
+                _navMeshAgent.isStopped = false;
                 _navMeshAgent.destination = _playerPos.transform.position;
                 return this;
             }
@@ -51,14 +55,18 @@ namespace TFMEsada
 
         #region Private Methods
         
-        private void OnTriggerEnter(Collider other) {
-            if(other.tag == "Player"){
+        private void OnTriggerEnter(Collider other) 
+        {
+            if(other.tag == "Player")
+            {
                 inAttackRangePlayer = true;
             }
         }
 
-        private void OnTriggerExit(Collider other) {
-            if(other.tag == "Player"){
+        private void OnTriggerExit(Collider other) 
+        {
+            if(other.tag == "Player")
+            {
                 inAttackRangePlayer = false;
             }
         }

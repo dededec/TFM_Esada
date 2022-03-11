@@ -25,7 +25,8 @@ namespace TFMEsada
 	 
 	    #region LifeCycle
 
-        void Update() {
+        void Update() 
+        {
             RunStateMachine();
         }
       
@@ -34,7 +35,8 @@ namespace TFMEsada
         #region Private Methods
 	    
         // Runs the stateMachine constantly so the agent, turn off to stop agent
-        private void RunStateMachine(){
+        private void RunStateMachine()
+        {
             State newState = _currentState?.RunCurrentState();
 
             if(newState != null){
@@ -43,7 +45,8 @@ namespace TFMEsada
         }
 
         // Assigns the new state of the stateMachine to the current one
-        private void changeState(State newState){
+        private void changeState(State newState)
+        {
             _currentState = newState;
         }
 

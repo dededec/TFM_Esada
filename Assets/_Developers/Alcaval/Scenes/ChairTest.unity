@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974f02b08ee219446a77ddb0e2825562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _runState: {fileID: 758524367}
 --- !u!4 &740292199
 Transform:
   m_ObjectHideFlags: 0
@@ -307,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPos: {fileID: 923926383}
+  _attackState: {fileID: 1817318043}
 --- !u!4 &758524368
 Transform:
   m_ObjectHideFlags: 0
@@ -378,6 +380,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b01869bba378f42bdb80b65d52f329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _controls:
+    m_Name: Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4c43d710-a22e-4b7f-bff9-62fc84be07f9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: WASD
+      m_Id: 4619ac68-077a-484c-b964-a47b67e604c5
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Controls
+      m_Flags: 4
+    - m_Name: up
+      m_Id: f77f0f07-fb07-4bbe-a366-5437d5dbcfa8
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Controls
+      m_Flags: 8
+    - m_Name: down
+      m_Id: c07b71dd-0653-4b2d-a4d5-9129cc5caa24
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Controls
+      m_Flags: 8
+    - m_Name: left
+      m_Id: d9614643-b5e7-459c-b5cf-55ca3e69ad98
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Controls
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 8162480c-d4d7-481a-a129-4cfe754df341
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Controls
+      m_Flags: 8
 --- !u!1 &940757603
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +755,7 @@ MonoBehaviour:
   runState: {fileID: 758524367}
   inAttackRangeRUN: 0
   attackState: {fileID: 1817318043}
-  inAttackRangeATTACK: 0
+  finishAttackATTACK: 0
 --- !u!1 &1681680132
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +861,7 @@ GameObject:
   - component: {fileID: 1788713192}
   - component: {fileID: 1788713191}
   - component: {fileID: 1788713190}
+  - component: {fileID: 1788713193}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -894,6 +945,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788713188}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1788713193
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788713188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44701000cb72382408029e1cbe44c232, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1817318041
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +1007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dcde46535e256448989495064c99419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inAttackRange: 0
+  _idleState: {fileID: 740292198}
+  _runState: {fileID: 758524367}
+  animator: {fileID: 1788713193}
+  finishedAttacking: 0
 --- !u!1 &2121967645
 GameObject:
   m_ObjectHideFlags: 0
