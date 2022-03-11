@@ -13,12 +13,12 @@ namespace TFMEsada
         public bool inAttackRangeRUN = false;
 
         [SerializeField] private AttackState attackState;
-        public bool inAttackRangeATTACK = false;
+        public bool finishAttackATTACK = false;
 
         private void Update() {
             RangeIDLE = idleState.inRangePlayer;
             inAttackRangeRUN = runState.inAttackRangePlayer;
-            inAttackRangeATTACK = attackState.inAttackRange;
+            finishAttackATTACK = attackState.finishedAttacking;
         }
     }
 }

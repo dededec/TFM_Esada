@@ -16,7 +16,7 @@ namespace TFMEsada
         private IdleState _idleState;
         private RunState _runState;
 
-        public bool inAttackRange;
+        public bool finishedAttacking;
 
         #endregion
 
@@ -33,7 +33,10 @@ namespace TFMEsada
         public override State RunCurrentState()
         {
             StartCoroutine(AttackCoroutine(3f));
-            return _runState;
+            if(finishedAttacking){
+                return _runState;
+            }
+            return this;
         }
 
         #endregion
@@ -47,6 +50,7 @@ namespace TFMEsada
         IEnumerator AttackCoroutine(float s){
             yield return new WaitForSeconds(s);
             Debug.Log("Get atacado");
+            finishedAttacking = true;
         }
 
         #endregion
