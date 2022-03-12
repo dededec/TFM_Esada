@@ -18,6 +18,9 @@ namespace TFMEsada
         // States: Here you can have all the states that this state state could go to
         [SerializeField] private AttackState _attackState;
 
+        // Transform of the chair so it always rotates to the direction of the player when moving
+        [SerializeField] private Transform _chairTransform;
+
         // Variable that lets us and the script know if the agent is inAttackRange of the player
         public bool inAttackRangePlayer{set; get;}
 
@@ -46,6 +49,7 @@ namespace TFMEsada
             else
             {
                 _navMeshAgent.isStopped = false;
+                _chairTransform.LookAt(_playerPos.transform);
                 _navMeshAgent.destination = _playerPos.transform.position;
                 return this;
             }
@@ -67,6 +71,7 @@ namespace TFMEsada
         {
             if(other.tag == "Player")
             {
+                print("se salio o murio");
                 inAttackRangePlayer = false;
             }
         }

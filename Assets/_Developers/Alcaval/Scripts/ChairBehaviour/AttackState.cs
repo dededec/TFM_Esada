@@ -20,6 +20,23 @@ namespace TFMEsada
         // Flag that controls whether you have finished an attack or not
         public bool finishedAttacking;
 
+        // Cooldown for the attack
+        [SerializeField] private float _cooldown = 2f;
+        
+        // Flag if you are able to attack
+        private bool _ableToAttack = true;
+
+        // HitBox manager, we have to enable the hitbox when the sweetspot of the animation is active so it can hit the player
+        //[SerializeField] private DamageCollider _hitbox;
+
+        #endregion
+
+        #region Life cycle
+
+        private void Start() {
+            //_hitbox = GetComponent<DamageCollider>();
+        }
+
         #endregion
 
         #region Public Methods
@@ -27,12 +44,10 @@ namespace TFMEsada
         {
             if(finishedAttacking){
                 finishedAttacking = false;
-                print("aqui?");
-                print(_runState);
                 return _runState;
             }
             StartCoroutine(AttackCoroutine(0f));
-            finishedAttacking = true;
+            StartCoroutine(startCooldownRoutine());
             return this;
         }
 
@@ -46,8 +61,20 @@ namespace TFMEsada
 
         IEnumerator AttackCoroutine(float s)
         {
-            yield return new WaitForSeconds(s);
-            animator.SetTrigger("attack");
+            if(_ableToAttack) 
+            {
+                yield return new WaitForSeconds(s);
+                //_hitbox.enableHitbox();
+                animator.SetTrigger("attack");
+                //finishedAttacking = true;
+                _ableToAttack = false;
+            }
+        }
+
+        IEnumerator startCooldownRoutine(){
+            //_hitbox.disableHitbox();
+            yield return new WaitForSeconds(_cooldown);
+            _ableToAttack = true;
             finishedAttacking = true;
         }
 
