@@ -17,6 +17,7 @@ namespace TFMEsada
 
         // States: Here you can have all the states that this state state could go to
         [SerializeField] private AttackState _attackState;
+        [SerializeField] private IdleState _idleState;
 
         // Transform of the chair so it always rotates to the direction of the player when moving
         [SerializeField] private Transform _chairTransform;
@@ -41,7 +42,12 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
-            if(inAttackRangePlayer)
+            if(GameObject.FindGameObjectWithTag("Player") == null)
+            {
+                _idleState.inRangePlayer = false;
+                return _idleState;
+            }
+            else if(inAttackRangePlayer)
             {
                 _navMeshAgent.isStopped = true;
                 return _attackState;
@@ -71,7 +77,6 @@ namespace TFMEsada
         {
             if(other.tag == "Player")
             {
-                print("se salio o murio");
                 inAttackRangePlayer = false;
             }
         }

@@ -20,28 +20,12 @@ public class DamageCollider : MonoBehaviour
 
     #endregion
 
-    #region Public Methods
-    
-    public void enableHitbox()
-    {
-        _hitbox.enabled = true;
-    }
-
-    public void disableHitbox()
-    {
-        _hitbox.enabled = false;
-    }
-
-    #endregion
-
     #region Private Methods
 
     private void OnTriggerEnter(Collider other) 
     {
-        print("se encontro coas");
         if(other.tag == "Player")
         {
-            print(other);
             Destroy(other.gameObject);
         }
     }

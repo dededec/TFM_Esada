@@ -27,7 +27,7 @@ namespace TFMEsada
         private bool _ableToAttack = true;
 
         // HitBox manager, we have to enable the hitbox when the sweetspot of the animation is active so it can hit the player
-        //[SerializeField] private DamageCollider _hitbox;
+        [SerializeField] private DamageCollider _hitbox;
 
         #endregion
 
@@ -42,10 +42,17 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {
-            if(finishedAttacking){
+            if(GameObject.FindGameObjectWithTag("Player") == null)
+            {
+                _idleState.inRangePlayer = false;
+                return _idleState;
+            }
+            else if(finishedAttacking)
+            {
                 finishedAttacking = false;
                 return _runState;
-            }
+            } 
+
             StartCoroutine(AttackCoroutine(0f));
             StartCoroutine(startCooldownRoutine());
             return this;
@@ -64,15 +71,13 @@ namespace TFMEsada
             if(_ableToAttack) 
             {
                 yield return new WaitForSeconds(s);
-                //_hitbox.enableHitbox();
                 animator.SetTrigger("attack");
-                //finishedAttacking = true;
+                yield return new WaitForSeconds(1f);
                 _ableToAttack = false;
             }
         }
 
         IEnumerator startCooldownRoutine(){
-            //_hitbox.disableHitbox();
             yield return new WaitForSeconds(_cooldown);
             _ableToAttack = true;
             finishedAttacking = true;
