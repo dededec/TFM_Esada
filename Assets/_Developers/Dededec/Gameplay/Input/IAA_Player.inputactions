@@ -22,12 +22,20 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Fire",
+                    "name": "Shoot Normal",
                     "type": "Button",
                     "id": "2d96598c-a775-4b81-a2ca-fda8836d94be",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
+                },
+                {
+                    "name": "Shoot Puddle",
+                    "type": "Button",
+                    "id": "302315f6-9f4f-4b0b-9c59-46424d374975",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
                 },
                 {
                     "name": "Lock Screen",
@@ -263,7 +271,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Fire",
+                    "action": "Shoot Normal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -274,7 +282,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "Shoot Normal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -285,7 +293,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Fire",
+                    "action": "Shoot Normal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -296,7 +304,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Fire",
+                    "action": "Shoot Normal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -307,7 +315,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
-                    "action": "Fire",
+                    "action": "Shoot Normal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -330,6 +338,61 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2ff19daa-c03b-4df2-9350-af5d8f747660",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Shoot Puddle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56ce475e-bf59-455e-bec1-291ccbac95bb",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Shoot Puddle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa830714-6478-44ee-be9d-563613faddb2",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Touch",
+                    "action": "Shoot Puddle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2544b79c-a1e8-428d-9b1b-f1130dafb644",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Shoot Puddle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "449c546a-edd4-4f93-a4bc-9ac971f4de12",
+                    "path": "<XRController>/{PrimaryAction}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "Shoot Puddle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

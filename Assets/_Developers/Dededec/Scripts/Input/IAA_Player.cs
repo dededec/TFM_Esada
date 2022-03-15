@@ -37,12 +37,20 @@ namespace TFMEsada
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""Shoot Normal"",
                     ""type"": ""Button"",
                     ""id"": ""2d96598c-a775-4b81-a2ca-fda8836d94be"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Tap""
+                },
+                {
+                    ""name"": ""Shoot Puddle"",
+                    ""type"": ""Button"",
+                    ""id"": ""302315f6-9f4f-4b0b-9c59-46424d374975"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
                 },
                 {
                     ""name"": ""Lock Screen"",
@@ -278,7 +286,7 @@ namespace TFMEsada
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot Normal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -289,7 +297,7 @@ namespace TFMEsada
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot Normal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -300,7 +308,7 @@ namespace TFMEsada
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Touch"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot Normal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -311,7 +319,7 @@ namespace TFMEsada
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot Normal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -322,7 +330,7 @@ namespace TFMEsada
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""XR"",
-                    ""action"": ""Fire"",
+                    ""action"": ""Shoot Normal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -345,6 +353,61 @@ namespace TFMEsada
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Zoom"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ff19daa-c03b-4df2-9350-af5d8f747660"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Shoot Puddle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""56ce475e-bf59-455e-bec1-291ccbac95bb"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Shoot Puddle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fa830714-6478-44ee-be9d-563613faddb2"",
+                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
+                    ""action"": ""Shoot Puddle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2544b79c-a1e8-428d-9b1b-f1130dafb644"",
+                    ""path"": ""<Joystick>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Shoot Puddle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""449c546a-edd4-4f93-a4bc-9ac971f4de12"",
+                    ""path"": ""<XRController>/{PrimaryAction}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""XR"",
+                    ""action"": ""Shoot Puddle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -924,7 +987,8 @@ namespace TFMEsada
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-            m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+            m_Player_ShootNormal = m_Player.FindAction("Shoot Normal", throwIfNotFound: true);
+            m_Player_ShootPuddle = m_Player.FindAction("Shoot Puddle", throwIfNotFound: true);
             m_Player_LockScreen = m_Player.FindAction("Lock Screen", throwIfNotFound: true);
             m_Player_Zoom = m_Player.FindAction("Zoom", throwIfNotFound: true);
             // UI
@@ -990,7 +1054,8 @@ namespace TFMEsada
         private IPlayerActions m_PlayerActionsCallbackInterface;
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_Look;
-        private readonly InputAction m_Player_Fire;
+        private readonly InputAction m_Player_ShootNormal;
+        private readonly InputAction m_Player_ShootPuddle;
         private readonly InputAction m_Player_LockScreen;
         private readonly InputAction m_Player_Zoom;
         public struct PlayerActions
@@ -999,7 +1064,8 @@ namespace TFMEsada
             public PlayerActions(@IAA_Player wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Player_Move;
             public InputAction @Look => m_Wrapper.m_Player_Look;
-            public InputAction @Fire => m_Wrapper.m_Player_Fire;
+            public InputAction @ShootNormal => m_Wrapper.m_Player_ShootNormal;
+            public InputAction @ShootPuddle => m_Wrapper.m_Player_ShootPuddle;
             public InputAction @LockScreen => m_Wrapper.m_Player_LockScreen;
             public InputAction @Zoom => m_Wrapper.m_Player_Zoom;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
@@ -1017,9 +1083,12 @@ namespace TFMEsada
                     @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                     @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                     @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                    @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                    @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                    @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
+                    @ShootNormal.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootNormal;
+                    @ShootNormal.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootNormal;
+                    @ShootNormal.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootNormal;
+                    @ShootPuddle.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootPuddle;
+                    @ShootPuddle.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootPuddle;
+                    @ShootPuddle.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootPuddle;
                     @LockScreen.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLockScreen;
                     @LockScreen.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLockScreen;
                     @LockScreen.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLockScreen;
@@ -1036,9 +1105,12 @@ namespace TFMEsada
                     @Look.started += instance.OnLook;
                     @Look.performed += instance.OnLook;
                     @Look.canceled += instance.OnLook;
-                    @Fire.started += instance.OnFire;
-                    @Fire.performed += instance.OnFire;
-                    @Fire.canceled += instance.OnFire;
+                    @ShootNormal.started += instance.OnShootNormal;
+                    @ShootNormal.performed += instance.OnShootNormal;
+                    @ShootNormal.canceled += instance.OnShootNormal;
+                    @ShootPuddle.started += instance.OnShootPuddle;
+                    @ShootPuddle.performed += instance.OnShootPuddle;
+                    @ShootPuddle.canceled += instance.OnShootPuddle;
                     @LockScreen.started += instance.OnLockScreen;
                     @LockScreen.performed += instance.OnLockScreen;
                     @LockScreen.canceled += instance.OnLockScreen;
@@ -1203,7 +1275,8 @@ namespace TFMEsada
         {
             void OnMove(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
-            void OnFire(InputAction.CallbackContext context);
+            void OnShootNormal(InputAction.CallbackContext context);
+            void OnShootPuddle(InputAction.CallbackContext context);
             void OnLockScreen(InputAction.CallbackContext context);
             void OnZoom(InputAction.CallbackContext context);
         }
