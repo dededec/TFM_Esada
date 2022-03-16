@@ -40,8 +40,12 @@ namespace TFMEsada
 
         private void Awake()
         {
-            _cameraOptions.mode = PixelatedCamera.PixelScreenMode.Scale;
-            _cameraOptions.screenScaleFactor = 4;
+            if(_cameraOptions != null)
+            {
+                _cameraOptions.mode = PixelatedCamera.PixelScreenMode.Scale;
+                _cameraOptions.screenScaleFactor = 4;
+            }
+            
             _playerControls = new IAA_Player();
         }
 
