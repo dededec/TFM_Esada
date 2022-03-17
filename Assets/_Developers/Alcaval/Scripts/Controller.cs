@@ -12,6 +12,7 @@ namespace TFMEsada
 
         [SerializeField] private InputAction _controls;
 
+
         private void OnEnable() {
             _controls.Enable();
         }
