@@ -11,6 +11,7 @@ namespace TFMEsada
     {
 
         [SerializeField] private InputAction _controls;
+        private bool reading = false;
 
         private void OnEnable() {
             _controls.Enable();
@@ -22,9 +23,16 @@ namespace TFMEsada
 
         private void Update() 
         {
-            var movement = _controls.ReadValue<Vector2>();
-            Vector3 Movement = new Vector3 (movement.x, 0, movement.y);
-            transform.position += Movement * 10f * Time.deltaTime;
+            if(!reading)
+            {
+                var movement = _controls.ReadValue<Vector2>();
+                Vector3 Movement = new Vector3 (movement.x, 0, movement.y);
+                transform.position += Movement * 10f * Time.deltaTime;
+            }
+        }
+
+        public void setReading(bool flag){
+            reading = flag;
         }
     }
 }
