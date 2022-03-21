@@ -29,14 +29,6 @@ namespace TFMEsada
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Look"",
-                    ""type"": ""Value"",
-                    ""id"": ""65768d78-b033-48c8-b96d-0d60571edecc"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""Shoot Normal"",
                     ""type"": ""Button"",
                     ""id"": ""2d96598c-a775-4b81-a2ca-fda8836d94be"",
@@ -51,22 +43,6 @@ namespace TFMEsada
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Hold""
-                },
-                {
-                    ""name"": ""Lock Screen"",
-                    ""type"": ""Button"",
-                    ""id"": ""edb31785-0524-4fde-b099-6f58baef3d0a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Zoom"",
-                    ""type"": ""Value"",
-                    ""id"": ""24bd5b41-6d31-402d-9844-ca20f92cb686"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -237,50 +213,6 @@ namespace TFMEsada
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c1f7a91b-d0fd-4a62-997e-7fb9b69bf235"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""55cd1d3f-e3c0-4707-9019-a76844f0e642"",
-                    ""path"": ""<Mouse>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8c8e490b-c610-4785-884f-f04217b23ca4"",
-                    ""path"": ""<Pointer>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse;Touch"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3e5f5442-8668-4b27-a940-df99bad7e831"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""143bb1cd-cc10-4eca-a2f0-a3664166fe91"",
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
@@ -336,28 +268,6 @@ namespace TFMEsada
                 },
                 {
                     ""name"": """",
-                    ""id"": ""0f4b8dec-b072-4dbb-9ff9-0b6bbb760f34"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Lock Screen"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""385833e1-53ad-42db-b1fe-70db66755575"",
-                    ""path"": ""<Mouse>/scroll"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Zoom"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""2ff19daa-c03b-4df2-9350-af5d8f747660"",
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
@@ -408,6 +318,104 @@ namespace TFMEsada
                     ""processors"": """",
                     ""groups"": ""XR"",
                     ""action"": ""Shoot Puddle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Camera"",
+            ""id"": ""1cbab33d-4d8b-4320-a724-ed3624cc6691"",
+            ""actions"": [
+                {
+                    ""name"": ""Zoom"",
+                    ""type"": ""Value"",
+                    ""id"": ""56e765f2-5064-4257-bd66-e890e329ce21"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Lock Screen"",
+                    ""type"": ""Button"",
+                    ""id"": ""de0afa43-a039-4ce5-8ec1-e078a5a17dfc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""69c067d6-d88c-4f27-8042-3819757d0fdc"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""f99101b1-193f-41be-812b-e07dd7964406"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""299e8d5c-66c3-4454-beb6-91d42cf69bdc"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d80ff96a-077d-4edc-8800-2a8b5dea2fd7"",
+                    ""path"": ""<Pointer>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse;Touch"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""02f09e94-0507-4359-b1c8-7f1e20779e12"",
+                    ""path"": ""<Joystick>/{Hatswitch}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e15e3449-ee34-412e-acdb-212d44a589f0"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Lock Screen"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0ab57247-bd61-434c-aea9-1798d88c9a98"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Zoom"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -986,11 +994,13 @@ namespace TFMEsada
             // Player
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-            m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
             m_Player_ShootNormal = m_Player.FindAction("Shoot Normal", throwIfNotFound: true);
             m_Player_ShootPuddle = m_Player.FindAction("Shoot Puddle", throwIfNotFound: true);
-            m_Player_LockScreen = m_Player.FindAction("Lock Screen", throwIfNotFound: true);
-            m_Player_Zoom = m_Player.FindAction("Zoom", throwIfNotFound: true);
+            // Camera
+            m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
+            m_Camera_Zoom = m_Camera.FindAction("Zoom", throwIfNotFound: true);
+            m_Camera_LockScreen = m_Camera.FindAction("Lock Screen", throwIfNotFound: true);
+            m_Camera_Look = m_Camera.FindAction("Look", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1053,21 +1063,15 @@ namespace TFMEsada
         private readonly InputActionMap m_Player;
         private IPlayerActions m_PlayerActionsCallbackInterface;
         private readonly InputAction m_Player_Move;
-        private readonly InputAction m_Player_Look;
         private readonly InputAction m_Player_ShootNormal;
         private readonly InputAction m_Player_ShootPuddle;
-        private readonly InputAction m_Player_LockScreen;
-        private readonly InputAction m_Player_Zoom;
         public struct PlayerActions
         {
             private @IAA_Player m_Wrapper;
             public PlayerActions(@IAA_Player wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Player_Move;
-            public InputAction @Look => m_Wrapper.m_Player_Look;
             public InputAction @ShootNormal => m_Wrapper.m_Player_ShootNormal;
             public InputAction @ShootPuddle => m_Wrapper.m_Player_ShootPuddle;
-            public InputAction @LockScreen => m_Wrapper.m_Player_LockScreen;
-            public InputAction @Zoom => m_Wrapper.m_Player_Zoom;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1080,21 +1084,12 @@ namespace TFMEsada
                     @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                     @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                     @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                    @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                    @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                    @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                     @ShootNormal.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootNormal;
                     @ShootNormal.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootNormal;
                     @ShootNormal.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootNormal;
                     @ShootPuddle.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootPuddle;
                     @ShootPuddle.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootPuddle;
                     @ShootPuddle.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShootPuddle;
-                    @LockScreen.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLockScreen;
-                    @LockScreen.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLockScreen;
-                    @LockScreen.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLockScreen;
-                    @Zoom.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnZoom;
-                    @Zoom.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnZoom;
-                    @Zoom.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnZoom;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1102,25 +1097,65 @@ namespace TFMEsada
                     @Move.started += instance.OnMove;
                     @Move.performed += instance.OnMove;
                     @Move.canceled += instance.OnMove;
-                    @Look.started += instance.OnLook;
-                    @Look.performed += instance.OnLook;
-                    @Look.canceled += instance.OnLook;
                     @ShootNormal.started += instance.OnShootNormal;
                     @ShootNormal.performed += instance.OnShootNormal;
                     @ShootNormal.canceled += instance.OnShootNormal;
                     @ShootPuddle.started += instance.OnShootPuddle;
                     @ShootPuddle.performed += instance.OnShootPuddle;
                     @ShootPuddle.canceled += instance.OnShootPuddle;
-                    @LockScreen.started += instance.OnLockScreen;
-                    @LockScreen.performed += instance.OnLockScreen;
-                    @LockScreen.canceled += instance.OnLockScreen;
-                    @Zoom.started += instance.OnZoom;
-                    @Zoom.performed += instance.OnZoom;
-                    @Zoom.canceled += instance.OnZoom;
                 }
             }
         }
         public PlayerActions @Player => new PlayerActions(this);
+
+        // Camera
+        private readonly InputActionMap m_Camera;
+        private ICameraActions m_CameraActionsCallbackInterface;
+        private readonly InputAction m_Camera_Zoom;
+        private readonly InputAction m_Camera_LockScreen;
+        private readonly InputAction m_Camera_Look;
+        public struct CameraActions
+        {
+            private @IAA_Player m_Wrapper;
+            public CameraActions(@IAA_Player wrapper) { m_Wrapper = wrapper; }
+            public InputAction @Zoom => m_Wrapper.m_Camera_Zoom;
+            public InputAction @LockScreen => m_Wrapper.m_Camera_LockScreen;
+            public InputAction @Look => m_Wrapper.m_Camera_Look;
+            public InputActionMap Get() { return m_Wrapper.m_Camera; }
+            public void Enable() { Get().Enable(); }
+            public void Disable() { Get().Disable(); }
+            public bool enabled => Get().enabled;
+            public static implicit operator InputActionMap(CameraActions set) { return set.Get(); }
+            public void SetCallbacks(ICameraActions instance)
+            {
+                if (m_Wrapper.m_CameraActionsCallbackInterface != null)
+                {
+                    @Zoom.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
+                    @Zoom.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
+                    @Zoom.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
+                    @LockScreen.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnLockScreen;
+                    @LockScreen.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnLockScreen;
+                    @LockScreen.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnLockScreen;
+                    @Look.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnLook;
+                    @Look.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnLook;
+                    @Look.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnLook;
+                }
+                m_Wrapper.m_CameraActionsCallbackInterface = instance;
+                if (instance != null)
+                {
+                    @Zoom.started += instance.OnZoom;
+                    @Zoom.performed += instance.OnZoom;
+                    @Zoom.canceled += instance.OnZoom;
+                    @LockScreen.started += instance.OnLockScreen;
+                    @LockScreen.performed += instance.OnLockScreen;
+                    @LockScreen.canceled += instance.OnLockScreen;
+                    @Look.started += instance.OnLook;
+                    @Look.performed += instance.OnLook;
+                    @Look.canceled += instance.OnLook;
+                }
+            }
+        }
+        public CameraActions @Camera => new CameraActions(this);
 
         // UI
         private readonly InputActionMap m_UI;
@@ -1274,11 +1309,14 @@ namespace TFMEsada
         public interface IPlayerActions
         {
             void OnMove(InputAction.CallbackContext context);
-            void OnLook(InputAction.CallbackContext context);
             void OnShootNormal(InputAction.CallbackContext context);
             void OnShootPuddle(InputAction.CallbackContext context);
-            void OnLockScreen(InputAction.CallbackContext context);
+        }
+        public interface ICameraActions
+        {
             void OnZoom(InputAction.CallbackContext context);
+            void OnLockScreen(InputAction.CallbackContext context);
+            void OnLook(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

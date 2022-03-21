@@ -19,9 +19,15 @@ namespace TFMEsada
     {
         #region Fields
 
-        [Tooltip("Movement script to check if the player is moving and assign controls to this script.")]
+        [Tooltip("ControlManager script to assign controls to this script.")]
         /// <summary>
-        /// Movement script to check if the player is moving and assign controls to this script.
+        /// Movement script to assign controls to this script.
+        /// </summary>
+        [SerializeField] private ControlManager _controlManager;
+
+        [Tooltip("Movement script to check if the player is moving.")]
+        /// <summary>
+        /// Movement script to check if the player is moving.
         /// </summary>
         [SerializeField] private Movement _movement;
 
@@ -97,7 +103,7 @@ namespace TFMEsada
 
         private void OnEnable()
         {
-            _shootNormal = _movement.Controls.Player.ShootNormal;
+            _shootNormal = _controlManager.Controls.Player.ShootNormal;
 
             if (_shootNormal == null)
             {
@@ -107,7 +113,7 @@ namespace TFMEsada
             _shootNormal.performed += shootNormal;
             _shootNormal.Enable();
 
-            _shootPuddle = _movement.Controls.Player.ShootPuddle;
+            _shootPuddle = _controlManager.Controls.Player.ShootPuddle;
             _shootPuddle.performed += shootPuddle;
             _shootPuddle.Enable();
         }

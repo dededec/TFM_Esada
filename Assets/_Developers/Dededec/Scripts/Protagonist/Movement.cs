@@ -54,7 +54,11 @@ namespace TFMEsada
         [SerializeField] private float _rotationSpeed;
 
         [Header("Controls")]
-        private IAA_Player _controls;
+        [Tooltip("ControlManager script to assign controls to this script.")]
+        /// <summary>
+        /// Movement script to assign controls to this script.
+        /// </summary>
+        [SerializeField] private ControlManager _controlManager;
         private InputAction _move;
 
 	    #endregion
@@ -76,26 +80,13 @@ namespace TFMEsada
             }
         }
 
-        public IAA_Player Controls
-        {
-            get
-            {
-                return _controls;
-            }
-        }
-
         #endregion
 
 	    #region LifeCycle
 
-        private void Awake() 
-        {
-            _controls = new IAA_Player();
-        }
-
         private void OnEnable() 
         {
-            _move = Controls.Player.Move;
+            _move = _controlManager.Controls.Player.Move;
             _move.Enable();
         }
 

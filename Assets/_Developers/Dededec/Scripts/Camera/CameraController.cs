@@ -26,13 +26,20 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private PixelatedCamera _cameraOptions;
 
-        private IAA_Player _playerControls;
+        [Tooltip("ControlManager script to assign controls to this script.")]
+        /// <summary>
+        /// Movement script to assign controls to this script.
+        /// </summary>
+        [SerializeField] private ControlManager _controlManager;
         private InputAction _look;
         private InputAction _lockScreen;
 
         private string _mouseDeltaName = "delta";
         private bool _isMouse;
         private bool _isRightButtonPressed = false;
+
+        private float _distanceToPivot;
+        private float _originalY;
 
         #endregion
 
@@ -45,17 +52,18 @@ namespace TFMEsada
                 _cameraOptions.mode = PixelatedCamera.PixelScreenMode.Scale;
                 _cameraOptions.screenScaleFactor = 4;
             }
-            
-            _playerControls = new IAA_Player();
+        
+            _distanceToPivot = Vector3.Distance(transform.position, _pivotPoint.position);
+            _originalY = transform.position.y;
         }
 
         private void OnEnable()
         {
-            _look = _playerControls.Player.Look;
+            _look = _controlManager.Controls.Camera.Look;
             _look.started += determineControl;
             _look.Enable();
 
-            _lockScreen = _playerControls.Player.LockScreen;
+            _lockScreen = _controlManager.Controls.Camera.LockScreen;
             _lockScreen.started += onRightButtonPress;
             _lockScreen.canceled += onRightButtonRelease;
             _lockScreen.Enable();
@@ -81,6 +89,15 @@ namespace TFMEsada
             else if(!_isMouse)
             {
                 transform.RotateAround(_pivotPoint.position, Vector3.up, cameraMovement.x * 100f * Time.deltaTime);
+            }
+
+            Debug.DrawLine(transform.position, _pivotPoint.position, Color.cyan);
+            transform.LookAt(_pivotPoint, Vector3.up);
+            // Comprobamos que seguimos a la distancia correcta
+            if(Vector3.Distance(transform.position, _pivotPoint.position) != _distanceToPivot)
+            {
+                transform.position = (transform.position - _pivotPoint.position).normalized * _distanceToPivot + _pivotPoint.position;
+                transform.position = new Vector3(transform.position.x, _originalY, transform.position.z);
             }
         }
 
