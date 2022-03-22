@@ -32,16 +32,9 @@ namespace TFMEsada
         private float posActual = 0, maxPos = 10;
 	  
 	    #endregion
-	  
-	    #region Properties
-	  
-        // public string Ejemplo {get; set;}
-            
-	    #endregion
 	 
 	    #region LifeCycle
 	  
-        // Start, OnAwake, Update, etc
         private void OnEnable() 
         {
             Controls.performed += moveTracks;
