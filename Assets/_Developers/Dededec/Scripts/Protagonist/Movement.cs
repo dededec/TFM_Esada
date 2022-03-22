@@ -86,10 +86,7 @@ namespace TFMEsada
 
         private void OnEnable() 
         {
-            if(!assignControls())
-            {
-                Debug.LogWarning("Movement - OnEnable: No se pudo asignar controles");
-            }
+            assignControls();
         }
 
         /*
@@ -99,10 +96,7 @@ namespace TFMEsada
         */
         private void Start() 
         {
-            if(assignControls())
-            {
-                Debug.Log("Movement - Start: Controles asignados.");
-            }
+            assignControls();
         }
 
         private void OnDisable() 

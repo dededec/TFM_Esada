@@ -108,10 +108,7 @@ namespace TFMEsada
         */
         private void OnEnable()
         {
-            if(!assignControls())
-            {
-                Debug.LogWarning("WaterGun - OnEnable: No se pudo asignar controles");
-            }
+            assignControls();
         }
 
         private void OnDisable()
@@ -125,10 +122,8 @@ namespace TFMEsada
 
         private void Start() 
         {
-            if(assignControls())
-            {
-                Debug.Log("WaterGun - Start: Controles asignados");
-            }
+            assignControls();
+
 
             if(_ammoSlider != null)
             {
