@@ -101,33 +101,40 @@ namespace TFMEsada
 
         #region LifeCycle
 
+        /*
+        Note: I use Start() instead of OnEnable() because it is NOT guaranteed that
+        this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
+        For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
+        */
         private void OnEnable()
         {
-            _shootNormal = _controlManager.Controls.Player.ShootNormal;
-
-            if (_shootNormal == null)
+            if(!assignControls())
             {
-                Debug.LogError("Error: Fire Input Action is null");
+                Debug.LogWarning("WaterGun - OnEnable: No se pudo asignar controles");
             }
-
-            _shootNormal.performed += shootNormal;
-            _shootNormal.Enable();
-
-            _shootPuddle = _controlManager.Controls.Player.ShootPuddle;
-            _shootPuddle.performed += shootPuddle;
-            _shootPuddle.Enable();
         }
 
         private void OnDisable()
         {
+            _shootNormal.performed -= shootNormal;
+            _shootPuddle.performed -= shootPuddle;
+
             _shootNormal.Disable();
             _shootPuddle.Disable();
         }
 
         private void Start() 
         {
-            _ammoSlider.maxValue = Ammo;
-            _ammoSlider.value = Ammo;
+            if(assignControls())
+            {
+                Debug.Log("WaterGun - Start: Controles asignados");
+            }
+
+            if(_ammoSlider != null)
+            {
+                _ammoSlider.maxValue = Ammo;
+                _ammoSlider.value = Ammo;
+            }
         }
 
         private void Update()
@@ -193,6 +200,26 @@ namespace TFMEsada
 
             Debug.Log("Disparas charco");
             Ammo -= _puddleCost;
+        }
+
+        private bool assignControls()
+        {
+            if (_controlManager.Controls == null)
+            {
+                return false;
+            }
+            else
+            {
+                _shootNormal = _controlManager.Controls.Player.ShootNormal;
+
+                _shootNormal.performed += shootNormal;
+                _shootNormal.Enable();
+
+                _shootPuddle = _controlManager.Controls.Player.ShootPuddle;
+                _shootPuddle.performed += shootPuddle;
+                _shootPuddle.Enable();
+                return true;
+            }
         }
 
         #endregion

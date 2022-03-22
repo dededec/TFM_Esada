@@ -50,6 +50,7 @@ namespace TFMEsada
 
         private void OnDisable() 
         {
+            Controls.performed -= moveTracks;
             Controls.Disable();
         }
       

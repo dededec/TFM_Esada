@@ -86,8 +86,23 @@ namespace TFMEsada
 
         private void OnEnable() 
         {
-            _move = _controlManager.Controls.Player.Move;
-            _move.Enable();
+            if(!assignControls())
+            {
+                Debug.LogWarning("Movement - OnEnable: No se pudo asignar controles");
+            }
+        }
+
+        /*
+        Note: I use Start() instead of OnEnable() because it is NOT guaranteed that
+        this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
+        For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
+        */
+        private void Start() 
+        {
+            if(assignControls())
+            {
+                Debug.Log("Movement - Start: Controles asignados.");
+            }
         }
 
         private void OnDisable() 
@@ -146,6 +161,20 @@ namespace TFMEsada
             if(input.y == 0f)
             {
                 _rigidbody.rotation *= Quaternion.Euler(0, input.x * _rotationSpeed, 0);
+            }
+        }
+
+        private bool assignControls()
+        {
+            if(_controlManager.Controls == null)
+            {
+                return false;
+            }
+            else
+            {
+                _move = _controlManager.Controls.Player.Move;
+                _move.Enable();
+                return true;
             }
         }
 
