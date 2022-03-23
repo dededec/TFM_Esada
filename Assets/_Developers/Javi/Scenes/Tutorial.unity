@@ -1474,6 +1474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pivotPoint: {fileID: 859114274}
   _cameraOptions: {fileID: 0}
+  _controlManager: {fileID: 2018838164}
 --- !u!114 &822407958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,6 +2600,17 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &2018838164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+  m_PrefabInstance: {fileID: 130028833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018838159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354106e1c951e4d4891994e68a29075e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2052550092
 GameObject:
   m_ObjectHideFlags: 0
