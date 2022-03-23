@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>E:\PROYECTOS WWISE\TFM Wwise ESADA\</ProjectRoot>
+		<SourceFilesRoot>E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\PROYECTOS WWISE\TFM Wwise ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="133642231" Language="SFX" Hash="4163170659">
+			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
+			<ShortName>General</ShortName>
+			<Path>General.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.505578" DurationMax="0.555760">
+					<IncludedMemoryFiles>
+						<File Id="520412353" Language="SFX">
+							<ShortName>Wood\footsteps Wood 4.wav</ShortName>
+							<Path>SFX\Wood\footsteps Wood 4_10C4C929.wem</Path>
+						</File>
+						<File Id="732776533" Language="SFX">
+							<ShortName>Wood\footsteps Wood 1.wav</ShortName>
+							<Path>SFX\Wood\footsteps Wood 1_10C4C929.wem</Path>
+						</File>
+						<File Id="750786422" Language="SFX">
+							<ShortName>Wood\footsteps Wood 2.wav</ShortName>
+							<Path>SFX\Wood\footsteps Wood 2_10C4C929.wem</Path>
+						</File>
+						<File Id="1036859632" Language="SFX">
+							<ShortName>Wood\footsteps Wood 3.wav</ShortName>
+							<Path>SFX\Wood\footsteps Wood 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3426087294" Name="prueba" ObjectPath="\Events\Default Work Unit\prueba" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="270.656250" DurationMax="270.656250">
+					<IncludedMemoryFiles>
+						<File Id="203575406" Language="SFX">
+							<ShortName>160 ketaketaketa.wav</ShortName>
+							<Path>SFX\160 ketaketaketa_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1421093602">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
