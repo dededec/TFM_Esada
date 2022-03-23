@@ -17,6 +17,8 @@ namespace TFMEsada
     {
         #region Fields
 
+        private float _keyCount = 0;
+
         [Tooltip("Range in which the player can pick a key or open a locked door.")]
         /// <summary>
         /// Range in which the player can pick a key or open a locked door.
@@ -29,10 +31,18 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private ControlManager _controlManager;
         private InputAction _interact;
+
+        [Tooltip("Layer in which to look for keys.")]
+        /// <summary>
+        /// Layer in which to look for keys.
+        /// </summary>
+        [SerializeField] private LayerMask _keyLayer;
         
-        private string _keyMask = "Key";
-        private string _doorMask = "Door";
-        private float _keyCount = 0;
+        [Tooltip("Layer in which to look for doors.")]
+        /// <summary>
+        /// Layer in which to look for doors.
+        /// </summary>
+        [SerializeField] private LayerMask _doorLayer;
 
 	    #endregion
 
@@ -44,7 +54,7 @@ namespace TFMEsada
         }
 
         /*
-        Note: I use Start() instead of OnEnable() because it is NOT guaranteed that
+        Note: I use Start() besides OnEnable() because it is NOT guaranteed that
         this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
         For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
         */
@@ -59,6 +69,11 @@ namespace TFMEsada
             _interact.Disable();
         }
 
+        private void Update() 
+        {
+            Debug.DrawRay(transform.position + transform.up, transform.forward * _range, Color.cyan);
+        }
+
         #endregion
 
         #region Private Methods
@@ -66,20 +81,26 @@ namespace TFMEsada
         private void interact(InputAction.CallbackContext context)
         {   
             RaycastHit hit;
-            if(Physics.Raycast(transform.position + transform.up, (transform.forward + transform.right), out hit, _range, LayerMask.NameToLayer(_keyMask)))
+            if(Physics.Raycast(transform.position + transform.up, transform.forward, out hit, _range, _keyLayer, QueryTriggerInteraction.Collide))
             {
                 // Obtener llave.
+                Debug.Log("Apañaste llave.");
                 _keyCount++;
                 Destroy(hit.collider.gameObject);
+                return;
             }
-            else if(Physics.Raycast(transform.position + transform.up, (transform.forward + transform.right), out hit, _range, LayerMask.NameToLayer(_doorMask)))
+            else if(Physics.Raycast(transform.position + transform.up, transform.forward, out hit, _range, _doorLayer, QueryTriggerInteraction.Collide))
             {
                 // Abrir puerta si hay llave.
                 if(_keyCount > 0)
                 {
+                    Debug.Log("Abres puerta.");
                     _keyCount--;
                 }
+                return;
             }
+
+            Debug.Log("No se pilla nada");
         }
 
         private bool assignControls()
