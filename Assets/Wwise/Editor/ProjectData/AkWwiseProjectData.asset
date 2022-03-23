@@ -345,8 +345,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5102b3088b319148bd078bcd635cfdad
     GuidInternal: 
-    m_lastTime: -8585540892836286789
-    List: []
+    m_lastTime: -8585540784513499301
+    List:
+    - name: General
+      guid: ef292bcdba831a47b3879b2384ba5970
+      id: 133642231
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5102b3088b319148bd078bcd635cfdad
+      - ElementName: General
+        ObjectType: 7
+        guid: ef292bcdba831a47b3879b2384ba5970
+      Path: SoundBanks\Default Work Unit\General
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -359,8 +373,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f6fbaedb94d57847a49651deadc32c7e
     GuidInternal: 
-    m_lastTime: -8585540892836496229
-    List: []
+    m_lastTime: -8585540784513459403
+    List:
+    - name: Player_Footsteps
+      guid: 8576ec12a457334eaf6ef83d8d8bf794
+      id: 1730208058
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: Player_Footsteps
+        ObjectType: 3
+        guid: 8576ec12a457334eaf6ef83d8d8bf794
+      Path: Events\Default Work Unit\Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.55576
+      minDuration: 0.505578
+    - name: prueba
+      guid: 5cfa1089575ab44aa7767b44c30fe66d
+      id: 3426087294
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: prueba
+        ObjectType: 3
+        guid: 5cfa1089575ab44aa7767b44c30fe66d
+      Path: Events\Default Work Unit\prueba
+      maxAttenuation: 10
+      maxDuration: 270.65625
+      minDuration: 270.65625
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -833,7 +881,7 @@ MonoBehaviour:
     m_lastTime: -8585540892836396493
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000600000007000000080000000b0000000c0000000d0000000e0000000c0100000d010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

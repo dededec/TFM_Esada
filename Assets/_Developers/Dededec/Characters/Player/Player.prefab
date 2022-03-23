@@ -108,6 +108,8 @@ GameObject:
   - component: {fileID: 6128377947335776081}
   - component: {fileID: 6128377947335776083}
   - component: {fileID: 6128377947335776080}
+  - component: {fileID: 1933474343}
+  - component: {fileID: 1933474344}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -192,10 +194,11 @@ MonoBehaviour:
   _collisionSize: 0.7
   _collisionMask:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 385
   _rigidbody: {fileID: 6128377947335776082}
   _movementSpeed: 5
   _rotationSpeed: 5
+  _controlManager: {fileID: 1933474343}
 --- !u!114 &6128377947335776080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58c9acf473b081b4b85ec9ad9044d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _controlManager: {fileID: 1933474343}
   _movement: {fileID: 6128377947335776083}
   _aimDistance: 4
   _fireLayer:
@@ -217,6 +221,32 @@ MonoBehaviour:
   _ammoSlider: {fileID: 0}
   _normalCost: 1
   _puddleCost: 2
+--- !u!114 &1933474343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128377947335776085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354106e1c951e4d4891994e68a29075e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1933474344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128377947335776085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d4ec201c34f6e4db1a921b8f750ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _range: 20
+  _controlManager: {fileID: 1933474343}
 --- !u!1 &6128377947552414862
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +356,7 @@ GameObject:
   - component: {fileID: 6128377947652530334}
   m_Layer: 6
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

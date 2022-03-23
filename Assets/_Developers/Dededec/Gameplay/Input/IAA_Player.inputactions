@@ -407,6 +407,44 @@
             ]
         },
         {
+            "name": "Interaction",
+            "id": "8d5acd6c-b55a-4a22-9f32-6303dd38d890",
+            "actions": [
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "8c3b5e48-6542-4929-8c38-c108929f15fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3a39d898-7956-4bcc-ae55-ae59b7e26a95",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76cb29f6-fbf5-471c-8590-e628ea246871",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "UI",
             "id": "2ee654e7-4e49-4e6e-a114-863e1726fdd9",
             "actions": [

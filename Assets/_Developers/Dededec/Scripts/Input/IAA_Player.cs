@@ -422,6 +422,44 @@ namespace TFMEsada
             ]
         },
         {
+            ""name"": ""Interaction"",
+            ""id"": ""8d5acd6c-b55a-4a22-9f32-6303dd38d890"",
+            ""actions"": [
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""8c3b5e48-6542-4929-8c38-c108929f15fc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""3a39d898-7956-4bcc-ae55-ae59b7e26a95"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""76cb29f6-fbf5-471c-8590-e628ea246871"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""UI"",
             ""id"": ""2ee654e7-4e49-4e6e-a114-863e1726fdd9"",
             ""actions"": [
@@ -1001,6 +1039,9 @@ namespace TFMEsada
             m_Camera_Zoom = m_Camera.FindAction("Zoom", throwIfNotFound: true);
             m_Camera_LockScreen = m_Camera.FindAction("Lock Screen", throwIfNotFound: true);
             m_Camera_Look = m_Camera.FindAction("Look", throwIfNotFound: true);
+            // Interaction
+            m_Interaction = asset.FindActionMap("Interaction", throwIfNotFound: true);
+            m_Interaction_Interact = m_Interaction.FindAction("Interact", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1156,6 +1197,39 @@ namespace TFMEsada
             }
         }
         public CameraActions @Camera => new CameraActions(this);
+
+        // Interaction
+        private readonly InputActionMap m_Interaction;
+        private IInteractionActions m_InteractionActionsCallbackInterface;
+        private readonly InputAction m_Interaction_Interact;
+        public struct InteractionActions
+        {
+            private @IAA_Player m_Wrapper;
+            public InteractionActions(@IAA_Player wrapper) { m_Wrapper = wrapper; }
+            public InputAction @Interact => m_Wrapper.m_Interaction_Interact;
+            public InputActionMap Get() { return m_Wrapper.m_Interaction; }
+            public void Enable() { Get().Enable(); }
+            public void Disable() { Get().Disable(); }
+            public bool enabled => Get().enabled;
+            public static implicit operator InputActionMap(InteractionActions set) { return set.Get(); }
+            public void SetCallbacks(IInteractionActions instance)
+            {
+                if (m_Wrapper.m_InteractionActionsCallbackInterface != null)
+                {
+                    @Interact.started -= m_Wrapper.m_InteractionActionsCallbackInterface.OnInteract;
+                    @Interact.performed -= m_Wrapper.m_InteractionActionsCallbackInterface.OnInteract;
+                    @Interact.canceled -= m_Wrapper.m_InteractionActionsCallbackInterface.OnInteract;
+                }
+                m_Wrapper.m_InteractionActionsCallbackInterface = instance;
+                if (instance != null)
+                {
+                    @Interact.started += instance.OnInteract;
+                    @Interact.performed += instance.OnInteract;
+                    @Interact.canceled += instance.OnInteract;
+                }
+            }
+        }
+        public InteractionActions @Interaction => new InteractionActions(this);
 
         // UI
         private readonly InputActionMap m_UI;
@@ -1317,6 +1391,10 @@ namespace TFMEsada
             void OnZoom(InputAction.CallbackContext context);
             void OnLockScreen(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
+        }
+        public interface IInteractionActions
+        {
+            void OnInteract(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {
