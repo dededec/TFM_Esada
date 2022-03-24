@@ -618,18 +618,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 425184522}
     m_Modifications:
-    - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: _range
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: _keyLayer.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: _doorLayer.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 6128377947335776084, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: m_RootOrder
       value: 2
