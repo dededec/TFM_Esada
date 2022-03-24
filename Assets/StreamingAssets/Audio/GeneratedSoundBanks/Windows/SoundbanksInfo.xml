@@ -46,10 +46,10 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2385628198" GUID="{3B428307-F432-4AC5-A229-B32097830BBD}" Language="SFX" Hash="2304955490">
-			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
-			<ShortName>Footsteps</ShortName>
-			<Path>Footsteps.bnk</Path>
+		<SoundBank Id="1730208058" GUID="{CBD8DBE6-BD44-4A4D-8C0D-4D53D00A8CBC}" Language="SFX" Hash="800018704">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player_Footsteps</ObjectPath>
+			<ShortName>Player_Footsteps</ShortName>
+			<Path>Player_Footsteps.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" GUID="{12EC7685-57A4-4E33-AF6E-F83D8D8BF794}" DurationType="OneShot" DurationMin="0.505578" DurationMax="0.555760">
 					<IncludedMemoryFiles>
