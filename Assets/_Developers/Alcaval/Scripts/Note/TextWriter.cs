@@ -18,16 +18,11 @@ namespace TFMEsada
 	    /// The text in which we are going to write
 	    /// </summary>
         private TMP_Text _text;
-
-        /// <summary>  
-	    /// Background of the bubble
-	    /// </summary>
-        [SerializeField] private GameObject _bgImage;
         
         /// <summary>  
 	    /// The text we are going to write
 	    /// </summary>
-        public string _textToWrite;
+        private string _textToWrite;
 
         /// <summary>  
 	    /// The index of the current letter that we have to write

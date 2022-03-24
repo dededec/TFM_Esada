@@ -8,28 +8,21 @@ using TMPro;
 namespace TFMEsada
 {
     /// <summary>  
-	/// Brief summary of what the class does
+	/// Manages the whole note
 	/// </summary>
     public class NoteController : MonoBehaviour
     {
         #region Fields
       
         private GameObject _speechBubble;
-        [SerializeField] private TMP_Text _text;
-
+        private TMP_Text _text;
         private bool _inReadingRange = false;
-        private bool _control;
-
-        [SerializeField] private Image _pressButtonProp;
-
-
+        private GameObject _pressButtonProp;
+        
         [Tooltip("Contents of the note no more than n characters")]
         [SerializeField] private string[] _contentOfNote;
         private int _currentDialog = 0;
-
-        [SerializeField] TextWriter tw;
-
-        [SerializeField] private GameObject bubble; 
+        private TextWriter _tw;
 	  
 	    #endregion
 
@@ -39,21 +32,24 @@ namespace TFMEsada
 	  
         private void OnEnable() {
             _speechBubble = GameObject.FindGameObjectWithTag("Bubble");
+            _text = _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>();
+            _pressButtonProp = GameObject.FindGameObjectWithTag("ReadPropButton").transform.GetChild(0).gameObject;
+            _tw = gameObject.GetComponent<TextWriter>();
         }
 
         private void Update() {
             if(_inReadingRange)
             {
-                _pressButtonProp.gameObject.SetActive(true);
+                _pressButtonProp.SetActive(true);
                 _pressButtonProp.transform.position = Camera.main.WorldToScreenPoint(transform.position);
                 if((Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame) && Writing)
                 {
-                    tw.FinishSentence();
+                    _tw.FinishSentence();
                     Writing = false;
                 }
                 else if((Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame) && _currentDialog == _contentOfNote.Length && !Writing)
                 {
-                    _pressButtonProp.gameObject.SetActive(true);
+                    _pressButtonProp.SetActive(true);
                     _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
                     _speechBubble.transform.GetChild(0).gameObject.SetActive(false);
                     _speechBubble.transform.GetChild(1).gameObject.SetActive(false);
@@ -65,10 +61,10 @@ namespace TFMEsada
                 else if((Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
                 {   
                     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
-                    _pressButtonProp.gameObject.SetActive(true);
+                    _pressButtonProp.SetActive(true);
                     _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
                     _speechBubble.transform.GetChild(1).gameObject.SetActive(true);
-                    tw.AddWriter(_speechBubble.GetComponentInChildren<TMP_Text>(), _contentOfNote[_currentDialog], 0.05f);
+                    _tw.AddWriter(_speechBubble.GetComponentInChildren<TMP_Text>(), _contentOfNote[_currentDialog], 0.05f);
                     Writing = true;
                     _currentDialog++;
                 }
@@ -95,7 +91,7 @@ namespace TFMEsada
             if(other.tag == "Player")
             {
                 _inReadingRange = false; 
-                _pressButtonProp.gameObject.SetActive(false);
+                _pressButtonProp.SetActive(false);
             }
         }
 	   

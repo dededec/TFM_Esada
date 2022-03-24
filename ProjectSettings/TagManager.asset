@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bubble
+  - DialogPosition
+  - LeftLimit
+  - RightLimit
+  - ReadPropButton
   layers:
   - Default
   - TransparentFX
