@@ -403,7 +403,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ef6dd5ccca23cd4f8d1a79dc855e8154
       Path: Events\Default Work Unit\ambiente_noche
-      maxAttenuation: 200
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: Player_Footsteps
