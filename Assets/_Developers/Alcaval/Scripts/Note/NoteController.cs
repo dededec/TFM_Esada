@@ -42,12 +42,12 @@ namespace TFMEsada
             {
                 _pressButtonProp.SetActive(true);
                 _pressButtonProp.transform.position = Camera.main.WorldToScreenPoint(transform.position);
-                if((Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame) && Writing)
+                if((Keyboard.current.spaceKey.wasPressedThisFrame) && Writing)
                 {
                     _tw.FinishSentence();
                     Writing = false;
                 }
-                else if((Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame) && _currentDialog == _contentOfNote.Length && !Writing)
+                else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog == _contentOfNote.Length && !Writing)
                 {
                     _pressButtonProp.SetActive(true);
                     _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
@@ -58,7 +58,7 @@ namespace TFMEsada
                     Writing = false;
                     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
                 }
-                else if((Keyboard.current.spaceKey.wasPressedThisFrame || Gamepad.current.buttonSouth.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
+                else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
                 {   
                     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
                     _pressButtonProp.SetActive(true);
