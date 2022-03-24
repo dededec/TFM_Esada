@@ -38,8 +38,6 @@ namespace TFMEsada
 	    /// Timer total 
 	    /// </summary>
         private float _timer;
-
-        private bool wr = false;
 	  
 	    #endregion
 	 
@@ -57,7 +55,6 @@ namespace TFMEsada
                     _characterIndex++;
                     if(_characterIndex <= _textToWrite.Length)
                     {
-                        wr = true;
                         _text.text = _textToWrite.Substring(0, _characterIndex);
                         Vector2 tSize = _text.GetRenderedValues(false);
                     } 
@@ -66,7 +63,6 @@ namespace TFMEsada
                     {
                         transform.GetComponent<NoteController>().Writing = false;
                         _text = null;
-                        wr = false;
                         return;
                     }  
                 }
