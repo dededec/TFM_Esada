@@ -345,8 +345,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5102b3088b319148bd078bcd635cfdad
     GuidInternal: 
-    m_lastTime: -8585540784513499301
+    m_lastTime: -8585535426369821503
     List:
+    - name: ambientes
+      guid: 5ec0f5bc57884343a0acd59528dceb99
+      id: 1014953671
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5102b3088b319148bd078bcd635cfdad
+      - ElementName: ambientes
+        ObjectType: 7
+        guid: 5ec0f5bc57884343a0acd59528dceb99
+      Path: SoundBanks\Default Work Unit\ambientes
     - name: General
       guid: ef292bcdba831a47b3879b2384ba5970
       id: 133642231
@@ -373,8 +387,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f6fbaedb94d57847a49651deadc32c7e
     GuidInternal: 
-    m_lastTime: -8585540784513459403
+    m_lastTime: -8585535451279396859
     List:
+    - name: ambiente_noche
+      guid: ef6dd5ccca23cd4f8d1a79dc855e8154
+      id: 343718480
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: ambiente_noche
+        ObjectType: 3
+        guid: ef6dd5ccca23cd4f8d1a79dc855e8154
+      Path: Events\Default Work Unit\ambiente_noche
+      maxAttenuation: 200
+      maxDuration: -1
+      minDuration: -1
     - name: Player_Footsteps
       guid: 8576ec12a457334eaf6ef83d8d8bf794
       id: 1730208058
@@ -881,7 +912,7 @@ MonoBehaviour:
     m_lastTime: -8585540892836396493
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000b0000000c0000000d0000000e0000000c0100000d010000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000b0000000c0000000d0000000e0000000f0000000c0100000d010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

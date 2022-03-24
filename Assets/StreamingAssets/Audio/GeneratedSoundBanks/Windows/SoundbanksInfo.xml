@@ -11,12 +11,47 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Language="SFX" Hash="4163170659">
+		<SoundBank Id="133642231" GUID="{CD2B29EF-83BA-471A-B387-9B2384BA5970}" Language="SFX" Hash="2100347870">
 			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" DurationType="OneShot" DurationMin="0.505578" DurationMax="0.555760">
+				<Event Id="3426087294" Name="prueba" ObjectPath="\Events\Default Work Unit\prueba" GUID="{8910FA5C-5A57-4AB4-A776-7B44C30FE66D}" DurationType="OneShot" DurationMin="270.656250" DurationMax="270.656250">
+					<IncludedMemoryFiles>
+						<File Id="203575406" Language="SFX">
+							<ShortName>160 ketaketaketa.wav</ShortName>
+							<Path>SFX\160 ketaketaketa_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1014953671" GUID="{BCF5C05E-8857-4343-A0AC-D59528DCEB99}" Language="SFX" Hash="829014146">
+			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
+			<ShortName>ambientes</ShortName>
+			<Path>ambientes.bnk</Path>
+			<IncludedEvents>
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\ambiente_noche" GUID="{CCD56DEF-23CA-4FCD-8D1A-79DC855E8154}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="872514747" Language="SFX">
+							<ShortName>ambiente  noche Tutorial.wav</ShortName>
+							<Path>SFX\ambiente  noche Tutorial_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1421093602">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2385628198" GUID="{3B428307-F432-4AC5-A229-B32097830BBD}" Language="SFX" Hash="2304955490">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
+			<ShortName>Footsteps</ShortName>
+			<Path>Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" GUID="{12EC7685-57A4-4E33-AF6E-F83D8D8BF794}" DurationType="OneShot" DurationMin="0.505578" DurationMax="0.555760">
 					<IncludedMemoryFiles>
 						<File Id="520412353" Language="SFX">
 							<ShortName>Wood\footsteps Wood 4.wav</ShortName>
@@ -36,20 +71,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3426087294" Name="prueba" ObjectPath="\Events\Default Work Unit\prueba" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="270.656250" DurationMax="270.656250">
-					<IncludedMemoryFiles>
-						<File Id="203575406" Language="SFX">
-							<ShortName>160 ketaketaketa.wav</ShortName>
-							<Path>SFX\160 ketaketaketa_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 			</IncludedEvents>
-		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1421093602">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

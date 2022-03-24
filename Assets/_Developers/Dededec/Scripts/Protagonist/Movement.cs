@@ -139,13 +139,15 @@ namespace TFMEsada
             if(!hasHitFront && vertical > 0f)
             {
                 // MovePosition() because physics are not neccessary (i.e. using _rigidbody.velocity).
-                _rigidbody.MovePosition(_rigidbody.transform.position + _movementSpeed * Time.deltaTime * vertical * _rigidbody.transform.forward); 
+                _rigidbody.MovePosition(_rigidbody.transform.position + _movementSpeed * Time.deltaTime * vertical * _rigidbody.transform.forward);
+                AkSoundEngine.PostEvent("Player_Footsteps", gameObject); 
             }
 
             if(!hasHitBack && vertical < 0f)
             {
                 // MovePosition() because physics are not neccessary (i.e. using _rigidbody.velocity).
-                _rigidbody.MovePosition(_rigidbody.transform.position + _movementSpeed * Time.deltaTime * vertical * _rigidbody.transform.forward); 
+                _rigidbody.MovePosition(_rigidbody.transform.position + _movementSpeed * Time.deltaTime * vertical * _rigidbody.transform.forward);
+                AkSoundEngine.PostEvent("Player_Footsteps", gameObject);
             }
         }
 

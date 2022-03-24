@@ -1,11 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1730208058	Player_Footsteps			\Default Work Unit\Player_Footsteps	
 	3426087294	prueba			\Default Work Unit\prueba	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	203575406	160 ketaketaketa	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\160 ketaketaketa_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\160 ketaketaketa		47743828
-	520412353	footsteps Wood 4	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\Wood\footsteps Wood 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\footsteps Wood 4		98100
-	732776533	footsteps Wood 1	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\Wood\footsteps Wood 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\footsteps Wood 1		89256
-	750786422	footsteps Wood 2	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\Wood\footsteps Wood 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\footsteps Wood 2		89256
-	1036859632	footsteps Wood 3	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\Wood\footsteps Wood 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wood\footsteps Wood 3		89248
 
