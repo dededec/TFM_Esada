@@ -19,6 +19,8 @@ namespace TFMEsada
     {
         #region Fields
 
+        #region General settings
+
         [Tooltip("ControlManager script to assign controls to this script.")]
         /// <summary>
         /// Movement script to assign controls to this script.
@@ -31,6 +33,34 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private Movement _movement;
 
+        [Tooltip("Projectile to instantiate when doing a normal shot.")]
+        /// <summary>
+        /// Projectile to instantiate when doing a normal shot.
+        /// </summary>
+        [SerializeField] private GameObject _bullet;
+
+        [Tooltip("Projectile to instantiate when doing a puddle shot.")]
+        /// <summary>
+        /// Projectile to instantiate when doing a puddle shot.
+        /// </summary>
+        [SerializeField] private GameObject _puddle;
+
+        [Tooltip("Transform from which to instantiate the projectile.")]
+        /// <summary>
+        /// Transform from which to instantiate the projectile.
+        /// </summary>
+        [SerializeField] private Transform _shootPosition;
+
+        [Tooltip("Transform from which to instantiate the puddle.")]
+        /// <summary>
+        /// Transform from which to instantiate the puddle.
+        /// </summary>
+        [SerializeField] private Transform _puddlePosition;
+
+        #endregion
+
+        #region Balancing
+
         [Header("Balancing")]
         [Tooltip("Distance for the raycast that dictates if you can shoot an enemy.")]
         /// <summary>
@@ -38,11 +68,9 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private float _aimDistance;
 
-        [Tooltip("LayerMask which determines what objects can be shot.")]
-        /// <summary>
-        /// LayerMask which determines what objects can be shot.
-        /// </summary>
-        [SerializeField] private LayerMask _fireLayer;
+        #endregion
+
+        #region Ammo Options
 
         [Header("Ammo options")]
         [Tooltip("Amount of shots the player has for this level.")]
@@ -69,6 +97,8 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private int _puddleCost;
 
+        #endregion
+
         private InputAction _shootNormal;
         private InputAction _shootPuddle;
 
@@ -92,7 +122,11 @@ namespace TFMEsada
                 else
                 {
                     _ammo = value;
-                    _ammoSlider.value = Ammo;
+                    
+                    if(_ammoSlider != null)
+                    {
+                        _ammoSlider.value = Ammo;
+                    }
                 }
             }
         }
@@ -101,11 +135,6 @@ namespace TFMEsada
 
         #region LifeCycle
 
-        /*
-        Note: I use Start() instead of OnEnable() because it is NOT guaranteed that
-        this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
-        For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
-        */
         private void OnEnable()
         {
             assignControls();
@@ -120,6 +149,11 @@ namespace TFMEsada
             _shootPuddle.Disable();
         }
 
+        /*
+        Note: I use Start() besides OnEnable() because it is NOT guaranteed that
+        this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
+        For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
+        */
         private void Start() 
         {
             assignControls();
@@ -149,34 +183,16 @@ namespace TFMEsada
                 return;
             }
 
-            if(Ammo < _puddleCost)
+            if(Ammo < _normalCost)
             {
                 Debug.Log("You can't shoot, not enough ammo.");
                 return;
             }
 
             Debug.Log("Disparas normal");
-
-            /*
-            Creo que lo suyo es que sea en plan autoapuntado (Que no sea un proyectil que se cree),
-            asi que trazamos un raycast palante y ver si está apuntando a un enemigo
-            (tal vez sea mejor trazar un cono, pero esa parte se puede hacer después, es
-            "un módulo aparte").
-            Se traza un raycast, y si choca con algo se dispara (se rota hacia él? tal vez no hace falta).
-            */
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, _aimDistance, _fireLayer))
-            {
-                /* 
-                Aquí faltarían más cosas, de animación, efectos visuales, sonidos y tal.
-                De hecho tal vez se debería llamar a una función de una clase genérica enemigo,
-                de la cual hereden todos los enemigos por su lado y puedan redefinir la función
-                de muerte o algo por el estilo.
-                */
-                Debug.Log("Disparas a: " + hit.collider.gameObject.name);
-                Destroy(hit.collider.gameObject);
-                Ammo -= _normalCost;
-            }
+            Instantiate(_bullet, _shootPosition.position, transform.rotation);
+            Ammo -= _normalCost;
+            
         }
 
         private void shootPuddle(InputAction.CallbackContext context)
@@ -194,6 +210,8 @@ namespace TFMEsada
             }
 
             Debug.Log("Disparas charco");
+            
+            Instantiate(_puddle, _puddlePosition.position, transform.rotation);
             Ammo -= _puddleCost;
         }
 

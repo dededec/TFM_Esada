@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3234922844139878174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5095603250992780259}
+  m_Layer: 6
+  m_Name: PuddlePosition
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5095603250992780259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3234922844139878174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6128377947335776084}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5205391917395589687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 723006214199770416}
+  m_Layer: 6
+  m_Name: Shoot Position
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &723006214199770416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5205391917395589687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.38, y: 1.094, z: 1.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6128377947335776084}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6128377947247951718
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +192,8 @@ Transform:
   m_Children:
   - {fileID: 6128377949086169651}
   - {fileID: 6128377947552414861}
+  - {fileID: 723006214199770416}
+  - {fileID: 5095603250992780259}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -215,10 +277,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controlManager: {fileID: 1933474343}
   _movement: {fileID: 6128377947335776083}
+  _bullet: {fileID: 330662566609505328, guid: 13a58e9e9d987404f99a9b08eea0dc8b, type: 3}
+  _puddle: {fileID: 6521651872321479617, guid: 463b86e3ce85f3b409b21e9a68085463, type: 3}
+  _shootPosition: {fileID: 723006214199770416}
+  _puddlePosition: {fileID: 5095603250992780259}
   _aimDistance: 4
-  _fireLayer:
-    serializedVersion: 2
-    m_Bits: 128
   _ammo: 4
   _ammoSlider: {fileID: 0}
   _normalCost: 1
@@ -315,7 +378,7 @@ GameObject:
   - component: {fileID: 6128377947552414860}
   m_Layer: 6
   m_Name: Water Pistol
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -503,7 +566,7 @@ GameObject:
   - component: {fileID: 6128377949086169651}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -90,7 +90,7 @@ namespace TFMEsada
         }
 
         /*
-        Note: I use Start() instead of OnEnable() because it is NOT guaranteed that
+        Note: I use Start() besides OnEnable() because it is NOT guaranteed that
         this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
         For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
         */
