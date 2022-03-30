@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e85ed2d00587ce46bc44dacba6360339
     GuidInternal: 
-    m_lastTime: -8585540892748297006
+    m_lastTime: -8585530486233014471
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5102b3088b319148bd078bcd635cfdad
     GuidInternal: 
-    m_lastTime: -8585535426369821503
+    m_lastTime: -8585530251753370204
     List:
     - name: ambientes
       guid: 5ec0f5bc57884343a0acd59528dceb99
@@ -361,9 +361,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: 5ec0f5bc57884343a0acd59528dceb99
       Path: SoundBanks\Default Work Unit\ambientes
-    - name: General
-      guid: ef292bcdba831a47b3879b2384ba5970
-      id: 133642231
+    - name: Player
+      guid: 51bbd29c48071a48bcf267d155b5660a
+      id: 1069431850
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -371,10 +371,24 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 5102b3088b319148bd078bcd635cfdad
-      - ElementName: General
+      - ElementName: Player
         ObjectType: 7
-        guid: ef292bcdba831a47b3879b2384ba5970
-      Path: SoundBanks\Default Work Unit\General
+        guid: 51bbd29c48071a48bcf267d155b5660a
+      Path: SoundBanks\Default Work Unit\Player
+    - name: SFX
+      guid: c975a8a81abf6b468d7319169231efa6
+      id: 393239870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5102b3088b319148bd078bcd635cfdad
+      - ElementName: SFX
+        ObjectType: 7
+        guid: c975a8a81abf6b468d7319169231efa6
+      Path: SoundBanks\Default Work Unit\SFX
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -387,7 +401,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f6fbaedb94d57847a49651deadc32c7e
     GuidInternal: 
-    m_lastTime: -8585535451279396859
+    m_lastTime: -8585530251753320342
     List:
     - name: ambiente_noche
       guid: ef6dd5ccca23cd4f8d1a79dc855e8154
@@ -399,16 +413,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: Enviroment
+        ObjectType: 4
+        guid: 3efd972d5f48f546a937d60d96a3e07a
       - ElementName: ambiente_noche
         ObjectType: 3
         guid: ef6dd5ccca23cd4f8d1a79dc855e8154
-      Path: Events\Default Work Unit\ambiente_noche
-      maxAttenuation: 100
+      Path: Events\Default Work Unit\Enviroment\ambiente_noche
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Player_Footsteps
-      guid: 8576ec12a457334eaf6ef83d8d8bf794
-      id: 1730208058
+    - name: chirriando_lejos_3
+      guid: a7f5d7230f50154295102627b057baee
+      id: 4115248352
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -416,16 +433,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f6fbaedb94d57847a49651deadc32c7e
-      - ElementName: Player_Footsteps
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      - ElementName: chirriando_lejos_3
         ObjectType: 3
-        guid: 8576ec12a457334eaf6ef83d8d8bf794
-      Path: Events\Default Work Unit\Player_Footsteps
+        guid: a7f5d7230f50154295102627b057baee
+      Path: Events\Default Work Unit\SFX\chirriando_lejos_3
       maxAttenuation: 0
-      maxDuration: 0.55576
-      minDuration: 0.505578
-    - name: prueba
-      guid: 5cfa1089575ab44aa7767b44c30fe66d
-      id: 3426087294
+      maxDuration: 4.8
+      minDuration: 3.809763
+    - name: chirriando_lejos_3_2
+      guid: e41fffc1f4d5bf418edb83bed5165c10
+      id: 3291383135
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -433,13 +453,130 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f6fbaedb94d57847a49651deadc32c7e
-      - ElementName: prueba
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      - ElementName: chirriando_lejos_3_2
         ObjectType: 3
-        guid: 5cfa1089575ab44aa7767b44c30fe66d
-      Path: Events\Default Work Unit\prueba
-      maxAttenuation: 10
-      maxDuration: 270.65625
-      minDuration: 270.65625
+        guid: e41fffc1f4d5bf418edb83bed5165c10
+      Path: Events\Default Work Unit\SFX\chirriando_lejos_3_2
+      maxAttenuation: 0
+      maxDuration: 6.047621
+      minDuration: 4.8
+    - name: Enviroment
+      guid: 3efd972d5f48f546a937d60d96a3e07a
+      id: 3909959462
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: Enviroment
+        ObjectType: 4
+        guid: 3efd972d5f48f546a937d60d96a3e07a
+      Path: Events\Default Work Unit\Enviroment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PickUp_nota
+      guid: 3812ae51fe0e4b499a8e4f1ea1cce326
+      id: 1233512512
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      - ElementName: PickUp_nota
+        ObjectType: 3
+        guid: 3812ae51fe0e4b499a8e4f1ea1cce326
+      Path: Events\Default Work Unit\SFX\PickUp_nota
+      maxAttenuation: 0
+      maxDuration: 6.312517
+      minDuration: 6.312517
+    - name: puerta_chirriando_lejos
+      guid: 61da3e2e4cd00b429e847cec4fd5707c
+      id: 2170274192
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      - ElementName: puerta_chirriando_lejos
+        ObjectType: 3
+        guid: 61da3e2e4cd00b429e847cec4fd5707c
+      Path: Events\Default Work Unit\SFX\puerta_chirriando_lejos
+      maxAttenuation: 0
+      maxDuration: 4.35607
+      minDuration: 3.457415
+    - name: puerta_chirriando_lejos2
+      guid: 67873e402a730f4b9a3d31b743877520
+      id: 863090050
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      - ElementName: puerta_chirriando_lejos2
+        ObjectType: 3
+        guid: 67873e402a730f4b9a3d31b743877520
+      Path: Events\Default Work Unit\SFX\puerta_chirriando_lejos2
+      maxAttenuation: 0
+      maxDuration: 5.488304
+      minDuration: 4.35607
+    - name: SFX
+      guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: silla_pre_atack
+      guid: 7f9ee20475efd547a474606d8c923fea
+      id: 3549094443
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f6fbaedb94d57847a49651deadc32c7e
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 9fa93c565d9a7e40bfbfa67cafc98162
+      - ElementName: silla_pre_atack
+        ObjectType: 3
+        guid: 7f9ee20475efd547a474606d8c923fea
+      Path: Events\Default Work Unit\SFX\silla_pre_atack
+      maxAttenuation: 0
+      maxDuration: 4.8
+      minDuration: 4.8
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -895,8 +1032,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a978be443f85bd47ad133c4589015a80
     GuidInternal: 
-    m_lastTime: -8585540892836486002
-    List: []
+    m_lastTime: -8585531346241441255
+    List:
+    - name: Footsteps_surface
+      guid: 65f89fceccd8df47b8d572820b4183ab
+      id: 1162743606
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a978be443f85bd47ad133c4589015a80
+      - ElementName: Footsteps_surface
+        ObjectType: 11
+        guid: 65f89fceccd8df47b8d572820b4183ab
+      Path: Switches\Default Work Unit\Footsteps_surface
+      values:
+      - name: Water
+        guid: 3504ed391ed7884485332e7602b35787
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a978be443f85bd47ad133c4589015a80
+        - ElementName: Footsteps_surface
+          ObjectType: 11
+          guid: 65f89fceccd8df47b8d572820b4183ab
+        - ElementName: Water
+          ObjectType: 10
+          guid: 3504ed391ed7884485332e7602b35787
+      - name: Wood
+        guid: 52a47b1571b5434b9657348c171b84c8
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a978be443f85bd47ad133c4589015a80
+        - ElementName: Footsteps_surface
+          ObjectType: 11
+          guid: 65f89fceccd8df47b8d572820b4183ab
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 52a47b1571b5434b9657348c171b84c8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -912,7 +1099,7 @@ MonoBehaviour:
     m_lastTime: -8585540892836396493
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000b0000000c0000000d0000000e0000000f0000000c0100000d010000
+  ExpandedWaapiItemIds: 010000000700000008000000090000000a0000000e00000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

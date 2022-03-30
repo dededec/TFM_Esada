@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	863090050	puerta_chirriando_lejos2			\Default Work Unit\SFX\puerta_chirriando_lejos2	
+	1233512512	PickUp_nota			\Default Work Unit\SFX\PickUp_nota	
+	2170274192	puerta_chirriando_lejos			\Default Work Unit\SFX\puerta_chirriando_lejos	
+	3291383135	chirriando_lejos_3_2			\Default Work Unit\SFX\chirriando_lejos_3_2	
+	3549094443	silla_pre_atack			\Default Work Unit\SFX\silla_pre_atack	
+	4115248352	chirriando_lejos_3			\Default Work Unit\SFX\chirriando_lejos_3	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	72368024	recoger nota-1	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\recoger nota-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\recoger nota-1		1113592
+	295145765	sfx_chirrido relleno 3_2	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\sfx_chirrido relleno 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\sfx_chirrido relleno 3_2		846784
+	408748626	puerta chirriando de fondo	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\puerta chirriando de fondo_C771C1EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\puerta chirriando de fondo		768476
+	731533648	silla_arrastra_preatak	E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\SFX\silla_arrastra_preatak_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\silla_arrastra_preatak		846784
+

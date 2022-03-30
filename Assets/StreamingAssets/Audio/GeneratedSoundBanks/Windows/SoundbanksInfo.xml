@@ -3,7 +3,7 @@
 	<RootPaths>
 		<ProjectRoot>E:\PROYECTOS WWISE\TFM Wwise ESADA\</ProjectRoot>
 		<SourceFilesRoot>E:\PROYECTOS WWISE\TFM Wwise ESADA\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada_2\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>E:\PROYECTOS WWISE\TFM Wwise ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
@@ -11,27 +11,67 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="133642231" GUID="{CD2B29EF-83BA-471A-B387-9B2384BA5970}" Language="SFX" Hash="2100347870">
-			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
-			<ShortName>General</ShortName>
-			<Path>General.bnk</Path>
+		<SoundBank Id="393239870" GUID="{A8A875C9-BF1A-466B-8D73-19169231EFA6}" Language="SFX" Hash="238890892">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3426087294" Name="prueba" ObjectPath="\Events\Default Work Unit\prueba" GUID="{8910FA5C-5A57-4AB4-A776-7B44C30FE66D}" DurationType="OneShot" DurationMin="270.656250" DurationMax="270.656250">
+				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\SFX\chirriando_lejos_3" GUID="{23D7F5A7-500F-4215-9510-2627B057BAEE}" DurationType="OneShot" DurationMin="3.809763" DurationMax="4.800000">
 					<IncludedMemoryFiles>
-						<File Id="203575406" Language="SFX">
-							<ShortName>160 ketaketaketa.wav</ShortName>
-							<Path>SFX\160 ketaketaketa_10C4C929.wem</Path>
+						<File Id="295145765" Language="SFX">
+							<ShortName>sfx_chirrido relleno 3.wav</ShortName>
+							<Path>SFX\sfx_chirrido relleno 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\SFX\chirriando_lejos_3_2" GUID="{C1FF1FE4-D5F4-41BF-8EDB-83BED5165C10}" DurationType="OneShot" DurationMin="4.800000" DurationMax="6.047621">
+					<IncludedMemoryFiles>
+						<File Id="295145765" Language="SFX">
+							<ShortName>sfx_chirrido relleno 3.wav</ShortName>
+							<Path>SFX\sfx_chirrido relleno 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\SFX\PickUp_nota" GUID="{51AE1238-0EFE-494B-9A8E-4F1EA1CCE326}" DurationType="OneShot" DurationMin="6.312517" DurationMax="6.312517">
+					<IncludedMemoryFiles>
+						<File Id="72368024" Language="SFX">
+							<ShortName>recoger nota-1.wav</ShortName>
+							<Path>SFX\recoger nota-1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\SFX\puerta_chirriando_lejos" GUID="{2E3EDA61-D04C-420B-9E84-7CEC4FD5707C}" DurationType="OneShot" DurationMin="3.457415" DurationMax="4.356070">
+					<IncludedMemoryFiles>
+						<File Id="408748626" Language="SFX">
+							<ShortName>puerta chirriando de fondo.wav</ShortName>
+							<Path>SFX\puerta chirriando de fondo_C771C1EA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\SFX\puerta_chirriando_lejos2" GUID="{403E8767-732A-4B0F-9A3D-31B743877520}" DurationType="OneShot" DurationMin="4.356070" DurationMax="5.488304">
+					<IncludedMemoryFiles>
+						<File Id="408748626" Language="SFX">
+							<ShortName>puerta chirriando de fondo.wav</ShortName>
+							<Path>SFX\puerta chirriando de fondo_C771C1EA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3549094443" Name="silla_pre_atack" ObjectPath="\Events\Default Work Unit\SFX\silla_pre_atack" GUID="{04E29E7F-EF75-47D5-A474-606D8C923FEA}" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
+					<IncludedMemoryFiles>
+						<File Id="731533648" Language="SFX">
+							<ShortName>silla_arrastra_preatak.wav</ShortName>
+							<Path>SFX\silla_arrastra_preatak_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{BCF5C05E-8857-4343-A0AC-D59528DCEB99}" Language="SFX" Hash="829014146">
+		<SoundBank Id="1014953671" GUID="{BCF5C05E-8857-4343-A0AC-D59528DCEB99}" Language="SFX" Hash="1336424505">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
 			<IncludedEvents>
-				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\ambiente_noche" GUID="{CCD56DEF-23CA-4FCD-8D1A-79DC855E8154}" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\Enviroment\ambiente_noche" GUID="{CCD56DEF-23CA-4FCD-8D1A-79DC855E8154}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="872514747" Language="SFX">
 							<ShortName>ambiente  noche Tutorial.wav</ShortName>
@@ -41,37 +81,15 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
+		<SoundBank Id="1069431850" GUID="{9CD2BB51-0748-481A-BCF2-67D155B5660A}" Language="SFX" Hash="2567482570">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+		</SoundBank>
 		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1421093602">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="1730208058" GUID="{CBD8DBE6-BD44-4A4D-8C0D-4D53D00A8CBC}" Language="SFX" Hash="800018704">
-			<ObjectPath>\SoundBanks\Default Work Unit\Player_Footsteps</ObjectPath>
-			<ShortName>Player_Footsteps</ShortName>
-			<Path>Player_Footsteps.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player_Footsteps" GUID="{12EC7685-57A4-4E33-AF6E-F83D8D8BF794}" DurationType="OneShot" DurationMin="0.505578" DurationMax="0.555760">
-					<IncludedMemoryFiles>
-						<File Id="520412353" Language="SFX">
-							<ShortName>Wood\footsteps Wood 4.wav</ShortName>
-							<Path>SFX\Wood\footsteps Wood 4_10C4C929.wem</Path>
-						</File>
-						<File Id="732776533" Language="SFX">
-							<ShortName>Wood\footsteps Wood 1.wav</ShortName>
-							<Path>SFX\Wood\footsteps Wood 1_10C4C929.wem</Path>
-						</File>
-						<File Id="750786422" Language="SFX">
-							<ShortName>Wood\footsteps Wood 2.wav</ShortName>
-							<Path>SFX\Wood\footsteps Wood 2_10C4C929.wem</Path>
-						</File>
-						<File Id="1036859632" Language="SFX">
-							<ShortName>Wood\footsteps Wood 3.wav</ShortName>
-							<Path>SFX\Wood\footsteps Wood 3_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
