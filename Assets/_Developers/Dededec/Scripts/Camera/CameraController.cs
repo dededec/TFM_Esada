@@ -59,6 +59,10 @@ namespace TFMEsada
 
         private void OnEnable()
         {
+            if(_controlManager == null)
+            {
+                _controlManager = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>();
+            }
             assignControls();
         }
 
