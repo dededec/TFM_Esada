@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e09c66350e2ff48801698f5c78133c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 3745622626878219511}
+  targetObject: {fileID: 1729968704}
   wallMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -3333,8 +3333,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &832149485940353566
-MeshCollider:
+--- !u!65 &832149485940353566
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3343,10 +3343,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5495902117074765545, guid: bbeea9e70cac07345801d719c1301614, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.030083768, y: 0.0005617819, z: 0.0703338}
+  m_Center: {x: 0.0050418805, y: 0.009719057, z: 0.025166888}
 --- !u!1 &919132147693954344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3396,7 +3395,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: bbeea9e70cac07345801d719c1301614, type: 3}
+  - {fileID: 2100000, guid: 2b68b89b23670334c9d2b595ee1c9c4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
