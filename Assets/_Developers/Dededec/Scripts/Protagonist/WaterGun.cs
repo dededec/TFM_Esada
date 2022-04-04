@@ -177,7 +177,7 @@ namespace TFMEsada
 
         private void shootNormal(InputAction.CallbackContext context)
         {
-            if (_movement.IsMoving)
+            if (_movement.IsMoving || _movement.IsRotating)
             {
                 Debug.Log("You can't shoot, you're moving.");
                 return;
@@ -197,7 +197,7 @@ namespace TFMEsada
 
         private void shootPuddle(InputAction.CallbackContext context)
         {
-            if (_movement.IsMoving)
+            if (_movement.IsMoving || _movement.IsRotating)
             {
                 Debug.Log("You can't shoot, you're moving.");
                 return;

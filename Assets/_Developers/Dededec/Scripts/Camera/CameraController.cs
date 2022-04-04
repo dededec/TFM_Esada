@@ -95,7 +95,7 @@ namespace TFMEsada
             var cameraMovement = _look.ReadValue<Vector2>();
             if (_isRightButtonPressed)
             {
-                transform.RotateAround(_pivotPoint.position, Vector3.up, cameraMovement.x * 360f * Time.deltaTime);
+                transform.RotateAround(_pivotPoint.position, Vector3.up, cameraMovement.x * 75f * Time.deltaTime);
             }
             else if (!_isMouse)
             {
