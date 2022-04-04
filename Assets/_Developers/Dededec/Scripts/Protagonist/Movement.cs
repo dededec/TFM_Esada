@@ -71,7 +71,22 @@ namespace TFMEsada
             {
                 if(_move.enabled)
                 {
-                    return (_move.ReadValue<Vector2>().x != 0f) || (_move.ReadValue<Vector2>().y != 0f);
+                    return (_move.ReadValue<Vector2>().y != 0f);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        public bool IsRotating
+        {
+            get
+            {
+                if(_move.enabled)
+                {
+                    return (_move.ReadValue<Vector2>().x != 0f);
                 }
                 else
                 {
