@@ -189,7 +189,7 @@ namespace TFMEsada
                 return;
             }
 
-            Debug.Log("Disparas normal");
+            Debug.Log("Disparas normal desde: " + gameObject.name);
             Instantiate(_bullet, _shootPosition.position, transform.rotation);
             Ammo -= _normalCost;
             
@@ -220,6 +220,11 @@ namespace TFMEsada
             if (_controlManager.Controls == null)
             {
                 return false;
+            }
+            
+            if(_shootNormal != null)
+            {
+                return true;
             }
             else
             {

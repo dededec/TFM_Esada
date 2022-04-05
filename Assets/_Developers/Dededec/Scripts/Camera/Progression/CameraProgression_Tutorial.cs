@@ -27,11 +27,10 @@ namespace TFMEsada
         private void Update() 
         {
             var distance = _playerMovement.gameObject.transform.forward.normalized.z;
-            Debug.Log("Distance: " + distance);
             if(_playerMovement.IsMoving && _playerMovement.transform.position.x < 3f && Mathf.Abs(distance) > 0.5f)
             {
-                _cameraCart.m_Speed = distance/4f;
-                _pointCart.m_Speed = distance/4f;
+                _cameraCart.m_Speed = _playerMovement.MovementDirection * distance/4f;
+                _pointCart.m_Speed = _playerMovement.MovementDirection * distance/4f;
             }
             else
             {

@@ -61,9 +61,8 @@ namespace TFMEsada
                 Destroy(other.gameObject);
             }
             
-            if(other.tag != "Player")
+            if(other.tag != "Player" || other.tag != "Note")
             {
-                Debug.Log(other.name);
                 Destroy(this.gameObject);
             }
         }
