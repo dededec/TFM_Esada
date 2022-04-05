@@ -43,7 +43,7 @@ namespace TFMEsada
             if(_inReadingRange)
             {
                 _pressButtonProp.SetActive(true);
-                _pressButtonProp.GetComponent<RectTransform>().anchoredPosition = _renderCamera.WorldToScreenPoint(transform.position);
+                _pressButtonProp.GetComponent<RectTransform>().anchoredPosition3D = _renderCamera.WorldToScreenPoint(transform.position);
                 if((Keyboard.current.spaceKey.wasPressedThisFrame) && Writing)
                 {
                     _tw.FinishSentence();

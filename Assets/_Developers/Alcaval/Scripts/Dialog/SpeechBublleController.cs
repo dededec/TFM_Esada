@@ -11,7 +11,9 @@ namespace TFMEsada
     public class SpeechBublleController : MonoBehaviour
     {
         #region Fields
-      
+        [SerializeField] private Camera _renderCamera;
+
+
         private Transform _dialogPosition;
         private Transform _leftLimit;
         private Transform _rightLimit;
@@ -27,13 +29,13 @@ namespace TFMEsada
         }
 	  
         private void Update() {
-            transform.position = Camera.main.WorldToScreenPoint(_dialogPosition.position);
+            GetComponent<RectTransform>().anchoredPosition3D = _renderCamera.WorldToScreenPoint(_dialogPosition.position);
 
-            if(Camera.main.WorldToScreenPoint(_dialogPosition.position).x > _leftLimit.position.x && Camera.main.WorldToScreenPoint(_dialogPosition.position).x < _rightLimit.position.x)
+            if(_renderCamera.WorldToScreenPoint(_dialogPosition.position).x > _leftLimit.position.x && _renderCamera.WorldToScreenPoint(_dialogPosition.position).x < _rightLimit.position.x)
             {
                 transform.rotation = Quaternion.Euler(0, 180, 0);
                 transform.GetChild(1).transform.rotation = Quaternion.Euler(0, 0, 0);
-            }else if(Camera.main.WorldToScreenPoint(_dialogPosition.position).x < _leftLimit.position.x)
+            }else if(_renderCamera.WorldToScreenPoint(_dialogPosition.position).x < _leftLimit.position.x)
             {
                 transform.rotation = Quaternion.Euler(0, 180, 0);         
                 transform.GetChild(1).transform.rotation = Quaternion.Euler(0, 0, 0);
