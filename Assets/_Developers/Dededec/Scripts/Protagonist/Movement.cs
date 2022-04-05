@@ -65,6 +65,21 @@ namespace TFMEsada
 
         #region Properties
 
+        public float MovementDirection
+        {
+            get
+            {
+                if(_move.enabled)
+                {
+                    return _move.ReadValue<Vector2>().y;
+                }
+                else
+                {
+                    return 0f;
+                }
+            }
+        }
+
         public bool IsMoving
         {
             get
