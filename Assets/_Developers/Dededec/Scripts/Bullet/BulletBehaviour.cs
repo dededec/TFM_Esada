@@ -58,11 +58,15 @@ namespace TFMEsada
         {
             if(other.tag == "Enemy")
             {
-                Destroy(other.gameObject);
+                if(other.name.Contains("State"))
+                {
+                    Destroy(other.gameObject.transform.parent.parent.gameObject);
+                }   
             }
             
-            if(other.tag != "Player" || other.tag != "Note")
+            if(other.tag != "Player" && other.tag != "Note")
             {
+                Debug.Log("Se destruye con: " + other.name + " --- " + other.tag);
                 Destroy(this.gameObject);
             }
         }
