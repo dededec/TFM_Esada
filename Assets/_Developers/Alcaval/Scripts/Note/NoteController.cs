@@ -13,7 +13,9 @@ namespace TFMEsada
     public class NoteController : MonoBehaviour
     {
         #region Fields
-      
+
+
+        [SerializeField] private Camera _renderCamera;
         private GameObject _speechBubble;
         private TMP_Text _text;
         private bool _inReadingRange = false;
@@ -41,7 +43,7 @@ namespace TFMEsada
             if(_inReadingRange)
             {
                 _pressButtonProp.SetActive(true);
-                _pressButtonProp.transform.position = Camera.main.WorldToScreenPoint(transform.position);
+                _pressButtonProp.GetComponent<RectTransform>().anchoredPosition = _renderCamera.WorldToScreenPoint(transform.position);
                 if((Keyboard.current.spaceKey.wasPressedThisFrame) && Writing)
                 {
                     _tw.FinishSentence();
