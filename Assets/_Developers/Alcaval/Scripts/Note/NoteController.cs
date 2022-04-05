@@ -61,7 +61,8 @@ namespace TFMEsada
                     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
                 }
                 else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
-                {   
+                {
+                    AkSoundEngine.PostEvent("PickUp_nota", this.gameObject);
                     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
                     _pressButtonProp.SetActive(true);
                     _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
