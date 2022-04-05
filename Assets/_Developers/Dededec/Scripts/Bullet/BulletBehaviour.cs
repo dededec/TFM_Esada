@@ -64,7 +64,7 @@ namespace TFMEsada
                 }   
             }
             
-            if(other.tag != "Player" && other.tag != "Note")
+            if(other.tag != "Player" && other.tag != "Note" && other.tag != "FX")
             {
                 Debug.Log("Se destruye con: " + other.name + " --- " + other.tag);
                 Destroy(this.gameObject);
