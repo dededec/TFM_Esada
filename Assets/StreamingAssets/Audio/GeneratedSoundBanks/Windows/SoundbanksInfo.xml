@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{A8A875C9-BF1A-466B-8D73-19169231EFA6}" Language="SFX" Hash="238890892">
+		<SoundBank Id="393239870" GUID="{A8A875C9-BF1A-466B-8D73-19169231EFA6}" Language="SFX" Hash="1957463058">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -32,11 +32,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\SFX\PickUp_nota" GUID="{51AE1238-0EFE-494B-9A8E-4F1EA1CCE326}" DurationType="OneShot" DurationMin="6.312517" DurationMax="6.312517">
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\SFX\PickUp_nota" GUID="{51AE1238-0EFE-494B-9A8E-4F1EA1CCE326}" DurationType="OneShot" DurationMin="6.111830" DurationMax="6.111830">
 					<IncludedMemoryFiles>
 						<File Id="72368024" Language="SFX">
 							<ShortName>recoger nota-1.wav</ShortName>
-							<Path>SFX\recoger nota-1_10C4C929.wem</Path>
+							<Path>SFX\recoger nota-1_DBA41CEE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -48,11 +48,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\SFX\puerta_chirriando_lejos2" GUID="{403E8767-732A-4B0F-9A3D-31B743877520}" DurationType="OneShot" DurationMin="4.356070" DurationMax="5.488304">
+				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\SFX\puerta_chirriando_lejos2" GUID="{403E8767-732A-4B0F-9A3D-31B743877520}" DurationType="OneShot" DurationMin="3.880817" DurationMax="5.488304">
 					<IncludedMemoryFiles>
-						<File Id="408748626" Language="SFX">
+						<File Id="544993726" Language="SFX">
 							<ShortName>puerta chirriando de fondo.wav</ShortName>
-							<Path>SFX\puerta chirriando de fondo_C771C1EA.wem</Path>
+							<Path>SFX\puerta chirriando de fondo_052FD644.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
