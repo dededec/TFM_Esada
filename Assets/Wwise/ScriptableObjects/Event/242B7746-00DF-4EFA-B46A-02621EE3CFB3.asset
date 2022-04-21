@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 245b00bc82527ff4d9ab3369f297a63f, type: 3}
-  m_Name: CCD56DEF-23CA-4FCD-8D1A-79DC855E8154
+  m_Name: 242B7746-00DF-4EFA-B46A-02621EE3CFB3
   m_EditorClassIdentifier: 
-  objectName: ambiente_noche
-  id: 343718480
-  guid: CCD56DEF-23CA-4FCD-8D1A-79DC855E8154
+  objectName: silla_pre_attack
+  id: 3337955159
+  guid: 242B7746-00DF-4EFA-B46A-02621EE3CFB3

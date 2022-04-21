@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e1eb825d0e3b54469f8273625d32ece, type: 3}
-  m_Name: A8A875C9-BF1A-466B-8D73-19169231EFA6
+  m_Script: {fileID: 11500000, guid: 245b00bc82527ff4d9ab3369f297a63f, type: 3}
+  m_Name: D587A2C5-5931-4EF3-9550-DDC319A4F1C9
   m_EditorClassIdentifier: 
-  objectName: SFX
-  id: 393239870
-  guid: A8A875C9-BF1A-466B-8D73-19169231EFA6
+  objectName: ambiente_noche
+  id: 343718480
+  guid: D587A2C5-5931-4EF3-9550-DDC319A4F1C9

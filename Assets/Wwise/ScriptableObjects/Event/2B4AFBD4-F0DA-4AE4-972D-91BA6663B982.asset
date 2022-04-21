@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e1eb825d0e3b54469f8273625d32ece, type: 3}
-  m_Name: BCF5C05E-8857-4343-A0AC-D59528DCEB99
+  m_Script: {fileID: 11500000, guid: 245b00bc82527ff4d9ab3369f297a63f, type: 3}
+  m_Name: 2B4AFBD4-F0DA-4AE4-972D-91BA6663B982
   m_EditorClassIdentifier: 
-  objectName: ambientes
-  id: 1014953671
-  guid: BCF5C05E-8857-4343-A0AC-D59528DCEB99
+  objectName: chirriando_lejos_3
+  id: 4115248352
+  guid: 2B4AFBD4-F0DA-4AE4-972D-91BA6663B982

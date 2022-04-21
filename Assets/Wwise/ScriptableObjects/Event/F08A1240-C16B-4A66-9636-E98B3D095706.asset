@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 245b00bc82527ff4d9ab3369f297a63f, type: 3}
-  m_Name: 04E29E7F-EF75-47D5-A474-606D8C923FEA
+  m_Name: F08A1240-C16B-4A66-9636-E98B3D095706
   m_EditorClassIdentifier: 
-  objectName: silla_pre_atack
-  id: 3549094443
-  guid: 04E29E7F-EF75-47D5-A474-606D8C923FEA
+  objectName: puerta_chirriando_lejos
+  id: 2170274192
+  guid: F08A1240-C16B-4A66-9636-E98B3D095706

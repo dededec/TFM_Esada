@@ -288,7 +288,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d0255db19806e2c46b70b85e2444cd9a, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: fdb77e5c1c13f3d4db84949a5ed3b70f, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -1266,7 +1266,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3deb0a21a386cf94ea64a55713dfe4f7, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e3c07bb4e8b8c9a4abdef1c1e135b190, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2004,7 +2004,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b30fe08348c654e47a83f5ccc425d3fc, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 846fe5f5a220b7e488fb23dd92f903ca, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 265ef94c0a4f8cc46a3ea079a0cc19d0, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b1d1527b417af6640a5980ad45506259, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6c611d1a2f26bc64991261b84e871a03, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b68040a988dda984cad2c15dc04fb199, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -2697,7 +2697,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ec298ed610e97d740af6a4dd66cd1abc, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: d54c5f36d335fc3458c2e64a3ab7a550, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -3229,7 +3229,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a5cbd607afe50b842b318bffe04387cb, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 7f0ca0346da6873438b9aba2e43f2cd9, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -3678,7 +3678,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 15e8e77b26ec70e4fb4883127232e25d, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ab5cec66f2e109e4b988a730d060ad39, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0

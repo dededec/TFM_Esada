@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 245b00bc82527ff4d9ab3369f297a63f, type: 3}
-  m_Name: 51AE1238-0EFE-494B-9A8E-4F1EA1CCE326
+  m_Script: {fileID: 11500000, guid: 8e1eb825d0e3b54469f8273625d32ece, type: 3}
+  m_Name: 48A68BF0-0C0D-422D-9A7A-5219A656460E
   m_EditorClassIdentifier: 
-  objectName: PickUp_nota
-  id: 1233512512
-  guid: 51AE1238-0EFE-494B-9A8E-4F1EA1CCE326
+  objectName: SFX
+  id: 393239870
+  guid: 48A68BF0-0C0D-422D-9A7A-5219A656460E

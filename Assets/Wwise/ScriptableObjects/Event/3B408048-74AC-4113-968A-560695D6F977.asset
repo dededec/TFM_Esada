@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 245b00bc82527ff4d9ab3369f297a63f, type: 3}
-  m_Name: 2E3EDA61-D04C-420B-9E84-7CEC4FD5707C
+  m_Name: 3B408048-74AC-4113-968A-560695D6F977
   m_EditorClassIdentifier: 
-  objectName: puerta_chirriando_lejos
-  id: 2170274192
-  guid: 2E3EDA61-D04C-420B-9E84-7CEC4FD5707C
+  objectName: chirriando_lejos_3_2
+  id: 3291383135
+  guid: 3B408048-74AC-4113-968A-560695D6F977
