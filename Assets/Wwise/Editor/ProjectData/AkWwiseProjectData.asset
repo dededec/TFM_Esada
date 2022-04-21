@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 78d05e40fbaf094a908efe69c810878f
     GuidInternal: 
-    m_lastTime: -8585511256531929620
+    m_lastTime: -8585510675127671533
     List:
     - name: ambientes
       guid: 890382c0c2d4364186c5fcd7c7eda5ce
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 57e8c0fbb7822b4e89f9e627744f4248
     GuidInternal: 
-    m_lastTime: -8585511255876424313
+    m_lastTime: -8585510670953980621
     List:
     - name: ambiente_noche
       guid: c5a287d53159f34e9550ddc319a4f1c9
@@ -125,8 +125,8 @@ MonoBehaviour:
         guid: c5a287d53159f34e9550ddc319a4f1c9
       Path: Events\Default Work Unit\ambiente_noche
       maxAttenuation: 0
-      maxDuration: 51.2
-      minDuration: 51.2
+      maxDuration: -1
+      minDuration: -1
     - name: chirriando_lejos_3
       guid: d4fb4a2bdaf0e44a972d91ba6663b982
       id: 4115248352
@@ -178,6 +178,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 6.312517
       minDuration: 6.312517
+    - name: preuba_trigg
+      guid: e2c4ae2cc33d764984d175f2b201b3e8
+      id: 3729309010
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57e8c0fbb7822b4e89f9e627744f4248
+      - ElementName: preuba_trigg
+        ObjectType: 3
+        guid: e2c4ae2cc33d764984d175f2b201b3e8
+      Path: Events\Default Work Unit\preuba_trigg
+      maxAttenuation: 0
+      maxDuration: 100
+      minDuration: 100
     - name: puerta_chirriando_lejos
       guid: 40128af06bc1664a9636e98b3d095706
       id: 2170274192

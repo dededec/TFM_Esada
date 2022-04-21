@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3511332232">
+		<SoundBank Id="393239870" Language="SFX" Hash="1127209469">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -37,6 +37,14 @@
 						<File Id="838015305" Language="SFX">
 							<ShortName>sonidos TFM ESADA\recoger nota-1.wav</ShortName>
 							<Path>SFX\sonidos TFM ESADA\recoger nota-1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3729309010" Name="preuba_trigg" ObjectPath="\Events\Default Work Unit\preuba_trigg" DurationType="OneShot" DurationMin="100.000000" DurationMax="100.000000">
+					<IncludedMemoryFiles>
+						<File Id="636650689" Language="SFX">
+							<ShortName>Demo Binaural DearRealty VR (Drazor).wav</ShortName>
+							<Path>SFX\Demo Binaural DearRealty VR (Drazor)_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
