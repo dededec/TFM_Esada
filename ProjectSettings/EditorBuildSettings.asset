@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Developers/Dededec/Levels/TestCamera_Tutorial.unity
+    guid: efd7049f5d3477e4e82615210ecdb1d6
+  - enabled: 1
+    path: Assets/_Developers/Dededec/Levels/Test_LevelSelection.unity
+    guid: d86965608bd04d94aad873e16d8bb877
   m_configObjects: {}
