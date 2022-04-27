@@ -8,21 +8,20 @@ public class BookColisionDetection : MonoBehaviour
     private bool _recolocate = false;
     float x = 0f;
     float y = 0f;
+    [SerializeField] private GameObject _player;
 
     private void Update() {
-        Debug.Log(bbt.taskAttack.isAttacking);
-
         if(_recolocate)
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(x, 2, y), 2 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 2, _player.transform.position.z), 2 * Time.deltaTime);
         }
     }
 
     private void OnCollisionEnter(Collision other) {
-        print("chocado con algo");
         if(other.transform.tag == "Player")
         {
-            Debug.Log("Get chocado");
+            transform.GetChild(0).GetComponent<TrailRenderer>().emitting = false;
+            transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             StartCoroutine(cooldownCoroutine()); 
             _recolocate = true;
             x = transform.position.x;
@@ -31,6 +30,8 @@ public class BookColisionDetection : MonoBehaviour
 
         if(other.transform.tag == "Note")
         {
+            transform.GetChild(0).GetComponent<TrailRenderer>().emitting = false;
+            transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             StartCoroutine(cooldownCoroutine()); 
             _recolocate = true;
             x = transform.position.x;
