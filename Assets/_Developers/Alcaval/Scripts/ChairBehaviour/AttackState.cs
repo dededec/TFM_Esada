@@ -31,14 +31,6 @@ namespace TFMEsada
 
         #endregion
 
-        #region Life cycle
-
-        private void Start() {
-            //_hitbox = GetComponent<DamageCollider>();
-        }
-
-        #endregion
-
         #region Public Methods
         public override State RunCurrentState()
         {
@@ -53,8 +45,11 @@ namespace TFMEsada
                 return _runState;
             } 
 
-            StartCoroutine(AttackCoroutine(0f));
-            StartCoroutine(startCooldownRoutine());
+            if(!_hitbox.playerDead)
+            {
+                StartCoroutine(AttackCoroutine(0f));
+                StartCoroutine(startCooldownRoutine());    
+            }
             return this;
         }
 

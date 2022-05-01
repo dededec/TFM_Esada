@@ -8,13 +8,13 @@ public class DamageCollider : MonoBehaviour
     #region Fields
 
     [SerializeField] private Collider _hitbox;
+    public bool playerDead = false;
 
     #endregion
 
     #region Life Cycle
 
     private void Awake() {
-        //_hitbox = GetComponent<Collider>();
         _hitbox.isTrigger = true;
         _hitbox.enabled = false;
     }
@@ -27,8 +27,8 @@ public class DamageCollider : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log(other.name);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
+            playerDead = true;
         }
     }
 

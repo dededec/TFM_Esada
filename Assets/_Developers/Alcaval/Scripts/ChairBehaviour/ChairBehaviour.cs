@@ -51,5 +51,15 @@ namespace TFMEsada
         }
 
         #endregion
+
+        #region Public Methods
+
+        public void death()
+        {
+            Debug.Log("Se murio la silla");
+            Destroy(gameObject);
+        }
+            
+        #endregion
     }
 }

@@ -1136,11 +1136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8878030330201888090, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8878030331272114598, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8878030331290578444, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: _playerPos
@@ -1148,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 1729968704}
     - target: {fileID: 8878030331290578445, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8878030331290578450, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_Enabled
@@ -5362,6 +5362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6128377947552414860, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
 --- !u!4 &1729968704 stripped
@@ -7368,7 +7372,7 @@ GameObject:
   - component: {fileID: 2166118555441316212}
   m_Layer: 0
   m_Name: e1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -7523,7 +7527,7 @@ GameObject:
   - component: {fileID: 1540474420821420549}
   m_Layer: 0
   m_Name: Suelo
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8250,7 +8254,7 @@ GameObject:
   - component: {fileID: 7008792307445780925}
   m_Layer: 0
   m_Name: Pared.004
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -8348,7 +8352,7 @@ GameObject:
   - component: {fileID: 6718449027922261828}
   m_Layer: 0
   m_Name: Pared.001
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -8407,7 +8411,7 @@ GameObject:
   - component: {fileID: 41690519976462059}
   m_Layer: 0
   m_Name: e3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -8981,7 +8985,7 @@ GameObject:
   - component: {fileID: 3671626057142313982}
   m_Layer: 0
   m_Name: Pared.003
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -9013,7 +9017,7 @@ GameObject:
   - component: {fileID: 2566133970492987439}
   m_Layer: 0
   m_Name: Pared.005
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8

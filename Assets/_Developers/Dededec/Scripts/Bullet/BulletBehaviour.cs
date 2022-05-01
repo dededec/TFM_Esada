@@ -58,13 +58,10 @@ namespace TFMEsada
         {
             if(other.tag == "Enemy")
             {
-                if(other.name.Contains("State"))
-                {
-                    Destroy(other.gameObject.transform.parent.parent.gameObject);
-                }   
+                if(other.GetComponent<ChairBehaviour>() != null) { other.GetComponent<ChairBehaviour>().death(); }
             }
             
-            if(other.tag != "Player" && other.tag != "Note" && other.tag != "FX")
+            if(other.tag != "Player" && other.tag != "Note" && other.tag != "FX" && other.tag != "AI")
             {
                 Debug.Log("Se destruye con: " + other.name + " --- " + other.tag);
                 Destroy(this.gameObject);

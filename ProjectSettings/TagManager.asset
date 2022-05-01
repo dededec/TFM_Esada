@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Note
   - FX
+  - Ground
   layers:
   - Default
   - TransparentFX
