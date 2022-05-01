@@ -142,11 +142,7 @@ namespace TFMEsada
 
         private void OnDisable()
         {
-            _shootNormal.performed -= shootNormal;
-            _shootPuddle.performed -= shootPuddle;
-
-            _shootNormal.Disable();
-            _shootPuddle.Disable();
+            StopControls();
         }
 
         /*
@@ -169,6 +165,19 @@ namespace TFMEsada
         private void Update()
         {
             Debug.DrawRay(transform.position + Vector3.up, transform.forward * _aimDistance, Color.red);
+        }
+
+        #endregion
+
+        #region Public Methods
+
+        public void StopControls()
+        {
+            _shootNormal.performed -= shootNormal;
+            _shootPuddle.performed -= shootPuddle;
+
+            _shootNormal.Disable();
+            _shootPuddle.Disable();
         }
 
         #endregion
@@ -229,7 +238,7 @@ namespace TFMEsada
             else
             {
                 _shootNormal = _controlManager.Controls.Player.ShootNormal;
-
+                
                 _shootNormal.performed += shootNormal;
                 _shootNormal.Enable();
 

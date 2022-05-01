@@ -23,7 +23,8 @@ namespace TFMEsada
         [SerializeField] private InputAction _scrollControls;
         [SerializeField] private InputAction _pickControls;
         [SerializeField] private ScrollRect _levelScroll;
-        [SerializeField] private List<string> _sceneNames;
+        [SerializeField] private List<Object> _scenes;
+        private List<string> _sceneNames;
         private int _sceneToLoad;
         [SerializeField] private GameFlowController _gameFlowController;
 
@@ -48,6 +49,15 @@ namespace TFMEsada
         {
             _scrollControls.Disable();
             _pickControls.Disable();
+        }
+
+        private void Start() 
+        {
+            _sceneNames = new List<string>();
+            foreach(var obj in _scenes)
+            {
+                _sceneNames.Add(obj.name);
+            }
         }
       
         #endregion

@@ -217,8 +217,10 @@ MonoBehaviour:
       m_Action: Pick Controls
       m_Flags: 8
   _levelScroll: {fileID: 1662147073}
-  _sceneNames:
-  - TestCamera_Tutorial
+  _scenes:
+  - {fileID: 102900000, guid: 0309b6274affca240bde248dde154503, type: 3}
+  - {fileID: 102900000, guid: 95e1ddbf551aeb642985b797af583bee, type: 3}
+  - {fileID: 102900000, guid: 9a73330a45f453f42ac79654c20c748b, type: 3}
   _gameFlowController: {fileID: 1321122071}
 --- !u!4 &79745496
 Transform:
@@ -927,6 +929,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7780f79a766ee4b4d91db6a287c96e59, type: 3}
       propertyPath: m_Name
       value: Tamagotchi (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7780f79a766ee4b4d91db6a287c96e59, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7780f79a766ee4b4d91db6a287c96e59, type: 3}

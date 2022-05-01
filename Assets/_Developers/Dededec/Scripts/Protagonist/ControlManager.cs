@@ -49,10 +49,12 @@ namespace TFMEsada
             if(value)
             {
                 Controls.Player.Enable();
+                Controls.Camera.Enable();
             }
             else
             {
                 Controls.Player.Disable();
+                Controls.Camera.Disable();
             }
         }
 

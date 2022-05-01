@@ -44,6 +44,20 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private LayerMask _doorLayer;
 
+        [Tooltip("Layer in which to look for collectables.")]
+        /// <summary>
+        /// Layer in which to look for collectables.
+        /// </summary>
+        [SerializeField] private LayerMask _collectableLayer;
+
+        [Tooltip("UI to show when the level is completed.")]
+        /// <summary>
+        /// UI to show when the level is completed.
+        /// </summary>
+        [SerializeField] private GameObject _victoryUI;
+
+        private bool hasCollectable = false;
+
 	    #endregion
 
         #region LifeCycle
@@ -65,13 +79,22 @@ namespace TFMEsada
 
         private void OnDisable() 
         {
-            _interact.started -= interact;
-            _interact.Disable();
+            StopControls();
         }
 
         private void Update() 
         {
             Debug.DrawRay(transform.position + transform.up, transform.forward * _range, Color.cyan);
+        }
+
+        #endregion
+
+        #region Public Methods
+
+        public void StopControls()
+        {
+            _interact.started -= interact;
+            _interact.Disable();
         }
 
         #endregion
@@ -96,7 +119,15 @@ namespace TFMEsada
                 {
                     Debug.Log("Abres puerta.");
                     _keyCount--;
+                    victory();
                 }
+                return;
+            }
+            else if(Physics.Raycast(transform.position + transform.up, transform.forward, out hit, _range, _collectableLayer, QueryTriggerInteraction.Collide))
+            {
+                Debug.Log("Pillas coleccionable");
+                hasCollectable = true;
+                Destroy(hit.collider.gameObject);
                 return;
             }
 
@@ -115,6 +146,15 @@ namespace TFMEsada
                 _interact.started += interact;
                 _interact.Enable();
                 return true;
+            }
+        }
+
+        private void victory()
+        {
+            _victoryUI.SetActive(true);
+            if(hasCollectable)
+            {
+                // Se harán cosas
             }
         }
 	   
