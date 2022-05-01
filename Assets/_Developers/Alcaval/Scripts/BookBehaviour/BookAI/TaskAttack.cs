@@ -7,6 +7,7 @@ using TFMEsada;
 public class TaskAttack : Node
 {
     public bool isAttacking = true;
+    public bool inAttack = false;
 
     private GameObject _book;
     private GameObject _player;
@@ -24,7 +25,9 @@ public class TaskAttack : Node
         {
             _book.GetComponent<Animator>().SetBool("attacking", true);
             _book.GetComponent<Rigidbody>().useGravity = true;
-            _book.GetComponent<Rigidbody>().velocity = (_player.transform.position - _book.transform.position) * _force;
+            Vector3 playerPosModified = new Vector3(_player.transform.position.x, _player.transform.position.y + 3, _player.transform.position.z);
+            _book.GetComponent<Rigidbody>().velocity = (playerPosModified - _book.transform.position) * _force;
+            inAttack = true;
             isAttacking = false;
         }
         

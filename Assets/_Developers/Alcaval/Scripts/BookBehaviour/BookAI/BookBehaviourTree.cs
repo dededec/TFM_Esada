@@ -4,11 +4,15 @@ using TFMEsada;
 
 public class BookBehaviourTree : Tree
 {
-    public UnityEngine.GameObject player;
+    private UnityEngine.GameObject player;
     [UnityEngine.SerializeField] private float _rangeAttackBook;
     [UnityEngine.SerializeField] private float _force;
 
     public TaskAttack taskAttack;
+
+    private void Awake() {
+        player = UnityEngine.GameObject.FindGameObjectWithTag("Player");
+    }
 
     protected override Node SetupTree()
     {
@@ -16,7 +20,7 @@ public class BookBehaviourTree : Tree
         Node root = new Selector(new List<Node>
         {
             new Sequence(new List<Node>{
-                new CheckInAttackRange(transform, player.transform, _rangeAttackBook),
+                new CheckInAttackRange(transform, player, _rangeAttackBook),
                 taskAttack,
             }),
             new TaskIdle(),

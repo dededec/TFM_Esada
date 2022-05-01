@@ -41,16 +41,19 @@ public class BookColisionDetection : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        if(other.transform.tag == "Player" && bbt.taskAttack.isAttacking == false)
+        print(bbt.taskAttack.inAttack);
+        print(other.transform.tag);
+        if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
         {
-            Destroy(other.gameObject);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            transform.GetComponent<Rigidbody>().useGravity = false;
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
             _flapIdle = true;
+            bbt.taskAttack.inAttack = false;
         }
 
-        if(other.transform.tag == "Note")
+        if(other.transform.tag == "Ground" && bbt.taskAttack.inAttack)
         {
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
@@ -58,7 +61,14 @@ public class BookColisionDetection : MonoBehaviour
             _recolocate = true;
             x = transform.position.x;
             y = transform.position.y;
+            bbt.taskAttack.inAttack = false;
         }
+    }
+
+    public void death()
+    {
+        Debug.Log("Se murio el libro");
+        Destroy(gameObject);
     }
 
     IEnumerator cooldownCoroutine()
@@ -74,6 +84,5 @@ public class BookColisionDetection : MonoBehaviour
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", false);
             _recolocate = false;
         }
-
     }
 }

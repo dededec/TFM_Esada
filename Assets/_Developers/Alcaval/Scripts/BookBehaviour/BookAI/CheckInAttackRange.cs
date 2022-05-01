@@ -6,13 +6,13 @@ using TFMEsada;
 public class CheckInAttackRange : Node
 {
     private Transform _bookPos;
-    private Transform _playerPos;
+    private GameObject _player;
     private float _rangeAttackBook;
 
-    public CheckInAttackRange(Transform bookPos, Transform playerPos, float rangeAttackBook)
+    public CheckInAttackRange(Transform bookPos, GameObject player, float rangeAttackBook)
     {
         this._bookPos = bookPos;
-        this._playerPos = playerPos.gameObject.transform.parent.gameObject.transform;
+        this._player = player;
         this._rangeAttackBook = rangeAttackBook;
     }
 
@@ -20,12 +20,13 @@ public class CheckInAttackRange : Node
     {
         RaycastHit hit;
         Vector3 bookPosModified = new Vector3(_bookPos.position.x, _bookPos.position.y + 0.5f, _bookPos.position.z);
+        Vector3 playerPosModified = new Vector3(_player.transform.position.x, _player.transform.position.y + 1, _player.transform.position.z);
  
-        if(_playerPos != null)
+        if(_player != null)
         {
-            Debug.DrawRay(bookPosModified, (_playerPos.position - bookPosModified), Color.green);
+            Debug.DrawRay(bookPosModified, (playerPosModified - bookPosModified), Color.green);
     
-            if(Physics.Raycast(bookPosModified,(_playerPos.position - bookPosModified) * 1, out hit) && hit.transform.tag != "Player") 
+            if(Physics.Raycast(bookPosModified,(playerPosModified - bookPosModified) * 1, out hit) && hit.transform.tag != "Player") 
             {
                 Debug.DrawLine (bookPosModified, hit.point, Color.red);
                 if(_bookPos.gameObject.GetComponent<Animator>().GetBool("attacking"))
@@ -34,8 +35,7 @@ public class CheckInAttackRange : Node
                 }
             }
             
-            Debug.Log(hit.transform.gameObject.tag);
-            if(hit.transform.gameObject.tag == "Player" && Vector3.Distance(bookPosModified, _playerPos.position) < _rangeAttackBook) 
+            if(hit.transform.gameObject.tag == "Player" && Vector3.Distance(bookPosModified, playerPosModified) < _rangeAttackBook) 
             {
                 state = NodeState.SUCCESS;
                 return state;

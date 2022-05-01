@@ -14,7 +14,6 @@ public class TaskIdle : Node
 
     public override NodeState Evaluate()
     {
-        Debug.Log("IDLE");
         state = NodeState.RUNNING;
         return state;
     }

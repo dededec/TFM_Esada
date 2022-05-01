@@ -287,8 +287,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.0728526, z: 1.3096507}
-  m_Center: {x: 0, y: -0.7531789, z: -0.6664113}
+  m_Size: {x: 1.6838143, y: 3.4590735, z: 1.3096507}
+  m_Center: {x: 0.08828843, y: -0.6440804, z: -0.6664113}
 --- !u!95 &6459909240692254085
 Animator:
   serializedVersion: 3
@@ -337,4 +337,3 @@ MonoBehaviour:
   player: {fileID: 0}
   _rangeAttackBook: 7
   _force: 2
-  _trail: {fileID: 0}

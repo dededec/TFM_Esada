@@ -59,6 +59,7 @@ namespace TFMEsada
             if(other.tag == "Enemy")
             {
                 if(other.GetComponent<ChairBehaviour>() != null) { other.GetComponent<ChairBehaviour>().death(); }
+                if(other.GetComponent<BookColisionDetection>() != null) { other.GetComponent<BookColisionDetection>().death(); }
             }
             
             if(other.tag != "Player" && other.tag != "Note" && other.tag != "FX" && other.tag != "AI")
