@@ -10,21 +10,19 @@ public class TaskAttack : Node
 
     private GameObject _book;
     private GameObject _player;
-    private GameObject _trail;
     private float _force;
-    public TaskAttack(GameObject book, GameObject player, float force, GameObject trail)
+    public TaskAttack(GameObject book, GameObject player, float force)
     {
         this._book = book;
         this._player = player;
         this._force = force;
-        this._trail = trail;
     }
 
     public override NodeState Evaluate()
     {
         if(isAttacking)
         {
-            _trail.gameObject.GetComponent<TrailRenderer>().emitting = true;
+            _book.GetComponent<Animator>().SetBool("attacking", true);
             _book.GetComponent<Rigidbody>().useGravity = true;
             _book.GetComponent<Rigidbody>().velocity = (_player.transform.position - _book.transform.position) * _force;
             isAttacking = false;
