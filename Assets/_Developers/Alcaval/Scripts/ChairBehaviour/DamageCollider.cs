@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFMEsada;
 using UnityEngine;
 
 public class DamageCollider : MonoBehaviour
@@ -26,7 +27,8 @@ public class DamageCollider : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Destroy(other.gameObject);
+            Debug.Log(other.name);
+            other.gameObject.GetComponent<ControlManager>().PlayerDeath();
         }
     }
 

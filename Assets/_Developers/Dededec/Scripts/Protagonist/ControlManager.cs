@@ -44,6 +44,12 @@ namespace TFMEsada
 
         #region Public Methods
 
+        public void PlayerDeath()
+        {
+            //...
+            Debug.LogWarning("Muerte del jugador no implementada");
+        }
+
         public void TogglePlayerControls(bool value)
         {
             if(value)

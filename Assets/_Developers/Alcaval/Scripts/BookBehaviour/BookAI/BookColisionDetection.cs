@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TFMEsada;
 using UnityEngine;
 
 public class BookColisionDetection : MonoBehaviour
@@ -43,6 +44,7 @@ public class BookColisionDetection : MonoBehaviour
         if(other.transform.tag == "Player" && bbt.taskAttack.isAttacking == false)
         {
             Destroy(other.gameObject);
+            other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
             _flapIdle = true;
