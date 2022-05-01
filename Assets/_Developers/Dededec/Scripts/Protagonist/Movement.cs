@@ -131,7 +131,7 @@ namespace TFMEsada
 
         private void OnDisable() 
         {
-            _move.Disable();
+            StopControls();
         }
 	  
         private void FixedUpdate() 
@@ -141,6 +141,12 @@ namespace TFMEsada
             rotation(input);
         }
       
+        #endregion
+
+        #region Public Methods
+
+        public void StopControls() => _move.Disable();
+
         #endregion
 
         #region Private Methods
