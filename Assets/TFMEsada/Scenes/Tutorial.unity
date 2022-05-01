@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 10996932}
   m_Layer: 0
   m_Name: puerta chirriando 2
-  m_TagString: Untagged
+  m_TagString: FX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 236147310}
   m_Layer: 0
   m_Name: puerta chirriando 1
-  m_TagString: Untagged
+  m_TagString: FX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1136,11 +1136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8878030330201888090, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: AI
       objectReference: {fileID: 0}
     - target: {fileID: 8878030331272114598, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: AI
       objectReference: {fileID: 0}
     - target: {fileID: 8878030331290578444, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: _playerPos
@@ -1148,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 1729968704}
     - target: {fileID: 8878030331290578445, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: AI
       objectReference: {fileID: 0}
     - target: {fileID: 8878030331290578450, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_Enabled
@@ -2768,7 +2768,7 @@ GameObject:
   - component: {fileID: 949094992}
   m_Layer: 0
   m_Name: silla arrastre_preatack
-  m_TagString: Untagged
+  m_TagString: FX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5889,7 +5889,7 @@ GameObject:
   - component: {fileID: 1837972988}
   m_Layer: 0
   m_Name: chirrio relleno 2
-  m_TagString: Untagged
+  m_TagString: FX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6403,7 +6403,7 @@ GameObject:
   - component: {fileID: 2115027447}
   m_Layer: 0
   m_Name: chirrio relleno 1
-  m_TagString: Untagged
+  m_TagString: FX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
