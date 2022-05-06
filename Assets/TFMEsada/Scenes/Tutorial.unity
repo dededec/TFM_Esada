@@ -996,6 +996,10 @@ PrefabInstance:
       propertyPath: _pivotPoint
       value: 
       objectReference: {fileID: 1729968704}
+    - target: {fileID: 8551851785950345495, guid: a7f51486cae9975468610761b9f3b0f3, type: 3}
+      propertyPath: m_UpdateMethod
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f51486cae9975468610761b9f3b0f3, type: 3}
 --- !u!1 &388273344

@@ -19,18 +19,18 @@ namespace TFMEsada
 
         private float _keyCount = 0;
 
-        [Tooltip("Range in which the player can pick a key or open a locked door.")]
-        /// <summary>
-        /// Range in which the player can pick a key or open a locked door.
-        /// </summary>
-        [SerializeField] private float _range;
-
         [Tooltip("ControlManager script to assign controls to this script.")]
         /// <summary>
         /// Movement script to assign controls to this script.
         /// </summary>
         [SerializeField] private ControlManager _controlManager;
         private InputAction _interact;
+
+        [Tooltip("Range in which the player can pick a key or open a locked door.")]
+        /// <summary>
+        /// Range in which the player can pick a key or open a locked door.
+        /// </summary>
+        [SerializeField] private float _range;
 
         [Tooltip("Layer in which to look for keys.")]
         /// <summary>
@@ -104,7 +104,7 @@ namespace TFMEsada
         private void interact(InputAction.CallbackContext context)
         {   
             RaycastHit hit;
-            if(Physics.Raycast(transform.position + transform.up, transform.forward, out hit, _range, _keyLayer, QueryTriggerInteraction.Collide))
+            if(RayCast(out hit, _range, _keyLayer))
             {
                 // Obtener llave.
                 Debug.Log("Apañaste llave.");
@@ -112,7 +112,7 @@ namespace TFMEsada
                 Destroy(hit.collider.gameObject);
                 return;
             }
-            else if(Physics.Raycast(transform.position + transform.up, transform.forward, out hit, _range, _doorLayer, QueryTriggerInteraction.Collide))
+            else if(RayCast(out hit, _range, _doorLayer))
             {
                 // Abrir puerta si hay llave.
                 if(_keyCount > 0)
@@ -123,8 +123,8 @@ namespace TFMEsada
                 }
                 return;
             }
-            else if(Physics.Raycast(transform.position + transform.up, transform.forward, out hit, _range, _collectableLayer, QueryTriggerInteraction.Collide))
-            {
+            else if(RayCast(out hit, _range, _collectableLayer))
+            {   
                 Debug.Log("Pillas coleccionable");
                 hasCollectable = true;
                 Destroy(hit.collider.gameObject);
@@ -154,8 +154,13 @@ namespace TFMEsada
             _victoryUI.SetActive(true);
             if(hasCollectable)
             {
-                // Se harán cosas
+                // Se harán cosas en el _victoryUI
             }
+        }
+
+        private bool RayCast(out RaycastHit hit, float range, LayerMask layerMask)
+        {
+            return Physics.Raycast(transform.position + transform.up, transform.forward, out hit, range, layerMask, QueryTriggerInteraction.Collide);
         }
 	   
         #endregion
