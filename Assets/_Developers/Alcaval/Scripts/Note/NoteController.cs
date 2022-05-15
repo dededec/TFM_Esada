@@ -42,7 +42,7 @@ namespace TFMEsada
         private void Update() {
             if(_inReadingRange)
             {
-                _pressButtonProp.SetActive(true);
+                
                 _pressButtonProp.GetComponent<RectTransform>().anchoredPosition3D = _renderCamera.WorldToScreenPoint(transform.position);
                 if((Keyboard.current.spaceKey.wasPressedThisFrame) && Writing)
                 {
@@ -62,9 +62,10 @@ namespace TFMEsada
                 }
                 else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
                 {
+                    _pressButtonProp.SetActive(false);
                     AkSoundEngine.PostEvent("PickUp_nota", this.gameObject);
                     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
-                    _pressButtonProp.SetActive(true);
+                    //_pressButtonProp.SetActive(true);
                     _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
                     _speechBubble.transform.GetChild(1).gameObject.SetActive(true);
                     _tw.AddWriter(_speechBubble.GetComponentInChildren<TMP_Text>(), _contentOfNote[_currentDialog], 0.05f);
@@ -87,6 +88,7 @@ namespace TFMEsada
             if(other.tag == "Player")
             {
                 _inReadingRange = true; 
+                _pressButtonProp.SetActive(true);
             }
         }
 
