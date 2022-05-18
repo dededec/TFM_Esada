@@ -20,11 +20,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 5fbc58d3f238c34c86214a6ff0acd5e4
+      guid: f01d69e299c27845b1aaa476f114a3cc
     ParentPath: Virtual Acoustics\Default Work Unit
-    guid: 5fbc58d3f238c34c86214a6ff0acd5e4
+    guid: f01d69e299c27845b1aaa476f114a3cc
     GuidInternal: 
-    m_lastTime: -8585511284702829422
+    m_lastTime: -8585489082272100095
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -34,11 +34,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 46d2eae99d6ac64da130f283219fcc97
+      guid: f9c8332c0610ec45bf717ab499bef714
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
-    guid: 46d2eae99d6ac64da130f283219fcc97
+    guid: f9c8332c0610ec45bf717ab499bef714
     GuidInternal: 
-    m_lastTime: -8585511284703008943
+    m_lastTime: -8585489082272319514
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,7 +49,7 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 46d2eae99d6ac64da130f283219fcc97
+        guid: f9c8332c0610ec45bf717ab499bef714
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -62,14 +62,14 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 78d05e40fbaf094a908efe69c810878f
+      guid: d50506078fda0e429e281a648e16f448
     ParentPath: SoundBanks\Default Work Unit
-    guid: 78d05e40fbaf094a908efe69c810878f
+    guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585510675127671533
+    m_lastTime: -8585489075466314657
     List:
     - name: ambientes
-      guid: 890382c0c2d4364186c5fcd7c7eda5ce
+      guid: 33cbe0db57c60d49b80d1a8db8494aeb
       id: 1014953671
       PathAndIcons:
       - ElementName: SoundBanks
@@ -77,13 +77,13 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 78d05e40fbaf094a908efe69c810878f
+        guid: d50506078fda0e429e281a648e16f448
       - ElementName: ambientes
         ObjectType: 7
-        guid: 890382c0c2d4364186c5fcd7c7eda5ce
+        guid: 33cbe0db57c60d49b80d1a8db8494aeb
       Path: SoundBanks\Default Work Unit\ambientes
     - name: SFX
-      guid: f08ba6480d0c2d429a7a5219a656460e
+      guid: f5d42e7ea739f242b0d36b408d01a787
       id: 393239870
       PathAndIcons:
       - ElementName: SoundBanks
@@ -91,10 +91,10 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 78d05e40fbaf094a908efe69c810878f
+        guid: d50506078fda0e429e281a648e16f448
       - ElementName: SFX
         ObjectType: 7
-        guid: f08ba6480d0c2d429a7a5219a656460e
+        guid: f5d42e7ea739f242b0d36b408d01a787
       Path: SoundBanks\Default Work Unit\SFX
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -104,14 +104,14 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 57e8c0fbb7822b4e89f9e627744f4248
+      guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     ParentPath: Events\Default Work Unit
-    guid: 57e8c0fbb7822b4e89f9e627744f4248
+    guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585510670953980621
+    m_lastTime: -8585489075466334601
     List:
     - name: ambiente_noche
-      guid: c5a287d53159f34e9550ddc319a4f1c9
+      guid: ebf8c1e0805eb546b8271c2d33b3c130
       id: 343718480
       PathAndIcons:
       - ElementName: Events
@@ -119,16 +119,16 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: ambiente_noche
         ObjectType: 3
-        guid: c5a287d53159f34e9550ddc319a4f1c9
+        guid: ebf8c1e0805eb546b8271c2d33b3c130
       Path: Events\Default Work Unit\ambiente_noche
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: chirriando_lejos_3
-      guid: d4fb4a2bdaf0e44a972d91ba6663b982
+      guid: 4280f50580a85c49926de120b6655092
       id: 4115248352
       PathAndIcons:
       - ElementName: Events
@@ -136,16 +136,16 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: chirriando_lejos_3
         ObjectType: 3
-        guid: d4fb4a2bdaf0e44a972d91ba6663b982
+        guid: 4280f50580a85c49926de120b6655092
       Path: Events\Default Work Unit\chirriando_lejos_3
       maxAttenuation: 0
-      maxDuration: 4.8
-      minDuration: 3.809763
+      maxDuration: -1
+      minDuration: -1
     - name: chirriando_lejos_3_2
-      guid: 4880403bac741341968a560695d6f977
+      guid: ab3185ac03077544a05f22465f5e9cf5
       id: 3291383135
       PathAndIcons:
       - ElementName: Events
@@ -153,16 +153,16 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: chirriando_lejos_3_2
         ObjectType: 3
-        guid: 4880403bac741341968a560695d6f977
+        guid: ab3185ac03077544a05f22465f5e9cf5
       Path: Events\Default Work Unit\chirriando_lejos_3_2
       maxAttenuation: 0
-      maxDuration: 6.047621
-      minDuration: 4.8
+      maxDuration: -1
+      minDuration: -1
     - name: PickUp_nota
-      guid: 9543dc1a1c0d44439661472ecf44c210
+      guid: 7246980a1b2a174e9eaed5f73a26d062
       id: 1233512512
       PathAndIcons:
       - ElementName: Events
@@ -170,33 +170,16 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: PickUp_nota
         ObjectType: 3
-        guid: 9543dc1a1c0d44439661472ecf44c210
+        guid: 7246980a1b2a174e9eaed5f73a26d062
       Path: Events\Default Work Unit\PickUp_nota
       maxAttenuation: 0
-      maxDuration: 6.312517
-      minDuration: 6.312517
-    - name: preuba_trigg
-      guid: e2c4ae2cc33d764984d175f2b201b3e8
-      id: 3729309010
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
-      - ElementName: preuba_trigg
-        ObjectType: 3
-        guid: e2c4ae2cc33d764984d175f2b201b3e8
-      Path: Events\Default Work Unit\preuba_trigg
-      maxAttenuation: 0
-      maxDuration: 100
-      minDuration: 100
+      maxDuration: -1
+      minDuration: -1
     - name: puerta_chirriando_lejos
-      guid: 40128af06bc1664a9636e98b3d095706
+      guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
       PathAndIcons:
       - ElementName: Events
@@ -204,16 +187,16 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: puerta_chirriando_lejos
         ObjectType: 3
-        guid: 40128af06bc1664a9636e98b3d095706
+        guid: c77300fbb9e7a140959deaf8f02a9915
       Path: Events\Default Work Unit\puerta_chirriando_lejos
       maxAttenuation: 0
-      maxDuration: 5.6
-      minDuration: 4.444723
+      maxDuration: -1
+      minDuration: -1
     - name: puerta_chirriando_lejos2
-      guid: 3ec427322a9df14b8eac6c4b7517aef4
+      guid: 196ecbfcf9398f4da27087c2e40ceca1
       id: 863090050
       PathAndIcons:
       - ElementName: Events
@@ -221,16 +204,16 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: puerta_chirriando_lejos2
         ObjectType: 3
-        guid: 3ec427322a9df14b8eac6c4b7517aef4
+        guid: 196ecbfcf9398f4da27087c2e40ceca1
       Path: Events\Default Work Unit\puerta_chirriando_lejos2
       maxAttenuation: 0
-      maxDuration: 7.055558
-      minDuration: 5.6
+      maxDuration: -1
+      minDuration: -1
     - name: silla_pre_attack
-      guid: 46772b24df00fa4eb46a02621ee3cfb3
+      guid: 31a2a020ae1e8c43a1569869df0ade70
       id: 3337955159
       PathAndIcons:
       - ElementName: Events
@@ -238,14 +221,14 @@ MonoBehaviour:
         guid: 00000000000000000000000000000000
       - ElementName: Default Work Unit
         ObjectType: 12
-        guid: 57e8c0fbb7822b4e89f9e627744f4248
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
       - ElementName: silla_pre_attack
         ObjectType: 3
-        guid: 46772b24df00fa4eb46a02621ee3cfb3
+        guid: 31a2a020ae1e8c43a1569869df0ade70
       Path: Events\Default Work Unit\silla_pre_attack
       maxAttenuation: 0
-      maxDuration: 4.8
-      minDuration: 4.8
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -254,11 +237,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 28fd1e8f8df97e42a52a029e7d4ef647
+      guid: eebf55aef849594c80feac5f9c23cd97
     ParentPath: Game Parameters\Default Work Unit
-    guid: 28fd1e8f8df97e42a52a029e7d4ef647
+    guid: eebf55aef849594c80feac5f9c23cd97
     GuidInternal: 
-    m_lastTime: -8585511284703058813
+    m_lastTime: -8585489082272259299
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -268,11 +251,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 6fef94c81fa212418cf0cf7f3bea2782
+      guid: 09dd40fdc05713428dd461a22ff941da
     ParentPath: States\Default Work Unit
-    guid: 6fef94c81fa212418cf0cf7f3bea2782
+    guid: 09dd40fdc05713428dd461a22ff941da
     GuidInternal: 
-    m_lastTime: -8585511284702988726
+    m_lastTime: -8585489082272070178
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -282,62 +265,12 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: 85882c34d490154289438e7a99897efb
+      guid: 1847309535c3bd4983fc1a700ec2e7dc
     ParentPath: Switches\Default Work Unit
-    guid: 85882c34d490154289438e7a99897efb
+    guid: 1847309535c3bd4983fc1a700ec2e7dc
     GuidInternal: 
-    m_lastTime: -8585511261696492901
-    List:
-    - name: Surface
-      guid: e8607ef3ecf01b4d8c83f495938513a6
-      id: 1834394558
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 85882c34d490154289438e7a99897efb
-      - ElementName: Surface
-        ObjectType: 11
-        guid: e8607ef3ecf01b4d8c83f495938513a6
-      Path: Switches\Default Work Unit\Surface
-      values:
-      - name: Normal
-        guid: be5a59d2f184a94fb94775f268a6b71b
-        id: 1160234136
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 85882c34d490154289438e7a99897efb
-        - ElementName: Surface
-          ObjectType: 11
-          guid: e8607ef3ecf01b4d8c83f495938513a6
-        - ElementName: Normal
-          ObjectType: 10
-          guid: be5a59d2f184a94fb94775f268a6b71b
-      - name: Water
-        guid: 1169946445dabe448dbc694d5541f7fd
-        id: 2654748154
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 85882c34d490154289438e7a99897efb
-        - ElementName: Surface
-          ObjectType: 11
-          guid: e8607ef3ecf01b4d8c83f495938513a6
-        - ElementName: Water
-          ObjectType: 10
-          guid: 1169946445dabe448dbc694d5541f7fd
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8585489082272269638
+    List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -346,11 +279,11 @@ MonoBehaviour:
       guid: 00000000000000000000000000000000
     - ElementName: Default Work Unit
       ObjectType: 12
-      guid: a7184ebca61bd2418e1799c40876541d
+      guid: 407d60a2a4f4254bb7dfc94dd433b3ad
     ParentPath: Triggers\Default Work Unit
-    guid: a7184ebca61bd2418e1799c40876541d
+    guid: 407d60a2a4f4254bb7dfc94dd433b3ad
     GuidInternal: 
-    m_lastTime: -8585511284702888997
+    m_lastTime: -8585489082272189860
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 06000000070000001100000012000000

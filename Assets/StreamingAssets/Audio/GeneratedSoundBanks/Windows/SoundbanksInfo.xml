@@ -1,95 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>E:\PROYECTOS WWISE\TFM ESADA Wwise\</ProjectRoot>
-		<SourceFilesRoot>E:\PROYECTOS WWISE\TFM ESADA Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada_2\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\</ProjectRoot>
+		<SourceFilesRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\PROYECTOS WWISE\TFM ESADA Wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1127209469">
+		<SoundBank Id="393239870" Language="SFX" Hash="1522377785">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3" DurationType="OneShot" DurationMin="3.809763" DurationMax="4.800000">
+				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3" DurationType="OneShot" DurationMin="3.366894" DurationMax="3.779210">
 					<IncludedMemoryFiles>
-						<File Id="137591744" Language="SFX">
-							<ShortName>sonidos TFM ESADA\sfx_chirrido relleno 3.wav</ShortName>
-							<Path>SFX\sonidos TFM ESADA\sfx_chirrido relleno 3_10C4C929.wem</Path>
+						<File Id="228469276" Language="SFX">
+							<ShortName>chirrio lejos corto 1.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3_2" DurationType="OneShot" DurationMin="4.800000" DurationMax="6.047621">
+				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3_2" DurationType="OneShot" DurationMin="5.131610" DurationMax="5.131610">
 					<IncludedMemoryFiles>
-						<File Id="137591744" Language="SFX">
-							<ShortName>sonidos TFM ESADA\sfx_chirrido relleno 3.wav</ShortName>
-							<Path>SFX\sonidos TFM ESADA\sfx_chirrido relleno 3_10C4C929.wem</Path>
+						<File Id="706911643" Language="SFX">
+							<ShortName>chirrio lejos corto 2.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" DurationType="OneShot" DurationMin="6.312517" DurationMax="6.312517">
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" DurationType="OneShot" DurationMin="4.400000" DurationMax="4.400000">
 					<IncludedMemoryFiles>
-						<File Id="838015305" Language="SFX">
-							<ShortName>sonidos TFM ESADA\recoger nota-1.wav</ShortName>
-							<Path>SFX\sonidos TFM ESADA\recoger nota-1_10C4C929.wem</Path>
+						<File Id="312023770" Language="SFX">
+							<ShortName>RECOGER NOTA.wav</ShortName>
+							<Path>SFX\RECOGER NOTA_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3729309010" Name="preuba_trigg" ObjectPath="\Events\Default Work Unit\preuba_trigg" DurationType="OneShot" DurationMin="100.000000" DurationMax="100.000000">
+				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos" DurationType="OneShot" DurationMin="4.800000" DurationMax="5.708194">
 					<IncludedMemoryFiles>
-						<File Id="636650689" Language="SFX">
-							<ShortName>Demo Binaural DearRealty VR (Drazor).wav</ShortName>
-							<Path>SFX\Demo Binaural DearRealty VR (Drazor)_10C4C929.wem</Path>
+						<File Id="44670585" Language="SFX">
+							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
+							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos" DurationType="OneShot" DurationMin="4.444723" DurationMax="5.600000">
+				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos2" DurationType="OneShot" DurationMin="4.036303" DurationMax="4.800000">
 					<IncludedMemoryFiles>
-						<File Id="21103750" Language="SFX">
-							<ShortName>puerta chirriando de fondo-1.wav</ShortName>
-							<Path>SFX\puerta chirriando de fondo-1_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos2" DurationType="OneShot" DurationMin="5.600000" DurationMax="7.055558">
-					<IncludedMemoryFiles>
-						<File Id="21103750" Language="SFX">
-							<ShortName>puerta chirriando de fondo-1.wav</ShortName>
-							<Path>SFX\puerta chirriando de fondo-1_10C4C929.wem</Path>
+						<File Id="44670585" Language="SFX">
+							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
+							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3337955159" Name="silla_pre_attack" ObjectPath="\Events\Default Work Unit\silla_pre_attack" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
 					<IncludedMemoryFiles>
-						<File Id="318924591" Language="SFX">
-							<ShortName>sonidos TFM ESADA\silla_arrastra_preatak.wav</ShortName>
-							<Path>SFX\sonidos TFM ESADA\silla_arrastra_preatak_10C4C929.wem</Path>
+						<File Id="68270176" Language="SFX">
+							<ShortName>SILLA PREATTACK.wav</ShortName>
+							<Path>SFX\SILLA PREATTACK_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" Language="SFX" Hash="4205646650">
+		<SoundBank Id="1014953671" Language="SFX" Hash="677503613">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
 			<IncludedEvents>
-				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\ambiente_noche" DurationType="Infinite">
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\ambiente_noche" DurationType="OneShot" DurationMin="51.200001" DurationMax="51.200001">
 					<IncludedMemoryFiles>
-						<File Id="553994270" Language="SFX">
-							<ShortName>sonidos TFM ESADA\ambiente  noche Tutorial.wav</ShortName>
-							<Path>SFX\sonidos TFM ESADA\ambiente  noche Tutorial_D79FB2B7.wem</Path>
+						<File Id="16645949" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1471369194">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
