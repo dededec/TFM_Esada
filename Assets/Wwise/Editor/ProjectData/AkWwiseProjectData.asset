@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585489075466334601
+    m_lastTime: -8585487969160014542
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -125,8 +125,8 @@ MonoBehaviour:
         guid: ebf8c1e0805eb546b8271c2d33b3c130
       Path: Events\Default Work Unit\ambiente_noche
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 51.2
+      minDuration: 51.2
     - name: chirriando_lejos_3
       guid: 4280f50580a85c49926de120b6655092
       id: 4115248352
@@ -142,8 +142,8 @@ MonoBehaviour:
         guid: 4280f50580a85c49926de120b6655092
       Path: Events\Default Work Unit\chirriando_lejos_3
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.77921
+      minDuration: 3.366894
     - name: chirriando_lejos_3_2
       guid: ab3185ac03077544a05f22465f5e9cf5
       id: 3291383135
@@ -159,8 +159,8 @@ MonoBehaviour:
         guid: ab3185ac03077544a05f22465f5e9cf5
       Path: Events\Default Work Unit\chirriando_lejos_3_2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.13161
+      minDuration: 5.13161
     - name: PickUp_nota
       guid: 7246980a1b2a174e9eaed5f73a26d062
       id: 1233512512
@@ -176,8 +176,8 @@ MonoBehaviour:
         guid: 7246980a1b2a174e9eaed5f73a26d062
       Path: Events\Default Work Unit\PickUp_nota
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.4
+      minDuration: 4.4
     - name: puerta_chirriando_lejos
       guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
@@ -193,8 +193,8 @@ MonoBehaviour:
         guid: c77300fbb9e7a140959deaf8f02a9915
       Path: Events\Default Work Unit\puerta_chirriando_lejos
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.708194
+      minDuration: 4.8
     - name: puerta_chirriando_lejos2
       guid: 196ecbfcf9398f4da27087c2e40ceca1
       id: 863090050
@@ -210,8 +210,8 @@ MonoBehaviour:
         guid: 196ecbfcf9398f4da27087c2e40ceca1
       Path: Events\Default Work Unit\puerta_chirriando_lejos2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.8
+      minDuration: 4.036303
     - name: silla_pre_attack
       guid: 31a2a020ae1e8c43a1569869df0ade70
       id: 3337955159
@@ -227,8 +227,8 @@ MonoBehaviour:
         guid: 31a2a020ae1e8c43a1569869df0ade70
       Path: Events\Default Work Unit\silla_pre_attack
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.8
+      minDuration: 4.8
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -286,7 +286,7 @@ MonoBehaviour:
     m_lastTime: -8585489082272189860
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000001100000012000000
+  ExpandedWaapiItemIds: 050000000600000007000000100000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
