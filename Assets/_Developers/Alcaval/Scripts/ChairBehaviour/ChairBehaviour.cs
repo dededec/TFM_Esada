@@ -14,6 +14,9 @@ namespace TFMEsada
 
         // Current state in the stateMachine
         public State _currentState;
+        [SerializeField] private Animator _animator;
+        private NavMeshAgent _navMeshAgent;
+        private bool dead = false;
 	  
 	    #endregion
 	  
@@ -25,9 +28,15 @@ namespace TFMEsada
 	 
 	    #region LifeCycle
 
+        private void Start() 
+        {
+            _navMeshAgent = GetComponentInParent<NavMeshAgent>();
+        }
+
         void Update() 
         {
             RunStateMachine();
+            
         }
       
         #endregion
@@ -57,7 +66,10 @@ namespace TFMEsada
         public void death()
         {
             Debug.Log("Se murio la silla");
-            Destroy(gameObject);
+            _navMeshAgent.isStopped = true;
+            _animator.SetTrigger("fall");
+            this.GetComponent<ChairBehaviour>().enabled = false;
+            //Destroy(gameObject);
         }
             
         #endregion

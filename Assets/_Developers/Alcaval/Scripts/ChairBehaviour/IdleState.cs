@@ -13,6 +13,7 @@ namespace TFMEsada
 
         // States: Here you can have all the states that this state state could go to
         [SerializeField] private RunState _runState;
+        [SerializeField] private Animator _animator;
 
         // Variable that lets us and the script know if the agent is inRange of the player
         public bool inRangePlayer{ set; get; }
@@ -52,6 +53,7 @@ namespace TFMEsada
         {
             yield return new WaitForSeconds(s);
             inRangePlayer = true;
+            _animator.SetTrigger("awake");
         }
 
         #endregion

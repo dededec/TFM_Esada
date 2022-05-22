@@ -9,6 +9,7 @@ public class DamageCollider : MonoBehaviour
 
     [SerializeField] private Collider _hitbox;
     public bool playerDead = false;
+    [SerializeField] private Animator _animator;
 
     #endregion
 
@@ -29,6 +30,7 @@ public class DamageCollider : MonoBehaviour
         {
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             playerDead = true;
+            _animator.SetTrigger("playerDead");
         }
     }
 

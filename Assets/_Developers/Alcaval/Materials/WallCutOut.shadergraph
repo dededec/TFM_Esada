@@ -122,6 +122,9 @@
         },
         {
             "m_Id": "0817f6181c074150ba07a26210f5a35c"
+        },
+        {
+            "m_Id": "c67ce90916534a00904e1c5cd5680d13"
         }
     ],
     "m_GroupDatas": [],
@@ -137,20 +140,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "e8999a88ac064ce283c3aef0b4716cf1"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "12c1a44bbca74363925f36075ab1296f"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "47ce265d605846ed82196a266aedf223"
                 },
                 "m_SlotId": 1
             }
@@ -235,20 +224,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "257c4acc9e024c07bc65cf7bb4680b52"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "47ce265d605846ed82196a266aedf223"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "c5c52e1f493545f7ad4107d7414776f0"
                 },
                 "m_SlotId": 0
             }
@@ -391,6 +366,20 @@
                     "m_Id": "ff770c303cc643688eb695e399cd5869"
                 },
                 "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "c67ce90916534a00904e1c5cd5680d13"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "c5c52e1f493545f7ad4107d7414776f0"
+                },
+                "m_SlotId": 0
             }
         },
         {
@@ -1540,10 +1529,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -389.9999694824219,
-            "y": 57.99998474121094,
+            "x": -390.0000305175781,
+            "y": 58.0000114440918,
             "width": 208.0,
-            "height": 436.9999694824219
+            "height": 437.0000305175781
         }
     },
     "m_Slots": [
@@ -2848,6 +2837,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "bd794181ec864386a014d6c94ae3f37f",
+    "m_Id": 0,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "c00817c86f8a436bbde84c7fee62fe7b",
     "m_Id": 0,
@@ -2931,6 +2945,47 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.BaseColor"
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.ColorNode",
+    "m_ObjectId": "c67ce90916534a00904e1c5cd5680d13",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Color",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -787.0,
+            "y": -126.99998474121094,
+            "width": 208.00001525878907,
+            "height": 127.00000762939453
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "bd794181ec864386a014d6c94ae3f37f"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Color": {
+        "color": {
+            "r": 0.09019608050584793,
+            "g": 0.1098039299249649,
+            "b": 0.1882353127002716,
+            "a": 1.0
+        },
+        "mode": 0
+    }
 }
 
 {

@@ -85,4 +85,18 @@ public class BookColisionDetection : MonoBehaviour
             _recolocate = false;
         }
     }
+
+
+    public void PreAttack()
+    {
+        StartCoroutine(preAttack());
+    }
+
+    IEnumerator preAttack()
+    {
+        bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 2.5f, _player.transform.position.z), 0.5f * Time.deltaTime);
+        yield return new WaitForSeconds(1f);
+        bbt.checkInAttackRange.ready = true;
+    }
 }
