@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1522377785">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3094295470">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3" DurationType="OneShot" DurationMin="3.366894" DurationMax="3.779210">
+				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3" GUID="{05F58042-A880-495C-926D-E120B6655092}" DurationType="OneShot" DurationMin="3.366894" DurationMax="3.779210">
 					<IncludedMemoryFiles>
 						<File Id="228469276" Language="SFX">
 							<ShortName>chirrio lejos corto 1.wav</ShortName>
@@ -24,7 +24,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3_2" DurationType="OneShot" DurationMin="5.131610" DurationMax="5.131610">
+				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\chirriando_lejos_3_2" GUID="{AC8531AB-0703-4475-A05F-22465F5E9CF5}" DurationType="OneShot" DurationMin="5.131610" DurationMax="5.131610">
 					<IncludedMemoryFiles>
 						<File Id="706911643" Language="SFX">
 							<ShortName>chirrio lejos corto 2.wav</ShortName>
@@ -32,23 +32,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" DurationType="OneShot" DurationMin="4.400000" DurationMax="4.400000">
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="2.700000" DurationMax="2.700000">
 					<IncludedMemoryFiles>
-						<File Id="312023770" Language="SFX">
-							<ShortName>RECOGER NOTA.wav</ShortName>
-							<Path>SFX\RECOGER NOTA_10C4C929.wem</Path>
+						<File Id="658227827" Language="SFX">
+							<ShortName>Recoger NOTA_2.wav</ShortName>
+							<Path>SFX\Recoger NOTA_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos" DurationType="OneShot" DurationMin="4.800000" DurationMax="5.708194">
-					<IncludedMemoryFiles>
-						<File Id="44670585" Language="SFX">
-							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
-							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos2" DurationType="OneShot" DurationMin="4.036303" DurationMax="4.800000">
+				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos" GUID="{FB0073C7-E7B9-40A1-959D-EAF8F02A9915}" DurationType="OneShot" DurationMin="4.800000" DurationMax="5.708194">
 					<IncludedMemoryFiles>
 						<File Id="44670585" Language="SFX">
 							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
@@ -56,7 +48,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3337955159" Name="silla_pre_attack" ObjectPath="\Events\Default Work Unit\silla_pre_attack" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
+				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\puerta_chirriando_lejos2" GUID="{FCCB6E19-39F9-4D8F-A270-87C2E40CECA1}" DurationType="OneShot" DurationMin="4.036303" DurationMax="4.800000">
+					<IncludedMemoryFiles>
+						<File Id="44670585" Language="SFX">
+							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
+							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3337955159" Name="silla_pre_attack" ObjectPath="\Events\Default Work Unit\silla_pre_attack" GUID="{20A0A231-1EAE-438C-A156-9869DF0ADE70}" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
 					<IncludedMemoryFiles>
 						<File Id="68270176" Language="SFX">
 							<ShortName>SILLA PREATTACK.wav</ShortName>
@@ -66,12 +66,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" Language="SFX" Hash="677503613">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="1793531433">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
 			<IncludedEvents>
-				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\ambiente_noche" DurationType="OneShot" DurationMin="51.200001" DurationMax="51.200001">
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\ambiente_noche" GUID="{E0C1F8EB-5E80-46B5-B827-1C2D33B3C130}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="51.200001" DurationMax="51.200001">
 					<IncludedMemoryFiles>
 						<File Id="16645949" Language="SFX">
 							<ShortName>AMBIENTE NOCHE 1.wav</ShortName>
@@ -81,7 +81,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
