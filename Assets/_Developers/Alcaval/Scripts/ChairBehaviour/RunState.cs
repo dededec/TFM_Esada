@@ -21,12 +21,15 @@ namespace TFMEsada
 
         // Transform of the chair so it always rotates to the direction of the player when moving
         [SerializeField] private Transform _chairTransform;
+        [SerializeField] private Animator _animator;
+        [SerializeField] private Transform sillaMesh;
 
         // Variable that lets us and the script know if the agent is inAttackRange of the player
         public bool inAttackRangePlayer{set; get;}
 
         // NavMeshAgent of the chair
         private NavMeshAgent _navMeshAgent;
+        
 
         #endregion
 
@@ -43,14 +46,17 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
+            //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, -0.33f, sillaMesh.position.z);
             if(GameObject.FindGameObjectWithTag("Player") == null)
             {
                 _idleState.inRangePlayer = false;
+                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
                 return _idleState;
             }
             else if(inAttackRangePlayer)
             {
                 _navMeshAgent.isStopped = true;
+                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
                 return _attackState;
             }
             else

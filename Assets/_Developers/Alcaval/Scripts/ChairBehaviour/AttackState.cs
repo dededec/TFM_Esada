@@ -73,6 +73,7 @@ namespace TFMEsada
         }
 
         IEnumerator startCooldownRoutine(){
+            animator.SetTrigger("awake");
             yield return new WaitForSeconds(_cooldown);
             _ableToAttack = true;
             finishedAttacking = true;

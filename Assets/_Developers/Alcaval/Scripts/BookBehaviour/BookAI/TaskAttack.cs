@@ -12,6 +12,7 @@ public class TaskAttack : Node
     private GameObject _book;
     private GameObject _player;
     private float _force;
+    
     public TaskAttack(GameObject book, GameObject player, float force)
     {
         this._book = book;

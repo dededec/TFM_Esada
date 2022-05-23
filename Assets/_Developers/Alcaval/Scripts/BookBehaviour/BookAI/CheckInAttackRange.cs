@@ -8,12 +8,15 @@ public class CheckInAttackRange : Node
     private Transform _bookPos;
     private GameObject _player;
     private float _rangeAttackBook;
+    public bool ready = false;
+    private BookColisionDetection bookColisionDetection;
 
-    public CheckInAttackRange(Transform bookPos, GameObject player, float rangeAttackBook)
+    public CheckInAttackRange(Transform bookPos, GameObject player, float rangeAttackBook, BookColisionDetection bookColisionDetection)
     {
         this._bookPos = bookPos;
         this._player = player;
         this._rangeAttackBook = rangeAttackBook;
+        this.bookColisionDetection = bookColisionDetection;
     }
 
     public override NodeState Evaluate()
@@ -37,9 +40,16 @@ public class CheckInAttackRange : Node
             
             if(hit.transform.gameObject.tag == "Player" && Vector3.Distance(bookPosModified, playerPosModified) < _rangeAttackBook) 
             {
-                state = NodeState.SUCCESS;
+                // aqui 
+                bookColisionDetection.PreAttack();
                 return state;
             }
+            else if(ready)
+            {
+                state = NodeState.SUCCESS;
+                ready = false;
+                return state;  
+            } 
             else
             {
                 if(_bookPos.gameObject.GetComponent<Animator>().GetBool("attacking"))
