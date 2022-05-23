@@ -27,6 +27,10 @@ public class TaskAttack : Node
             _book.GetComponent<Animator>().SetBool("attacking", true);
             _book.GetComponent<Rigidbody>().useGravity = true;
             Vector3 playerPosModified = new Vector3(_player.transform.position.x, _player.transform.position.y + 3, _player.transform.position.z);
+            AkSoundEngine.StopAll(_book);
+            AkSoundEngine.PostEvent("libro_ataque", _book);
+
+
             _book.GetComponent<Rigidbody>().velocity = (playerPosModified - _book.transform.position) * _force;
             inAttack = true;
             isAttacking = false;

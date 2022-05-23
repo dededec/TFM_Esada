@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	863090050	puerta_chirriando_lejos2			\Default Work Unit\puerta_chirriando_lejos2	
 	1233512512	PickUp_nota			\Default Work Unit\PickUp_nota	
 	2170274192	puerta_chirriando_lejos			\Default Work Unit\puerta_chirriando_lejos	
+	3179460290	PickUp_llave			\Default Work Unit\PickUp_llave	
 	3291383135	chirriando_lejos_3_2			\Default Work Unit\chirriando_lejos_3_2	
 	3337955159	silla_pre_attack			\Default Work Unit\silla_pre_attack	
 	4115248352	chirriando_lejos_3			\Default Work Unit\chirriando_lejos_3	
@@ -12,4 +13,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	228469276	chirrio lejos corto 1	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 1		593984
 	658227827	Recoger NOTA_2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Recoger NOTA_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Recoger NOTA_2		476344
 	706911643	chirrio lejos corto 2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 2		905280
+	980605339	Pick Up llave	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pick Up llave		535212
 

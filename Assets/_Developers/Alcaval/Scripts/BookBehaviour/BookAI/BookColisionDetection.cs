@@ -45,10 +45,16 @@ public class BookColisionDetection : MonoBehaviour
         print(other.transform.tag);
         if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
         {
+            AkSoundEngine.StopAll(transform.gameObject);
+            // AQUÍ DEBERÍA SONAR EL GOLPE CHOCANDO COSAS
+            AkSoundEngine.PostEvent("libro_chocando", transform.gameObject);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             transform.GetComponent<Rigidbody>().useGravity = false;
+
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
+            AkSoundEngine.PostEvent("libro_despierto", transform.gameObject);
+
             _flapIdle = true;
             bbt.taskAttack.inAttack = false;
         }

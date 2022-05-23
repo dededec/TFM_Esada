@@ -66,7 +66,9 @@ namespace TFMEsada
             if(_ableToAttack) 
             {
                 yield return new WaitForSeconds(s);
+                AkSoundEngine.StopAll(animator.gameObject);
                 animator.SetTrigger("attack");
+                AkSoundEngine.PostEvent("silla_atacando", animator.gameObject); // IGUAL TENEMOS QUE SONORIZAR DESDE ANIMACIÓN
                 yield return new WaitForSeconds(1f);
                 _ableToAttack = false;
             }
@@ -74,6 +76,8 @@ namespace TFMEsada
 
         IEnumerator startCooldownRoutine(){
             animator.SetTrigger("awake");
+            AkSoundEngine.StopAll(animator.gameObject);
+            AkSoundEngine.PostEvent("silla_despierta", animator.gameObject); 
             yield return new WaitForSeconds(_cooldown);
             _ableToAttack = true;
             finishedAttacking = true;

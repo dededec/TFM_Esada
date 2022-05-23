@@ -54,6 +54,7 @@ namespace TFMEsada
             yield return new WaitForSeconds(s);
             inRangePlayer = true;
             _animator.SetTrigger("awake");
+            AkSoundEngine.PostEvent("silla_despierta", _animator.gameObject);
         }
 
         #endregion

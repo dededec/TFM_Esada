@@ -108,6 +108,7 @@ namespace TFMEsada
             {
                 // Obtener llave.
                 Debug.Log("Apañaste llave.");
+                AkSoundEngine.PostEvent("PickUp_llave", this.gameObject);
                 _keyCount++;
                 Destroy(hit.collider.gameObject);
                 return;

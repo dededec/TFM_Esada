@@ -35,11 +35,13 @@ public class CheckInAttackRange : Node
                 if(_bookPos.gameObject.GetComponent<Animator>().GetBool("attacking"))
                 {
                     _bookPos.gameObject.GetComponent<Animator>().SetBool("flap", true);
+                    AkSoundEngine.PostEvent("libro_despierto", _bookPos.gameObject);
                 }
             }
             
             if(hit.transform.gameObject.tag == "Player" && Vector3.Distance(bookPosModified, playerPosModified) < _rangeAttackBook) 
             {
+                AkSoundEngine.PostEvent("libro_despierto", _bookPos.gameObject);
                 // aqui 
                 bookColisionDetection.PreAttack();
                 return state;
