@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="324735152">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="73177393">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -40,11 +40,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="2.700000" DurationMax="2.700000">
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="4.400000" DurationMax="4.400000">
 					<IncludedMemoryFiles>
-						<File Id="658227827" Language="SFX">
-							<ShortName>Recoger NOTA_2.wav</ShortName>
-							<Path>SFX\Recoger NOTA_2_10C4C929.wem</Path>
+						<File Id="312023770" Language="SFX">
+							<ShortName>RECOGER NOTA.wav</ShortName>
+							<Path>SFX\RECOGER NOTA_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

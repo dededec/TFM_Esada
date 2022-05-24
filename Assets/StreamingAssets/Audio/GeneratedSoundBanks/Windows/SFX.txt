@@ -11,7 +11,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	44670585	PUERTA CHIRRIANDO LEJOS	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PUERTA CHIRRIANDO LEJOS		846784
 	68270176	SILLA PREATTACK	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\SILLA PREATTACK_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA PREATTACK		846784
 	228469276	chirrio lejos corto 1	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 1		593984
-	658227827	Recoger NOTA_2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Recoger NOTA_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Recoger NOTA_2		476344
+	312023770	RECOGER NOTA	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\RECOGER NOTA_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\RECOGER NOTA		776224
 	706911643	chirrio lejos corto 2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 2		905280
 	821833520	Pick Up llave 3	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pick Up llave 3		609536
 

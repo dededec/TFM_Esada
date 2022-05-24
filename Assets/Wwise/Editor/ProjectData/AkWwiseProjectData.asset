@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585482801937989229
+    m_lastTime: -8585482197159303949
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -161,6 +161,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.13161
       minDuration: 5.13161
+    - name: libro_ataque
+      guid: 7fac305156d16848a18826f9aaac7215
+      id: 2363885649
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: libro_ataque
+        ObjectType: 3
+        guid: 7fac305156d16848a18826f9aaac7215
+      Path: Events\Default Work Unit\libro_ataque
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: libro_chocando
+      guid: 5b325f14a5beb44fbc45db1f4a3046c4
+      id: 3662398675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: libro_chocando
+        ObjectType: 3
+        guid: 5b325f14a5beb44fbc45db1f4a3046c4
+      Path: Events\Default Work Unit\libro_chocando
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: libro_despierto
+      guid: 510d226a441302428a0300e0395e1a0a
+      id: 1881438433
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: libro_despierto
+        ObjectType: 3
+        guid: 510d226a441302428a0300e0395e1a0a
+      Path: Events\Default Work Unit\libro_despierto
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PickUp_llave
       guid: dde4deca5cf7874dbe4f6f0a3bba9bde
       id: 3179460290
@@ -176,8 +227,8 @@ MonoBehaviour:
         guid: dde4deca5cf7874dbe4f6f0a3bba9bde
       Path: Events\Default Work Unit\PickUp_llave
       maxAttenuation: 0
-      maxDuration: 3.033719
-      minDuration: 3.033719
+      maxDuration: 3.455057
+      minDuration: 3.455057
     - name: PickUp_nota
       guid: 7246980a1b2a174e9eaed5f73a26d062
       id: 1233512512
@@ -193,8 +244,8 @@ MonoBehaviour:
         guid: 7246980a1b2a174e9eaed5f73a26d062
       Path: Events\Default Work Unit\PickUp_nota
       maxAttenuation: 0
-      maxDuration: 2.7
-      minDuration: 2.7
+      maxDuration: 4.4
+      minDuration: 4.4
     - name: puerta_chirriando_lejos
       guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
@@ -229,6 +280,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.8
       minDuration: 4.036303
+    - name: silla_atacando
+      guid: aeb5db31734af647b51705c4b053db5f
+      id: 277151048
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: silla_atacando
+        ObjectType: 3
+        guid: aeb5db31734af647b51705c4b053db5f
+      Path: Events\Default Work Unit\silla_atacando
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: silla_despierta
+      guid: fadaf38fd38d274483c6f33085ecfe7b
+      id: 1708516226
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: silla_despierta
+        ObjectType: 3
+        guid: fadaf38fd38d274483c6f33085ecfe7b
+      Path: Events\Default Work Unit\silla_despierta
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: silla_pre_attack
       guid: 31a2a020ae1e8c43a1569869df0ade70
       id: 3337955159
