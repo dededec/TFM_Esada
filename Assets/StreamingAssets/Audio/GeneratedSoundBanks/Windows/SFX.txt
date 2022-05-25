@@ -1,17 +1,26 @@
 Event	ID	Name			Wwise Object Path	Notes
+	277151048	silla_atacando			\Default Work Unit\silla_atacando	
 	863090050	puerta_chirriando_lejos2			\Default Work Unit\puerta_chirriando_lejos2	
 	1233512512	PickUp_nota			\Default Work Unit\PickUp_nota	
+	1708516226	silla_despierta			\Default Work Unit\silla_despierta	
+	1881438433	libro_despierto			\Default Work Unit\libro_despierto	
 	2170274192	puerta_chirriando_lejos			\Default Work Unit\puerta_chirriando_lejos	
+	2363885649	libro_ataque			\Default Work Unit\libro_ataque	
 	3179460290	PickUp_llave			\Default Work Unit\PickUp_llave	
 	3291383135	chirriando_lejos_3_2			\Default Work Unit\chirriando_lejos_3_2	
 	3337955159	silla_pre_attack			\Default Work Unit\silla_pre_attack	
+	3662398675	libro_chocando			\Default Work Unit\libro_chocando	
 	4115248352	chirriando_lejos_3			\Default Work Unit\chirriando_lejos_3	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	44670585	PUERTA CHIRRIANDO LEJOS	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PUERTA CHIRRIANDO LEJOS		846784
 	68270176	SILLA PREATTACK	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\SILLA PREATTACK_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA PREATTACK		846784
+	94555320	golpe chirrido puerta lejos	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\golpe chirrido puerta lejos_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\golpe chirrido puerta lejos		499776
 	228469276	chirrio lejos corto 1	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 1		593984
-	312023770	RECOGER NOTA	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\RECOGER NOTA_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\RECOGER NOTA		776224
+	596209391	chirrio lejos largo	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos largo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos largo		1366084
+	699158859	chirrio lejos corto 3	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 3		585792
 	706911643	chirrio lejos corto 2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 2		905280
-	821833520	Pick Up llave 3	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Pick Up llave 3		609536
+	821833520	Pick Up llave 3	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave 3		609536
+	980605339	Pick Up llave	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave		535212
+	1040978422	Recoger NOTA 4	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Recoger NOTA 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Recoger NOTA 4		529264
 

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585482801937949584
+    m_lastTime: -8585482135046048703
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585482197159303949
+    m_lastTime: -8585481105661692092
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -176,8 +176,8 @@ MonoBehaviour:
         guid: 7fac305156d16848a18826f9aaac7215
       Path: Events\Default Work Unit\libro_ataque
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.320453
+      minDuration: 3.320453
     - name: libro_chocando
       guid: 5b325f14a5beb44fbc45db1f4a3046c4
       id: 3662398675
@@ -193,8 +193,8 @@ MonoBehaviour:
         guid: 5b325f14a5beb44fbc45db1f4a3046c4
       Path: Events\Default Work Unit\libro_chocando
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.832834
+      minDuration: 2.832834
     - name: libro_despierto
       guid: 510d226a441302428a0300e0395e1a0a
       id: 1881438433
@@ -210,8 +210,8 @@ MonoBehaviour:
         guid: 510d226a441302428a0300e0395e1a0a
       Path: Events\Default Work Unit\libro_despierto
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.743877
+      minDuration: 7.743877
     - name: PickUp_llave
       guid: dde4deca5cf7874dbe4f6f0a3bba9bde
       id: 3179460290
@@ -244,8 +244,8 @@ MonoBehaviour:
         guid: 7246980a1b2a174e9eaed5f73a26d062
       Path: Events\Default Work Unit\PickUp_nota
       maxAttenuation: 0
-      maxDuration: 4.4
-      minDuration: 4.4
+      maxDuration: 3
+      minDuration: 3
     - name: puerta_chirriando_lejos
       guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
@@ -295,8 +295,8 @@ MonoBehaviour:
         guid: aeb5db31734af647b51705c4b053db5f
       Path: Events\Default Work Unit\silla_atacando
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.033719
+      minDuration: 3.033719
     - name: silla_despierta
       guid: fadaf38fd38d274483c6f33085ecfe7b
       id: 1708516226
@@ -312,8 +312,8 @@ MonoBehaviour:
         guid: fadaf38fd38d274483c6f33085ecfe7b
       Path: Events\Default Work Unit\silla_despierta
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4.8
+      minDuration: 4.8
     - name: silla_pre_attack
       guid: 31a2a020ae1e8c43a1569869df0ade70
       id: 3337955159
@@ -371,8 +371,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1847309535c3bd4983fc1a700ec2e7dc
     GuidInternal: 
-    m_lastTime: -8585489082272269638
-    List: []
+    m_lastTime: -8585481236415398741
+    List:
+    - name: Footsteps_Surface
+      guid: fbb62a032c24a54787b4889d8f1ffc6a
+      id: 1162743606
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1847309535c3bd4983fc1a700ec2e7dc
+      - ElementName: Footsteps_Surface
+        ObjectType: 11
+        guid: fbb62a032c24a54787b4889d8f1ffc6a
+      Path: Switches\Default Work Unit\Footsteps_Surface
+      values:
+      - name: Charco
+        guid: 6a316ec0f6cd3b4cb1a21c47a8dacf94
+        id: 57390691
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1847309535c3bd4983fc1a700ec2e7dc
+        - ElementName: Footsteps_Surface
+          ObjectType: 11
+          guid: fbb62a032c24a54787b4889d8f1ffc6a
+        - ElementName: Charco
+          ObjectType: 10
+          guid: 6a316ec0f6cd3b4cb1a21c47a8dacf94
+      - name: Normal
+        guid: 1ebd4ce731ce6143ac2e6ff872d17abf
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1847309535c3bd4983fc1a700ec2e7dc
+        - ElementName: Footsteps_Surface
+          ObjectType: 11
+          guid: fbb62a032c24a54787b4889d8f1ffc6a
+        - ElementName: Normal
+          ObjectType: 10
+          guid: 1ebd4ce731ce6143ac2e6ff872d17abf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

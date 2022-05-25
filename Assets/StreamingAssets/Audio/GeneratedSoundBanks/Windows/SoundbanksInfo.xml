@@ -3,7 +3,7 @@
 	<RootPaths>
 		<ProjectRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\</ProjectRoot>
 		<SourceFilesRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_ESADA_2\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="73177393">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="997129967">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -32,6 +32,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="3.320453" DurationMax="3.320453">
+					<IncludedMemoryFiles>
+						<File Id="699158859" Language="SFX">
+							<ShortName>chirrio lejos corto 3.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" DurationType="OneShot" DurationMin="2.832834" DurationMax="2.832834">
+					<IncludedMemoryFiles>
+						<File Id="94555320" Language="SFX">
+							<ShortName>golpe chirrido puerta lejos.wav</ShortName>
+							<Path>SFX\golpe chirrido puerta lejos_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="OneShot" DurationMin="7.743877" DurationMax="7.743877">
+					<IncludedMemoryFiles>
+						<File Id="596209391" Language="SFX">
+							<ShortName>chirrio lejos largo.wav</ShortName>
+							<Path>SFX\chirrio lejos largo_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3179460290" Name="PickUp_llave" ObjectPath="\Events\Default Work Unit\PickUp_llave" GUID="{CADEE4DD-F75C-4D87-BE4F-6F0A3BBA9BDE}" DurationType="OneShot" DurationMin="3.455057" DurationMax="3.455057">
 					<IncludedMemoryFiles>
 						<File Id="821833520" Language="SFX">
@@ -40,11 +64,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="4.400000" DurationMax="4.400000">
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
 					<IncludedMemoryFiles>
-						<File Id="312023770" Language="SFX">
-							<ShortName>RECOGER NOTA.wav</ShortName>
-							<Path>SFX\RECOGER NOTA_10C4C929.wem</Path>
+						<File Id="1040978422" Language="SFX">
+							<ShortName>Recoger NOTA 4.wav</ShortName>
+							<Path>SFX\Recoger NOTA 4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -61,6 +85,22 @@
 						<File Id="44670585" Language="SFX">
 							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
 							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" DurationType="OneShot" DurationMin="3.033719" DurationMax="3.033719">
+					<IncludedMemoryFiles>
+						<File Id="980605339" Language="SFX">
+							<ShortName>Pick Up llave.wav</ShortName>
+							<Path>SFX\Pick Up llave_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
+					<IncludedMemoryFiles>
+						<File Id="68270176" Language="SFX">
+							<ShortName>SILLA PREATTACK.wav</ShortName>
+							<Path>SFX\SILLA PREATTACK_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
