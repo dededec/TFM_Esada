@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3453606070	Music_prueba			\Default Work Unit\Music\Music_prueba	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1010201767	melodía sinte 160 bpm (rueda Em TFM armonía)	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\melodía sinte 160 bpm (rueda Em TFM armonía)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Playlist Container\melodía sinte 160 bpm (rueda Em TFM armonía)\melodía sinte 160 bpm (rueda Em TFM armonía)		16934464
+
