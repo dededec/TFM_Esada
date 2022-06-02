@@ -61,6 +61,8 @@ namespace TFMEsada
         [SerializeField] private ControlManager _controlManager;
         private InputAction _move;
 
+        [SerializeField] private Animator _animator;
+
 	    #endregion
 
         #region Properties
@@ -127,6 +129,7 @@ namespace TFMEsada
         private void Start() 
         {
             assignControls();
+            _animator.SetFloat("WalkingMult", _movementSpeed);
         }
 
         private void OnDisable() 
@@ -183,6 +186,9 @@ namespace TFMEsada
                 // MovePosition() because physics are not neccessary (i.e. using _rigidbody.velocity).
                 _rigidbody.MovePosition(_rigidbody.transform.position + _movementSpeed * Time.deltaTime * vertical * _rigidbody.transform.forward);
             }
+
+            _animator.SetFloat("Speed", Mathf.Abs(vertical));
+            _animator.SetBool("IsWalkingBackwards", vertical < 0f);
         }
 
         private void rotation(Vector2 input)

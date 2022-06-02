@@ -99,6 +99,8 @@ namespace TFMEsada
 
         #endregion
 
+        [SerializeField] private Animator _animator;
+
         private InputAction _shootNormal;
         private InputAction _shootPuddle;
 
@@ -180,11 +182,7 @@ namespace TFMEsada
             _shootPuddle.Disable();
         }
 
-        #endregion
-
-        #region Private Methods
-
-        private void shootNormal(InputAction.CallbackContext context)
+        public void shootNormal(InputAction.CallbackContext context)
         {
             if (_movement.IsMoving || _movement.IsRotating)
             {
@@ -198,11 +196,18 @@ namespace TFMEsada
                 return;
             }
 
-            Debug.Log("Disparas normal desde: " + gameObject.name);
+            _animator.SetTrigger("IsShooting");
             Instantiate(_bullet, _shootPosition.position, transform.rotation);
             Ammo -= _normalCost;
-            
         }
+
+        public void OnShootingAnimation()
+        {
+        }
+
+        #endregion
+
+        #region Private Methods
 
         private void shootPuddle(InputAction.CallbackContext context)
         {

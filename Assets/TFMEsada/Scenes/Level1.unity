@@ -6711,58 +6711,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1208356791}
     m_Modifications:
-    - target: {fileID: 45990770, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 45990772, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Color.b
-      value: 0.864409
-      objectReference: {fileID: 0}
-    - target: {fileID: 45990772, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Color.g
-      value: 0.91892666
-      objectReference: {fileID: 0}
-    - target: {fileID: 45990772, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Color.r
-      value: 0.990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 45990772, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Intensity
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783042, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783042, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.086
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783043, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Range
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783043, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Color.b
-      value: 0.7195621
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783043, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8278295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783043, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9245283
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783043, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_Intensity
-      value: 48.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444783043, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_SpotAngle
-      value: 59.36216
-      objectReference: {fileID: 0}
     - target: {fileID: 6128377947335776080, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _ammoSlider
       value: 
@@ -6813,10 +6761,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6128377947335776085, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6128377947335776085, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
