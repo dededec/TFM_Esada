@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7780f79a766ee4b4d91db6a287c96e59
+guid: 2bf16b1085a015047b6943a8e21dded4
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,13 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: c4f1b49372c84df44bad1a9b16ec06ae, type: 2}
+      name: Boton
+    second: {fileID: 2100000, guid: 992634d43efdf4044878b00e711a5b5d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 555478a3993568a40a14b6f7880b6760, type: 2}
+      name: Cuerpo
+    second: {fileID: 2100000, guid: 7c4d7490af719f54cb8c599bad18506f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {instanceID: 0}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pantalla
+    second: {fileID: 2100000, guid: 37347b04174fdc84398c0a50496f5a54, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
