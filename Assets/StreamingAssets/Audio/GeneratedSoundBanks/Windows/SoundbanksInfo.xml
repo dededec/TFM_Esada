@@ -3,7 +3,7 @@
 	<RootPaths>
 		<ProjectRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\</ProjectRoot>
 		<SourceFilesRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_ESADA_2\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="754461874">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1088033841">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -60,7 +60,7 @@
 					<IncludedMemoryFiles>
 						<File Id="808368439" Language="SFX">
 							<ShortName>Sonido Lámpara.wav</ShortName>
-							<Path>SFX\Sonido Lámpara_4634A6C5.wem</Path>
+							<Path>SFX\Sonido Lámpara_4317B8A5.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -114,7 +114,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="1625814591">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="1740819511">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
@@ -123,7 +123,7 @@
 					<IncludedMemoryFiles>
 						<File Id="883601427" Language="SFX">
 							<ShortName>AMBIENTE NOCHE 1_2.wav</ShortName>
-							<Path>SFX\AMBIENTE NOCHE 1_2_CC25F392.wem</Path>
+							<Path>SFX\AMBIENTE NOCHE 1_2_38374C31.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -134,7 +134,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="678787086">
+		<SoundBank Id="3991942870" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2258167937">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

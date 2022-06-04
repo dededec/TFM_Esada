@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: f01d69e299c27845b1aaa476f114a3cc
     GuidInternal: 
-    m_lastTime: -8585489082272100095
+    m_lastTime: -8585489082254775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f9c8332c0610ec45bf717ab499bef714
     GuidInternal: 
-    m_lastTime: -8585489082272319514
+    m_lastTime: -8585489082254775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585475973639068929
+    m_lastTime: -8585475973634775808
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585475966496387277
+    m_lastTime: -8585475966494775808
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -142,8 +142,8 @@ MonoBehaviour:
         guid: ebf8c1e0805eb546b8271c2d33b3c130
       Path: Events\Default Work Unit\SFX_Enviroments\ambiente_noche
       maxAttenuation: 0
-      maxDuration: 44.8
-      minDuration: 44.8
+      maxDuration: -1
+      minDuration: -1
     - name: chirriando_lejos_3
       guid: 4280f50580a85c49926de120b6655092
       id: 4115248352
@@ -450,7 +450,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: eebf55aef849594c80feac5f9c23cd97
     GuidInternal: 
-    m_lastTime: -8585489082272259299
+    m_lastTime: -8585489082254775808
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -464,7 +464,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 09dd40fdc05713428dd461a22ff941da
     GuidInternal: 
-    m_lastTime: -8585489082272070178
+    m_lastTime: -8585489082254775808
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -478,7 +478,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1847309535c3bd4983fc1a700ec2e7dc
     GuidInternal: 
-    m_lastTime: -8585481236415398741
+    m_lastTime: -8585481236414775808
     List:
     - name: Footsteps_Surface
       guid: fbb62a032c24a54787b4889d8f1ffc6a
@@ -542,7 +542,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 407d60a2a4f4254bb7dfc94dd433b3ad
     GuidInternal: 
-    m_lastTime: -8585489082272189860
+    m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000c0000000d000000100000001100000012000000

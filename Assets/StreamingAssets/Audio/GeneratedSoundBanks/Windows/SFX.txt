@@ -13,14 +13,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	4115248352	chirriando_lejos_3			\Default Work Unit\SFX_Enviroments\chirriando_lejos_3	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	44670585	PUERTA CHIRRIANDO LEJOS	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PUERTA CHIRRIANDO LEJOS		846784
+	44670585	PUERTA CHIRRIANDO LEJOS_2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PUERTA CHIRRIANDO LEJOS_2		846784
 	68270176	SILLA PREATTACK	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\SILLA PREATTACK_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA PREATTACK		846784
 	94555320	golpe chirrido puerta lejos	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\golpe chirrido puerta lejos_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\golpe chirrido puerta lejos		499776
 	228469276	chirrio lejos corto 1	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 1		593984
 	596209391	chirrio lejos largo	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos largo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos largo		1366084
 	699158859	chirrio lejos corto 3	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 3		585792
 	706911643	chirrio lejos corto 2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 2		905280
-	808368439	Sonido Lámpara	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Sonido Lámpara_4634A6C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\Sonido Lámpara		3583956
+	808368439	Sonido Lámpara	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Sonido Lámpara_4317B8A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\Sonido Lámpara		3583956
 	959306979	Pick Up llave 4	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave 4		416292
 	980605339	Pick Up llave	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave		535212
 	1040978422	Recoger NOTA 4	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Recoger NOTA 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Recoger NOTA 4		529264
