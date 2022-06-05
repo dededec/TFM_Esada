@@ -26,7 +26,9 @@ public class BookColisionDetection : MonoBehaviour
         {
             if(_recolocate)
             {
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 2.5f, _player.transform.position.z), 3 * Time.deltaTime);
+                print("se deberia de recolocar");
+                transform.GetComponent<Rigidbody>().useGravity = false;
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 3f, _player.transform.position.z), 3 * Time.deltaTime);
             }
 
             if(_player != null){
@@ -46,14 +48,14 @@ public class BookColisionDetection : MonoBehaviour
         if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
         {
             AkSoundEngine.StopAll(transform.gameObject);
-            // AQUÍ DEBERÍA SONAR EL GOLPE CHOCANDO COSAS
-            AkSoundEngine.PostEvent("libro_chocando", transform.gameObject);
+            // AQUï¿½ DEBERï¿½A SONAR EL GOLPE CHOCANDO COSAS
+            //AkSoundEngine.PostEvent("libro_chocando", transform.gameObject);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             transform.GetComponent<Rigidbody>().useGravity = false;
 
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
-            AkSoundEngine.PostEvent("libro_despierto", transform.gameObject);
+            //AkSoundEngine.PostEvent("libro_despierto", transform.gameObject);
 
             _flapIdle = true;
             bbt.taskAttack.inAttack = false;
