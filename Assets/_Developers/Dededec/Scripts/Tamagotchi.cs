@@ -21,44 +21,34 @@ namespace TFMEsada
         [SerializeField] private Renderer _bodyRenderer;
         [SerializeField] private Renderer _buttonRenderer;
         [SerializeField] private Renderer _screenRenderer;
-        [SerializeField] private bool _isLocked;
-
-        public bool isLocked
-        {
-            get
-            {
-                return _isLocked;
-            }
-
-            set
-            {
-                _isLocked = value;
-                SetVisibility();
-            }
-        }
 	  
 	    #endregion
 	 
 	    #region LifeCycle
-	  
-        private void Awake() 
-        {
-            SetVisibility();
-        }
 
-        private void SetVisibility()
+        public void SetUnlocked(bool unlocked)
         {
-            if(_isLocked)
+            if(unlocked)
             {
-                _screenRenderer.material.mainTexture = _lockedTexture;
-                _buttonRenderer.sharedMaterial.SetFloat("_Opacity", 0.3f);
-                _bodyRenderer.sharedMaterial.SetFloat("_Opacity", 0.3f);
+                _screenRenderer.material.mainTexture = _unlockedTexture;
             }
             else
             {
-                _screenRenderer.material.mainTexture = _unlockedTexture;
+                _screenRenderer.material.mainTexture = _lockedTexture;
+            }
+        }
+
+        public void SetTamagotchi(bool hasTamagotchi)
+        {
+            if(hasTamagotchi)
+            {
                 _buttonRenderer.sharedMaterial.SetFloat("_Opacity", 1);
                 _bodyRenderer.sharedMaterial.SetFloat("_Opacity", 1);
+            }
+            else
+            {
+                _buttonRenderer.sharedMaterial.SetFloat("_Opacity", 0.3f);
+                _bodyRenderer.sharedMaterial.SetFloat("_Opacity", 0.3f);
             }
         }
       

@@ -33,16 +33,41 @@ namespace TFMEsada
         [Header("Level settings")]
         [SerializeField] private GameObject _levelHolder;
         [SerializeField] private int _selectedIndex;
-        private List<GameObject> _levels = new List<GameObject>();
+        private List<Tamagotchi> _levels = new List<Tamagotchi>();
 
         [SerializeField] private GameFlowController _gameFlowController;
-
 
         [Header("Controls")]
         [SerializeField] private InputAction _scrollControls;
         [SerializeField] private InputAction _pickControls;
         [SerializeField] private AnimationCurve _scrollCurve;
         private Coroutine _scrollCoroutine;
+
+        private bool[] hasTamagotchi
+        {
+            get
+            {
+                return SaveDataController.HasTamagotchi;
+            }
+
+            set
+            {
+                SaveDataController.HasTamagotchi = value;
+            }
+        }
+
+        private int CurrentLevelIndex
+        {
+            get
+            {
+                return SaveDataController.CurrentLevelIndex;
+            }
+
+            set
+            {
+                SaveDataController.CurrentLevelIndex = value;
+            }
+        }
 	  
 	    #endregion
 
@@ -52,7 +77,10 @@ namespace TFMEsada
         {
             for(int i=0; i<_levelHolder.transform.childCount; ++i)
             {
-                _levels.Add(_levelHolder.transform.GetChild(i).gameObject);
+                Tamagotchi aux = _levelHolder.transform.GetChild(i).gameObject.GetComponent<Tamagotchi>();
+                _levels.Add(aux);
+                aux.SetUnlocked(i <= CurrentLevelIndex);
+                aux.SetTamagotchi(hasTamagotchi[i]);
             }
 
             _selectedIndex = 0;          
@@ -86,7 +114,6 @@ namespace TFMEsada
             {
                 ExecuteEvents.Execute(LeftButton.gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
             }
-            // StartScrollCoroutine(value);
         }
 
         public void StartScrollCoroutine(float value)
@@ -101,9 +128,9 @@ namespace TFMEsada
         {
             if(context.ReadValue<float>() == 1)
             {
-                if(_levels[_selectedIndex].GetComponent<Tamagotchi>().isLocked)
+                if(_selectedIndex <= CurrentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
                 {
-                    _gameFlowController.LoadScene(_levels[_selectedIndex].name);
+                    _gameFlowController.LoadScene(_levels[_selectedIndex].gameObject.name);
                 }
                 else
                 {
