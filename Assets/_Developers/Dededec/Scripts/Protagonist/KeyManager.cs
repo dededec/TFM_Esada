@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace TFMEsada
 {
@@ -60,6 +61,36 @@ namespace TFMEsada
 
 	    #endregion
 
+        #region Properties
+
+        private bool[] hasTamagotchi
+        {
+            get
+            {
+                return SaveDataController.HasTamagotchi;
+            }
+
+            set
+            {
+                SaveDataController.HasTamagotchi = value;
+            }
+        }
+
+        private int currentLevelIndex
+        {
+            get
+            {
+                return SaveDataController.CurrentLevelIndex;
+            }
+
+            set
+            {
+                SaveDataController.CurrentLevelIndex = value;
+            }
+        }
+        
+        #endregion
+
         #region LifeCycle
 
         private void OnEnable() 
@@ -100,6 +131,21 @@ namespace TFMEsada
         #endregion
 
         #region Private Methods
+        
+        private bool assignControls()
+        {
+            if (_controlManager.Controls == null)
+            {
+                return false;
+            }
+            else
+            {
+                _interact = _controlManager.Controls.Interaction.Interact;
+                _interact.started += interact;
+                _interact.Enable();
+                return true;
+            }
+        }
 
         private void interact(InputAction.CallbackContext context)
         {   
@@ -135,27 +181,41 @@ namespace TFMEsada
             Debug.Log("No se pilla nada");
         }
 
-        private bool assignControls()
-        {
-            if (_controlManager.Controls == null)
-            {
-                return false;
-            }
-            else
-            {
-                _interact = _controlManager.Controls.Interaction.Interact;
-                _interact.started += interact;
-                _interact.Enable();
-                return true;
-            }
-        }
-
         private void victory()
         {
             _victoryUI.SetActive(true);
-            if(hasCollectable)
+
+            /*
+            Esto se podría hacer escalable si tuviesemos una convención
+            para los nombres de escena, por ejemplo "Mundo_NúmeroDeNivel" o algo así
+            */
+            int levelIndex = -1;
+            switch(SceneManager.GetActiveScene().name)
+            {
+                case "Tutorial":
+                levelIndex = 0;
+                break;
+                case "Level1":
+                levelIndex = 1;
+                break;
+                case "Level2":
+                levelIndex = 2;
+                break;
+                default:
+                Debug.LogError("Error: Nombre de nivel no encontrado: " + SceneManager.GetActiveScene().name);
+                return;
+            }
+            
+            if(true)
             {
                 // Se harán cosas en el _victoryUI
+                hasTamagotchi[levelIndex] = true;
+            }
+
+            // Si estábamos jugando el último nivel, se desbloquea el siguiente
+            if(levelIndex == currentLevelIndex)
+            {
+                currentLevelIndex++;
             }
         }
 

@@ -15,11 +15,6 @@ public class SaveData
 
     public SaveData()
     {
-        currentLevelIndex = 0;
         hasTamagotchi = new bool[3];
-        for(int i=0; i<3; ++i)
-        {
-            hasTamagotchi[i] = false;
-        }
     }
 }

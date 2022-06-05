@@ -197,12 +197,12 @@ namespace TFMEsada
             }
 
             _animator.SetTrigger("IsShooting");
-            Instantiate(_bullet, _shootPosition.position, transform.rotation);
-            Ammo -= _normalCost;
         }
 
         public void OnShootingAnimation()
         {
+            Instantiate(_bullet, _shootPosition.position, transform.rotation);
+            Ammo -= _normalCost;
         }
 
         #endregion

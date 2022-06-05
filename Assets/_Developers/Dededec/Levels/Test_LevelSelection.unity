@@ -156,7 +156,6 @@ MonoBehaviour:
   LeftButton: {fileID: 1016943873}
   eventSystem: {fileID: 1707973217}
   _levelHolder: {fileID: 1955606697}
-  _selectedIndex: 0
   _gameFlowController: {fileID: 1321122071}
   _scrollControls:
     m_Name: Scroll Controls
@@ -309,7 +308,6 @@ MonoBehaviour:
   _bodyRenderer: {fileID: 1894718561}
   _buttonRenderer: {fileID: 1412029429}
   _screenRenderer: {fileID: 1343310327}
-  _isLocked: 1
 --- !u!1 &271005902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1162,6 @@ MonoBehaviour:
   _bodyRenderer: {fileID: 935239057}
   _buttonRenderer: {fileID: 601630866}
   _screenRenderer: {fileID: 2012292852}
-  _isLocked: 1
 --- !u!4 &1633456832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
@@ -1487,7 +1484,6 @@ MonoBehaviour:
   _bodyRenderer: {fileID: 715148329}
   _buttonRenderer: {fileID: 1894395408}
   _screenRenderer: {fileID: 1189630739}
-  _isLocked: 0
 --- !u!1 &1877710128
 GameObject:
   m_ObjectHideFlags: 0

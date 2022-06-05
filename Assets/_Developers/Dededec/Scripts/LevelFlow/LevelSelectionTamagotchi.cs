@@ -32,7 +32,7 @@ namespace TFMEsada
 
         [Header("Level settings")]
         [SerializeField] private GameObject _levelHolder;
-        [SerializeField] private int _selectedIndex;
+        private int _selectedIndex;
         private List<Tamagotchi> _levels = new List<Tamagotchi>();
 
         [SerializeField] private GameFlowController _gameFlowController;
@@ -42,6 +42,10 @@ namespace TFMEsada
         [SerializeField] private InputAction _pickControls;
         [SerializeField] private AnimationCurve _scrollCurve;
         private Coroutine _scrollCoroutine;
+
+        #endregion
+
+        #region Properties
 
         private bool[] hasTamagotchi
         {
@@ -56,7 +60,7 @@ namespace TFMEsada
             }
         }
 
-        private int CurrentLevelIndex
+        private int currentLevelIndex
         {
             get
             {
@@ -79,7 +83,7 @@ namespace TFMEsada
             {
                 Tamagotchi aux = _levelHolder.transform.GetChild(i).gameObject.GetComponent<Tamagotchi>();
                 _levels.Add(aux);
-                aux.SetUnlocked(i <= CurrentLevelIndex);
+                aux.SetUnlocked(i <= currentLevelIndex);
                 aux.SetTamagotchi(hasTamagotchi[i]);
             }
 
@@ -128,7 +132,7 @@ namespace TFMEsada
         {
             if(context.ReadValue<float>() == 1)
             {
-                if(_selectedIndex <= CurrentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
+                if(_selectedIndex <= currentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
                 {
                     _gameFlowController.LoadScene(_levels[_selectedIndex].gameObject.name);
                 }
