@@ -45,6 +45,12 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private LayerMask _doorLayer;
 
+        [Tooltip("Layer in which to look for the final door.")]
+        /// <summary>
+        /// Layer in which to look for the final door.
+        /// </summary>
+        [SerializeField] private LayerMask _endingLayer;
+
         [Tooltip("Layer in which to look for collectables.")]
         /// <summary>
         /// Layer in which to look for collectables.
@@ -159,7 +165,19 @@ namespace TFMEsada
                 Destroy(hit.collider.gameObject);
                 return;
             }
+            else if(RayCast(out hit, _range, _collectableLayer))
+            {   
+                Debug.Log("Pillas coleccionable");
+                hasCollectable = true;
+                Destroy(hit.collider.gameObject);
+                return;
+            }
             else if(RayCast(out hit, _range, _doorLayer))
+            {
+                var sign = Mathf.Sign(Vector3.SignedAngle(hit.collider.gameObject.transform.right, transform.forward, Vector3.up));
+                StartCoroutine(crOpenDoor(hit.collider.gameObject, sign));
+            }
+            else if(RayCast(out hit, _range, _endingLayer))
             {
                 // Abrir puerta si hay llave.
                 if(_keyCount > 0)
@@ -170,15 +188,16 @@ namespace TFMEsada
                 }
                 return;
             }
-            else if(RayCast(out hit, _range, _collectableLayer))
-            {   
-                Debug.Log("Pillas coleccionable");
-                hasCollectable = true;
-                Destroy(hit.collider.gameObject);
-                return;
-            }
 
             Debug.Log("No se pilla nada");
+        }
+
+        private IEnumerator crOpenDoor(GameObject door, float sign)
+        {
+            door.GetComponent<Animator>().SetFloat("Sign", sign);
+            yield return new WaitForSeconds(5f);
+            door.GetComponent<Animator>().SetFloat("Sign", 0f);
+            door.GetComponent<Animator>().SetTrigger("Close");
         }
 
         private void victory()
@@ -206,7 +225,7 @@ namespace TFMEsada
                 return;
             }
             
-            if(true)
+            if(hasCollectable)
             {
                 // Se harán cosas en el _victoryUI
                 hasTamagotchi[levelIndex] = true;
