@@ -69,7 +69,7 @@ namespace TFMEsada
             var value = context.ReadValue<float>();
             if(scrollCoroutine == null)
             {
-                scrollCoroutine = StartCoroutine(crScroll(value));
+                // scrollCoroutine = StartCoroutine(crScroll(value));
             }
         }
 
@@ -86,25 +86,25 @@ namespace TFMEsada
             }
         }
 
-        private IEnumerator crScroll(float direction)
-        {
-            // Si son tres niveles, cada uno está en 0 - 0.5 - 1
-            // Si fuesen cuatro, sería 0 - 0.33 - 0.66 - 1
-            _sceneToLoad += (int) direction;
-            if(_sceneToLoad < 0) _sceneToLoad = 0;
-            else if(_sceneToLoad > 2) _sceneToLoad = 2;
-            var goal = _sceneToLoad * 0.5f; 
-            var start = _levelScroll.horizontalNormalizedPosition;
-            var duracion = 0.1f;
-            for(float i=0; i<duracion; i+=Time.deltaTime)
-            {
-                _levelScroll.horizontalNormalizedPosition = Mathf.Lerp(start, goal, i/duracion);
-                yield return null;
-            }   
+        // private IEnumerator crScroll(float direction)
+        // {
+        //     // Si son tres niveles, cada uno está en 0 - 0.5 - 1
+        //     // Si fuesen cuatro, sería 0 - 0.33 - 0.66 - 1
+        //     _sceneToLoad += (int) direction;
+        //     if(_sceneToLoad < 0) _sceneToLoad = 0;
+        //     else if(_sceneToLoad > 2) _sceneToLoad = 2;
+        //     var goal = _sceneToLoad * 0.5f; 
+        //     var start = _levelScroll.horizontalNormalizedPosition;
+        //     var duracion = 0.1f;
+        //     for(float i=0; i<duracion; i+=Time.deltaTime)
+        //     {
+        //         _levelScroll.horizontalNormalizedPosition = Mathf.Lerp(start, goal, i/duracion);
+        //         yield return null;
+        //     }   
 
-            _levelScroll.horizontalNormalizedPosition = goal;
-            scrollCoroutine = null;
-        }
+        //     _levelScroll.horizontalNormalizedPosition = goal;
+        //     scrollCoroutine = null;
+        // }
 	   
         #endregion
     }

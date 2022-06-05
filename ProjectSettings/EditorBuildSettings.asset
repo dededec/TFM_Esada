@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Developers/Dededec/Levels/TestCamera_Level1.unity
     guid: 95e1ddbf551aeb642985b797af583bee
+  - enabled: 1
+    path: Assets/TFMEsada/Scenes/Tutorial.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/TFMEsada/Scenes/Level1.unity
+    guid: fa684c0ba22f64f4db3f9eac33cfd30c
+  - enabled: 1
+    path: Assets/TFMEsada/Scenes/Level2.unity
+    guid: a540e072ac419e34cb332bacc32d8800
   m_configObjects: {}
