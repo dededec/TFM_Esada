@@ -4836,7 +4836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1536013508
 Light:
   m_ObjectHideFlags: 0
@@ -7206,6 +7206,10 @@ PrefabInstance:
       propertyPath: _victoryUI
       value: 
       objectReference: {fileID: 1024493255}
+    - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _endingLayer.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
     - target: {fileID: 6128377947335776083, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _collisionMask.m_Bits
       value: 20353
@@ -7539,6 +7543,10 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 452899447}
+    - target: {fileID: 1027608710986582911, guid: d146ead39eac80d43853e7a0038bcda8, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 28631
+      objectReference: {fileID: 0}
     - target: {fileID: 3967537391252643037, guid: d146ead39eac80d43853e7a0038bcda8, type: 3}
       propertyPath: targetObject
       value: 

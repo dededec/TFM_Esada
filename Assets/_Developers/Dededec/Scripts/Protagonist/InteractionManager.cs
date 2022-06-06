@@ -14,7 +14,7 @@ namespace TFMEsada
     /// <summary>  
 	/// Handle key obtaining and door opening. 
 	/// </summary>
-    public class KeyManager : MonoBehaviour
+    public class InteractionManager : MonoBehaviour
     {
         #region Fields
 
@@ -194,10 +194,18 @@ namespace TFMEsada
 
         private IEnumerator crOpenDoor(GameObject door, float sign)
         {
-            door.GetComponent<Animator>().SetFloat("Sign", sign);
+            Animator anim = door.GetComponent<Animator>();
+            
+            if(!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleDoor"))
+            {
+                Debug.Log("La puerta no está en idle.");
+                yield break;
+            }
+
+            anim.SetFloat("Sign", sign);
             yield return new WaitForSeconds(5f);
-            door.GetComponent<Animator>().SetFloat("Sign", 0f);
-            door.GetComponent<Animator>().SetTrigger("Close");
+            anim.SetFloat("Sign", 0f);
+            anim.SetTrigger("Close");
         }
 
         private void victory()
