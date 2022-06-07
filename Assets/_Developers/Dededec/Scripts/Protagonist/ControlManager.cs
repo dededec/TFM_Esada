@@ -47,6 +47,7 @@ namespace TFMEsada
         public void PlayerDeath()
         {
             //...
+            GetComponent<Animator>().SetTrigger("IsDead");
             Debug.LogWarning("Muerte del jugador no implementada");
         }
 

@@ -38,8 +38,12 @@ namespace TFMEsada
         [SerializeField] private GameFlowController _gameFlowController;
 
         [Header("Controls")]
-        [SerializeField] private InputAction _scrollControls;
-        [SerializeField] private InputAction _pickControls;
+        [SerializeField] private ControlManager _controlManager;
+        private InputAction _scrollControls;
+        private InputAction _selectControls;
+        private InputAction _cancelControls;
+        private bool _loadedControls = false;
+
         [SerializeField] private AnimationCurve _scrollCurve;
         private Coroutine _scrollCoroutine;
 
@@ -76,6 +80,14 @@ namespace TFMEsada
 	    #endregion
 
 	    #region LifeCycle
+
+        private void Start() 
+        {
+            if(!_loadedControls)
+            {
+                assignControls();
+            }  
+        }
 	  
         private void OnEnable() 
         {
@@ -87,19 +99,24 @@ namespace TFMEsada
                 aux.SetTamagotchi(hasTamagotchi[i]);
             }
 
-            _selectedIndex = 0;          
+            _selectedIndex = 0;   
 
-            _scrollControls.started += processInput;
-            _scrollControls.Enable();
-
-            _pickControls.started += pickLevel; 
-            _pickControls.Enable();
+            if(!_loadedControls)
+            {
+                assignControls();
+            }       
         }
 
         private void OnDisable() 
         {
+            _scrollControls.started -= processScroll;
             _scrollControls.Disable();
-            _pickControls.Disable();
+
+            _selectControls.started -= selectLevel; 
+            _selectControls.Disable();
+
+            _selectControls.started -= CancelInput; 
+            _selectControls.Disable();
         }
       
         #endregion
@@ -107,9 +124,33 @@ namespace TFMEsada
 
         #region Private Methods
 
-        private void processInput(InputAction.CallbackContext context)
+        private void assignControls()
         {
-            var value = context.ReadValue<float>();
+            if (_controlManager.Controls == null)
+            {
+                return;
+            }
+            else
+            {
+                _scrollControls = _controlManager.Controls.UI.Navigate;
+                _scrollControls.started += processScroll;
+                _scrollControls.Enable();
+
+                _selectControls = _controlManager.Controls.UI.Select;
+                _selectControls.started += selectLevel; 
+                _selectControls.Enable();
+
+                _cancelControls = _controlManager.Controls.UI.Cancel;
+                _cancelControls.started += CancelInput; 
+                _cancelControls.Enable();
+
+                _loadedControls = true;
+            }
+        }
+
+        private void processScroll(InputAction.CallbackContext context)
+        {
+            float value = context.ReadValue<Vector2>().x;
             if(value > 0)
             {
                 ExecuteEvents.Execute(RightButton.gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
@@ -128,23 +169,21 @@ namespace TFMEsada
             }
         }
 
-        private void pickLevel(InputAction.CallbackContext context)
+        private void selectLevel(InputAction.CallbackContext context)
         {
-            if(context.ReadValue<float>() == 1)
+            if(_selectedIndex <= currentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
             {
-                if(_selectedIndex <= currentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
-                {
-                    _gameFlowController.LoadScene(_levels[_selectedIndex].gameObject.name);
-                }
-                else
-                {
-                    Debug.Log("Nivel no desbloqueado.");
-                }
+                _gameFlowController.LoadScene(_levels[_selectedIndex].gameObject.name);
             }
             else
             {
-                Debug.Log("Se sale al menú");
+                Debug.Log("Nivel no desbloqueado.");
             }
+        }
+
+        private void CancelInput(InputAction.CallbackContext context)
+        {
+            Debug.Log("Se sale al menú.");
         }
 
         private IEnumerator crScroll(float value)

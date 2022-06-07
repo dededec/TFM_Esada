@@ -14,6 +14,13 @@ namespace TFMEsada
     {
         #region Fields
 
+        [Tooltip("ControlManager script to assign controls to this script.")]
+        /// <summary>
+        /// Movement script to assign controls to this script.
+        /// </summary>
+        [SerializeField] private ControlManager _controlManager;
+        private InputAction _interact;
+
 
         [SerializeField] private Camera _renderCamera;
         private GameObject _speechBubble;
@@ -32,46 +39,53 @@ namespace TFMEsada
 	 
 	    #region LifeCycle
 	  
-        private void OnEnable() {
+        private void OnEnable() 
+        {
             _speechBubble = GameObject.FindGameObjectWithTag("Bubble");
             _text = _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>();
             _pressButtonProp = GameObject.FindGameObjectWithTag("ReadPropButton").transform.GetChild(0).gameObject;
             _tw = gameObject.GetComponent<TextWriter>();
         }
 
-        private void Update() {
+        private void Start() 
+        {
+            assignControls();
+        }
+
+        private void Update() 
+        {
             if(_inReadingRange)
             {
                 
-                _pressButtonProp.GetComponent<RectTransform>().anchoredPosition3D = _renderCamera.WorldToScreenPoint(transform.position);
-                if((Keyboard.current.spaceKey.wasPressedThisFrame) && Writing)
-                {
-                    _tw.FinishSentence();
-                    Writing = false;
-                }
-                else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog == _contentOfNote.Length && !Writing)
-                {
-                    _pressButtonProp.SetActive(true);
-                    _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
-                    _speechBubble.transform.GetChild(0).gameObject.SetActive(false);
-                    _speechBubble.transform.GetChild(1).gameObject.SetActive(false);
-                    _currentDialog = 0;
-                    _inReadingRange = true;
-                    Writing = false;
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
-                }
-                else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
-                {
-                    _pressButtonProp.SetActive(false);
-                    AkSoundEngine.PostEvent("PickUp_nota", this.gameObject);
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
-                    //_pressButtonProp.SetActive(true);
-                    _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
-                    _speechBubble.transform.GetChild(1).gameObject.SetActive(true);
-                    _tw.AddWriter(_speechBubble.GetComponentInChildren<TMP_Text>(), _contentOfNote[_currentDialog], 0.05f);
-                    Writing = true;
-                    _currentDialog++;
-                }
+                // _pressButtonProp.GetComponent<RectTransform>().anchoredPosition3D = _renderCamera.WorldToScreenPoint(transform.position);
+                // if((Keyboard.current.spaceKey.wasPressedThisFrame) && Writing)
+                // {
+                //     _tw.FinishSentence();
+                //     Writing = false;
+                // }
+                // else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog == _contentOfNote.Length && !Writing)
+                // {
+                //     _pressButtonProp.SetActive(true);
+                //     _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
+                //     _speechBubble.transform.GetChild(0).gameObject.SetActive(false);
+                //     _speechBubble.transform.GetChild(1).gameObject.SetActive(false);
+                //     _currentDialog = 0;
+                //     _inReadingRange = true;
+                //     Writing = false;
+                //     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
+                // }
+                // else if((Keyboard.current.spaceKey.wasPressedThisFrame) && _currentDialog < _contentOfNote.Length && !Writing)
+                // {
+                //     _pressButtonProp.SetActive(false);
+                //     AkSoundEngine.PostEvent("PickUp_nota", this.gameObject);
+                //     GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
+                //     //_pressButtonProp.SetActive(true);
+                //     _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
+                //     _speechBubble.transform.GetChild(1).gameObject.SetActive(true);
+                //     _tw.AddWriter(_speechBubble.GetComponentInChildren<TMP_Text>(), _contentOfNote[_currentDialog], 0.05f);
+                //     Writing = true;
+                //     _currentDialog++;
+                // }
 
                 RectTransform rt = _speechBubble.transform.GetChild(0).GetComponent<RectTransform>();
                 Vector2 tSize = _text.GetRenderedValues(false);
@@ -84,7 +98,23 @@ namespace TFMEsada
 
         #region Private Methods
 
-        private void OnTriggerEnter(Collider other) {
+        private bool assignControls()
+        {
+            if (_controlManager.Controls == null)
+            {
+                return false;
+            }
+            else
+            {
+                _interact = _controlManager.Controls.Interaction.Interact;
+                _interact.started += readNote;
+                _interact.Enable();
+                return true;
+            }
+        }
+
+        private void OnTriggerEnter(Collider other) 
+        {
             if(other.tag == "Player")
             {
                 _inReadingRange = true; 
@@ -92,7 +122,8 @@ namespace TFMEsada
             }
         }
 
-        private void OnTriggerExit(Collider other) {
+        private void OnTriggerExit(Collider other) 
+        {
             if(other.tag == "Player")
             {
                 _inReadingRange = false; 
@@ -100,6 +131,44 @@ namespace TFMEsada
             }
         }
 	   
+        #endregion
+
+        #region Public Methods
+
+        public void readNote(InputAction.CallbackContext context)
+        {
+            if(!_inReadingRange) return;
+
+            if(Writing)
+            {
+                _tw.FinishSentence();
+                Writing = false;
+            }
+            else if(_currentDialog == _contentOfNote.Length && !Writing)
+            {
+                _pressButtonProp.SetActive(true);
+                _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
+                _speechBubble.transform.GetChild(0).gameObject.SetActive(false);
+                _speechBubble.transform.GetChild(1).gameObject.SetActive(false);
+                _currentDialog = 0;
+                _inReadingRange = true;
+                Writing = false;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
+            }
+            else if(_currentDialog < _contentOfNote.Length && !Writing)
+            {
+                _pressButtonProp.SetActive(false);
+                AkSoundEngine.PostEvent("PickUp_nota", this.gameObject);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
+                //_pressButtonProp.SetActive(true);
+                _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
+                _speechBubble.transform.GetChild(1).gameObject.SetActive(true);
+                _tw.AddWriter(_speechBubble.GetComponentInChildren<TMP_Text>(), _contentOfNote[_currentDialog], 0.05f);
+                Writing = true;
+                _currentDialog++;
+            }
+        }
+
         #endregion
     }
 }

@@ -27,6 +27,12 @@ namespace TFMEsada
         [SerializeField] private ControlManager _controlManager;
         private InputAction _interact;
 
+        [Tooltip("NoteController script to manage note reading.")]
+        /// <summary>
+        /// NoteController script to manage note reading.
+        /// </summary>
+        [SerializeField] private NoteController _noteController;
+
         [Tooltip("Range in which the player can pick a key or open a locked door.")]
         /// <summary>
         /// Range in which the player can pick a key or open a locked door.
@@ -211,6 +217,7 @@ namespace TFMEsada
         private void victory()
         {
             _victoryUI.SetActive(true);
+            _controlManager.TogglePlayerControls(false);
 
             /*
             Esto se podría hacer escalable si tuviesemos una convención

@@ -8,6 +8,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
+using UnityEngine.InputSystem.Controls;
 using UnityEngine.UI;
 
 namespace TFMEsada
@@ -101,8 +103,7 @@ namespace TFMEsada
 
         [SerializeField] private Animator _animator;
 
-        private InputAction _shootNormal;
-        private InputAction _shootPuddle;
+        private InputAction _shoot;
 
         #endregion
 
@@ -175,14 +176,19 @@ namespace TFMEsada
 
         public void StopControls()
         {
-            _shootNormal.performed -= shootNormal;
-            _shootPuddle.performed -= shootPuddle;
-
-            _shootNormal.Disable();
-            _shootPuddle.Disable();
+            _shoot.performed -= Shoot;
+            _shoot.Disable();
         }
 
-        public void shootNormal(InputAction.CallbackContext context)
+        public void Shoot(InputAction.CallbackContext context)
+        {
+            if (context.interaction is SlowTapInteraction)
+                shootPuddle();
+            else
+                shootNormal();
+        }
+
+        public void shootNormal()
         {
             if (_movement.IsMoving || _movement.IsRotating)
             {
@@ -209,7 +215,7 @@ namespace TFMEsada
 
         #region Private Methods
 
-        private void shootPuddle(InputAction.CallbackContext context)
+        private void shootPuddle()
         {
             if (_movement.IsMoving || _movement.IsRotating)
             {
@@ -236,20 +242,16 @@ namespace TFMEsada
                 return false;
             }
             
-            if(_shootNormal != null)
+            if(_shoot != null)
             {
                 return true;
             }
             else
             {
-                _shootNormal = _controlManager.Controls.Player.ShootNormal;
-                
-                _shootNormal.performed += shootNormal;
-                _shootNormal.Enable();
+                _shoot = _controlManager.Controls.Player.Shoot;
+                _shoot.performed += Shoot;
+                _shoot.Enable();
 
-                _shootPuddle = _controlManager.Controls.Player.ShootPuddle;
-                _shootPuddle.performed += shootPuddle;
-                _shootPuddle.Enable();
                 return true;
             }
         }
