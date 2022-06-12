@@ -6355,7 +6355,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waterImages: []
-  _currentWater: 0
   _waterTop: {fileID: 651391869}
 --- !u!114 &1854891703
 MonoBehaviour:
