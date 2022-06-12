@@ -18,6 +18,7 @@ namespace TFMEsada
         // States: Here you can have all the states that this state state could go to
         [SerializeField] private AttackState _attackState;
         [SerializeField] private IdleState _idleState;
+        [SerializeField] private FallState _fallState;
 
         // Transform of the chair so it always rotates to the direction of the player when moving
         [SerializeField] private Transform _chairTransform;
@@ -29,6 +30,8 @@ namespace TFMEsada
 
         // NavMeshAgent of the chair
         private NavMeshAgent _navMeshAgent;
+
+        public bool fell = false;
         
 
         #endregion
@@ -58,6 +61,12 @@ namespace TFMEsada
                 _navMeshAgent.isStopped = true;
                 //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
                 return _attackState;
+            }
+            else if(fell)
+            {
+                _navMeshAgent.isStopped = true;
+                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
+                return _fallState;
             }
             else
             {

@@ -7,7 +7,7 @@ public class DamageCollider : MonoBehaviour
 {
     #region Fields
 
-    [SerializeField] private Collider _hitbox;
+    [SerializeField] public Collider _hitbox;
     public bool playerDead = false;
     [SerializeField] private Animator _animator;
 

@@ -74,9 +74,18 @@ namespace TFMEsada
 
         public void Attack()
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().PlayerDeath();
-            _animator.SetBool("playerDead", true) ;
-            this.enabled = false;
+            // GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().PlayerDeath();
+            // _animator.SetBool("playerDead", true) ;
+            // this.enabled = false;
+            GetComponentInChildren<DamageCollider>()._hitbox.enabled = true;
+        }
+
+         public void NotAttack()
+        {
+            // GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().PlayerDeath();
+            // _animator.SetBool("playerDead", true) ;
+            // this.enabled = false;
+            GetComponentInChildren<DamageCollider>()._hitbox.enabled = false;
         }
             
         #endregion
