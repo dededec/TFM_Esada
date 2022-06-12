@@ -17,6 +17,7 @@ namespace TFMEsada
     public class InteractionManager : MonoBehaviour
     {
         #region Fields
+        [SerializeField] private Level2Controller level2Controller;
 
         private float _keyCount = 0;
 
@@ -182,6 +183,8 @@ namespace TFMEsada
             {
                 var sign = Mathf.Sign(Vector3.SignedAngle(hit.collider.gameObject.transform.right, transform.forward, Vector3.up));
                 StartCoroutine(crOpenDoor(hit.collider.gameObject, sign));
+                if(hit.collider.gameObject.name == "SecondFloorDoor") level2Controller.TeleportPlayer(1); 
+                if(hit.collider.gameObject.name == "FirstFloorDoor") level2Controller.TeleportPlayer(0);
             }
             else if(RayCast(out hit, _range, _endingLayer))
             {

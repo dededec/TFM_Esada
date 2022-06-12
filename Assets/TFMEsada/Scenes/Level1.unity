@@ -13617,10 +13617,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -130.532
       objectReference: {fileID: 0}
+    - target: {fileID: -4452055818617705245, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ca13a3afcebf974584557d5a4ec33c7, type: 2}
+    - target: {fileID: -4020924224465817570, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3eb59617519110742aaffbd20fe3e87e, type: 2}
     - target: {fileID: 919132149155446097, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
       propertyPath: m_Name
       value: Tamagotchi
       objectReference: {fileID: 0}
+    - target: {fileID: 5649864729656009488, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ca13a3afcebf974584557d5a4ec33c7, type: 2}
+    - target: {fileID: 6549128881841834247, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ca13a3afcebf974584557d5a4ec33c7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
 --- !u!1 &2091991864 stripped

@@ -154,6 +154,26 @@ namespace TFMEsada
                 _inReadingRange = true;
                 Writing = false;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
+                
+                if(gameObject.name == "TamagochiNote1")
+                {
+                    GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdateTamagochiQuest();
+                }
+
+                if(gameObject.name == "TamagochiNoteCorrect")
+                {
+                    GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdateTamagochiQuest();
+                }
+
+                if(gameObject.name == "PhoneNote1" || gameObject.name == "PhoneNote2")
+                {
+                    GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
+                }
+                
+                if(gameObject.name == "PhoneNote4")
+                {
+                    GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
+                }
             }
             else if(_currentDialog < _contentOfNote.Length && !Writing)
             {

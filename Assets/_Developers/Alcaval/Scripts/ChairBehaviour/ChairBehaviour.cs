@@ -71,6 +71,13 @@ namespace TFMEsada
             this.GetComponent<ChairBehaviour>().enabled = false;
             //Destroy(gameObject);
         }
+
+        public void Attack()
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().PlayerDeath();
+            _animator.SetBool("playerDead", true) ;
+            this.enabled = false;
+        }
             
         #endregion
     }

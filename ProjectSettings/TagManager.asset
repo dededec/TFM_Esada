@@ -14,6 +14,7 @@ TagManager:
   - FX
   - Ground
   - AI
+  - Level2Controller
   layers:
   - Default
   - TransparentFX
