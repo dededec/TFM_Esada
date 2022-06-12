@@ -85,19 +85,19 @@ namespace TFMEsada
         /// <summary>
         /// Slider showing player ammo.
         /// </summary>
-        [SerializeField] private Slider _ammoSlider;
+        [SerializeField] private WaterSlider _ammoSlider;
 
         [Tooltip("Ammo cost of a normal shot.")]
         /// <summary>
         /// Ammo cost of a normal shot.
         /// </summary>
-        [SerializeField] private int _normalCost;
+        [SerializeField] private int _normalCost = 1;
 
         [Tooltip("Ammo cost of a puddle shot.")]
         /// <summary>
         /// Ammo cost of a puddle shot.
         /// </summary>
-        [SerializeField] private int _puddleCost;
+        [SerializeField] private int _puddleCost = 2;
 
         #endregion
 
@@ -123,13 +123,15 @@ namespace TFMEsada
                     throw new ArgumentOutOfRangeException($"{nameof(value)} must be greater than 0");
                 }
                 else
-                {
-                    _ammo = value;
-                    
+                {                    
                     if(_ammoSlider != null)
                     {
-                        _ammoSlider.value = Ammo;
+                        // value = _ammo + x => x = value - _ammo
+                        Debug.Log("WATER: " + (0.5f * (float) (value - _ammo)));
+                        _ammoSlider.Water += (0.5f * (float) (value - _ammo));
                     }
+
+                    _ammo = value;
                 }
             }
         }
@@ -156,13 +158,6 @@ namespace TFMEsada
         private void Start() 
         {
             assignControls();
-
-
-            if(_ammoSlider != null)
-            {
-                _ammoSlider.maxValue = Ammo;
-                _ammoSlider.value = Ammo;
-            }
         }
 
         private void Update()
@@ -203,12 +198,12 @@ namespace TFMEsada
             }
 
             _animator.SetTrigger("IsShooting");
+            Ammo -= _normalCost;
         }
 
         public void OnShootingAnimation()
         {
             Instantiate(_bullet, _shootPosition.position, transform.rotation);
-            Ammo -= _normalCost;
         }
 
         #endregion
