@@ -86,7 +86,7 @@ namespace TFMEsada
             assignControls();
         }
 
-        void Update()
+        void FixedUpdate()
         {
             // La cámara está fixeada en la y
             // Rota alrededor del centro del escenario
