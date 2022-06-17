@@ -5,10 +5,10 @@ using TFMEsada;
 
 public class puddleCollision : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other) {
-        if(other.collider.tag == "Enemy")
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag == "Enemy")
         {
-            other.collider.gameObject.GetComponentInChildren<FallState>().PuddleColission();
+            other.GetComponentInChildren<RunState>().fall();
         }
     }
 }
