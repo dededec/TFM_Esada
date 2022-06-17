@@ -50,7 +50,15 @@ namespace TFMEsada
         public override State RunCurrentState()
         {   
             //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, -0.33f, sillaMesh.position.z);
-            if(GameObject.FindGameObjectWithTag("Player") == null)
+            if(fell)
+            {
+                _navMeshAgent.isStopped = true;
+                _fallState.up = false;
+                _fallState.fallStart = true;
+                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
+                return _fallState;
+            }
+            else if(GameObject.FindGameObjectWithTag("Player") == null)
             {
                 _idleState.inRangePlayer = false;
                 //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
@@ -61,12 +69,6 @@ namespace TFMEsada
                 _navMeshAgent.isStopped = true;
                 //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
                 return _attackState;
-            }
-            else if(fell)
-            {
-                _navMeshAgent.isStopped = true;
-                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
-                return _fallState;
             }
             else
             {
@@ -97,6 +99,15 @@ namespace TFMEsada
             }
         }
 
+        #endregion
+
+        #region Public methods
+
+        public void fall()
+        {
+            fell = true;
+        }
+            
         #endregion
     }
 }

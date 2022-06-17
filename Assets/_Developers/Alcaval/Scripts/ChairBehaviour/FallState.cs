@@ -19,19 +19,25 @@ namespace TFMEsada
         public bool inRangePlayer{ set; get; }
 
         public bool up = false;
+        public bool fallStart = true;
+        public int upFlag = 0;
 
         #endregion
 
         #region Public Methods
         public override State RunCurrentState()
         {
-            if(up)
+            print("alo");
+            if(up && upFlag > 1)
             {
                 up = false;
+                upFlag = 0;
                 return _runState;
             }
             else
             {
+                StartCoroutine(FallCoroutine(2f));
+                _animator.SetTrigger("fall");
                 return this;
             }
         }
@@ -52,10 +58,22 @@ namespace TFMEsada
 
         IEnumerator FallCoroutine(float s)
         {
-            yield return new WaitForSeconds(s);
-            print("Se termino");
-            up = true;
-            _runState.fell = false;
+            if(fallStart)
+            {
+                fallStart = false;
+                yield return new WaitForSeconds(s);
+                print("Se termino");
+                up = true;
+                _runState.fell = false;
+            }
+        }
+
+        IEnumerator UpCoroutine()
+        {
+            upFlag++;
+            _animator.SetTrigger("fall");
+            yield return new WaitForSeconds(1f);
+            upFlag++;
         }
 
         #endregion
