@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585475973634775808
+    m_lastTime: -8585461222873592959
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585475966494775808
+    m_lastTime: -8585460604439571674
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -184,6 +184,83 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.13161
       minDuration: 5.13161
+    - name: choque_disparo_surface
+      guid: 9cd8faa1f82c41478ecae64264cc02a4
+      id: 3654008031
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Player
+        ObjectType: 4
+        guid: 060b01513d7814499d8c53f78565248c
+      - ElementName: choque_disparo_surface
+        ObjectType: 3
+        guid: 9cd8faa1f82c41478ecae64264cc02a4
+      Path: Events\Default Work Unit\Player\choque_disparo_surface
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Disparar
+      guid: 581984a3bec06c42a5bc5f3252be019d
+      id: 3429508197
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Player
+        ObjectType: 4
+        guid: 060b01513d7814499d8c53f78565248c
+      - ElementName: Disparar
+        ObjectType: 3
+        guid: 581984a3bec06c42a5bc5f3252be019d
+      Path: Events\Default Work Unit\Player\Disparar
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Enemies
+      guid: 64d37a45d8e5484f8358a463f0af00e2
+      id: 2242381963
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      Path: Events\Default Work Unit\Enemies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LIBRO
+      guid: c5b0280b1ee537448dd1bca1a62c2f3a
+      id: 2068852883
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: LIBRO
+        ObjectType: 4
+        guid: c5b0280b1ee537448dd1bca1a62c2f3a
+      Path: Events\Default Work Unit\Enemies\LIBRO
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: libro_ataque
       guid: 7fac305156d16848a18826f9aaac7215
       id: 2363885649
@@ -194,16 +271,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Enemies
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: LIBRO
+        ObjectType: 4
+        guid: c5b0280b1ee537448dd1bca1a62c2f3a
       - ElementName: libro_ataque
         ObjectType: 3
         guid: 7fac305156d16848a18826f9aaac7215
-      Path: Events\Default Work Unit\SFX_Enviroments\libro_ataque
+      Path: Events\Default Work Unit\Enemies\LIBRO\libro_ataque
       maxAttenuation: 0
-      maxDuration: 3.320453
-      minDuration: 3.320453
+      maxDuration: 1.133061
+      minDuration: 1.105556
     - name: libro_chocando
       guid: 5b325f14a5beb44fbc45db1f4a3046c4
       id: 3662398675
@@ -214,16 +294,42 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Enemies
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: LIBRO
+        ObjectType: 4
+        guid: c5b0280b1ee537448dd1bca1a62c2f3a
       - ElementName: libro_chocando
         ObjectType: 3
         guid: 5b325f14a5beb44fbc45db1f4a3046c4
-      Path: Events\Default Work Unit\SFX_Enviroments\libro_chocando
+      Path: Events\Default Work Unit\Enemies\LIBRO\libro_chocando
       maxAttenuation: 0
-      maxDuration: 2.832834
-      minDuration: 2.832834
+      maxDuration: 0.886735
+      minDuration: 0.788209
+    - name: libro_defeated
+      guid: 5ba765de7e48c4449ef01cc6e7801dbb
+      id: 1219855736
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: LIBRO
+        ObjectType: 4
+        guid: c5b0280b1ee537448dd1bca1a62c2f3a
+      - ElementName: libro_defeated
+        ObjectType: 3
+        guid: 5ba765de7e48c4449ef01cc6e7801dbb
+      Path: Events\Default Work Unit\Enemies\LIBRO\libro_defeated
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: libro_despierto
       guid: 510d226a441302428a0300e0395e1a0a
       id: 1881438433
@@ -234,16 +340,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Enemies
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: LIBRO
+        ObjectType: 4
+        guid: c5b0280b1ee537448dd1bca1a62c2f3a
       - ElementName: libro_despierto
         ObjectType: 3
         guid: 510d226a441302428a0300e0395e1a0a
-      Path: Events\Default Work Unit\SFX_Enviroments\libro_despierto
+      Path: Events\Default Work Unit\Enemies\LIBRO\libro_despierto
       maxAttenuation: 0
-      maxDuration: 7.743877
-      minDuration: 7.743877
+      maxDuration: -1
+      minDuration: -1
     - name: luz_chisporroteo
       guid: f3b2325096116f45a6f96ba5a80906ad
       id: 834445282
@@ -301,6 +410,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 96
       minDuration: 96
+    - name: PickUp_coleccionable
+      guid: a7a1932a545c3a49ba844f0ebe83ed3b
+      id: 1142560233
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Player
+        ObjectType: 4
+        guid: 060b01513d7814499d8c53f78565248c
+      - ElementName: PickUp_coleccionable
+        ObjectType: 3
+        guid: a7a1932a545c3a49ba844f0ebe83ed3b
+      Path: Events\Default Work Unit\Player\PickUp_coleccionable
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PickUp_llave
       guid: dde4deca5cf7874dbe4f6f0a3bba9bde
       id: 3179460290
@@ -311,16 +440,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Player
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 060b01513d7814499d8c53f78565248c
       - ElementName: PickUp_llave
         ObjectType: 3
         guid: dde4deca5cf7874dbe4f6f0a3bba9bde
-      Path: Events\Default Work Unit\SFX_Enviroments\PickUp_llave
+      Path: Events\Default Work Unit\Player\PickUp_llave
       maxAttenuation: 0
-      maxDuration: 2.359569
-      minDuration: 2.359569
+      maxDuration: 3.455057
+      minDuration: 3.455057
     - name: PickUp_nota
       guid: 7246980a1b2a174e9eaed5f73a26d062
       id: 1233512512
@@ -331,16 +460,53 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Player
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 060b01513d7814499d8c53f78565248c
       - ElementName: PickUp_nota
         ObjectType: 3
         guid: 7246980a1b2a174e9eaed5f73a26d062
-      Path: Events\Default Work Unit\SFX_Enviroments\PickUp_nota
+      Path: Events\Default Work Unit\Player\PickUp_nota
       maxAttenuation: 0
       maxDuration: 3
       minDuration: 3
+    - name: Player
+      guid: 060b01513d7814499d8c53f78565248c
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Player
+        ObjectType: 4
+        guid: 060b01513d7814499d8c53f78565248c
+      Path: Events\Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player_Defeated
+      guid: 1a36021f4568624ca79e9746ce2d43ed
+      id: 41810451
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Player
+        ObjectType: 4
+        guid: 060b01513d7814499d8c53f78565248c
+      - ElementName: Player_Defeated
+        ObjectType: 3
+        guid: 1a36021f4568624ca79e9746ce2d43ed
+      Path: Events\Default Work Unit\Player\Player_Defeated
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: puerta_chirriando_lejos
       guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
@@ -398,6 +564,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SILLA
+      guid: 86d1398f75bc314ca3026e2fa13aea5b
+      id: 16214102
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
+      Path: Events\Default Work Unit\Enemies\SILLA
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: silla_atacando
       guid: aeb5db31734af647b51705c4b053db5f
       id: 277151048
@@ -408,16 +594,42 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Enemies
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
       - ElementName: silla_atacando
         ObjectType: 3
         guid: aeb5db31734af647b51705c4b053db5f
-      Path: Events\Default Work Unit\SFX_Enviroments\silla_atacando
+      Path: Events\Default Work Unit\Enemies\SILLA\silla_atacando
       maxAttenuation: 0
-      maxDuration: 3.033719
-      minDuration: 3.033719
+      maxDuration: 1.289841
+      minDuration: 0.562517
+    - name: silla_defeated
+      guid: f361776a3571e140b37e153ee63c1f4b
+      id: 390506615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
+      - ElementName: silla_defeated
+        ObjectType: 3
+        guid: f361776a3571e140b37e153ee63c1f4b
+      Path: Events\Default Work Unit\Enemies\SILLA\silla_defeated
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: silla_despierta
       guid: fadaf38fd38d274483c6f33085ecfe7b
       id: 1708516226
@@ -428,16 +640,19 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: SFX_Enviroments
+      - ElementName: Enemies
         ObjectType: 4
-        guid: 76c8da62b6e26148b20682c9b015c8bb
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
       - ElementName: silla_despierta
         ObjectType: 3
         guid: fadaf38fd38d274483c6f33085ecfe7b
-      Path: Events\Default Work Unit\SFX_Enviroments\silla_despierta
+      Path: Events\Default Work Unit\Enemies\SILLA\silla_despierta
       maxAttenuation: 0
-      maxDuration: 4.8
-      minDuration: 4.8
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -478,7 +693,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1847309535c3bd4983fc1a700ec2e7dc
     GuidInternal: 
-    m_lastTime: -8585481236414775808
+    m_lastTime: -8585461130649217452
     List:
     - name: Footsteps_Surface
       guid: fbb62a032c24a54787b4889d8f1ffc6a
@@ -527,6 +742,106 @@ MonoBehaviour:
         - ElementName: Normal
           ObjectType: 10
           guid: 1ebd4ce731ce6143ac2e6ff872d17abf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Golpe_Libro_Surface
+      guid: 97e529201800f74c92c57033b3af1bb3
+      id: 2133740333
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1847309535c3bd4983fc1a700ec2e7dc
+      - ElementName: Golpe_Libro_Surface
+        ObjectType: 11
+        guid: 97e529201800f74c92c57033b3af1bb3
+      Path: Switches\Default Work Unit\Golpe_Libro_Surface
+      values:
+      - name: Pared_mueble
+        guid: c26e2e9f6b645643b0ba5b86fdba45b0
+        id: 3404187766
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1847309535c3bd4983fc1a700ec2e7dc
+        - ElementName: Golpe_Libro_Surface
+          ObjectType: 11
+          guid: 97e529201800f74c92c57033b3af1bb3
+        - ElementName: Pared_mueble
+          ObjectType: 10
+          guid: c26e2e9f6b645643b0ba5b86fdba45b0
+      - name: Player
+        guid: d1933e11cc12ae45a6258990ecd06068
+        id: 1069431850
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1847309535c3bd4983fc1a700ec2e7dc
+        - ElementName: Golpe_Libro_Surface
+          ObjectType: 11
+          guid: 97e529201800f74c92c57033b3af1bb3
+        - ElementName: Player
+          ObjectType: 10
+          guid: d1933e11cc12ae45a6258990ecd06068
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Golpe_Pistola_Agua_Surface
+      guid: a030ca0cf0e6704791dcca10e8f054f5
+      id: 3794319880
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1847309535c3bd4983fc1a700ec2e7dc
+      - ElementName: Golpe_Pistola_Agua_Surface
+        ObjectType: 11
+        guid: a030ca0cf0e6704791dcca10e8f054f5
+      Path: Switches\Default Work Unit\Golpe_Pistola_Agua_Surface
+      values:
+      - name: Enemigo
+        guid: d897239a9292e64499e4cd58631c63cc
+        id: 2275937393
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1847309535c3bd4983fc1a700ec2e7dc
+        - ElementName: Golpe_Pistola_Agua_Surface
+          ObjectType: 11
+          guid: a030ca0cf0e6704791dcca10e8f054f5
+        - ElementName: Enemigo
+          ObjectType: 10
+          guid: d897239a9292e64499e4cd58631c63cc
+      - name: Pared
+        guid: 0cb84a53e2d80d4a994c6b732378ffed
+        id: 3462533745
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1847309535c3bd4983fc1a700ec2e7dc
+        - ElementName: Golpe_Pistola_Agua_Surface
+          ObjectType: 11
+          guid: a030ca0cf0e6704791dcca10e8f054f5
+        - ElementName: Pared
+          ObjectType: 10
+          guid: 0cb84a53e2d80d4a994c6b732378ffed
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

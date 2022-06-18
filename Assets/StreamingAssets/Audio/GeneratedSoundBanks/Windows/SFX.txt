@@ -1,27 +1,54 @@
 Event	ID	Name			Wwise Object Path	Notes
-	277151048	silla_atacando			\Default Work Unit\SFX_Enviroments\silla_atacando	
+	277151048	silla_atacando			\Default Work Unit\Enemies\SILLA\silla_atacando	
 	834445282	luz_chisporroteo			\Default Work Unit\SFX_Enviroments\luz_chisporroteo	
 	863090050	puerta_chirriando_lejos2			\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos2	
-	1233512512	PickUp_nota			\Default Work Unit\SFX_Enviroments\PickUp_nota	
-	1708516226	silla_despierta			\Default Work Unit\SFX_Enviroments\silla_despierta	
-	1881438433	libro_despierto			\Default Work Unit\SFX_Enviroments\libro_despierto	
+	1233512512	PickUp_nota			\Default Work Unit\Player\PickUp_nota	
+	1708516226	silla_despierta			\Default Work Unit\Enemies\SILLA\silla_despierta	
+	1881438433	libro_despierto			\Default Work Unit\Enemies\LIBRO\libro_despierto	
 	2170274192	puerta_chirriando_lejos			\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos	
-	2363885649	libro_ataque			\Default Work Unit\SFX_Enviroments\libro_ataque	
-	3179460290	PickUp_llave			\Default Work Unit\SFX_Enviroments\PickUp_llave	
+	2363885649	libro_ataque			\Default Work Unit\Enemies\LIBRO\libro_ataque	
+	3179460290	PickUp_llave			\Default Work Unit\Player\PickUp_llave	
 	3291383135	chirriando_lejos_3_2			\Default Work Unit\SFX_Enviroments\chirriando_lejos_3_2	
-	3662398675	libro_chocando			\Default Work Unit\SFX_Enviroments\libro_chocando	
+	3662398675	libro_chocando			\Default Work Unit\Enemies\LIBRO\libro_chocando	
 	4115248352	chirriando_lejos_3			\Default Work Unit\SFX_Enviroments\chirriando_lejos_3	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2133740333	Golpe_Libro_Surface			\Default Work Unit\Golpe_Libro_Surface	
+
+Switch	ID	Name	Switch Group			Notes
+	1069431850	Player	Golpe_Libro_Surface			
+	3404187766	Pared_mueble	Golpe_Libro_Surface			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	44670585	PUERTA CHIRRIANDO LEJOS_2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PUERTA CHIRRIANDO LEJOS_2		846784
-	68270176	SILLA PREATTACK	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\SILLA PREATTACK_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA PREATTACK		846784
-	94555320	golpe chirrido puerta lejos	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\golpe chirrido puerta lejos_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\golpe chirrido puerta lejos		499776
-	228469276	chirrio lejos corto 1	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 1		593984
-	596209391	chirrio lejos largo	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos largo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos largo		1366084
-	699158859	chirrio lejos corto 3	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 3		585792
-	706911643	chirrio lejos corto 2	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\chirrio lejos corto 2		905280
-	808368439	Sonido Lámpara	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Sonido Lámpara_4317B8A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\Sonido Lámpara		3583956
-	959306979	Pick Up llave 4	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave 4		416292
-	980605339	Pick Up llave	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave		535212
-	1040978422	Recoger NOTA 4	E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\SFX\Recoger NOTA 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Recoger NOTA 4		529264
+	44670585	PUERTA CHIRRIANDO LEJOS_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\PUERTA CHIRRIANDO LEJOS_2		846784
+	61837310	Pick Up llave 5	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Pick Up llave 5		609536
+	68270176	SILLA PREATTACK	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\SILLA PREATTACK_973032F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\SILLA PREATTACK		182376
+	86589264	silla_Despierta_preataque_3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla_Despierta_preataque\silla_Despierta_preataque_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\silla_DESPERTANDO\silla_Despierta_preataque_3		159620
+	161816004	libro despertando_3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_3		136036
+	173175079	Libro MOVIMIENTO ATACAR	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro MOVIMIENTO ATACAR_3DC4402E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\libro MOVIMIENTO\Libro MOVIMIENTO ATACAR		414036
+	213606207	ATAQUE SILLA_5 (doble)	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_5 (doble)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_5 (doble)		227592
+	228469276	chirrio lejos corto 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\chirrio lejos corto 1		593984
+	313251693	ATAQUE SILLA_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_1		116708
+	314523489	libro golpe pared_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro GOLPEANDO\Libro golpe\libro golpe pared\libro golpe pared_2		139104
+	378540908	libro despertando_5	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_5		136036
+	389535949	libro golpe player_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro GOLPEANDO\Libro golpe\libro golpe player\libro golpe player_1		199936
+	425246434	libro despertando_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_2		136036
+	425274813	silla movimiento ataque	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla movimiento ataque_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MOVIMIENTO\silla movimiento ataque		1083272
+	484221412	silla_Despierta_preataque_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla_Despierta_preataque\silla_Despierta_preataque_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\silla_DESPERTANDO\silla_Despierta_preataque_2		186140
+	535653452	ATAQUE SILLA_8	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_8		201580
+	585887816	libro despertando_4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_4		136036
+	611819290	ATAQUE SILLA_2(doble)	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_2(doble)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_2(doble)		149092
+	630096068	silla_Despierta_preataque_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla_Despierta_preataque\silla_Despierta_preataque_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\silla_DESPERTANDO\silla_Despierta_preataque_1		280912
+	680002340	ATAQUE SILLA_6	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_6		123400
+	702119830	ATAQUE SILLA_7	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_7		137256
+	706911643	chirrio lejos corto 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\chirrio lejos corto 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\chirrio lejos corto 2		905280
+	729922704	libro golpe pared_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro GOLPEANDO\Libro golpe\libro golpe pared\libro golpe pared_1		156484
+	808368439	Sonido Lámpara	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Sonido Lámpara_4317B8A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enviroments\Sonido Lámpara		3583956
+	809543815	libro despertando_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_1		136036
+	820011558	silla_Despierta_preataque_4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla_Despierta_preataque_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\silla_DESPERTANDO\silla_Despierta_preataque_4		146696
+	842156914	ATAQUE SILLA_3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_3		99292
+	869243928	libro golpe player_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro GOLPEANDO\Libro golpe\libro golpe player\libro golpe player_2		195084
+	946225320	libro despertando_6	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_6		136036
+	1039147241	ATAQUE SILLA_4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla Ataque\ATAQUE SILLA_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\SILLA\SILLA_ATACANDO\Silla MORDIENDO\ATAQUE SILLA_4		120288
+	1040978422	Recoger NOTA 4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Recoger NOTA 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PICK UPS\Recoger NOTA 4		529264
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\</ProjectRoot>
-		<SourceFilesRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Usuario\Documents\GITHUB (proyectos nube)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\UNITY\GitHub UNITY (PROYECTOS NUBE)\WWISE TFM ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1088033841">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="4229432086">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -32,27 +32,59 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="3.320453" DurationMax="3.320453">
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="1.105556" DurationMax="1.133061">
 					<IncludedMemoryFiles>
-						<File Id="699158859" Language="SFX">
-							<ShortName>chirrio lejos corto 3.wav</ShortName>
-							<Path>SFX\chirrio lejos corto 3_10C4C929.wem</Path>
+						<File Id="389535949" Language="SFX">
+							<ShortName>Libro GOLPEANDO\libro golpe player\libro golpe player_1.wav</ShortName>
+							<Path>SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_1_10C4C929.wem</Path>
+						</File>
+						<File Id="869243928" Language="SFX">
+							<ShortName>Libro GOLPEANDO\libro golpe player\libro golpe player_2.wav</ShortName>
+							<Path>SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" DurationType="OneShot" DurationMin="2.832834" DurationMax="2.832834">
+				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" DurationType="OneShot" DurationMin="0.788209" DurationMax="0.886735">
 					<IncludedMemoryFiles>
-						<File Id="94555320" Language="SFX">
-							<ShortName>golpe chirrido puerta lejos.wav</ShortName>
-							<Path>SFX\golpe chirrido puerta lejos_10C4C929.wem</Path>
+						<File Id="314523489" Language="SFX">
+							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_2.wav</ShortName>
+							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_2_10C4C929.wem</Path>
+						</File>
+						<File Id="729922704" Language="SFX">
+							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_1.wav</ShortName>
+							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="OneShot" DurationMin="7.743877" DurationMax="7.743877">
+				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="596209391" Language="SFX">
-							<ShortName>chirrio lejos largo.wav</ShortName>
-							<Path>SFX\chirrio lejos largo_10C4C929.wem</Path>
+						<File Id="161816004" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_3.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_3_10C4C929.wem</Path>
+						</File>
+						<File Id="173175079" Language="SFX">
+							<ShortName>Libro MOVIMIENTO ATACAR.wav</ShortName>
+							<Path>SFX\Libro MOVIMIENTO ATACAR_3DC4402E.wem</Path>
+						</File>
+						<File Id="378540908" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_5.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_5_10C4C929.wem</Path>
+						</File>
+						<File Id="425246434" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_2.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_2_10C4C929.wem</Path>
+						</File>
+						<File Id="585887816" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_4.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_4_10C4C929.wem</Path>
+						</File>
+						<File Id="809543815" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_1.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_1_10C4C929.wem</Path>
+						</File>
+						<File Id="946225320" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_6.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_6_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -64,15 +96,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3179460290" Name="PickUp_llave" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\PickUp_llave" GUID="{CADEE4DD-F75C-4D87-BE4F-6F0A3BBA9BDE}" DurationType="OneShot" DurationMin="2.359569" DurationMax="2.359569">
+				<Event Id="3179460290" Name="PickUp_llave" ObjectPath="\Events\Default Work Unit\Player\PickUp_llave" GUID="{CADEE4DD-F75C-4D87-BE4F-6F0A3BBA9BDE}" DurationType="OneShot" DurationMin="3.455057" DurationMax="3.455057">
 					<IncludedMemoryFiles>
-						<File Id="959306979" Language="SFX">
-							<ShortName>Pick Up llave 4.wav</ShortName>
-							<Path>SFX\Pick Up llave 4_10C4C929.wem</Path>
+						<File Id="61837310" Language="SFX">
+							<ShortName>Pick Up llave 5.wav</ShortName>
+							<Path>SFX\Pick Up llave 5_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\Player\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
 					<IncludedMemoryFiles>
 						<File Id="1040978422" Language="SFX">
 							<ShortName>Recoger NOTA 4.wav</ShortName>
@@ -96,23 +128,79 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" DurationType="OneShot" DurationMin="3.033719" DurationMax="3.033719">
+				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" DurationType="OneShot" DurationMin="0.562517" DurationMax="1.289841">
 					<IncludedMemoryFiles>
-						<File Id="980605339" Language="SFX">
-							<ShortName>Pick Up llave.wav</ShortName>
-							<Path>SFX\Pick Up llave_10C4C929.wem</Path>
+						<File Id="213606207" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_5 (doble).wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_5 (doble)_10C4C929.wem</Path>
+						</File>
+						<File Id="313251693" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_1.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_1_10C4C929.wem</Path>
+						</File>
+						<File Id="535653452" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_8.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_8_10C4C929.wem</Path>
+						</File>
+						<File Id="611819290" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_2(doble).wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_2(doble)_10C4C929.wem</Path>
+						</File>
+						<File Id="680002340" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_6.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_6_10C4C929.wem</Path>
+						</File>
+						<File Id="702119830" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_7.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_7_10C4C929.wem</Path>
+						</File>
+						<File Id="842156914" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_3.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1039147241" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_4.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
+				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="68270176" Language="SFX">
 							<ShortName>SILLA PREATTACK.wav</ShortName>
-							<Path>SFX\SILLA PREATTACK_10C4C929.wem</Path>
+							<Path>SFX\SILLA PREATTACK_973032F4.wem</Path>
+						</File>
+						<File Id="86589264" Language="SFX">
+							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_3.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_3_10C4C929.wem</Path>
+						</File>
+						<File Id="425274813" Language="SFX">
+							<ShortName>silla movimiento ataque.wav</ShortName>
+							<Path>SFX\silla movimiento ataque_D79FB2B7.wem</Path>
+						</File>
+						<File Id="484221412" Language="SFX">
+							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_2.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_2_10C4C929.wem</Path>
+						</File>
+						<File Id="630096068" Language="SFX">
+							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_1.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_1_10C4C929.wem</Path>
+						</File>
+						<File Id="820011558" Language="SFX">
+							<ShortName>silla_Despierta_preataque_4.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque_4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="2133740333" Name="Golpe_Libro_Surface" ObjectPath="\Switches\Default Work Unit\Golpe_Libro_Surface" GUID="{2029E597-0018-4CF7-92C5-7033B3AF1BB3}">
+					<Switches>
+						<Switch Id="1069431850" Name="Player" ObjectPath="\Switches\Default Work Unit\Golpe_Libro_Surface\Player" GUID="{113E93D1-12CC-45AE-A625-8990ECD06068}"/>
+						<Switch Id="3404187766" Name="Pared_mueble" ObjectPath="\Switches\Default Work Unit\Golpe_Libro_Surface\Pared_mueble" GUID="{9F2E6EC2-646B-4356-B0BA-5B86FDBA45B0}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="1740819511">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
