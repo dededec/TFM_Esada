@@ -49,6 +49,10 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
+            if(_fallState.upFlag == 3)
+            {
+                StartCoroutine(startCooldownRoutine());
+            }
             //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, -0.33f, sillaMesh.position.z);
             if(fell)
             {
@@ -105,9 +109,18 @@ namespace TFMEsada
 
         public void fall()
         {
-            fell = true;
+            if(ableToFall) fell = true; ableToFall = false;
         }
             
         #endregion
+        bool ableToFall = true;
+        IEnumerator startCooldownRoutine(){
+            
+            //AkSoundEngine.StopAll(animator.gameObject);
+            //AkSoundEngine.PostEvent("silla_despierta", animator.gameObject); 
+            yield return new WaitForSeconds(2f);
+            ableToFall = true;
+
+        }
     }
 }

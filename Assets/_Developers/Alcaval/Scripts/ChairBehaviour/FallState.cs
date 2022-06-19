@@ -31,7 +31,8 @@ namespace TFMEsada
             if(up && upFlag > 1)
             {
                 up = false;
-                upFlag = 0;
+                upFlag = 3;
+                _runState.fell = false;
                 return _runState;
             }
             else
@@ -40,16 +41,6 @@ namespace TFMEsada
                 _animator.SetTrigger("fall");
                 return this;
             }
-        }
-
-        #endregion
-
-        #region Public Methods
-
-        public void PuddleColission()
-        {
-            _runState.fell = true;
-            StartCoroutine(FallCoroutine(2f));
         }
 
         #endregion
@@ -65,14 +56,16 @@ namespace TFMEsada
                 print("Se termino");
                 up = true;
                 _runState.fell = false;
+                _animator.SetTrigger("up");
+                StartCoroutine(UpCoroutine());
             }
         }
 
         IEnumerator UpCoroutine()
         {
             upFlag++;
-            _animator.SetTrigger("fall");
             yield return new WaitForSeconds(1f);
+            _animator.SetTrigger("awake");
             upFlag++;
         }
 
