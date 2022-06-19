@@ -11,11 +11,19 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="4229432086">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1613878018">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche" GUID="{E0C1F8EB-5E80-46B5-B827-1C2D33B3C130}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="883601427" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1_2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_2_38374C31.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\chirriando_lejos_3" GUID="{05F58042-A880-495C-926D-E120B6655092}" DurationType="OneShot" DurationMin="3.366894" DurationMax="3.779210">
 					<IncludedMemoryFiles>
 						<File Id="228469276" Language="SFX">
@@ -29,6 +37,90 @@
 						<File Id="706911643" Language="SFX">
 							<ShortName>chirrio lejos corto 2.wav</ShortName>
 							<Path>SFX\chirrio lejos corto 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4096684240" Name="choque_disparo_enemigo" ObjectPath="\Events\Default Work Unit\Player\choque_disparo_enemigo" GUID="{A1FAD89C-2CF8-4741-8ECA-E64264CC02A4}" DurationType="OneShot" DurationMin="0.304694" DurationMax="0.445329">
+					<IncludedMemoryFiles>
+						<File Id="66190209" Language="SFX">
+							<ShortName>GOLPE PISTOLA ENEMY 1.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA ENEMY 1_10C4C929.wem</Path>
+						</File>
+						<File Id="131924372" Language="SFX">
+							<ShortName>GOLPE PISTOLA ENEMY 3.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA ENEMY 3_10C4C929.wem</Path>
+						</File>
+						<File Id="656262915" Language="SFX">
+							<ShortName>GOLPE PISTOLA ENEMY 2.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA ENEMY 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2335088272" Name="choque_disparo_pared" ObjectPath="\Events\Default Work Unit\Player\choque_disparo_pared" GUID="{0BC24F9A-A9A8-4A1B-986B-325FF94FED2B}" DurationType="OneShot" DurationMin="0.539070" DurationMax="0.562517">
+					<IncludedMemoryFiles>
+						<File Id="96239085" Language="SFX">
+							<ShortName>GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 1.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 1_10C4C929.wem</Path>
+						</File>
+						<File Id="725653774" Language="SFX">
+							<ShortName>GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 3.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 3_10C4C929.wem</Path>
+						</File>
+						<File Id="779019468" Language="SFX">
+							<ShortName>GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 2.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3397744248" Name="cruzar_puerta" ObjectPath="\Events\Default Work Unit\Player\cruzar_puerta" GUID="{34D4ECC1-A067-4953-BDD4-EE33E3263F76}" DurationType="OneShot" DurationMin="3.164082" DurationMax="3.164082">
+					<IncludedMemoryFiles>
+						<File Id="975135869" Language="SFX">
+							<ShortName>abrir_cruzar puerta.wav</ShortName>
+							<Path>SFX\abrir_cruzar puerta_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4002975042" Name="Disparar_charco" ObjectPath="\Events\Default Work Unit\Player\Disparar_charco" GUID="{9CF41E98-04D3-480D-8905-080A1DDD80CF}" DurationType="OneShot" DurationMin="0.934354" DurationMax="0.934354">
+					<IncludedMemoryFiles>
+						<File Id="4934995" Language="SFX">
+							<ShortName>pistola agua golpe superficie 1.wav</ShortName>
+							<Path>SFX\pistola agua golpe superficie 1_10C4C929.wem</Path>
+						</File>
+						<File Id="1025669054" Language="SFX">
+							<ShortName>pistola agua golpe superficie 2.wav</ShortName>
+							<Path>SFX\pistola agua golpe superficie 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3611330879" Name="Disparar_pistola_agua" ObjectPath="\Events\Default Work Unit\Player\Disparar_pistola_agua" GUID="{A3841958-C0BE-426C-A5BC-5F3252BE019D}" DurationType="OneShot" DurationMin="0.738958" DurationMax="1.316214">
+					<IncludedMemoryFiles>
+						<File Id="428210128" Language="SFX">
+							<ShortName>gotas salpicando 2.wav</ShortName>
+							<Path>SFX\gotas salpicando 2_9C6AAFB9.wem</Path>
+						</File>
+						<File Id="475707100" Language="SFX">
+							<ShortName>gotas salpicando 3.wav</ShortName>
+							<Path>SFX\gotas salpicando 3_8B82A490.wem</Path>
+						</File>
+						<File Id="502985428" Language="SFX">
+							<ShortName>gotas salpicando 5.wav</ShortName>
+							<Path>SFX\gotas salpicando 5_C599F91C.wem</Path>
+						</File>
+						<File Id="786717312" Language="SFX">
+							<ShortName>gotas salpicando 1.wav</ShortName>
+							<Path>SFX\gotas salpicando 1_B04FAEA9.wem</Path>
+						</File>
+						<File Id="932744705" Language="SFX">
+							<ShortName>gotas salpicando 4.wav</ShortName>
+							<Path>SFX\gotas salpicando 4_2C296BF9.wem</Path>
+						</File>
+						<File Id="940266622" Language="SFX">
+							<ShortName>gotas salpicando 6.wav</ShortName>
+							<Path>SFX\gotas salpicando 6_6188D792.wem</Path>
+						</File>
+						<File Id="996583496" Language="SFX">
+							<ShortName>DISPARO PISTOLA AGUA.wav</ShortName>
+							<Path>SFX\DISPARO PISTOLA AGUA_3DB81B72.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -53,6 +145,54 @@
 						<File Id="729922704" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_1.wav</ShortName>
 							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
+					<IncludedMemoryFiles>
+						<File Id="100102044" Language="SFX">
+							<ShortName>Libro_Defeated_3.wav</ShortName>
+							<Path>SFX\Libro_Defeated_3_10C4C929.wem</Path>
+						</File>
+						<File Id="106817344" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_2.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_2_10C4C929.wem</Path>
+						</File>
+						<File Id="172712685" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_3.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_3_10C4C929.wem</Path>
+						</File>
+						<File Id="377092234" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_1.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_1_10C4C929.wem</Path>
+						</File>
+						<File Id="404312212" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_5.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_5_10C4C929.wem</Path>
+						</File>
+						<File Id="553849205" Language="SFX">
+							<ShortName>Libro_Defeated_1.wav</ShortName>
+							<Path>SFX\Libro_Defeated_1_10C4C929.wem</Path>
+						</File>
+						<File Id="568553960" Language="SFX">
+							<ShortName>libro_DEFEATED_golpesuelo_1-1.wav</ShortName>
+							<Path>SFX\libro_DEFEATED_golpesuelo_1-1_10C4C929.wem</Path>
+						</File>
+						<File Id="654132551" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_4.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_4_10C4C929.wem</Path>
+						</File>
+						<File Id="720591902" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_6.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_6_10C4C929.wem</Path>
+						</File>
+						<File Id="856802978" Language="SFX">
+							<ShortName>Libro_Defeated_2.wav</ShortName>
+							<Path>SFX\Libro_Defeated_2_10C4C929.wem</Path>
+						</File>
+						<File Id="937332557" Language="SFX">
+							<ShortName>libro_DEFEATED_golpesuelo_2-1.wav</ShortName>
+							<Path>SFX\libro_DEFEATED_golpesuelo_2-1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -96,6 +236,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2147937880" Name="phone_chungo" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\phone_chungo" GUID="{5159E5A5-368B-4F22-B363-75D79C6AF12C}" MaxAttenuation="30.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="105782368" Language="SFX">
+							<ShortName>teléfono chungo.wav</ShortName>
+							<Path>SFX\teléfono chungo_C5579977.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1142560233" Name="PickUp_coleccionable" ObjectPath="\Events\Default Work Unit\Player\PickUp_coleccionable" GUID="{2A93A1A7-5C54-493A-BA84-4F0EBE83ED3B}" DurationType="OneShot" DurationMin="2.532972" DurationMax="2.532972">
+					<IncludedMemoryFiles>
+						<File Id="327271074" Language="SFX">
+							<ShortName>Pick Up Tamagochi.wav</ShortName>
+							<Path>SFX\Pick Up Tamagochi_231E0D83.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3179460290" Name="PickUp_llave" ObjectPath="\Events\Default Work Unit\Player\PickUp_llave" GUID="{CADEE4DD-F75C-4D87-BE4F-6F0A3BBA9BDE}" DurationType="OneShot" DurationMin="3.455057" DurationMax="3.455057">
 					<IncludedMemoryFiles>
 						<File Id="61837310" Language="SFX">
@@ -109,6 +265,74 @@
 						<File Id="1040978422" Language="SFX">
 							<ShortName>Recoger NOTA 4.wav</ShortName>
 							<Path>SFX\Recoger NOTA 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="41810451" Name="Player_Defeated" ObjectPath="\Events\Default Work Unit\Player\Player_Defeated" GUID="{1F02361A-6845-4C62-A79E-9746CE2D43ED}" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.783811">
+					<IncludedMemoryFiles>
+						<File Id="41775480" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_4-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_4-1_10C4C929.wem</Path>
+						</File>
+						<File Id="140312528" Language="SFX">
+							<ShortName>player_pre_defeated_4.wav</ShortName>
+							<Path>SFX\player_pre_defeated_4_10C4C929.wem</Path>
+						</File>
+						<File Id="154101929" Language="SFX">
+							<ShortName>player_pre_defeated_2.wav</ShortName>
+							<Path>SFX\player_pre_defeated_2_10C4C929.wem</Path>
+						</File>
+						<File Id="195420344" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_3-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_3-1_10C4C929.wem</Path>
+						</File>
+						<File Id="374749879" Language="SFX">
+							<ShortName>player_pre_defeated_1.wav</ShortName>
+							<Path>SFX\player_pre_defeated_1_10C4C929.wem</Path>
+						</File>
+						<File Id="491255521" Language="SFX">
+							<ShortName>player_pre_defeated_6.wav</ShortName>
+							<Path>SFX\player_pre_defeated_6_10C4C929.wem</Path>
+						</File>
+						<File Id="504768914" Language="SFX">
+							<ShortName>player_pre_defeated_7.wav</ShortName>
+							<Path>SFX\player_pre_defeated_7_10C4C929.wem</Path>
+						</File>
+						<File Id="680633966" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_2-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_2-1_10C4C929.wem</Path>
+						</File>
+						<File Id="800718375" Language="SFX">
+							<ShortName>player_pre_defeated_5.wav</ShortName>
+							<Path>SFX\player_pre_defeated_5_10C4C929.wem</Path>
+						</File>
+						<File Id="850807984" Language="SFX">
+							<ShortName>Player_Defeated_2.wav</ShortName>
+							<Path>SFX\Player_Defeated_2_10C4C929.wem</Path>
+						</File>
+						<File Id="888889190" Language="SFX">
+							<ShortName>player_pre_defeated_8.wav</ShortName>
+							<Path>SFX\player_pre_defeated_8_10C4C929.wem</Path>
+						</File>
+						<File Id="934776761" Language="SFX">
+							<ShortName>Player_Defeated_4.wav</ShortName>
+							<Path>SFX\Player_Defeated_4_10C4C929.wem</Path>
+						</File>
+						<File Id="957929545" Language="SFX">
+							<ShortName>player_pre_defeated_3.wav</ShortName>
+							<Path>SFX\player_pre_defeated_3_10C4C929.wem</Path>
+						</File>
+						<File Id="982937878" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_1-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_1-1_10C4C929.wem</Path>
+						</File>
+						<File Id="1026007491" Language="SFX">
+							<ShortName>Player_Defeated_3.wav</ShortName>
+							<Path>SFX\Player_Defeated_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1070060620" Language="SFX">
+							<ShortName>Player_Defeated_1.wav</ShortName>
+							<Path>SFX\Player_Defeated_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -128,12 +352,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" DurationType="OneShot" DurationMin="0.562517" DurationMax="1.289841">
+				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" DurationType="OneShot" DurationMin="0.562517" DurationMax="1.142381">
 					<IncludedMemoryFiles>
-						<File Id="213606207" Language="SFX">
-							<ShortName>Silla Ataque\ATAQUE SILLA_5 (doble).wav</ShortName>
-							<Path>SFX\Silla Ataque\ATAQUE SILLA_5 (doble)_10C4C929.wem</Path>
-						</File>
 						<File Id="313251693" Language="SFX">
 							<ShortName>Silla Ataque\ATAQUE SILLA_1.wav</ShortName>
 							<Path>SFX\Silla Ataque\ATAQUE SILLA_1_10C4C929.wem</Path>
@@ -141,10 +361,6 @@
 						<File Id="535653452" Language="SFX">
 							<ShortName>Silla Ataque\ATAQUE SILLA_8.wav</ShortName>
 							<Path>SFX\Silla Ataque\ATAQUE SILLA_8_10C4C929.wem</Path>
-						</File>
-						<File Id="611819290" Language="SFX">
-							<ShortName>Silla Ataque\ATAQUE SILLA_2(doble).wav</ShortName>
-							<Path>SFX\Silla Ataque\ATAQUE SILLA_2(doble)_10C4C929.wem</Path>
 						</File>
 						<File Id="680002340" Language="SFX">
 							<ShortName>Silla Ataque\ATAQUE SILLA_6.wav</ShortName>
@@ -164,6 +380,46 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="390506615" Name="silla_defeated" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_defeated" GUID="{6A7761F3-7135-40E1-B37E-153EE63C1F4B}" DurationType="OneShot" DurationMin="1.280227" DurationMax="1.700023">
+					<IncludedMemoryFiles>
+						<File Id="446715020" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_1.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_1_10C4C929.wem</Path>
+						</File>
+						<File Id="510553907" Language="SFX">
+							<ShortName>Silla_Defeated_3.wav</ShortName>
+							<Path>SFX\Silla_Defeated_3_EEC69130.wem</Path>
+						</File>
+						<File Id="563858125" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_2-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_2-1_10C4C929.wem</Path>
+						</File>
+						<File Id="641358567" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_3.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_3_10C4C929.wem</Path>
+						</File>
+						<File Id="696021381" Language="SFX">
+							<ShortName>Silla_Defeated_1.wav</ShortName>
+							<Path>SFX\Silla_Defeated_1_D3897DA5.wem</Path>
+						</File>
+						<File Id="748780595" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_2.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_2_10C4C929.wem</Path>
+						</File>
+						<File Id="786969096" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_3-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_3-1_10C4C929.wem</Path>
+						</File>
+						<File Id="871172369" Language="SFX">
+							<ShortName>Silla_Defeated_2.wav</ShortName>
+							<Path>SFX\Silla_Defeated_2_75D8CC9F.wem</Path>
+						</File>
+						<File Id="1001956948" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_1-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_1-1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="68270176" Language="SFX">
@@ -173,10 +429,6 @@
 						<File Id="86589264" Language="SFX">
 							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_3.wav</ShortName>
 							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_3_10C4C929.wem</Path>
-						</File>
-						<File Id="425274813" Language="SFX">
-							<ShortName>silla movimiento ataque.wav</ShortName>
-							<Path>SFX\silla movimiento ataque_D79FB2B7.wem</Path>
 						</File>
 						<File Id="484221412" Language="SFX">
 							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_2.wav</ShortName>
@@ -190,6 +442,10 @@
 							<ShortName>silla_Despierta_preataque_4.wav</ShortName>
 							<Path>SFX\silla_Despierta_preataque_4_10C4C929.wem</Path>
 						</File>
+						<File Id="861437711" Language="SFX">
+							<ShortName>silla movimiento ataque 2 (menos galopada).wav</ShortName>
+							<Path>SFX\silla movimiento ataque 2 (menos galopada)_830013D5.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
@@ -202,7 +458,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="1740819511">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="3191379233">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
@@ -217,12 +473,16 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2063165755">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Default Work Unit\Music_Volume" GUID="{F480098A-4B6B-4076-BC22-0AEA7AAAB16F}"/>
+				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2258167937">
+		<SoundBank Id="3991942870" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2433845189">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

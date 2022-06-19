@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585461222873592959
+    m_lastTime: -8585460534686137356
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585460604439571674
+    m_lastTime: -8585460535128851219
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -410,6 +410,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 96
       minDuration: 96
+    - name: phone_chungo
+      guid: a5e559518b36224fb36375d79c6af12c
+      id: 2147937880
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: phone_chungo
+        ObjectType: 3
+        guid: a5e559518b36224fb36375d79c6af12c
+      Path: Events\Default Work Unit\SFX_Enviroments\phone_chungo
+      maxAttenuation: 30
+      maxDuration: -1
+      minDuration: -1
     - name: PickUp_coleccionable
       guid: a7a1932a545c3a49ba844f0ebe83ed3b
       id: 1142560233
@@ -651,8 +671,8 @@ MonoBehaviour:
         guid: fadaf38fd38d274483c6f33085ecfe7b
       Path: Events\Default Work Unit\Enemies\SILLA\silla_despierta
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 6.927687
+      minDuration: 6.927687
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -860,7 +880,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000c0000000d000000100000001100000012000000
+  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000c0000000d000000100000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
