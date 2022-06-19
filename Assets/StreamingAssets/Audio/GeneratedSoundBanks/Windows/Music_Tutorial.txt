@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	931250475	Music_Tutorial			\Default Work Unit\Music\Music_Tutorial	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	65425077	PAD 3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\PAD 3		8467264
+	510676643	PAD 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\PAD 2		8467264
+	538990284	UP CORTO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\UP CORTO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\UP CORTO		8467264
+	575158461	CHORUS EXALE	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\CHORUS EXALE_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\CHORUS EXALE		8467264
+	698884518	UP LARGO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\UP LARGO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\UP LARGO		8467264
+	717471477	DOWN CORTO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\DOWN CORTO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\DOWN CORTO		8467264
+	968385185	DOWN LARGO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\DOWN LARGO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\DOWN LARGO		8467264
+	1020362891	PAD 4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tutorial\Music Tutorial\PAD 4		8467264
+

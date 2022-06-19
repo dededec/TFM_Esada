@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585459431110664308
+    m_lastTime: -8585459419731035322
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -116,8 +116,8 @@ MonoBehaviour:
         ObjectType: 7
         guid: 33cbe0db57c60d49b80d1a8db8494aeb
       Path: SoundBanks\Default Work Unit\ambientes
-    - name: Music
-      guid: 46247693a189194fb3a5a660b4f5fe80
+    - name: MUSIC
+      guid: 4ff40a21735395468029a723cff3def8
       id: 3991942870
       PathAndIcons:
       - ElementName: SoundBanks
@@ -126,10 +126,95 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: d50506078fda0e429e281a648e16f448
-      - ElementName: Music
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      Path: SoundBanks\Default Work Unit\MUSIC
+    - name: Music_LVL1
+      guid: 25a7de18d6606249a22915203b58dfb0
+      id: 3380345082
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      - ElementName: Music_LVL1
+        ObjectType: 7
+        guid: 25a7de18d6606249a22915203b58dfb0
+      Path: SoundBanks\Default Work Unit\MUSIC\Music_LVL1
+    - name: Music_LVL2
+      guid: 7ff03817aa1e4949819ec40407f838c4
+      id: 3380345081
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      - ElementName: Music_LVL2
+        ObjectType: 7
+        guid: 7ff03817aa1e4949819ec40407f838c4
+      Path: SoundBanks\Default Work Unit\MUSIC\Music_LVL2
+    - name: Music_MenuPrincipal
+      guid: 46247693a189194fb3a5a660b4f5fe80
+      id: 1667785198
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      - ElementName: Music_MenuPrincipal
         ObjectType: 7
         guid: 46247693a189194fb3a5a660b4f5fe80
-      Path: SoundBanks\Default Work Unit\Music
+      Path: SoundBanks\Default Work Unit\MUSIC\Music_MenuPrincipal
+    - name: Music_The_End
+      guid: 945d10761151eb49a65c5b16d92c25a2
+      id: 3328924828
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      - ElementName: Music_The_End
+        ObjectType: 7
+        guid: 945d10761151eb49a65c5b16d92c25a2
+      Path: SoundBanks\Default Work Unit\MUSIC\Music_The_End
+    - name: Music_Tutorial
+      guid: ecddc9d6cd053049b5db2bf57aae3ed9
+      id: 931250475
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      - ElementName: Music_Tutorial
+        ObjectType: 7
+        guid: ecddc9d6cd053049b5db2bf57aae3ed9
+      Path: SoundBanks\Default Work Unit\MUSIC\Music_Tutorial
     - name: SFX
       guid: f5d42e7ea739f242b0d36b408d01a787
       id: 393239870
@@ -276,8 +361,8 @@ MonoBehaviour:
         guid: 9cd8faa1f82c41478ecae64264cc02a4
       Path: Events\Default Work Unit\Player\choque_disparo_enemigo
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.445329
+      minDuration: 0.304694
     - name: choque_disparo_pared
       guid: 9a4fc20ba8a91b4a986b325ff94fed2b
       id: 2335088272
@@ -296,8 +381,8 @@ MonoBehaviour:
         guid: 9a4fc20ba8a91b4a986b325ff94fed2b
       Path: Events\Default Work Unit\Player\choque_disparo_pared
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.562517
+      minDuration: 0.53907
     - name: cruzar_puerta
       guid: c1ecd43467a05349bdd4ee33e3263f76
       id: 3397744248
@@ -316,8 +401,8 @@ MonoBehaviour:
         guid: c1ecd43467a05349bdd4ee33e3263f76
       Path: Events\Default Work Unit\Player\cruzar_puerta
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.164082
+      minDuration: 3.164082
     - name: Disparar_charco
       guid: 981ef49cd3040d488905080a1ddd80cf
       id: 4002975042
@@ -336,8 +421,8 @@ MonoBehaviour:
         guid: 981ef49cd3040d488905080a1ddd80cf
       Path: Events\Default Work Unit\Player\Disparar_charco
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.934354
+      minDuration: 0.934354
     - name: Disparar_pistola_agua
       guid: 581984a3bec06c42a5bc5f3252be019d
       id: 3611330879
@@ -356,8 +441,8 @@ MonoBehaviour:
         guid: 581984a3bec06c42a5bc5f3252be019d
       Path: Events\Default Work Unit\Player\Disparar_pistola_agua
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.316214
+      minDuration: 0.738958
     - name: Enemies
       guid: 64d37a45d8e5484f8358a463f0af00e2
       id: 2242381963
@@ -462,8 +547,8 @@ MonoBehaviour:
         guid: 5ba765de7e48c4449ef01cc6e7801dbb
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_defeated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.5
+      minDuration: 1.125011
     - name: libro_despierto
       guid: 510d226a441302428a0300e0395e1a0a
       id: 1881438433
@@ -542,8 +627,8 @@ MonoBehaviour:
         guid: fd3d0da42b7e394aab616a319a1c8d19
       Path: Events\Default Work Unit\Music\Music_IU
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Music_LVL1
       guid: 4a89cd709ea62f46b2744ad3289eb087
       id: 3380345082
@@ -662,8 +747,8 @@ MonoBehaviour:
         guid: a7a1932a545c3a49ba844f0ebe83ed3b
       Path: Events\Default Work Unit\Player\PickUp_coleccionable
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.532972
+      minDuration: 2.532972
     - name: PickUp_llave
       guid: dde4deca5cf7874dbe4f6f0a3bba9bde
       id: 3179460290
@@ -739,8 +824,8 @@ MonoBehaviour:
         guid: 1a36021f4568624ca79e9746ce2d43ed
       Path: Events\Default Work Unit\Player\Player_Defeated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.783811
+      minDuration: 1.125011
     - name: Player_Footsteps
       guid: 4b5601463a5a274eab9b88a1c634ef7c
       id: 1730208058
@@ -759,8 +844,8 @@ MonoBehaviour:
         guid: 4b5601463a5a274eab9b88a1c634ef7c
       Path: Events\Default Work Unit\Player\Player_Footsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.674172
+      minDuration: 0.610975
     - name: puerta_chirriando_lejos
       guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
@@ -859,7 +944,7 @@ MonoBehaviour:
         guid: aeb5db31734af647b51705c4b053db5f
       Path: Events\Default Work Unit\Enemies\SILLA\silla_atacando
       maxAttenuation: 0
-      maxDuration: 1.289841
+      maxDuration: 1.142381
       minDuration: 0.562517
     - name: silla_defeated
       guid: f361776a3571e140b37e153ee63c1f4b
@@ -882,8 +967,8 @@ MonoBehaviour:
         guid: f361776a3571e140b37e153ee63c1f4b
       Path: Events\Default Work Unit\Enemies\SILLA\silla_defeated
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.700023
+      minDuration: 1.280227
     - name: silla_despierta
       guid: fadaf38fd38d274483c6f33085ecfe7b
       id: 1708516226
@@ -1142,7 +1227,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000008000000090000000a0000000c0000000d0000001000000011000000120000001300000014000000
+  ExpandedWaapiItemIds: 010000000600000007000000090000000d0000000e00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

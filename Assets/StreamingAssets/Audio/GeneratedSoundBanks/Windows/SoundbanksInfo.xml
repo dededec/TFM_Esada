@@ -519,6 +519,49 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
+		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="2188612600">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Tutorial</ObjectPath>
+			<ShortName>Music_Tutorial</ShortName>
+			<Path>Music_Tutorial.bnk</Path>
+			<IncludedEvents>
+				<Event Id="931250475" Name="Music_Tutorial" ObjectPath="\Events\Default Work Unit\Music\Music_Tutorial" GUID="{5512BB91-C5F7-42AE-A014-CDB524295B8F}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="65425077" Language="SFX">
+							<ShortName>PAD 3.wav</ShortName>
+							<Path>SFX\PAD 3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510676643" Language="SFX">
+							<ShortName>PAD 2.wav</ShortName>
+							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="538990284" Language="SFX">
+							<ShortName>UP CORTO.wav</ShortName>
+							<Path>SFX\UP CORTO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="575158461" Language="SFX">
+							<ShortName>CHORUS EXALE.wav</ShortName>
+							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
+						</File>
+						<File Id="698884518" Language="SFX">
+							<ShortName>UP LARGO.wav</ShortName>
+							<Path>SFX\UP LARGO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="717471477" Language="SFX">
+							<ShortName>DOWN CORTO.wav</ShortName>
+							<Path>SFX\DOWN CORTO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="968385185" Language="SFX">
+							<ShortName>DOWN LARGO.wav</ShortName>
+							<Path>SFX\DOWN LARGO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1020362891" Language="SFX">
+							<ShortName>PAD 4.wav</ShortName>
+							<Path>SFX\PAD 4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="3191379233">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
@@ -543,20 +586,25 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2896208863" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2768005998">
-			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_IU</ObjectPath>
-			<ShortName>Music_IU</ShortName>
-			<Path>Music_IU.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2896208863" Name="Music_IU" ObjectPath="\Events\Default Work Unit\Music\Music_IU" GUID="{A40D3DFD-7E2B-4A39-AB61-6A319A1C8D19}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<IncludedMemoryFiles>
-						<File Id="362553558" Language="SFX">
-							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
-							<Path>SFX\MUSIC_Menu_Principal_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
+		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2561441989">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_MenuPrincipal</ObjectPath>
+			<ShortName>Music_MenuPrincipal</ShortName>
+			<Path>Music_MenuPrincipal.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="1089142940">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_The_End</ObjectPath>
+			<ShortName>Music_The_End</ShortName>
+			<Path>Music_The_End.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="1843488024">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
+			<ShortName>Music_LVL2</ShortName>
+			<Path>Music_LVL2.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="3599308870">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>
+			<ShortName>Music_LVL1</ShortName>
+			<Path>Music_LVL1.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

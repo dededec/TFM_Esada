@@ -1890,7 +1890,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c4c8f708508eaf7488da788e4f4ba666, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -2938,7 +2938,7 @@ GameObject:
   - component: {fileID: 913264459}
   - component: {fileID: 913264458}
   m_Layer: 0
-  m_Name: Music
+  m_Name: Music_Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2964,7 +2964,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fcd52bfa440fb054bbd9d07df0161b2b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e25dd3db5cb505f43ba27506865375c7, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
