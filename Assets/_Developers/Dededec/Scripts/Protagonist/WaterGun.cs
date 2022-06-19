@@ -183,7 +183,23 @@ namespace TFMEsada
                 shootNormal();
         }
 
-        public void shootNormal()
+        public void OnShootingAnimation()
+        {
+            AkSoundEngine.PostEvent("Disparar_pistola_agua", this.gameObject);
+            Instantiate(_bullet, _shootPosition.position, transform.rotation);
+        }
+
+        public void OnShootingPuddleAnimation()
+        {
+            AkSoundEngine.PostEvent("Disparar_charco", this.gameObject);
+            StartCoroutine(crCreatePuddle());
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        private void shootNormal()
         {
             if (_movement.IsMoving || _movement.IsRotating)
             {
@@ -201,22 +217,6 @@ namespace TFMEsada
             Ammo -= _normalCost;
         }
 
-        public void OnShootingAnimation()
-        {
-            AkSoundEngine.PostEvent("Disparar_pistola_agua", this.gameObject);
-            Instantiate(_bullet, _shootPosition.position, transform.rotation);
-        }
-
-        public void OnShootingPuddleAnimation()
-        {
-            AkSoundEngine.PostEvent("Disparar_charco", this.gameObject);
-            Instantiate(_puddle, _puddlePosition.position, transform.rotation);
-        }
-
-        #endregion
-
-        #region Private Methods
-
         private void shootPuddle()
         {
             if (_movement.IsMoving || _movement.IsRotating)
@@ -233,6 +233,21 @@ namespace TFMEsada
             
             _animator.SetTrigger("IsShootingPuddle");
             Ammo -= _puddleCost;
+        }
+
+        private IEnumerator crCreatePuddle()
+        {
+            var puddle = Instantiate(_puddle, _puddlePosition.position, transform.rotation).transform;
+            var duracion = 0.8f;
+            float ogScale = puddle.localScale.x;
+            for(float i=0; i < duracion; i+=Time.deltaTime )
+            {
+                float newScale = Mathf.Lerp(ogScale, 1f, i/duracion);
+                puddle.localScale = Vector3.one * newScale;
+                yield return null;
+            }
+
+            puddle.localScale = Vector3.one;
         }
 
         private bool assignControls()
