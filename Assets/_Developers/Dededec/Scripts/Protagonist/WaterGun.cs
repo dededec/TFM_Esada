@@ -197,7 +197,7 @@ namespace TFMEsada
                 return;
             }
 
-            _animator.SetTrigger("IsShooting");
+            _animator.SetTrigger("IsShootingNormal");
             Ammo -= _normalCost;
         }
 
@@ -205,6 +205,12 @@ namespace TFMEsada
         {
             AkSoundEngine.PostEvent("Disparar_pistola_agua", this.gameObject);
             Instantiate(_bullet, _shootPosition.position, transform.rotation);
+        }
+
+        public void OnShootingPuddleAnimation()
+        {
+            AkSoundEngine.PostEvent("Disparar_charco", this.gameObject);
+            Instantiate(_puddle, _puddlePosition.position, transform.rotation);
         }
 
         #endregion
@@ -225,9 +231,7 @@ namespace TFMEsada
                 return;
             }
             
-            // ! CAMBIAR A ANIMACION Y TAL
-            AkSoundEngine.PostEvent("Disparar_charco", this.gameObject);
-            Instantiate(_puddle, _puddlePosition.position, transform.rotation);
+            _animator.SetTrigger("IsShootingPuddle");
             Ammo -= _puddleCost;
         }
 
