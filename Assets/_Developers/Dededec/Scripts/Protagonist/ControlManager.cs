@@ -48,6 +48,7 @@ namespace TFMEsada
         {
             //...
             GetComponentInChildren<Animator>().SetTrigger("IsDead");
+            AkSoundEngine.PostEvent("Player_Defeated", this.gameObject);
             TogglePlayerControls(false);
             Debug.LogWarning("Muerte del jugador no implementada");
         }

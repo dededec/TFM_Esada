@@ -58,13 +58,15 @@ namespace TFMEsada
         {
             if(other.tag == "Enemy")
             {
+                AkSoundEngine.PostEvent("choque_disparo_enemigo", this.gameObject);
                 if(other.GetComponent<ChairBehaviour>() != null) { other.GetComponent<ChairBehaviour>().death(); }
                 if(other.GetComponent<BookColisionDetection>() != null) { other.GetComponent<BookColisionDetection>().death(); }
             }
             
             if(other.tag != "Player" && other.tag != "Note" && other.tag != "FX" && other.tag != "AI")
             {
-                Debug.Log("Se destruye con: " + other.name + " --- " + other.tag);
+                // Debug.Log("Se destruye con: " + other.name + " --- " + other.tag);
+                AkSoundEngine.PostEvent("choque_disparo_pared", this.gameObject);
                 Destroy(this.gameObject);
             }
         }

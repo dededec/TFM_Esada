@@ -127,7 +127,7 @@ namespace TFMEsada
                     if(_ammoSlider != null)
                     {
                         // value = _ammo + x => x = value - _ammo
-                        Debug.Log("WATER: " + (0.5f * (float) (value - _ammo)));
+                        // Debug.Log("WATER: " + (0.5f * (float) (value - _ammo)));
                         _ammoSlider.Water += (0.5f * (float) (value - _ammo));
                     }
 
@@ -203,6 +203,7 @@ namespace TFMEsada
 
         public void OnShootingAnimation()
         {
+            AkSoundEngine.PostEvent("Disparar_pistola_agua", this.gameObject);
             Instantiate(_bullet, _shootPosition.position, transform.rotation);
         }
 
@@ -223,9 +224,9 @@ namespace TFMEsada
                 Debug.Log("You can't shoot, not enough ammo.");
                 return;
             }
-
-            Debug.Log("Disparas charco");
             
+            // ! CAMBIAR A ANIMACION Y TAL
+            AkSoundEngine.PostEvent("Disparar_charco", this.gameObject);
             Instantiate(_puddle, _puddlePosition.position, transform.rotation);
             Ammo -= _puddleCost;
         }

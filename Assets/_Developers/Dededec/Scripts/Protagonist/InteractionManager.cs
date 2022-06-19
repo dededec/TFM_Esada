@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace TFMEsada
 {
@@ -17,6 +18,8 @@ namespace TFMEsada
     public class InteractionManager : MonoBehaviour
     {
         #region Fields
+
+        [Header("Controller Dependencies")]
         [SerializeField] private Level2Controller level2Controller;
 
         private float _keyCount = 0;
@@ -34,6 +37,7 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private NoteController _noteController;
 
+        [Header("Range and layers")]
         [Tooltip("Range in which the player can pick a key or open a locked door.")]
         /// <summary>
         /// Range in which the player can pick a key or open a locked door.
@@ -64,11 +68,18 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private LayerMask _collectableLayer;
 
+        [Header("UI Settings")]
         [Tooltip("UI to show when the level is completed.")]
         /// <summary>
         /// UI to show when the level is completed.
         /// </summary>
         [SerializeField] private GameObject _victoryUI;
+
+        [Tooltip("UI Image for the Key.")]
+        /// <summary>
+        /// UI Image for the Key.
+        /// </summary>
+        [SerializeField] private Image _keyImage;
 
         private bool hasCollectable = false;
 
@@ -169,6 +180,7 @@ namespace TFMEsada
                 Debug.Log("Apañaste llave.");
                 AkSoundEngine.PostEvent("PickUp_llave", this.gameObject);
                 _keyCount++;
+                StartCoroutine(crObtainKey());
                 Destroy(hit.collider.gameObject);
                 return;
             }
@@ -199,6 +211,22 @@ namespace TFMEsada
             }
 
             Debug.Log("No se pilla nada");
+        }
+
+        private IEnumerator crObtainKey()
+        {
+            float duracion = 0.1f;
+            Color color;
+            color = _keyImage.color;
+            for(float i=0f; i<duracion; i+=Time.deltaTime)
+            {
+                color.a = Mathf.Lerp(0.25f, 1f, i/duracion);
+                _keyImage.color = color;
+                yield return null;
+            }
+
+            color.a = 1f;
+            _keyImage.color = color;
         }
 
         private IEnumerator crOpenDoor(GameObject door, float sign)
