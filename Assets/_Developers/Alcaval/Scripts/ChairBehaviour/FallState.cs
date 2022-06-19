@@ -19,37 +19,31 @@ namespace TFMEsada
         public bool inRangePlayer{ set; get; }
 
         public bool up = false;
+        private bool toRun = false;
         public bool fallStart = true;
-        public int upFlag = 0;
 
         #endregion
 
         #region Public Methods
         public override State RunCurrentState()
         {
-            print("alo");
-            if(up && upFlag > 1)
+            if(up)
             {
                 up = false;
-                upFlag = 0;
+                StartCoroutine(UpCoroutine(2f));
+                return this;
+            }
+            else if(toRun)
+            {
+                toRun = false;
+                _runState.justUp = true;
                 return _runState;
             }
             else
             {
-                StartCoroutine(FallCoroutine(2f));
-                _animator.SetTrigger("fall");
+                StartCoroutine(FallCoroutine(4f));
                 return this;
             }
-        }
-
-        #endregion
-
-        #region Public Methods
-
-        public void PuddleColission()
-        {
-            _runState.fell = true;
-            StartCoroutine(FallCoroutine(2f));
         }
 
         #endregion
@@ -62,18 +56,24 @@ namespace TFMEsada
             {
                 fallStart = false;
                 yield return new WaitForSeconds(s);
-                print("Se termino");
                 up = true;
                 _runState.fell = false;
+                StartCoroutine(UpCoroutine(2f));
             }
         }
 
-        IEnumerator UpCoroutine()
+        IEnumerator UpCoroutine(float s)
         {
-            upFlag++;
-            _animator.SetTrigger("fall");
-            yield return new WaitForSeconds(1f);
-            upFlag++;
+            _animator.SetTrigger("up");
+            _animator.ResetTrigger("fall");
+            _runState.canFall = false;
+            yield return new WaitForSeconds(0.3f);
+            _animator.SetTrigger("awake");
+            toRun = true;
+            yield return new WaitForSeconds(2f);
+            _runState.canFall = true;
+            print("Se puede volver a caer");
+            yield return null;
         }
 
         #endregion

@@ -31,6 +31,7 @@ public class DamageCollider : MonoBehaviour
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             playerDead = true;
             _animator.SetTrigger("playerDead");
+            gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 

@@ -43,8 +43,8 @@ public class BookColisionDetection : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        print(bbt.taskAttack.inAttack);
-        print(other.transform.tag);
+        // print(bbt.taskAttack.inAttack);
+        // print(other.transform.tag);
         if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
         {
             AkSoundEngine.StopAll(transform.gameObject);

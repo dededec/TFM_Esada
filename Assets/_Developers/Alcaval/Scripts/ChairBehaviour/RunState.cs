@@ -32,6 +32,7 @@ namespace TFMEsada
         private NavMeshAgent _navMeshAgent;
 
         public bool fell = false;
+        public bool justUp = false;
         
 
         #endregion
@@ -49,13 +50,16 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
-            //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, -0.33f, sillaMesh.position.z);
+            if(justUp)
+            {
+                _animator.SetTrigger("up");
+                justUp = false;
+            }
             if(fell)
             {
-                _navMeshAgent.isStopped = true;
                 _fallState.up = false;
                 _fallState.fallStart = true;
-                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
+                _navMeshAgent.isStopped = true;
                 return _fallState;
             }
             else if(GameObject.FindGameObjectWithTag("Player") == null)
@@ -105,9 +109,19 @@ namespace TFMEsada
 
         public void fall()
         {
-            fell = true;
+            print("se choco con el charco con " + canFall);
+            if(canFall)
+            {
+                //print("Animacion de caida, desde run");
+                fell = true; 
+                //_animator.SetTrigger("fall"); 
+                canFall = false;
+            } 
         }
             
         #endregion
+
+
+        public bool canFall = true;
     }
 }

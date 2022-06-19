@@ -16,6 +16,7 @@ public class PuddleCollision : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
+            other.GetComponent<ChairBehaviour>().fall();
             other.GetComponentInChildren<RunState>().fall();
         }
         else if(other.gameObject.tag == "Player")
