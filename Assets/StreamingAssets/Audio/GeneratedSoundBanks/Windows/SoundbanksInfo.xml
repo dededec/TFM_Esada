@@ -543,16 +543,16 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2433845189">
-			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
-			<ShortName>Music</ShortName>
-			<Path>Music.bnk</Path>
+		<SoundBank Id="2896208863" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2768005998">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_IU</ObjectPath>
+			<ShortName>Music_IU</ShortName>
+			<Path>Music_IU.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3453606070" Name="Music_prueba" ObjectPath="\Events\Default Work Unit\Music\Music_prueba" GUID="{37953CFD-C034-4807-BA5E-3CFD914CEFE3}" DurationType="OneShot" DurationMin="96.000000" DurationMax="96.000000">
+				<Event Id="2896208863" Name="Music_IU" ObjectPath="\Events\Default Work Unit\Music\Music_IU" GUID="{A40D3DFD-7E2B-4A39-AB61-6A319A1C8D19}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<IncludedMemoryFiles>
-						<File Id="1010201767" Language="SFX">
-							<ShortName>melodía sinte 160 bpm (rueda Em TFM armonía).wav</ShortName>
-							<Path>SFX\melodía sinte 160 bpm (rueda Em TFM armonía)_D79FB2B7.wem</Path>
+						<File Id="362553558" Language="SFX">
+							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
+							<Path>SFX\MUSIC_Menu_Principal_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
