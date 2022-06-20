@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3774852092">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3986456186">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -196,12 +196,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="Infinite">
+				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="OneShot" DurationMin="2.862426" DurationMax="2.862426">
 					<IncludedMemoryFiles>
-						<File Id="19095092" Language="SFX">
-							<ShortName>Libro MOVIMIENTO ATACAR_2.wav</ShortName>
-							<Path>SFX\Libro MOVIMIENTO ATACAR_2_B2C72184.wem</Path>
-						</File>
 						<File Id="161816004" Language="SFX">
 							<ShortName>Libro Despertando\libro despertando_3.wav</ShortName>
 							<Path>SFX\Libro Despertando\libro despertando_3_10C4C929.wem</Path>
@@ -221,6 +217,10 @@
 						<File Id="809543815" Language="SFX">
 							<ShortName>Libro Despertando\libro despertando_1.wav</ShortName>
 							<Path>SFX\Libro Despertando\libro despertando_1_10C4C929.wem</Path>
+						</File>
+						<File Id="898611541" Language="SFX">
+							<ShortName>Libro MOVIMIENTO ATACAR_4.wav</ShortName>
+							<Path>SFX\Libro MOVIMIENTO ATACAR_4_10C4C929.wem</Path>
 						</File>
 						<File Id="946225320" Language="SFX">
 							<ShortName>Libro Despertando\libro despertando_6.wav</ShortName>
