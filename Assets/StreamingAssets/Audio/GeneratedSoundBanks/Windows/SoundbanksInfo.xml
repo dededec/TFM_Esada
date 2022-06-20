@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3382567207">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3774852092">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -124,23 +124,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="0.821066" DurationMax="1.133061">
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="0.821066" DurationMax="0.821066">
 					<IncludedMemoryFiles>
 						<File Id="365758720" Language="SFX">
 							<ShortName>libro golpe player_1_2.wav</ShortName>
 							<Path>SFX\libro golpe player_1_2_10C4C929.wem</Path>
 						</File>
-						<File Id="389535949" Language="SFX">
-							<ShortName>Libro GOLPEANDO\libro golpe player\libro golpe player_1.wav</ShortName>
-							<Path>SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_1_10C4C929.wem</Path>
-						</File>
 						<File Id="497011953" Language="SFX">
 							<ShortName>libro golpe player_2_2.wav</ShortName>
 							<Path>SFX\libro golpe player_2_2_10C4C929.wem</Path>
-						</File>
-						<File Id="869243928" Language="SFX">
-							<ShortName>Libro GOLPEANDO\libro golpe player\libro golpe player_2.wav</ShortName>
-							<Path>SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
