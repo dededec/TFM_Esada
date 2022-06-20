@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585459419731035322
+    m_lastTime: -8585458566861432655
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -241,7 +241,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585458786232443143
+    m_lastTime: -8585458572848634895
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -501,8 +501,8 @@ MonoBehaviour:
         guid: 7fac305156d16848a18826f9aaac7215
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_ataque
       maxAttenuation: 0
-      maxDuration: 1.133061
-      minDuration: 1.105556
+      maxDuration: 0.821066
+      minDuration: 0.821066
     - name: libro_chocando
       guid: 5b325f14a5beb44fbc45db1f4a3046c4
       id: 3662398675
@@ -992,6 +992,75 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 7.575011
       minDuration: 7.575011
+    - name: silla_pataDelantera
+      guid: 3cd7ff35bab04b44a1e155e2b5b46555
+      id: 3130254335
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
+      - ElementName: silla_pataDelantera
+        ObjectType: 3
+        guid: 3cd7ff35bab04b44a1e155e2b5b46555
+      Path: Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera
+      maxAttenuation: 0
+      maxDuration: 1.125011
+      minDuration: 0.996009
+    - name: silla_pataTrasera
+      guid: 2743a844fb71b649a20fe345e50d1703
+      id: 4169820343
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
+      - ElementName: silla_pataTrasera
+        ObjectType: 3
+        guid: 2743a844fb71b649a20fe345e50d1703
+      Path: Events\Default Work Unit\Enemies\SILLA\silla_pataTrasera
+      maxAttenuation: 0
+      maxDuration: 1.125011
+      minDuration: 1.066508
+    - name: silla_resbalando
+      guid: 9da6b9e8e2c27c459763081a3dd19150
+      id: 2665470364
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Enemies
+        ObjectType: 4
+        guid: 64d37a45d8e5484f8358a463f0af00e2
+      - ElementName: SILLA
+        ObjectType: 4
+        guid: 86d1398f75bc314ca3026e2fa13aea5b
+      - ElementName: silla_resbalando
+        ObjectType: 3
+        guid: 9da6b9e8e2c27c459763081a3dd19150
+      Path: Events\Default Work Unit\Enemies\SILLA\silla_resbalando
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1227,7 +1296,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000d0000000e00000010000000
+  ExpandedWaapiItemIds: 060000000700000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
