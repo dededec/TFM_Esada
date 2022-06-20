@@ -36,6 +36,7 @@ namespace TFMEsada
         /// NoteController script to manage note reading.
         /// </summary>
         [SerializeField] private NoteController _noteController;
+        
 
         [Header("Range and layers")]
         [Tooltip("Range in which the player can pick a key or open a locked door.")]
@@ -68,12 +69,15 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private LayerMask _collectableLayer;
 
+
         [Header("UI Settings")]
         [Tooltip("UI to show when the level is completed.")]
         /// <summary>
         /// UI to show when the level is completed.
         /// </summary>
         [SerializeField] private GameObject _victoryUI;
+        [SerializeField] private Image _collectableImage;
+        [SerializeField] private Sprite _obtainedCollectableSprite;
 
         [Tooltip("UI Image for the Key.")]
         /// <summary>
@@ -81,7 +85,7 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private Image _keyImage;
 
-        private bool hasCollectable = false;
+        [SerializeField] private bool hasCollectable = false;
 
 	    #endregion
 
@@ -273,7 +277,7 @@ namespace TFMEsada
             
             if(hasCollectable)
             {
-                // Se harán cosas en el _victoryUI
+                _collectableImage.sprite = _obtainedCollectableSprite;
                 hasTamagotchi[levelIndex] = true;
             }
 
