@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="4224985818">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1968753808">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -114,21 +114,29 @@
 							<ShortName>gotas salpicando 4.wav</ShortName>
 							<Path>SFX\gotas salpicando 4_2C296BF9.wem</Path>
 						</File>
+						<File Id="934545693" Language="SFX">
+							<ShortName>DISPARO PISTOLA AGUA_2.wav</ShortName>
+							<Path>SFX\DISPARO PISTOLA AGUA_2_10C4C929.wem</Path>
+						</File>
 						<File Id="940266622" Language="SFX">
 							<ShortName>gotas salpicando 6.wav</ShortName>
 							<Path>SFX\gotas salpicando 6_6188D792.wem</Path>
 						</File>
-						<File Id="996583496" Language="SFX">
-							<ShortName>DISPARO PISTOLA AGUA.wav</ShortName>
-							<Path>SFX\DISPARO PISTOLA AGUA_3DB81B72.wem</Path>
-						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="1.105556" DurationMax="1.133061">
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="0.821066" DurationMax="1.133061">
 					<IncludedMemoryFiles>
+						<File Id="365758720" Language="SFX">
+							<ShortName>libro golpe player_1_2.wav</ShortName>
+							<Path>SFX\libro golpe player_1_2_10C4C929.wem</Path>
+						</File>
 						<File Id="389535949" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe player\libro golpe player_1.wav</ShortName>
 							<Path>SFX\Libro GOLPEANDO\libro golpe player\libro golpe player_1_10C4C929.wem</Path>
+						</File>
+						<File Id="497011953" Language="SFX">
+							<ShortName>libro golpe player_2_2.wav</ShortName>
+							<Path>SFX\libro golpe player_2_2_10C4C929.wem</Path>
 						</File>
 						<File Id="869243928" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe player\libro golpe player_2.wav</ShortName>
@@ -475,7 +483,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" DurationType="Infinite">
+				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" DurationType="OneShot" DurationMin="7.325011" DurationMax="7.325011">
 					<IncludedMemoryFiles>
 						<File Id="68270176" Language="SFX">
 							<ShortName>SILLA PREATTACK.wav</ShortName>
@@ -497,12 +505,61 @@
 							<ShortName>silla_Despierta_preataque_4.wav</ShortName>
 							<Path>SFX\silla_Despierta_preataque_4_10C4C929.wem</Path>
 						</File>
-						<File Id="861437711" Language="SFX">
-							<ShortName>silla movimiento ataque 2 (menos galopada).wav</ShortName>
-							<Path>SFX\silla movimiento ataque 2 (menos galopada)_830013D5.wem</Path>
+						<File Id="873495989" Language="SFX">
+							<ShortName>Silla movimiento sin pasos (solo relleno).wav</ShortName>
+							<Path>SFX\Silla movimiento sin pasos (solo relleno)_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3130254335" Name="silla_pataDelantera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera" GUID="{35FFD73C-B0BA-444B-A1E1-55E2B5B46555}" DurationType="OneShot" DurationMin="0.996009" DurationMax="1.125011">
+					<IncludedMemoryFiles>
+						<File Id="173152896" Language="SFX">
+							<ShortName>silla pasos delanteros_3(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_3(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="359971893" Language="SFX">
+							<ShortName>silla pasos delanteros_1(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_1(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="488484624" Language="SFX">
+							<ShortName>silla pasos delanteros_2(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_2(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="809598574" Language="SFX">
+							<ShortName>silla pasos delanteros_4(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_4(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="1047343331" Language="SFX">
+							<ShortName>silla pasos delanteros_5(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_5(sin galope)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4169820343" Name="silla_pataTrasera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataTrasera" GUID="{44A84327-71FB-49B6-A20F-E345E50D1703}" DurationType="OneShot" DurationMin="1.066508" DurationMax="1.125011">
+					<IncludedMemoryFiles>
+						<File Id="59365415" Language="SFX">
+							<ShortName>silla pasos traseros _3(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _3(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="234010317" Language="SFX">
+							<ShortName>silla pasos traseros _2(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _2(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="406925627" Language="SFX">
+							<ShortName>silla pasos traseros _4(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _4(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="547163449" Language="SFX">
+							<ShortName>silla pasos traseros _1(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _1(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="692954387" Language="SFX">
+							<ShortName>silla pasos traseros _5(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _5(singalope)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2665470364" Name="silla_resbalando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_resbalando" GUID="{E8B9A69D-C2E2-457C-9763-081A3DD19150}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="1162743606" Name="Footsteps_Surface" ObjectPath="\Switches\Default Work Unit\Footsteps_Surface" GUID="{032AB6FB-242C-47A5-87B4-889D8F1FFC6A}">
@@ -519,7 +576,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="2188612600">
+		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="477675360">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Tutorial</ObjectPath>
 			<ShortName>Music_Tutorial</ShortName>
 			<Path>Music_Tutorial.bnk</Path>
