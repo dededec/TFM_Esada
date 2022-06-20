@@ -50,17 +50,26 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
-            if(justUp)
-            {
-                _animator.SetTrigger("up");
-                justUp = false;
-            }
+            // if(justUp)
+            // {
+            //     // _animator.SetTrigger("up");
+            //     // justUp = false;
+            // }
+
             if(fell)
             {
-                _fallState.up = false;
-                _fallState.fallStart = true;
+                // _fallState.up = false;
+                // _fallState.fallStart = true;
+                // _navMeshAgent.isStopped = true;
+                // return _fallState;
+                fell = false;
+                StartCoroutine(FallCoroutine(5f));
+                return this;
+            }
+            else if(currentlyFalling)
+            {
                 _navMeshAgent.isStopped = true;
-                return _fallState;
+                return this;
             }
             else if(GameObject.FindGameObjectWithTag("Player") == null)
             {
@@ -116,12 +125,38 @@ namespace TFMEsada
                 fell = true; 
                 //_animator.SetTrigger("fall"); 
                 canFall = false;
-            } 
+            }
         }
             
         #endregion
 
 
+        public bool currentlyFalling = false;
         public bool canFall = true;
+
+        #region Coroutines
+
+        IEnumerator FallCoroutine(float s)
+        {
+            //_animator.SetTrigger("fall");
+            currentlyFalling = true;
+            _animator.SetBool("falling", currentlyFalling);
+            yield return new WaitForSeconds(s);
+            // _animator.ResetTrigger("fall");
+            StartCoroutine(UpCoroutine());
+        }
+
+        IEnumerator UpCoroutine()
+        {
+            //_animator.SetTrigger("up");
+            currentlyFalling = false;
+            _animator.SetBool("falling", currentlyFalling);
+            yield return new WaitForSeconds(0.3f);
+            _animator.ResetTrigger("up");
+            yield return new WaitForSeconds(3f);
+            canFall = true;
+        }
+
+        #endregion
     }
 }

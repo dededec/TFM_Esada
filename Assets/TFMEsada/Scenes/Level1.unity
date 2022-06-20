@@ -8721,6 +8721,18 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.12815115
       objectReference: {fileID: 0}
+    - target: {fileID: 9116385228437776022, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4090407
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116385228437776022, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
+      propertyPath: m_Center.y
+      value: 0.78600776
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116385228437776022, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
 --- !u!4 &1335675267 stripped
@@ -10073,7 +10085,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!1001 &1642799505
 PrefabInstance:

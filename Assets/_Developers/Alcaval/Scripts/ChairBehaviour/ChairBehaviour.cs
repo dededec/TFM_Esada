@@ -66,9 +66,10 @@ namespace TFMEsada
         public void death()
         {
             Debug.Log("Se murio la silla");
-            _navMeshAgent.isStopped = true;
-            _animator.SetTrigger("fall");
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
+            gameObject.GetComponent<ChairBehaviour>().enabled = false;
+            _navMeshAgent.isStopped = true;
+            _animator.SetBool("falling", true);
             //Destroy(gameObject);
         }
 
