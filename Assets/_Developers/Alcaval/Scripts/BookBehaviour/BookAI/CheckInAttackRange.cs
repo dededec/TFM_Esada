@@ -10,6 +10,8 @@ public class CheckInAttackRange : Node
     private float _rangeAttackBook;
     public bool ready = false;
     private BookColisionDetection bookColisionDetection;
+    private bool first = false;
+
 
     public CheckInAttackRange(Transform bookPos, GameObject player, float rangeAttackBook, BookColisionDetection bookColisionDetection)
     {
@@ -21,6 +23,7 @@ public class CheckInAttackRange : Node
 
     public override NodeState Evaluate()
     {
+        
         RaycastHit hit;
         Vector3 bookPosModified = new Vector3(_bookPos.position.x, _bookPos.position.y + 0.5f, _bookPos.position.z);
         Vector3 playerPosModified = new Vector3(_player.transform.position.x, _player.transform.position.y + 1, _player.transform.position.z);
@@ -43,6 +46,7 @@ public class CheckInAttackRange : Node
             {
                 //AkSoundEngine.PostEvent("libro_despierto", _bookPos.gameObject);
                 // aqui 
+                if(!first) AkSoundEngine.PostEvent("libro_despierto", _bookPos.gameObject); first = true;
                 bookColisionDetection.PreAttack();
                 return state;
             }

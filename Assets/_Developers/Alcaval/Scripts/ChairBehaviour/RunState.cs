@@ -50,18 +50,8 @@ namespace TFMEsada
         #region Public Methods
         public override State RunCurrentState()
         {   
-            // if(justUp)
-            // {
-            //     // _animator.SetTrigger("up");
-            //     // justUp = false;
-            // }
-
             if(fell)
             {
-                // _fallState.up = false;
-                // _fallState.fallStart = true;
-                // _navMeshAgent.isStopped = true;
-                // return _fallState;
                 fell = false;
                 StartCoroutine(FallCoroutine(5f));
                 return this;
@@ -74,13 +64,12 @@ namespace TFMEsada
             else if(GameObject.FindGameObjectWithTag("Player") == null)
             {
                 _idleState.inRangePlayer = false;
-                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
                 return _idleState;
             }
             else if(inAttackRangePlayer)
             {
                 _navMeshAgent.isStopped = true;
-                //sillaMesh.transform.position = new Vector3(sillaMesh.position.x, 0.438f, sillaMesh.position.z);
+                //_chairTransform.gameObject.GetComponent<ChairBehaviour>().stopAwake();
                 return _attackState;
             }
             else
@@ -138,11 +127,11 @@ namespace TFMEsada
 
         IEnumerator FallCoroutine(float s)
         {
-            //_animator.SetTrigger("fall");
             currentlyFalling = true;
+            //ESTA SERIA LA LINEA QUE HAY QUE DESCOMENTAR PARA QUE SUENE EL RESBALARSE
+            //AkSoundEngine.PostEvent("silla_resbalando", gameObject);
             _animator.SetBool("falling", currentlyFalling);
             yield return new WaitForSeconds(s);
-            // _animator.ResetTrigger("fall");
             StartCoroutine(UpCoroutine());
         }
 

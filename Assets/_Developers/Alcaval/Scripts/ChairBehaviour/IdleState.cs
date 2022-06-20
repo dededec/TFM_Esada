@@ -14,7 +14,7 @@ namespace TFMEsada
         // States: Here you can have all the states that this state state could go to
         [SerializeField] private RunState _runState;
         [SerializeField] private Animator _animator;
-
+        [SerializeField] private ChairBehaviour chairBehaviour;
         // Variable that lets us and the script know if the agent is inRange of the player
         public bool inRangePlayer{ set; get; }
 
@@ -25,6 +25,7 @@ namespace TFMEsada
         {
             if(inRangePlayer)
             {
+                chairBehaviour.playAwake();
                 return _runState;
             }
             else
@@ -54,7 +55,7 @@ namespace TFMEsada
             yield return new WaitForSeconds(s);
             inRangePlayer = true;
             _animator.SetTrigger("awake");
-            AkSoundEngine.PostEvent("silla_despierta", _animator.gameObject);
+            //AkSoundEngine.PostEvent("silla_despierta", _animator.gameObject);
         }
 
         #endregion

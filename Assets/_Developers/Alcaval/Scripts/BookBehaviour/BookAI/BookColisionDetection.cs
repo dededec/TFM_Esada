@@ -45,9 +45,11 @@ public class BookColisionDetection : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         // print(bbt.taskAttack.inAttack);
         // print(other.transform.tag);
+        
         if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
         {
-            AkSoundEngine.StopAll(transform.gameObject);
+            AkSoundEngine.PostEvent("libro_chocando", gameObject);
+            //AkSoundEngine.StopAll(transform.gameObject);
             // AQU� DEBER�A SONAR EL GOLPE CHOCANDO COSAS
             //AkSoundEngine.PostEvent("libro_chocando", transform.gameObject);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
@@ -63,6 +65,7 @@ public class BookColisionDetection : MonoBehaviour
 
         if(other.transform.tag == "Ground" && bbt.taskAttack.inAttack)
         {
+            AkSoundEngine.PostEvent("libro_chocando", gameObject);
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
             StartCoroutine(cooldownCoroutine()); 
@@ -76,6 +79,7 @@ public class BookColisionDetection : MonoBehaviour
     public void death()
     {
         Debug.Log("Se murio el libro");
+        AkSoundEngine.PostEvent("libro_defeated", gameObject);
         Destroy(gameObject);
     }
 
@@ -102,6 +106,7 @@ public class BookColisionDetection : MonoBehaviour
 
     IEnumerator preAttack()
     {
+        transform.GetComponent<Rigidbody>().useGravity = false;
         bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 2.5f, _player.transform.position.z), 0.5f * Time.deltaTime);
         yield return new WaitForSeconds(1f);

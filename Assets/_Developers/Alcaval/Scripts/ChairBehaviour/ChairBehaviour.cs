@@ -17,6 +17,7 @@ namespace TFMEsada
         [SerializeField] private Animator _animator;
         private NavMeshAgent _navMeshAgent;
         private bool dead = false;
+        public uint idWalkSound;
 	  
 	    #endregion
 	  
@@ -27,6 +28,7 @@ namespace TFMEsada
 	    #endregion
 	 
 	    #region LifeCycle
+        
 
         private void Start() 
         {
@@ -63,9 +65,21 @@ namespace TFMEsada
 
         #region Public Methods
 
+        public void playAwake()
+        {
+            idWalkSound = AkSoundEngine.PostEvent("silla_despierta", gameObject);
+        }
+
+        public void stopAwake()
+        {
+            AkSoundEngine.StopPlayingID(idWalkSound);
+        }
+
         public void death()
         {
+            stopAwake();
             Debug.Log("Se murio la silla");
+            AkSoundEngine.PostEvent("silla_defeated", gameObject);
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             gameObject.GetComponent<ChairBehaviour>().enabled = false;
             _navMeshAgent.isStopped = true;
@@ -75,8 +89,8 @@ namespace TFMEsada
 
         public void fall()
         {
-            _animator.ResetTrigger("up");
-            _animator.SetTrigger("fall"); 
+            // _animator.ResetTrigger("up");
+            // _animator.SetTrigger("fall"); 
         }
 
         public void Attack()
@@ -84,6 +98,7 @@ namespace TFMEsada
             // GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().PlayerDeath();
             // _animator.SetBool("playerDead", true) ;
             // this.enabled = false;
+            AkSoundEngine.PostEvent("silla_atacando", gameObject);
             GetComponentInChildren<DamageCollider>()._hitbox.enabled = true;
         }
 
@@ -93,6 +108,16 @@ namespace TFMEsada
             // _animator.SetBool("playerDead", true) ;
             // this.enabled = false;
             GetComponentInChildren<DamageCollider>()._hitbox.enabled = false;
+        }
+
+        public void playFront()
+        {
+            AkSoundEngine.PostEvent("silla_pataDelantera", gameObject);
+        }
+
+        public void playBack()
+        {
+            AkSoundEngine.PostEvent("silla_pataTrasera", gameObject);
         }
             
         #endregion

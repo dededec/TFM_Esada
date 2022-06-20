@@ -197,6 +197,7 @@ namespace TFMEsada
             }
             else if(RayCast(out hit, _range, _doorLayer))
             {
+                AkSoundEngine.PostEvent("cruzar_puerta", gameObject);
                 var sign = Mathf.Sign(Vector3.SignedAngle(hit.collider.gameObject.transform.right, transform.forward, Vector3.up));
                 StartCoroutine(crOpenDoor(hit.collider.gameObject, sign));
                 if(hit.collider.gameObject.name == "SecondFloorDoor") level2Controller.TeleportPlayer(1); 

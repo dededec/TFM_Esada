@@ -28,6 +28,7 @@ namespace TFMEsada
 
         // HitBox manager, we have to enable the hitbox when the sweetspot of the animation is active so it can hit the player
         [SerializeField] private DamageCollider _hitbox;
+        [SerializeField] private ChairBehaviour chairBehaviour;
 
         #endregion
 
@@ -42,6 +43,7 @@ namespace TFMEsada
             else if(finishedAttacking)
             {
                 finishedAttacking = false;
+                //chairBehaviour.playAwake();
                 return _runState;
             } 
 
