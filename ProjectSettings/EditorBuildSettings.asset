@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Developers/Dededec/Levels/Test_MainMenu.unity
+    guid: de4b6a9e2b25ec1409ba436f5db63a67
+  - enabled: 1
     path: Assets/_Developers/Dededec/Levels/Test_LevelSelection.unity
     guid: d86965608bd04d94aad873e16d8bb877
-  - enabled: 1
-    path: Assets/_Developers/Dededec/Levels/TestCamera_Tutorial.unity
-    guid: efd7049f5d3477e4e82615210ecdb1d6
-  - enabled: 1
-    path: Assets/_Developers/Dededec/Levels/TestCamera_Level1.unity
-    guid: 95e1ddbf551aeb642985b797af583bee
   - enabled: 1
     path: Assets/TFMEsada/Scenes/Tutorial.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -23,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TFMEsada/Scenes/Level2.unity
     guid: a540e072ac419e34cb332bacc32d8800
+  - enabled: 0
+    path: Assets/_Developers/Dededec/Levels/TestCamera_Tutorial.unity
+    guid: efd7049f5d3477e4e82615210ecdb1d6
+  - enabled: 0
+    path: Assets/_Developers/Dededec/Levels/TestCamera_Level1.unity
+    guid: 95e1ddbf551aeb642985b797af583bee
   m_configObjects: {}
