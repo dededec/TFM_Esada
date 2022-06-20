@@ -241,7 +241,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585459431110724402
+    m_lastTime: -8585458786232443143
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -609,26 +609,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Music_IU
-      guid: fd3d0da42b7e394aab616a319a1c8d19
-      id: 2896208863
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: Music
-        ObjectType: 4
-        guid: bc3a10ed8f57e44eaddb365239aabbe1
-      - ElementName: Music_IU
-        ObjectType: 3
-        guid: fd3d0da42b7e394aab616a319a1c8d19
-      Path: Events\Default Work Unit\Music\Music_IU
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Music_LVL1
       guid: 4a89cd709ea62f46b2744ad3289eb087
       id: 3380345082
@@ -666,6 +646,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 75b7fb59874ae249a5b3dda794f641bc
       Path: Events\Default Work Unit\Music\Music_LVL2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Menu_Principal
+      guid: fd3d0da42b7e394aab616a319a1c8d19
+      id: 17986547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Music
+        ObjectType: 4
+        guid: bc3a10ed8f57e44eaddb365239aabbe1
+      - ElementName: Music_Menu_Principal
+        ObjectType: 3
+        guid: fd3d0da42b7e394aab616a319a1c8d19
+      Path: Events\Default Work Unit\Music\Music_Menu_Principal
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -990,8 +990,8 @@ MonoBehaviour:
         guid: fadaf38fd38d274483c6f33085ecfe7b
       Path: Events\Default Work Unit\Enemies\SILLA\silla_despierta
       maxAttenuation: 0
-      maxDuration: 6.927687
-      minDuration: 6.927687
+      maxDuration: 7.575011
+      minDuration: 7.575011
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -1227,7 +1227,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000090000000d0000000e00000010000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000d0000000e00000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
