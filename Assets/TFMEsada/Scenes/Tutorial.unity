@@ -1552,6 +1552,10 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 699908700}
+    - target: {fileID: 8878030331272114597, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
+      propertyPath: chairBehaviour
+      value: 
+      objectReference: {fileID: 1037435303}
     - target: {fileID: 8878030331272114598, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
       propertyPath: m_TagString
       value: AI
@@ -3193,6 +3197,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1037435303 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8878030329553252252, guid: 4f62d7e184f451d44a32afeb25df3eba, type: 3}
+  m_PrefabInstance: {fileID: 394751153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834d17ceb79c9ab458d583ba6a1c2062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1052086430
 GameObject:
   m_ObjectHideFlags: 0
