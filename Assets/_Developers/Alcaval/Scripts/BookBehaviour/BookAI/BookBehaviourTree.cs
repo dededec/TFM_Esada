@@ -14,6 +14,7 @@ public class BookBehaviourTree : Tree
 
     private void Awake() {
         player = UnityEngine.GameObject.Find("Player");
+        bookColisionDetection = gameObject.GetComponent<BookColisionDetection>();
     }
 
     protected override Node SetupTree()

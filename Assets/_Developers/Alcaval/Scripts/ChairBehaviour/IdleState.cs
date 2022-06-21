@@ -20,6 +20,14 @@ namespace TFMEsada
 
         #endregion
 
+        /// <summary>
+        /// Awake is called when the script instance is being loaded.
+        /// </summary>
+        void Awake()
+        {
+            chairBehaviour = gameObject.transform.parent.parent.gameObject.GetComponent<ChairBehaviour>();
+        }
+
         #region Public Methods
         public override State RunCurrentState()
         {

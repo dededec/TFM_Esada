@@ -14,6 +14,10 @@ public class BookColisionDetection : MonoBehaviour
     float x = 0f;
     float y = 0f;
 
+    private void Awake() {
+        _player = GameObject.Find("Player");
+    }
+
     private void Update() {
         Vector3 targetPosition = Vector3.forward;
 
@@ -111,5 +115,10 @@ public class BookColisionDetection : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 2.5f, _player.transform.position.z), 0.5f * Time.deltaTime);
         yield return new WaitForSeconds(1f);
         bbt.checkInAttackRange.ready = true;
+    }
+
+    public void playAwake()
+    {
+        
     }
 }

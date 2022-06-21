@@ -134,14 +134,14 @@ namespace TFMEsada
             //AkSoundEngine.PostEvent("silla_resbalando", gameObject);
             _animator.SetBool("falling", currentlyFalling);
             yield return new WaitForSeconds(s);
+            currentlyFalling = false;
+            _animator.SetBool("falling", currentlyFalling);
             StartCoroutine(UpCoroutine());
         }
 
         IEnumerator UpCoroutine()
         {
             //_animator.SetTrigger("up");
-            currentlyFalling = false;
-            _animator.SetBool("falling", currentlyFalling);
             yield return new WaitForSeconds(0.3f);
             _animator.ResetTrigger("up");
             yield return new WaitForSeconds(3f);
