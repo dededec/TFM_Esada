@@ -153,7 +153,7 @@ namespace TFMEsada
                 _currentDialog = 0;
                 _inReadingRange = true;
                 Writing = false;
-                GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
+                GameObject.Find("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
                 
                 if(gameObject.name == "TamagochiNote1")
                 {
@@ -179,7 +179,7 @@ namespace TFMEsada
             {
                 _pressButtonProp.SetActive(false);
                 AkSoundEngine.PostEvent("PickUp_nota", this.gameObject);
-                GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
+                GameObject.Find("Player").GetComponent<ControlManager>().TogglePlayerControls(false);
                 //_pressButtonProp.SetActive(true);
                 _speechBubble.transform.GetChild(0).gameObject.SetActive(true);
                 _speechBubble.transform.GetChild(1).gameObject.SetActive(true);
