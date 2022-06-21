@@ -14,6 +14,7 @@ namespace TFMEsada
         
         // Transform that stores the player position
         private Transform _playerPos;
+        private GameObject _player;
 
         // States: Here you can have all the states that this state state could go to
         [SerializeField] private AttackState _attackState;
@@ -42,7 +43,8 @@ namespace TFMEsada
         private void Start() 
         {
             _navMeshAgent = GetComponentInParent<NavMeshAgent>();
-            _playerPos = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
+            _playerPos = GameObject.Find("Player").gameObject.transform;
+            _player = _playerPos.gameObject;
         }
       
         #endregion
@@ -61,7 +63,7 @@ namespace TFMEsada
                 _navMeshAgent.isStopped = true;
                 return this;
             }
-            else if(GameObject.FindGameObjectWithTag("Player") == null)
+            else if(_player == null)
             {
                 _idleState.inRangePlayer = false;
                 return _idleState;

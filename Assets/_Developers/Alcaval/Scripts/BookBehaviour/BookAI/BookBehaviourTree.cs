@@ -13,7 +13,7 @@ public class BookBehaviourTree : Tree
     public CheckInAttackRange checkInAttackRange;
 
     private void Awake() {
-        player = UnityEngine.GameObject.FindGameObjectWithTag("Player");
+        player = UnityEngine.GameObject.Find("Player");
     }
 
     protected override Node SetupTree()

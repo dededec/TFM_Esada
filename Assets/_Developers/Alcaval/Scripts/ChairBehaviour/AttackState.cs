@@ -30,12 +30,18 @@ namespace TFMEsada
         [SerializeField] private DamageCollider _hitbox;
         [SerializeField] private ChairBehaviour chairBehaviour;
 
+        private GameObject player;
+
         #endregion
+
+        private void Awake() {
+            player = GameObject.Find("Player");
+        }
 
         #region Public Methods
         public override State RunCurrentState()
         {
-            if(GameObject.FindGameObjectWithTag("Player") == null)
+            if(player == null)
             {
                 _idleState.inRangePlayer = false;
                 return _idleState;

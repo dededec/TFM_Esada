@@ -9,7 +9,7 @@ public class PuddleCollision : MonoBehaviour
 
     private void Start() 
     {
-        _player = GameObject.FindGameObjectWithTag("Player").transform.GetChild(5).gameObject;    
+        _player = GameObject.Find("Player").transform.GetChild(5).gameObject;    
     }
     
     private void OnTriggerEnter(Collider other) 
