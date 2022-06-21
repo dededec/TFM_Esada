@@ -61,7 +61,7 @@ namespace TFMEsada
         {
             if(_controlManager == null)
             {
-                _controlManager = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlManager>();
+                _controlManager = GameObject.Find("Player").GetComponent<ControlManager>();
             }
             assignControls();
         }
@@ -133,6 +133,8 @@ namespace TFMEsada
                 _lockScreen.started += onRightButtonPress;
                 _lockScreen.canceled += onRightButtonRelease;
                 _lockScreen.Enable();
+
+                _pivotPoint = GameObject.Find("Player").transform;
                 return true;
             }
         }
