@@ -76,6 +76,7 @@ namespace TFMEsada
         /// UI to show when the level is completed.
         /// </summary>
         [SerializeField] private GameObject _victoryUI;
+        [SerializeField] private GameObject _gameplayUI;
         [SerializeField] private Image _collectableImage;
         [SerializeField] private Sprite _obtainedCollectableSprite;
 
@@ -253,6 +254,7 @@ namespace TFMEsada
         private void victory()
         {
             _victoryUI.SetActive(true);
+            _gameplayUI.SetActive(false);
             _controlManager.TogglePlayerControls(false);
 
             /*

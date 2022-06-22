@@ -83,10 +83,19 @@ namespace TFMEsada
         {
             if(_selector.position == _buttonTransform[0].position)
             {
+                _selector.sizeDelta = new Vector2(_selector.sizeDelta.x, 300);
+                var textPosition = _buttonTransform[0].GetChild(0).gameObject.GetComponent<RectTransform>();
+                textPosition.anchoredPosition = textPosition.anchoredPosition + Vector2.down * 10;
+
                 ExecuteEvents.Execute(_buttonTransform[0].gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
+
             }
             else
             {
+                _selector.sizeDelta = new Vector2(_selector.sizeDelta.x, 300);
+                var textPosition = _buttonTransform[1].GetChild(0).gameObject.GetComponent<RectTransform>();
+                textPosition.anchoredPosition = textPosition.anchoredPosition + Vector2.down * 10;
+
                 ExecuteEvents.Execute(_buttonTransform[1].gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
             }
         }
