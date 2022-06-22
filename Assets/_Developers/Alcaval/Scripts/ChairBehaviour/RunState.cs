@@ -131,7 +131,7 @@ namespace TFMEsada
         {
             currentlyFalling = true;
             //ESTA SERIA LA LINEA QUE HAY QUE DESCOMENTAR PARA QUE SUENE EL RESBALARSE
-            //AkSoundEngine.PostEvent("silla_resbalando", gameObject);
+            AkSoundEngine.PostEvent("silla_resbalando", gameObject);
             _animator.SetBool("falling", currentlyFalling);
             yield return new WaitForSeconds(s);
             currentlyFalling = false;
