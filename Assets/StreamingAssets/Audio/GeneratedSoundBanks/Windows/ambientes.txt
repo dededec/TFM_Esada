@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	343718480	ambiente_noche			\Default Work Unit\SFX_Enviroments\ambiente_noche	
+	3952223308	ambiente_noche_1			\Default Work Unit\SFX_Enviroments\ambiente_noche_1	
+	3952223311	ambiente_noche_2			\Default Work Unit\SFX_Enviroments\ambiente_noche_2	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	883601427	AMBIENTE NOCHE 1_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\AMBIENTE NOCHE 1_2_38374C31.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\AMBIENTE NOCHE 1_2		7902848
+	16645949	AMBIENTE NOCHE 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\AMBIENTE NOCHE 1_38C4429A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\AMBIENTE NOCHE 1		9031808
+	883601427	AMBIENTE NOCHE 3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\AMBIENTE NOCHE 1_2_38374C31.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\AMBIENTE NOCHE 3		7902848
+	1069630703	AMBIENTE NOCHE 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\AMBIENTE NOCHE 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\AMBIENTE NOCHE 2		7902784
 

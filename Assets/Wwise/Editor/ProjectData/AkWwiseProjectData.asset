@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585458566861432655
+    m_lastTime: -8585456872642218780
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -116,6 +116,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 33cbe0db57c60d49b80d1a8db8494aeb
       Path: SoundBanks\Default Work Unit\ambientes
+    - name: menu_principal
+      guid: cfd22d9dd14ac24cb5caa17075216e74
+      id: 169596267
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: menu_principal
+        ObjectType: 7
+        guid: cfd22d9dd14ac24cb5caa17075216e74
+      Path: SoundBanks\Default Work Unit\menu_principal
     - name: MUSIC
       guid: 4ff40a21735395468029a723cff3def8
       id: 3991942870
@@ -241,7 +255,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585457019979597351
+    m_lastTime: -8585456867787471801
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -280,7 +294,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: de77274ece001b42948a2289464d3605
       Path: Events\Default Work Unit\SFX_Enviroments\ambiente_noche_1
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: ambiente_noche_2
@@ -301,8 +315,8 @@ MonoBehaviour:
         guid: 241f6423604eed4080d126f3650f6dd3
       Path: Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 44.8
+      minDuration: 44.8
     - name: cerrar_puerta
       guid: 45b5daaf39e41d419a3cc6c2fe9a3211
       id: 3873181946
@@ -321,8 +335,8 @@ MonoBehaviour:
         guid: 45b5daaf39e41d419a3cc6c2fe9a3211
       Path: Events\Default Work Unit\Player\cerrar_puerta
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.345089
+      minDuration: 2.089237
     - name: chirriando_lejos_3
       guid: 4280f50580a85c49926de120b6655092
       id: 4115248352
@@ -403,6 +417,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.562517
       minDuration: 0.53907
+    - name: Click
+      guid: 7193aaa38920824b86545969a090baab
+      id: 1584507803
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      - ElementName: Click
+        ObjectType: 3
+        guid: 7193aaa38920824b86545969a090baab
+      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Click"
+      maxAttenuation: 0
+      maxDuration: 2.343764
+      minDuration: 2.343764
     - name: cruzar_puerta
       guid: c1ecd43467a05349bdd4ee33e3263f76
       id: 3397744248
@@ -421,8 +455,8 @@ MonoBehaviour:
         guid: c1ecd43467a05349bdd4ee33e3263f76
       Path: Events\Default Work Unit\Player\cruzar_puerta
       maxAttenuation: 0
-      maxDuration: 2.109388
-      minDuration: 2.109388
+      maxDuration: 1.67833
+      minDuration: 1.495222
     - name: Disparar_charco
       guid: 981ef49cd3040d488905080a1ddd80cf
       id: 4002975042
@@ -480,6 +514,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Enter
+      guid: 11402345e1bf2449b2ba20234240d2d9
+      id: 2368844905
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      - ElementName: Enter
+        ObjectType: 3
+        guid: 11402345e1bf2449b2ba20234240d2d9
+      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Enter"
+      maxAttenuation: 0
+      maxDuration: 1.933605
+      minDuration: 1.933605
     - name: LIBRO
       guid: c5b0280b1ee537448dd1bca1a62c2f3a
       id: 2068852883
@@ -520,7 +574,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7fac305156d16848a18826f9aaac7215
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_ataque
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 0.821066
       minDuration: 0.821066
     - name: libro_chocando
@@ -543,7 +597,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5b325f14a5beb44fbc45db1f4a3046c4
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_chocando
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 0.886735
       minDuration: 0.788209
     - name: libro_defeated
@@ -589,7 +643,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 510d226a441302428a0300e0395e1a0a
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_despierto
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: luz_chisporroteo
@@ -610,6 +664,23 @@ MonoBehaviour:
         guid: f3b2325096116f45a6f96ba5a80906ad
       Path: Events\Default Work Unit\SFX_Enviroments\luz_chisporroteo
       maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
+    - name: "Men\xFA Principal"
+      guid: beaa8b278cfd604db66552101532d939
+      id: 291040510
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      Path: "Events\\Default Work Unit\\Men\xFA Principal"
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: Music
@@ -746,7 +817,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a5e559518b36224fb36375d79c6af12c
       Path: Events\Default Work Unit\SFX_Enviroments\phone_chungo
-      maxAttenuation: 30
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: PickUp_coleccionable
@@ -906,6 +977,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 5.387818
       minDuration: 4.036303
+    - name: Repuesto1
+      guid: 2d8e2e3154ed1f4da13e0e3715a4cc8f
+      id: 1251048105
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      - ElementName: Repuesto1
+        ObjectType: 3
+        guid: 2d8e2e3154ed1f4da13e0e3715a4cc8f
+      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Repuesto1"
+      maxAttenuation: 0
+      maxDuration: 3
+      minDuration: 3
+    - name: Repuesto2
+      guid: 10ee1e4eb8d9204d897aaa997c15f960
+      id: 1251048106
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      - ElementName: Repuesto2
+        ObjectType: 3
+        guid: 10ee1e4eb8d9204d897aaa997c15f960
+      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Repuesto2"
+      maxAttenuation: 0
+      maxDuration: 3
+      minDuration: 3
+    - name: Seleccionar_mapa
+      guid: ce4f22cf6285be4798c1800f57029734
+      id: 527665011
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      - ElementName: Seleccionar_mapa
+        ObjectType: 3
+        guid: ce4f22cf6285be4798c1800f57029734
+      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Seleccionar_mapa"
+      maxAttenuation: 0
+      maxDuration: 6.825374
+      minDuration: 6.825374
     - name: SFX_Enviroments
       guid: 76c8da62b6e26148b20682c9b015c8bb
       id: 3736347041
@@ -963,7 +1094,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: aeb5db31734af647b51705c4b053db5f
       Path: Events\Default Work Unit\Enemies\SILLA\silla_atacando
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.142381
       minDuration: 0.562517
     - name: silla_defeated
@@ -1009,9 +1140,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: fadaf38fd38d274483c6f33085ecfe7b
       Path: Events\Default Work Unit\Enemies\SILLA\silla_despierta
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 1.592109
+      minDuration: 0.879187
     - name: silla_pataDelantera
       guid: 3cd7ff35bab04b44a1e155e2b5b46555
       id: 3130254335
@@ -1032,7 +1163,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3cd7ff35bab04b44a1e155e2b5b46555
       Path: Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.125011
       minDuration: 0.996009
     - name: silla_pataTrasera
@@ -1055,7 +1186,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2743a844fb71b649a20fe345e50d1703
       Path: Events\Default Work Unit\Enemies\SILLA\silla_pataTrasera
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.125011
       minDuration: 1.066508
     - name: silla_resbalando
@@ -1316,7 +1447,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0100000005000000060000000b0000000e0000000f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	527665011	Seleccionar_mapa			\Default Work Unit\Menú Principal\Seleccionar_mapa	
+	1251048105	Repuesto1			\Default Work Unit\Menú Principal\Repuesto1	
+	1251048106	Repuesto2			\Default Work Unit\Menú Principal\Repuesto2	
+	1584507803	Click			\Default Work Unit\Menú Principal\Click	
+	2368844905	Enter			\Default Work Unit\Menú Principal\Enter	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	163710660	Enter_R	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Enter_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Enter_R		341152
+	752907907	Click_R	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Click_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Click_R		413504
+	793015402	Repuesto_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Repuesto_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Repuesto_1		529264
+	794741404	Seleccionar mapa_R	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Seleccionar mapa_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Seleccionar mapa_R		1204060
+	967099509	Repuesto_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Repuesto_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Repuesto_2		529264
+
