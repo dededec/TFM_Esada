@@ -4157,7 +4157,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3513e3f53f89d194cabbda72336c4fc0, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: f32abc6b884c99640ab9a66c01e56725, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -4341,6 +4341,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8556831201350507167, guid: 0a20716ff21783340bfcb2d2f49c959e, type: 3}
   m_PrefabInstance: {fileID: 663885658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &675563552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675563553}
+  - component: {fileID: 675563554}
+  m_Layer: 0
+  m_Name: SBNK Menu Principal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &675563553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675563552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1516482011}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &675563554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675563552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b721a3208ba3842b7d08fd502c3474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 72919ac7b97ce9d4b96231422464cf6b, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &693227755
 GameObject:
   m_ObjectHideFlags: 0
@@ -7029,6 +7084,62 @@ Transform:
   m_Father: {fileID: 1359729639}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1036836845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5304679406276696424, guid: 3ee0f636aec45044390dca200ffa798c, type: 3}
+  m_PrefabInstance: {fileID: 1185773876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1036836848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036836845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5569a5d4a50c764680ee18a2568eeed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 448d08f5cc298fe41b45a8101d848bd8, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1036836849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036836845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab0e4b6f9100b24d9ba62f79a57b709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1044643016
 GameObject:
   m_ObjectHideFlags: 0
@@ -9955,7 +10066,7 @@ GameObject:
   - component: {fileID: 1482105229}
   - component: {fileID: 1482105230}
   m_Layer: 0
-  m_Name: SoundBNK SFX
+  m_Name: SBNK SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10405,6 +10516,7 @@ Transform:
   - {fileID: 1482105229}
   - {fileID: 1925959046}
   - {fileID: 1878839629}
+  - {fileID: 675563553}
   m_Father: {fileID: 524899300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11279,7 +11391,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9d9196b26f1be3c438bf382806199105, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e1b330f0e8646874ca33cdaec7683546, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -12881,7 +12993,7 @@ GameObject:
   - component: {fileID: 1878839629}
   - component: {fileID: 1878839630}
   m_Layer: 0
-  m_Name: SBNK Music_IU
+  m_Name: SBNK Music LVL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12918,7 +13030,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c92a7357716fd3d47809aacfe2db4ead, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9f683c2d4b1d8de43b62e99e3ce18ce9, type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0

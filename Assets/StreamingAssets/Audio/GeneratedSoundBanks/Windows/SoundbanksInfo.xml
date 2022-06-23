@@ -733,10 +733,56 @@
 			<ShortName>Music_The_End</ShortName>
 			<Path>Music_The_End.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="1843488024">
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="1742529509">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
 			<ShortName>Music_LVL2</ShortName>
 			<Path>Music_LVL2.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3380345081" Name="Music_LVL2" ObjectPath="\Events\Default Work Unit\Music\Music_LVL2" GUID="{59FBB775-4A87-49E2-A5B3-DDA794F641BC}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="45085917" Language="SFX">
+							<ShortName>BASS 2.wav</ShortName>
+							<Path>SFX\BASS 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="147219979" Language="SFX">
+							<ShortName>PAD 1.wav</ShortName>
+							<Path>SFX\PAD 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510676643" Language="SFX">
+							<ShortName>PAD 2.wav</ShortName>
+							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="538990284" Language="SFX">
+							<ShortName>UP CORTO.wav</ShortName>
+							<Path>SFX\UP CORTO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="575158461" Language="SFX">
+							<ShortName>CHORUS EXALE.wav</ShortName>
+							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
+						</File>
+						<File Id="698884518" Language="SFX">
+							<ShortName>UP LARGO.wav</ShortName>
+							<Path>SFX\UP LARGO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="709195926" Language="SFX">
+							<ShortName>BASS 1.wav</ShortName>
+							<Path>SFX\BASS 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="717471477" Language="SFX">
+							<ShortName>DOWN CORTO.wav</ShortName>
+							<Path>SFX\DOWN CORTO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="968385185" Language="SFX">
+							<ShortName>DOWN LARGO.wav</ShortName>
+							<Path>SFX\DOWN LARGO_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1020362891" Language="SFX">
+							<ShortName>PAD 4.wav</ShortName>
+							<Path>SFX\PAD 4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="2098619303">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>

@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3380345081	Music_LVL2			\Default Work Unit\Music\Music_LVL2	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	45085917	BASS 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\BASS 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\BASS 2		8467264
+	147219979	PAD 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\PAD 1		8467264
+	510676643	PAD 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\PAD 2		8467264
+	538990284	UP CORTO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\UP CORTO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\UP CORTO		8467264
+	575158461	CHORUS EXALE	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\CHORUS EXALE_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\CHORUS EXALE		8467264
+	698884518	UP LARGO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\UP LARGO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\UP LARGO		8467264
+	709195926	BASS 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\BASS 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\BASS 2		8467264
+	717471477	DOWN CORTO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\DOWN CORTO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\DOWN CORTO		8467264
+	968385185	DOWN LARGO	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\DOWN LARGO_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\DOWN LARGO		8467264
+	1020362891	PAD 4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 2\LVL2 Music\PAD 4		8467264
+
