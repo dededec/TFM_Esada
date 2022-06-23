@@ -96,7 +96,7 @@ namespace TFMEsada
         public void Attack()
         {
             AkSoundEngine.PostEvent("silla_atacando", gameObject);
-            GetComponentInChildren<DamageCollider>()._hitbox.enabled = true;
+            if(GetComponentInChildren<DamageCollider>() != null) GetComponentInChildren<DamageCollider>()._hitbox.enabled = true;
         }
 
          public void NotAttack()

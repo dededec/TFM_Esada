@@ -32,8 +32,8 @@ public class CutOutScript : MonoBehaviour
             for(int m = 0; m < materials.Length; ++m)
             {
                 materials[m].SetVector("_CutoutPos", cutoutPos);
-                materials[m].SetFloat("_CutoutSize", 0.2f);
-                materials[m].SetFloat("_FalloffSize", 0.05f);
+                materials[m].SetFloat("_CutoutSize", 0.25f);
+                materials[m].SetFloat("_FalloffSize", 0.08f);
             }
         }
     }
