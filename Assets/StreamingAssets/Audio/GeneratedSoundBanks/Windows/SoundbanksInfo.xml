@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="790251809">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="2594470026">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -352,7 +352,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" GUID="{4601564B-5A3A-4E27-AB9B-88A1C634EF7C}" DurationType="OneShot" DurationMin="0.642108" DurationMax="1.667277">
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" GUID="{4601564B-5A3A-4E27-AB9B-88A1C634EF7C}" DurationType="OneShot" DurationMin="0.610975" DurationMax="1.573699">
 					<IncludedMemoryFiles>
 						<File Id="36118933" Language="SFX">
 							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_3.wav</ShortName>
@@ -491,43 +491,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="390506615" Name="silla_defeated" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_defeated" GUID="{6A7761F3-7135-40E1-B37E-153EE63C1F4B}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.280227" DurationMax="1.700023">
+				<Event Id="390506615" Name="silla_defeated" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_defeated" GUID="{6A7761F3-7135-40E1-B37E-153EE63C1F4B}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.769933" DurationMax="1.016889">
 					<IncludedMemoryFiles>
-						<File Id="446715020" Language="SFX">
-							<ShortName>silla_Defeated_chirridopremuerte_1.wav</ShortName>
-							<Path>SFX\silla_Defeated_chirridopremuerte_1_10C4C929.wem</Path>
-						</File>
 						<File Id="510553907" Language="SFX">
 							<ShortName>Silla_Defeated_3.wav</ShortName>
 							<Path>SFX\Silla_Defeated_3_EEC69130.wem</Path>
-						</File>
-						<File Id="563858125" Language="SFX">
-							<ShortName>Silla_DEFEATED_golpesuelo_2-1.wav</ShortName>
-							<Path>SFX\Silla_DEFEATED_golpesuelo_2-1_10C4C929.wem</Path>
-						</File>
-						<File Id="641358567" Language="SFX">
-							<ShortName>silla_Defeated_chirridopremuerte_3.wav</ShortName>
-							<Path>SFX\silla_Defeated_chirridopremuerte_3_10C4C929.wem</Path>
 						</File>
 						<File Id="696021381" Language="SFX">
 							<ShortName>Silla_Defeated_1.wav</ShortName>
 							<Path>SFX\Silla_Defeated_1_D3897DA5.wem</Path>
 						</File>
-						<File Id="748780595" Language="SFX">
-							<ShortName>silla_Defeated_chirridopremuerte_2.wav</ShortName>
-							<Path>SFX\silla_Defeated_chirridopremuerte_2_10C4C929.wem</Path>
-						</File>
-						<File Id="786969096" Language="SFX">
-							<ShortName>Silla_DEFEATED_golpesuelo_3-1.wav</ShortName>
-							<Path>SFX\Silla_DEFEATED_golpesuelo_3-1_10C4C929.wem</Path>
-						</File>
 						<File Id="871172369" Language="SFX">
 							<ShortName>Silla_Defeated_2.wav</ShortName>
 							<Path>SFX\Silla_Defeated_2_75D8CC9F.wem</Path>
-						</File>
-						<File Id="1001956948" Language="SFX">
-							<ShortName>Silla_DEFEATED_golpesuelo_1-1.wav</ShortName>
-							<Path>SFX\Silla_DEFEATED_golpesuelo_1-1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -555,7 +531,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3130254335" Name="silla_pataDelantera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera" GUID="{35FFD73C-B0BA-444B-A1E1-55E2B5B46555}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.996009" DurationMax="1.125011">
+				<Event Id="3130254335" Name="silla_pataDelantera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera" GUID="{35FFD73C-B0BA-444B-A1E1-55E2B5B46555}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.887343" DurationMax="1.262782">
 					<IncludedMemoryFiles>
 						<File Id="173152896" Language="SFX">
 							<ShortName>silla pasos delanteros_3(sin galope).wav</ShortName>
@@ -579,7 +555,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4169820343" Name="silla_pataTrasera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataTrasera" GUID="{44A84327-71FB-49B6-A20F-E345E50D1703}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.066508" DurationMax="1.125011">
+				<Event Id="4169820343" Name="silla_pataTrasera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataTrasera" GUID="{44A84327-71FB-49B6-A20F-E345E50D1703}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.950151" DurationMax="1.262782">
 					<IncludedMemoryFiles>
 						<File Id="59365415" Language="SFX">
 							<ShortName>silla pasos traseros _3(singalope).wav</ShortName>

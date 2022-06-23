@@ -1006,8 +1006,8 @@ MonoBehaviour:
         guid: 4b5601463a5a274eab9b88a1c634ef7c
       Path: Events\Default Work Unit\Player\Player_Footsteps
       maxAttenuation: 0
-      maxDuration: 1.667277
-      minDuration: 0.642108
+      maxDuration: 1.573699
+      minDuration: 0.610975
     - name: puerta_chirriando_lejos
       guid: c77300fbb9e7a140959deaf8f02a9915
       id: 2170274192
