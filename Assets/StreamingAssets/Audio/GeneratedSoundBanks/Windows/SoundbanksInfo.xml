@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="2520711444">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3996616780">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -177,11 +177,83 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.821066" DurationMax="1.182313">
+				<Event Id="2898542032" Name="Grito_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_1" GUID="{D0277978-5A61-43B9-87A6-3374B3671918}" DurationType="OneShot" DurationMin="7.500000" DurationMax="7.500000">
+					<IncludedMemoryFiles>
+						<File Id="328653772" Language="SFX">
+							<ShortName>gritos halloween_ 1.wav</ShortName>
+							<Path>SFX\gritos halloween_ 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542035" Name="Grito_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_2" GUID="{DE753FA7-F581-4D9B-A02C-18351AA15A22}" DurationType="OneShot" DurationMin="7.500000" DurationMax="7.500000">
+					<IncludedMemoryFiles>
+						<File Id="659437505" Language="SFX">
+							<ShortName>gritos halloween_ 2.wav</ShortName>
+							<Path>SFX\gritos halloween_ 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542034" Name="Grito_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_3" GUID="{BA9236FB-539C-445B-9C8D-83736133B34F}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+					<IncludedMemoryFiles>
+						<File Id="764167059" Language="SFX">
+							<ShortName>gritos halloween_ 3.wav</ShortName>
+							<Path>SFX\gritos halloween_ 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542037" Name="Grito_4" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_4" GUID="{9C2C8D64-B45A-484E-AEA9-549C3F26C045}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+					<IncludedMemoryFiles>
+						<File Id="381433966" Language="SFX">
+							<ShortName>gritos halloween_ 4.wav</ShortName>
+							<Path>SFX\gritos halloween_ 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542036" Name="Grito_5" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_5" GUID="{EE00C071-8FA7-45D4-B769-704C2F7A825E}" DurationType="OneShot" DurationMin="10.125011" DurationMax="10.125011">
+					<IncludedMemoryFiles>
+						<File Id="141216616" Language="SFX">
+							<ShortName>gritos halloween_ 5.wav</ShortName>
+							<Path>SFX\gritos halloween_ 5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542039" Name="Grito_6" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_6" GUID="{3F5A5D76-25C1-4DBD-A65D-678EE72F5083}" DurationType="OneShot" DurationMin="12.000000" DurationMax="12.000000">
+					<IncludedMemoryFiles>
+						<File Id="508591506" Language="SFX">
+							<ShortName>gritos halloween_ 6.wav</ShortName>
+							<Path>SFX\gritos halloween_ 6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542038" Name="Grito_7" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_7" GUID="{D145E8DF-9262-471C-A3B8-0E98410D8F82}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+					<IncludedMemoryFiles>
+						<File Id="1066004049" Language="SFX">
+							<ShortName>gritos halloween_ 7.wav</ShortName>
+							<Path>SFX\gritos halloween_ 7_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542041" Name="Grito_8" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_8" GUID="{2EF7798F-6E96-417A-B72C-972BAAD4369F}" DurationType="OneShot" DurationMin="6.000000" DurationMax="6.000000">
+					<IncludedMemoryFiles>
+						<File Id="165249764" Language="SFX">
+							<ShortName>gritos halloween_ 8.wav</ShortName>
+							<Path>SFX\gritos halloween_ 8_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2898542040" Name="Grito_9" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_9" GUID="{35A7C9CF-A2F8-4696-8F91-8708A7FE2983}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+					<IncludedMemoryFiles>
+						<File Id="801115799" Language="SFX">
+							<ShortName>gritos halloween_ 9.wav</ShortName>
+							<Path>SFX\gritos halloween_ 9_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
 					<IncludedMemoryFiles>
 						<File Id="365758720" Language="SFX">
 							<ShortName>libro golpe player_1_2.wav</ShortName>
-							<Path>SFX\libro golpe player_1_2_10C4C929.wem</Path>
+							<Path>SFX\libro golpe player_1_2_27BFF36A.wem</Path>
 						</File>
 						<File Id="497011953" Language="SFX">
 							<ShortName>libro golpe player_2_2.wav</ShortName>
@@ -189,7 +261,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.788209" DurationMax="0.886735">
+				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.604825" DurationMax="0.788209">
 					<IncludedMemoryFiles>
 						<File Id="314523489" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_2.wav</ShortName>
@@ -197,7 +269,7 @@
 						</File>
 						<File Id="729922704" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_1.wav</ShortName>
-							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_10C4C929.wem</Path>
+							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_179FE242.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -676,7 +748,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="2180837938">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="2284334509">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
