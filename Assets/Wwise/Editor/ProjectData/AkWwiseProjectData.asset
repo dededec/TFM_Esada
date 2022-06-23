@@ -151,7 +151,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585456193480441665
+    m_lastTime: -8585456035566921104
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -306,7 +306,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585456822136164264
+    m_lastTime: -8585456035566852694
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -585,6 +585,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.933605
       minDuration: 1.933605
+    - name: Entrar_nivel
+      guid: ce4f22cf6285be4798c1800f57029734
+      id: 1827304574
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: "Men\xFA Principal"
+        ObjectType: 4
+        guid: beaa8b278cfd604db66552101532d939
+      - ElementName: Entrar_nivel
+        ObjectType: 3
+        guid: ce4f22cf6285be4798c1800f57029734
+      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Entrar_nivel"
+      maxAttenuation: 0
+      maxDuration: 6.825374
+      minDuration: 6.825374
     - name: LIBRO
       guid: c5b0280b1ee537448dd1bca1a62c2f3a
       id: 2068852883
@@ -1068,26 +1088,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3
       minDuration: 3
-    - name: Seleccionar_mapa
-      guid: ce4f22cf6285be4798c1800f57029734
-      id: 527665011
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
-      - ElementName: "Men\xFA Principal"
-        ObjectType: 4
-        guid: beaa8b278cfd604db66552101532d939
-      - ElementName: Seleccionar_mapa
-        ObjectType: 3
-        guid: ce4f22cf6285be4798c1800f57029734
-      Path: "Events\\Default Work Unit\\Men\xFA Principal\\Seleccionar_mapa"
-      maxAttenuation: 0
-      maxDuration: 6.825374
-      minDuration: 6.825374
     - name: SFX_Enviroments
       guid: 76c8da62b6e26148b20682c9b015c8bb
       id: 3736347041
@@ -1498,7 +1498,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000e0000000f000000100000002100000022000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000e0000000f0000001000000012000000130000002100000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

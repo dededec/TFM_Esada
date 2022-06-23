@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="391749285">
+		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="4139326460">
 			<ObjectPath>\SoundBanks\Default Work Unit\menu_principal</ObjectPath>
 			<ShortName>menu_principal</ShortName>
 			<Path>menu_principal.bnk</Path>
@@ -32,6 +32,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="6.825374" DurationMax="6.825374">
+					<IncludedMemoryFiles>
+						<File Id="794741404" Language="SFX">
+							<ShortName>Seleccionar mapa_R.wav</ShortName>
+							<Path>SFX\Seleccionar mapa_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1251048105" Name="Repuesto1" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto1" GUID="{312E8E2D-ED54-4D1F-A13E-0E3715A4CC8F}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
 					<IncludedMemoryFiles>
 						<File Id="793015402" Language="SFX">
@@ -45,14 +53,6 @@
 						<File Id="967099509" Language="SFX">
 							<ShortName>Repuesto_2.wav</ShortName>
 							<Path>SFX\Repuesto_2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="527665011" Name="Seleccionar_mapa" ObjectPath="\Events\Default Work Unit\Menú Principal\Seleccionar_mapa" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="6.825374" DurationMax="6.825374">
-					<IncludedMemoryFiles>
-						<File Id="794741404" Language="SFX">
-							<ShortName>Seleccionar mapa_R.wav</ShortName>
-							<Path>SFX\Seleccionar mapa_R_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -635,7 +635,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="4034143549">
+		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="3598656453">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Tutorial</ObjectPath>
 			<ShortName>Music_Tutorial</ShortName>
 			<Path>Music_Tutorial.bnk</Path>
@@ -723,17 +723,27 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="2561441989">
+		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="3505172793">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_MenuPrincipal</ObjectPath>
 			<ShortName>Music_MenuPrincipal</ShortName>
 			<Path>Music_MenuPrincipal.bnk</Path>
+			<IncludedEvents>
+				<Event Id="17986547" Name="Music_Menu_Principal" ObjectPath="\Events\Default Work Unit\Music\Music_Menu_Principal" GUID="{A40D3DFD-7E2B-4A39-AB61-6A319A1C8D19}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="362553558" Language="SFX">
+							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
+							<Path>SFX\MUSIC_Menu_Principal_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="1089142940">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_The_End</ObjectPath>
 			<ShortName>Music_The_End</ShortName>
 			<Path>Music_The_End.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="1742529509">
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="3756114454">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
 			<ShortName>Music_LVL2</ShortName>
 			<Path>Music_LVL2.bnk</Path>
@@ -784,7 +794,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="2098619303">
+		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="3508148263">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>
 			<ShortName>Music_LVL1</ShortName>
 			<Path>Music_LVL1.bnk</Path>

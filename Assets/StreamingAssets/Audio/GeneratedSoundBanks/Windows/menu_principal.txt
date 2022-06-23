@@ -1,8 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	527665011	Seleccionar_mapa			\Default Work Unit\Menú Principal\Seleccionar_mapa	
 	1251048105	Repuesto1			\Default Work Unit\Menú Principal\Repuesto1	
 	1251048106	Repuesto2			\Default Work Unit\Menú Principal\Repuesto2	
 	1584507803	Click			\Default Work Unit\Menú Principal\Click	
+	1827304574	Entrar_nivel			\Default Work Unit\Menú Principal\Entrar_nivel	
 	2368844905	Enter			\Default Work Unit\Menú Principal\Enter	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
