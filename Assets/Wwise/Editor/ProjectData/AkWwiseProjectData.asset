@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f9c8332c0610ec45bf717ab499bef714
     GuidInternal: 
-    m_lastTime: -8585459489399841960
+    m_lastTime: -8585456200739756789
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -71,6 +71,57 @@ MonoBehaviour:
         ObjectType: 2
         guid: a6ebcf94a09895458e6d25375c6b6263
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Reverb_Creaks
+      guid: 022e7bea727c6248b20b5b28c9b30286
+      id: 3686193383
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f9c8332c0610ec45bf717ab499bef714
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb_Creaks
+        ObjectType: 1
+        guid: 022e7bea727c6248b20b5b28c9b30286
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks
+    - name: Reverb_footsteps
+      guid: 662c05f37bcea94181d95e328e61e1c6
+      id: 1921000341
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f9c8332c0610ec45bf717ab499bef714
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb_footsteps
+        ObjectType: 1
+        guid: 662c05f37bcea94181d95e328e61e1c6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_footsteps
+    - name: Reverb_Puerta
+      guid: 3ecde26c8ab0c24db683017e38135d7c
+      id: 854529873
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f9c8332c0610ec45bf717ab499bef714
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb_Puerta
+        ObjectType: 1
+        guid: 3ecde26c8ab0c24db683017e38135d7c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta
     - name: SFX
       guid: eeb900fd35393a4f9614e62ab3b29432
       id: 393239870
@@ -620,7 +671,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5ba765de7e48c4449ef01cc6e7801dbb
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_defeated
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.5
       minDuration: 1.125011
     - name: libro_despierto
@@ -1117,7 +1168,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f361776a3571e140b37e153ee63c1f4b
       Path: Events\Default Work Unit\Enemies\SILLA\silla_defeated
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.700023
       minDuration: 1.280227
     - name: silla_despierta
@@ -1209,7 +1260,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9da6b9e8e2c27c459763081a3dd19150
       Path: Events\Default Work Unit\Enemies\SILLA\silla_resbalando
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.165896
       minDuration: 0.908209
   RtpcWwu:

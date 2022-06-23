@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3930438827">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="790251809">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -70,6 +70,9 @@
 							<Path>SFX\cerrar puerta-1_5B4591CF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\chirriando_lejos_3" GUID="{05F58042-A880-495C-926D-E120B6655092}" DurationType="OneShot" DurationMin="3.366894" DurationMax="3.779210">
 					<IncludedMemoryFiles>
@@ -126,6 +129,9 @@
 							<Path>SFX\abrir_cruzar puerta-2_1A89E982.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="4002975042" Name="Disparar_charco" ObjectPath="\Events\Default Work Unit\Player\Disparar_charco" GUID="{9CF41E98-04D3-480D-8905-080A1DDD80CF}" DurationType="OneShot" DurationMin="0.934354" DurationMax="0.934354">
 					<IncludedMemoryFiles>
@@ -195,7 +201,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
+				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
 					<IncludedMemoryFiles>
 						<File Id="100102044" Language="SFX">
 							<ShortName>Libro_Defeated_3.wav</ShortName>
@@ -290,6 +296,9 @@
 							<Path>SFX\teléfono chungo_C5579977.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1142560233" Name="PickUp_coleccionable" ObjectPath="\Events\Default Work Unit\Player\PickUp_coleccionable" GUID="{2A93A1A7-5C54-493A-BA84-4F0EBE83ED3B}" DurationType="OneShot" DurationMin="2.532972" DurationMax="2.532972">
 					<IncludedMemoryFiles>
@@ -351,7 +360,7 @@
 						</File>
 						<File Id="81991429" Language="SFX">
 							<ShortName>CREAKS\Creaks 3.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 3_D38904AA.wem</Path>
+							<Path>SFX\CREAKS\Creaks 3_A12BC6E6.wem</Path>
 						</File>
 						<File Id="94848625" Language="SFX">
 							<ShortName>CHARCO\FOOTSTEPS_charco_3.wav</ShortName>
@@ -359,7 +368,7 @@
 						</File>
 						<File Id="116516013" Language="SFX">
 							<ShortName>CREAKS\Creaks 4.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 4_60E6CD7E.wem</Path>
+							<Path>SFX\CREAKS\Creaks 4_77B283CD.wem</Path>
 						</File>
 						<File Id="135008941" Language="SFX">
 							<ShortName>CHARCO\FOOTSTEPS_charco_2.wav</ShortName>
@@ -367,15 +376,15 @@
 						</File>
 						<File Id="369893605" Language="SFX">
 							<ShortName>CREAKS\Creaks 11.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 11_39CFF76A.wem</Path>
+							<Path>SFX\CREAKS\Creaks 11_FB6039BE.wem</Path>
 						</File>
 						<File Id="411621258" Language="SFX">
 							<ShortName>CREAKS\Creaks 5.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 5_02FD1426.wem</Path>
+							<Path>SFX\CREAKS\Creaks 5_F8A4F6FF.wem</Path>
 						</File>
 						<File Id="468651632" Language="SFX">
 							<ShortName>CREAKS\Creaks 10.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 10_0B425362.wem</Path>
+							<Path>SFX\CREAKS\Creaks 10_8DD9B04B.wem</Path>
 						</File>
 						<File Id="480809404" Language="SFX">
 							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_1.wav</ShortName>
@@ -391,7 +400,7 @@
 						</File>
 						<File Id="709888846" Language="SFX">
 							<ShortName>CREAKS\Creaks 12.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 12_82999BCC.wem</Path>
+							<Path>SFX\CREAKS\Creaks 12_2856EFB2.wem</Path>
 						</File>
 						<File Id="866468345" Language="SFX">
 							<ShortName>CHARCO\FOOTSTEPS_charco_4.wav</ShortName>
@@ -399,15 +408,15 @@
 						</File>
 						<File Id="879695477" Language="SFX">
 							<ShortName>CREAKS\Creaks 1.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 1_EE6B5BFF.wem</Path>
+							<Path>SFX\CREAKS\Creaks 1_ABF0433C.wem</Path>
 						</File>
 						<File Id="989562857" Language="SFX">
 							<ShortName>CREAKS\Creaks 6.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 6_6D1B207E.wem</Path>
+							<Path>SFX\CREAKS\Creaks 6_34A80D42.wem</Path>
 						</File>
 						<File Id="1048076172" Language="SFX">
 							<ShortName>CREAKS\Creaks 9.wav</ShortName>
-							<Path>SFX\CREAKS\Creaks 9_7E347F17.wem</Path>
+							<Path>SFX\CREAKS\Creaks 9_81F6E269.wem</Path>
 						</File>
 						<File Id="1064420680" Language="SFX">
 							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_4.wav</ShortName>
@@ -433,6 +442,10 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1921000341" Name="Reverb_footsteps" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_footsteps" GUID="{F3052C66-CE7B-41A9-81D9-5E328E61E1C6}"/>
+						<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos" GUID="{FB0073C7-E7B9-40A1-959D-EAF8F02A9915}" DurationType="OneShot" DurationMin="4.800000" DurationMax="5.708194">
 					<IncludedMemoryFiles>
@@ -478,7 +491,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="390506615" Name="silla_defeated" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_defeated" GUID="{6A7761F3-7135-40E1-B37E-153EE63C1F4B}" DurationType="OneShot" DurationMin="1.280227" DurationMax="1.700023">
+				<Event Id="390506615" Name="silla_defeated" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_defeated" GUID="{6A7761F3-7135-40E1-B37E-153EE63C1F4B}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.280227" DurationMax="1.700023">
 					<IncludedMemoryFiles>
 						<File Id="446715020" Language="SFX">
 							<ShortName>silla_Defeated_chirridopremuerte_1.wav</ShortName>
@@ -590,7 +603,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2665470364" Name="silla_resbalando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_resbalando" GUID="{E8B9A69D-C2E2-457C-9763-081A3DD19150}" DurationType="OneShot" DurationMin="0.908209" DurationMax="1.165896">
+				<Event Id="2665470364" Name="silla_resbalando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_resbalando" GUID="{E8B9A69D-C2E2-457C-9763-081A3DD19150}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.908209" DurationMax="1.165896">
 					<IncludedMemoryFiles>
 						<File Id="796425651" Language="SFX">
 							<ShortName>silla resbalando 3.wav</ShortName>
@@ -696,10 +709,15 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2063165755">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="3868980731">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
+				<AuxBus Id="1921000341" Name="Reverb_footsteps" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_footsteps" GUID="{F3052C66-CE7B-41A9-81D9-5E328E61E1C6}"/>
+				<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
+			</IncludedAuxBusses>
 			<GameParameters>
 				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Default Work Unit\Music_Volume" GUID="{F480098A-4B6B-4076-BC22-0AEA7AAAB16F}"/>
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
