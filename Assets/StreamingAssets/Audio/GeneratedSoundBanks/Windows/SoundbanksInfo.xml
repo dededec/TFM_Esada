@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="2594470026">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="2520711444">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -177,7 +177,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.821066" DurationMax="0.821066">
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.821066" DurationMax="1.182313">
 					<IncludedMemoryFiles>
 						<File Id="365758720" Language="SFX">
 							<ShortName>libro golpe player_1_2.wav</ShortName>
@@ -531,6 +531,34 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3379905959" Name="silla_golpe_suelo" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_golpe_suelo" GUID="{B60E8A8E-5884-4B5B-BA3E-30D6A33D21E0}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.734307" DurationMax="0.801169">
+					<IncludedMemoryFiles>
+						<File Id="446715020" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_1.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_1_10C4C929.wem</Path>
+						</File>
+						<File Id="563858125" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_2-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_2-1_0DAFA835.wem</Path>
+						</File>
+						<File Id="641358567" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_3.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_3_10C4C929.wem</Path>
+						</File>
+						<File Id="748780595" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_2.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_2_10C4C929.wem</Path>
+						</File>
+						<File Id="786969096" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_3-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_3-1_AD1665B8.wem</Path>
+						</File>
+						<File Id="1001956948" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_1-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_1-1_0F69B21B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3130254335" Name="silla_pataDelantera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera" GUID="{35FFD73C-B0BA-444B-A1E1-55E2B5B46555}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.887343" DurationMax="1.262782">
 					<IncludedMemoryFiles>
 						<File Id="173152896" Language="SFX">
@@ -601,12 +629,6 @@
 					<Switches>
 						<Switch Id="1160234136" Name="Normal" ObjectPath="\Switches\Default Work Unit\Footsteps_Surface\Normal" GUID="{E74CBD1E-CE31-4361-AC2E-6FF872D17ABF}"/>
 						<Switch Id="57390691" Name="Charco" ObjectPath="\Switches\Default Work Unit\Footsteps_Surface\Charco" GUID="{C06E316A-CDF6-4C3B-B1A2-1C47A8DACF94}"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="2133740333" Name="Golpe_Libro_Surface" ObjectPath="\Switches\Default Work Unit\Golpe_Libro_Surface" GUID="{2029E597-0018-4CF7-92C5-7033B3AF1BB3}">
-					<Switches>
-						<Switch Id="1069431850" Name="Player" ObjectPath="\Switches\Default Work Unit\Golpe_Libro_Surface\Player" GUID="{113E93D1-12CC-45AE-A625-8990ECD06068}"/>
-						<Switch Id="3404187766" Name="Pared_mueble" ObjectPath="\Switches\Default Work Unit\Golpe_Libro_Surface\Pared_mueble" GUID="{9F2E6EC2-646B-4356-B0BA-5B86FDBA45B0}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
