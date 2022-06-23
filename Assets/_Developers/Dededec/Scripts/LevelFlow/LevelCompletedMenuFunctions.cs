@@ -13,7 +13,7 @@ using UnityEngine.InputSystem;
 
 namespace TFMEsada
 {
-    /// <summary>  
+    /// <summary>
 	/// Functions to use at the end of a level
 	/// </summary>
     public class LevelCompletedMenuFunctions : MonoBehaviour

@@ -8594,6 +8594,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1562632277}
     m_Modifications:
+    - target: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _uiPause
+      value: 
+      objectReference: {fileID: 749291766}
     - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _keyImage
       value: 
