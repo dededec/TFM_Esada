@@ -423,6 +423,14 @@ namespace TFMEsada
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""PauseUnpause"",
+                    ""type"": ""Button"",
+                    ""id"": ""b1a270c1-f9a1-498b-9117-b95b2b5cb45e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -733,6 +741,28 @@ namespace TFMEsada
                     ""action"": ""Cancel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce7d8633-4f9f-4f84-82d4-bfd3715d2655"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseUnpause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""560c7f4b-3d49-4fae-aaf4-d32226539b64"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseUnpause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -817,6 +847,7 @@ namespace TFMEsada
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
             m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
             m_UI_Cancel = m_UI.FindAction("Cancel", throwIfNotFound: true);
+            m_UI_PauseUnpause = m_UI.FindAction("PauseUnpause", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -992,6 +1023,7 @@ namespace TFMEsada
         private readonly InputAction m_UI_Navigate;
         private readonly InputAction m_UI_Select;
         private readonly InputAction m_UI_Cancel;
+        private readonly InputAction m_UI_PauseUnpause;
         public struct UIActions
         {
             private @IAA_Player m_Wrapper;
@@ -999,6 +1031,7 @@ namespace TFMEsada
             public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
             public InputAction @Select => m_Wrapper.m_UI_Select;
             public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
+            public InputAction @PauseUnpause => m_Wrapper.m_UI_PauseUnpause;
             public InputActionMap Get() { return m_Wrapper.m_UI; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1017,6 +1050,9 @@ namespace TFMEsada
                     @Cancel.started -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
                     @Cancel.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
                     @Cancel.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
+                    @PauseUnpause.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseUnpause;
+                    @PauseUnpause.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseUnpause;
+                    @PauseUnpause.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseUnpause;
                 }
                 m_Wrapper.m_UIActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1030,6 +1066,9 @@ namespace TFMEsada
                     @Cancel.started += instance.OnCancel;
                     @Cancel.performed += instance.OnCancel;
                     @Cancel.canceled += instance.OnCancel;
+                    @PauseUnpause.started += instance.OnPauseUnpause;
+                    @PauseUnpause.performed += instance.OnPauseUnpause;
+                    @PauseUnpause.canceled += instance.OnPauseUnpause;
                 }
             }
         }
@@ -1099,6 +1138,7 @@ namespace TFMEsada
             void OnNavigate(InputAction.CallbackContext context);
             void OnSelect(InputAction.CallbackContext context);
             void OnCancel(InputAction.CallbackContext context);
+            void OnPauseUnpause(InputAction.CallbackContext context);
         }
     }
 }

@@ -27,27 +27,11 @@ public class GameStateManager
 
     public void SetState(GameState newGameState)
     {
+        Debug.Log("NewState: " + newGameState);
         if(newGameState == CurrentGameState)
             return;
         CurrentGameState = newGameState;
         onGameStateChanged?.Invoke(newGameState); 
     }
-
-    #region Example of use
-
-    // private void Awake() {
-    //     GameStateManager.instance.onGameStateChanged += onGameStateChanged;
-    // }
-
-    // private void OnDestroy() {
-    //     GameStateManager.instance.onGameStateChanged -= onGameStateChanged;
-    // }
-
-    // private void onGameStateChanged(GameState newGameState)
-    // {
-    //     enabled = newGameState == GameState.Gameplay;
-    // }
-        
-    #endregion
 
 }
