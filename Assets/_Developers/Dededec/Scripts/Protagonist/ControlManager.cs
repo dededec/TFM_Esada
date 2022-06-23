@@ -19,8 +19,6 @@ namespace TFMEsada
 
         private IAA_Player _controls;
         
-        [SerializeField] private GameObject _uiPause;
-        private InputAction _pauseUnpause;
 
 	    #endregion
 	  
@@ -41,23 +39,13 @@ namespace TFMEsada
         private void Awake() 
         {
             _controls = new IAA_Player();
-            GameStateManager.instance.onGameStateChanged += onGameStateChanged;
         }
 
-        private void Start() 
-        {
-            _pauseUnpause = Controls.UI.PauseUnpause;
-            _pauseUnpause.started += pauseUnpauseStarted;
-            _pauseUnpause.Enable();
-
-        }
+        
 
         private void OnDestroy() 
         {
-            StopPlayer(true);
-            _pauseUnpause.started -= pauseUnpauseStarted;
-            _pauseUnpause.Disable();
-            GameStateManager.instance.onGameStateChanged -= onGameStateChanged;    
+            StopPlayer(true);            
         }
       
         #endregion
@@ -103,17 +91,6 @@ namespace TFMEsada
                 Controls.Camera.Enable();
                 Controls.Interaction.Enable();
             }
-        }
-
-        private void pauseUnpauseStarted(InputAction.CallbackContext context)
-        {
-            GameStateManager.instance.SetState(GameStateManager.instance.CurrentGameState == GameState.Gameplay ? GameState.Paused : GameState.Gameplay);
-        }
-
-        private void onGameStateChanged(GameState newState)
-        {
-            _uiPause.SetActive(newState == GameState.Paused);
-            StopPlayer(newState == GameState.Paused);
         }
 
         #endregion

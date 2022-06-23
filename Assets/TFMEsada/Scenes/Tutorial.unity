@@ -2789,6 +2789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 749291767}
   - component: {fileID: 749291768}
+  - component: {fileID: 749291769}
   m_Layer: 5
   m_Name: UI_Pausa
   m_TagString: Untagged
@@ -2831,19 +2832,32 @@ MonoBehaviour:
   _buttons:
   - button: {fileID: 824020771}
     transitions:
-      up: {fileID: 954120965}
+      up: {fileID: 0}
       down: {fileID: 0}
       right: {fileID: 954120965}
       left: {fileID: 0}
   - button: {fileID: 954120966}
     transitions:
       up: {fileID: 0}
-      down: {fileID: 824020770}
+      down: {fileID: 0}
       right: {fileID: 0}
       left: {fileID: 824020770}
   _selector: {fileID: 655639688}
   _controlManager: {fileID: 6128377949064555888}
   eventSystem: {fileID: 1572740276}
+--- !u!114 &749291769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749291766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5767f9db76d95b489a70a84f0f93fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gfc: {fileID: 1792714149}
 --- !u!1 &760792678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,9 +3142,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TFMEsada.LevelCompletedFunctions, Assembly-CSharp
-        m_MethodName: LoadNextLevel
+      - m_Target: {fileID: 749291769}
+        m_TargetAssemblyTypeName: TFMEsada.PauseMenuFunctions, Assembly-CSharp
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3727,9 +3741,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TFMEsada.LevelCompletedManager, Assembly-CSharp
-        m_MethodName: GoToSelect
+      - m_Target: {fileID: 749291769}
+        m_TargetAssemblyTypeName: TFMEsada.PauseMenuFunctions, Assembly-CSharp
+        m_MethodName: ExitToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9369,6 +9383,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6128377947335776084, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
   m_PrefabInstance: {fileID: 1498218369242119270}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6128377949064555884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128377949064555882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef94e273de0b554a9444e28b12db35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiPause: {fileID: 749291766}
+  _controls: {fileID: 6128377949064555888}
 --- !u!114 &6128377949064555888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}

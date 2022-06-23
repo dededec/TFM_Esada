@@ -75,6 +75,7 @@ namespace TFMEsada
             _uiSelect.started -= changeSelection;
             _uiNavigate.Disable();
 
+            _loadedControls = false;
         }
 
         #endregion
