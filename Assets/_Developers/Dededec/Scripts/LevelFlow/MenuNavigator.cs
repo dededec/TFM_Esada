@@ -40,6 +40,8 @@ namespace TFMEsada
 
         [SerializeField] private List<ButtonTransition> _buttons = new List<ButtonTransition>();
         [SerializeField] private RectTransform _selector;
+        [SerializeField] private Sprite _smallSprite;
+        [SerializeField] private Sprite _bigSprite;
         [SerializeField] private ControlManager _controlManager;  
         [SerializeField] private EventSystem eventSystem;
         private InputAction _uiSelect;
@@ -72,7 +74,7 @@ namespace TFMEsada
             _uiSelect.started -= buttonInteract;
             _uiSelect.Disable();
 
-            _uiSelect.started -= changeSelection;
+            _uiNavigate.started -= changeSelection;
             _uiNavigate.Disable();
 
             _loadedControls = false;
@@ -104,44 +106,52 @@ namespace TFMEsada
 
         private void buttonInteract(InputAction.CallbackContext context)
         {
+            AkSoundEngine.PostEvent("Enter", this.gameObject);
             ExecuteEvents.Execute(_buttons[indexSelected].button.gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
         }
 
         private void changeSelection(InputAction.CallbackContext context)
         {
             var values = context.ReadValue<Vector2>();
+            AkSoundEngine.PostEvent("Click", this.gameObject);
 
             if(values.x > 0)
             {
-                if(_buttons[indexSelected].transitions.right != null)
-                {
-                    _selector.position = _buttons[indexSelected].transitions.right.position;
-                }
+                changeSelectorPosition(_buttons[indexSelected].transitions.right);
             }
             else if(values.x < 0)
             {
-                if(_buttons[indexSelected].transitions.left != null)
-                {
-                    _selector.position = _buttons[indexSelected].transitions.left.position;
-                }
+                changeSelectorPosition(_buttons[indexSelected].transitions.left);
             }
 
             if(values.y > 0)
             {
-                if(_buttons[indexSelected].transitions.up != null)
-                {
-                    _selector.position = _buttons[indexSelected].transitions.up.position;
-                }
+                changeSelectorPosition(_buttons[indexSelected].transitions.up);
             }
             else if(values.y < 0)
             {
-                if(_buttons[indexSelected].transitions.down != null)
-                {
-                    _selector.position = _buttons[indexSelected].transitions.down.position;
-                }
+                changeSelectorPosition(_buttons[indexSelected].transitions.down);
             }
 
             indexSelected = _buttons.FindIndex(b => b.button.gameObject.GetComponent<RectTransform>().position == _selector.position);
+        }
+
+        private void changeSelectorPosition(RectTransform rect)
+        {
+            if (rect != null)
+            {
+                _selector.position = rect.position;
+                _selector.sizeDelta = rect.sizeDelta + Vector2.right * 20f;
+                
+                if(rect.gameObject.name.StartsWith("small"))
+                {
+                    _selector.GetComponent<Image>().sprite = _smallSprite;
+                }
+                else
+                {
+                    _selector.GetComponent<Image>().sprite = _bigSprite;
+                }
+            }
         }
 
         #endregion

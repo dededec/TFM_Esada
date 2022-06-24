@@ -32,7 +32,7 @@ RectTransform:
   - {fileID: 3926333786349562214}
   - {fileID: 3926333786064707119}
   m_Father: {fileID: 1348598419608159045}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 3926333786064707089}
   - component: {fileID: 3926333786064707088}
   m_Layer: 5
-  m_Name: ButtonPlus
+  m_Name: small_ButtonPlus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,9 +360,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: 0}
+  m_AnchoredPosition: {x: 463, y: -76.79999}
   m_SizeDelta: {x: 256, y: 256}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.2}
 --- !u!222 &3926333786064707090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -444,7 +444,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3926333786064707089}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 749291768}
+        m_TargetAssemblyTypeName: TFMEsada.VolumeManager, Assembly-CSharp
+        m_MethodName: IncreaseMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3926333786345974628
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3926333786345974629}
   m_Layer: 5
-  m_Name: VFX
+  m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -477,7 +489,7 @@ RectTransform:
   - {fileID: 3926333787588450374}
   - {fileID: 3926333787411386669}
   m_Father: {fileID: 1348598419608159045}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -497,7 +509,7 @@ GameObject:
   - component: {fileID: 3926333786349562216}
   - component: {fileID: 3926333786349562215}
   m_Layer: 5
-  m_Name: ButtonMinus
+  m_Name: small_ButtonMinus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -519,9 +531,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285, y: 0}
+  m_AnchoredPosition: {x: 285, y: -76.79999}
   m_SizeDelta: {x: 256, y: 256}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.2}
 --- !u!222 &3926333786349562217
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -603,7 +615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3926333786349562216}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 749291768}
+        m_TargetAssemblyTypeName: TFMEsada.VolumeManager, Assembly-CSharp
+        m_MethodName: DecreaseMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3926333786671103852
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +714,7 @@ GameObject:
   - component: {fileID: 3926333786707208967}
   - component: {fileID: 3926333786707208968}
   - component: {fileID: 3926333786707208969}
+  - component: {fileID: 749291768}
   m_Layer: 5
   m_Name: UI_Pausa
   m_TagString: Untagged
@@ -732,17 +757,43 @@ MonoBehaviour:
   _buttons:
   - button: {fileID: 3926333787205070035}
     transitions:
-      up: {fileID: 0}
+      up: {fileID: 3926333787588450374}
       down: {fileID: 0}
       right: {fileID: 3926333787041683701}
       left: {fileID: 0}
   - button: {fileID: 3926333787041683702}
     transitions:
-      up: {fileID: 0}
+      up: {fileID: 3926333787588450374}
       down: {fileID: 0}
       right: {fileID: 0}
       left: {fileID: 3926333787205070034}
+  - button: {fileID: 3926333787588450375}
+    transitions:
+      up: {fileID: 3926333786349562214}
+      down: {fileID: 3926333787041683701}
+      right: {fileID: 3926333787411386669}
+      left: {fileID: 0}
+  - button: {fileID: 3926333787411386670}
+    transitions:
+      up: {fileID: 3926333786064707119}
+      down: {fileID: 3926333787041683701}
+      right: {fileID: 0}
+      left: {fileID: 3926333787588450374}
+  - button: {fileID: 3926333786349562215}
+    transitions:
+      up: {fileID: 0}
+      down: {fileID: 3926333787588450374}
+      right: {fileID: 3926333786064707119}
+      left: {fileID: 0}
+  - button: {fileID: 3926333786064707088}
+    transitions:
+      up: {fileID: 0}
+      down: {fileID: 3926333787411386669}
+      right: {fileID: 0}
+      left: {fileID: 3926333786349562214}
   _selector: {fileID: 3926333786835462008}
+  _smallSprite: {fileID: 21300000, guid: 21b51e85691613c4e9111c6658189fe8, type: 3}
+  _bigSprite: {fileID: 21300000, guid: 106fb0ab0b5a6774a9cffdb296274502, type: 3}
   _controlManager: {fileID: 0}
   eventSystem: {fileID: 0}
 --- !u!114 &3926333786707208969
@@ -758,6 +809,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gfc: {fileID: 0}
+--- !u!114 &749291768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3926333786707208966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a122c2b43c6eb014e9d83d1406b1a2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicSlider: {fileID: 3926333786671103854}
+  _SFXSlider: {fileID: 3926333786062742432}
 --- !u!1 &3926333786835462007
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +859,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -200, y: -370}
   m_SizeDelta: {x: 340, y: 320}
-  m_Pivot: {x: 0.5, y: 0.20438084}
+  m_Pivot: {x: 0.5, y: 0.25}
 --- !u!222 &3926333786835462010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1398,7 +1463,7 @@ GameObject:
   - component: {fileID: 3926333787411386671}
   - component: {fileID: 3926333787411386670}
   m_Layer: 5
-  m_Name: ButtonPlus
+  m_Name: small_ButtonPlus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1420,9 +1485,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: 0}
+  m_AnchoredPosition: {x: 463, y: -76.79999}
   m_SizeDelta: {x: 256, y: 256}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.2}
 --- !u!222 &3926333787411386640
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1504,7 +1569,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3926333787411386671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 749291768}
+        m_TargetAssemblyTypeName: TFMEsada.VolumeManager, Assembly-CSharp
+        m_MethodName: IncreaseSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3926333787412350290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,7 +1804,7 @@ GameObject:
   - component: {fileID: 3926333787588450376}
   - component: {fileID: 3926333787588450375}
   m_Layer: 5
-  m_Name: ButtonMinus
+  m_Name: small_ButtonMinus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1749,9 +1826,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 285, y: 0}
+  m_AnchoredPosition: {x: 285, y: -76.79999}
   m_SizeDelta: {x: 256, y: 256}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.2}
 --- !u!222 &3926333787588450377
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1833,7 +1910,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3926333787588450376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 749291768}
+        m_TargetAssemblyTypeName: TFMEsada.VolumeManager, Assembly-CSharp
+        m_MethodName: DecreaseSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &3926333785845634044
 PrefabInstance:
   m_ObjectHideFlags: 0
