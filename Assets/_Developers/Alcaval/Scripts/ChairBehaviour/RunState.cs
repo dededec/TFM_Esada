@@ -109,12 +109,9 @@ namespace TFMEsada
 
         public void fall()
         {
-            print("se choco con el charco con " + canFall);
             if(canFall)
             {
-                //print("Animacion de caida, desde run");
                 fell = true; 
-                //_animator.SetTrigger("fall"); 
                 canFall = false;
             }
         }

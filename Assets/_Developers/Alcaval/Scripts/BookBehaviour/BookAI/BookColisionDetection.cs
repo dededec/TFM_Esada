@@ -21,6 +21,9 @@ public class BookColisionDetection : MonoBehaviour
     private void Update() {
         Vector3 targetPosition = Vector3.forward;
 
+        if(moverse)
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 4f, _player.transform.position.z), 1f * Time.deltaTime); 
+
         if(_flapIdle)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 2, transform.position.z), 2 * Time.deltaTime);
@@ -30,9 +33,8 @@ public class BookColisionDetection : MonoBehaviour
         {
             if(_recolocate)
             {
-                print("se deberia de recolocar");
                 transform.GetComponent<Rigidbody>().useGravity = false;
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 3f, _player.transform.position.z), 3 * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 3f, _player.transform.position.z), 1.5f * Time.deltaTime);
             }
 
             if(_player != null){
@@ -46,27 +48,23 @@ public class BookColisionDetection : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other) {
-        // print(bbt.taskAttack.inAttack);
-        // print(other.transform.tag);
-        
+    private void OnCollisionEnter(Collision other) 
+    {
+        //CHOCO CONTRA EL PLAYER ESTANDO EN ATAQUE -> MUERTE DEL PLAYER
         if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
         {
             AkSoundEngine.PostEvent("libro_chocando", gameObject);
-            //AkSoundEngine.StopAll(transform.gameObject);
-            // AQU� DEBER�A SONAR EL GOLPE CHOCANDO COSAS
-            //AkSoundEngine.PostEvent("libro_chocando", transform.gameObject);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             transform.GetComponent<Rigidbody>().useGravity = false;
 
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
-            //AkSoundEngine.PostEvent("libro_despierto", transform.gameObject);
 
             _flapIdle = true;
             bbt.taskAttack.inAttack = false;
         }
 
+        //CHOCO CONTRA OTRA COSA
         if(other.transform.tag == "Ground" && bbt.taskAttack.inAttack)
         {
             AkSoundEngine.PostEvent("libro_chocando", gameObject);
@@ -82,9 +80,13 @@ public class BookColisionDetection : MonoBehaviour
 
     public void death()
     {
-        Debug.Log("Se murio el libro");
         AkSoundEngine.PostEvent("libro_defeated", gameObject);
-        Destroy(gameObject);
+        gameObject.GetComponent<Animator>().SetBool("dead", true);
+        gameObject.GetComponent<Animator>().SetBool("flap", false);
+        gameObject.GetComponent<Rigidbody>().useGravity = true;
+        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.back * 5, ForceMode.Impulse);
+        gameObject.GetComponent<BookBehaviourTree>().enabled = false;
+        this.enabled = false;
     }
 
     IEnumerator cooldownCoroutine()
@@ -99,6 +101,7 @@ public class BookColisionDetection : MonoBehaviour
             bbt.taskAttack.setAttack(true);
             bbt.gameObject.GetComponent<Animator>().SetBool("flap", false);
             _recolocate = false;
+            bbt.checkInAttackRange.ready = true;
         }
     }
 
@@ -108,13 +111,18 @@ public class BookColisionDetection : MonoBehaviour
         StartCoroutine(preAttack());
     }
 
+    bool moverse = false;
+
     IEnumerator preAttack()
     {
         transform.GetComponent<Rigidbody>().useGravity = false;
         bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 2.5f, _player.transform.position.z), 0.5f * Time.deltaTime);
-        yield return new WaitForSeconds(1f);
+        
+        moverse = true;
+        
+        yield return new WaitForSeconds(2f);
         bbt.checkInAttackRange.ready = true;
+        moverse = false;
     }
 
     public void playAwake()

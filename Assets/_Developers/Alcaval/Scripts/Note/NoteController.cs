@@ -160,7 +160,7 @@ namespace TFMEsada
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdateTamagochiQuest();
                 }
 
-                if(gameObject.name == "TamagochiNoteCorrect")
+                if(gameObject.name == "TamagochiNoteFinal")
                 {
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdateTamagochiQuest();
                 }

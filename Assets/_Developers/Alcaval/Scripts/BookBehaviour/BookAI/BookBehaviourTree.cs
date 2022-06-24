@@ -20,7 +20,7 @@ public class BookBehaviourTree : Tree
     protected override Node SetupTree()
     {
         taskAttack = new TaskAttack(transform.gameObject, player, _force);
-        checkInAttackRange = new CheckInAttackRange(transform, player, _rangeAttackBook, bookColisionDetection);
+        checkInAttackRange = new CheckInAttackRange(taskAttack, transform, player, _rangeAttackBook, bookColisionDetection);
         Node root = new Selector(new List<Node>
         {
             new Sequence(new List<Node>{
@@ -30,5 +30,13 @@ public class BookBehaviourTree : Tree
             new TaskIdle(),
         });
         return root;
+    }
+
+    public void deshabilitar() 
+    {
+        this.enabled = false;
+        taskAttack = null;
+        checkInAttackRange = null;
+        
     }
 }
