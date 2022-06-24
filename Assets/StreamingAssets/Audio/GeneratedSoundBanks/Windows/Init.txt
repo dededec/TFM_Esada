@@ -3,16 +3,18 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1564184899	SFX_Volume			\Default Work Unit\SFX_Volume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	652170608	SFX Volume			\Default Work Unit\Master Audio Bus\SFX Volume	
+	1599690472	Music Volume			\Default Work Unit\Master Audio Bus\Music Volume	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	854529873	Reverb_Puerta			\Default Work Unit\Master Audio Bus\Reverb_Puerta	
 	1921000341	Reverb_footsteps			\Default Work Unit\Master Audio Bus\Reverb_footsteps	
+	3556902431	Reverb_triggers			\Default Work Unit\Master Audio Bus\Reverb_triggers	
 	3686193383	Reverb_Creaks			\Default Work Unit\Master Audio Bus\Reverb_Creaks	
 
 Effect plug-ins	ID	Name	Type				Notes
+	4496003	Dirty_Washing_Machine	Wwise RoomVerb			
 	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
 	2791153688	Hall_Small	Wwise RoomVerb			
 	3559982155	Hall_Stop_Screaming	Wwise RoomVerb			

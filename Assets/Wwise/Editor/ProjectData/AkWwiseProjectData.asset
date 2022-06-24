@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: f9c8332c0610ec45bf717ab499bef714
     GuidInternal: 
-    m_lastTime: -8585456200739756789
+    m_lastTime: -8585455375371131523
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,9 +54,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: Music
+    - name: Music Volume
       guid: a6ebcf94a09895458e6d25375c6b6263
-      id: 3991942870
+      id: 1599690472
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -67,10 +67,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Music
+      - ElementName: Music Volume
         ObjectType: 2
         guid: a6ebcf94a09895458e6d25375c6b6263
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music Volume
     - name: Reverb_Creaks
       guid: 022e7bea727c6248b20b5b28c9b30286
       id: 3686193383
@@ -122,9 +122,9 @@ MonoBehaviour:
         ObjectType: 1
         guid: 3ecde26c8ab0c24db683017e38135d7c
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta
-    - name: SFX
-      guid: eeb900fd35393a4f9614e62ab3b29432
-      id: 393239870
+    - name: Reverb_triggers
+      guid: bbda57891c5fd244b7cf98fa7468aecf
+      id: 3556902431
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -135,10 +135,27 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: SFX
+      - ElementName: Reverb_triggers
+        ObjectType: 1
+        guid: bbda57891c5fd244b7cf98fa7468aecf
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers
+    - name: SFX Volume
+      guid: eeb900fd35393a4f9614e62ab3b29432
+      id: 652170608
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f9c8332c0610ec45bf717ab499bef714
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX Volume
         ObjectType: 2
         guid: eeb900fd35393a4f9614e62ab3b29432
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX Volume
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -151,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585456035566921104
+    m_lastTime: -8585455328273610827
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -306,7 +323,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585456000522741597
+    m_lastTime: -8585455328273670422
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -388,6 +405,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.345089
       minDuration: 2.089237
+    - name: Chiridos
+      guid: be74d3e87d3a524db4cc522e7bb430bd
+      id: 3496045188
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: chirriando_lejos_3
       guid: 4280f50580a85c49926de120b6655092
       id: 4115248352
@@ -401,13 +438,16 @@ MonoBehaviour:
       - ElementName: SFX_Enviroments
         ObjectType: 4
         guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
       - ElementName: chirriando_lejos_3
         ObjectType: 3
         guid: 4280f50580a85c49926de120b6655092
-      Path: Events\Default Work Unit\SFX_Enviroments\chirriando_lejos_3
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\chirriando_lejos_3
       maxAttenuation: 0
-      maxDuration: 3.77921
-      minDuration: 3.366894
+      maxDuration: 4.24202
+      minDuration: 0
     - name: chirriando_lejos_3_2
       guid: ab3185ac03077544a05f22465f5e9cf5
       id: 3291383135
@@ -421,13 +461,62 @@ MonoBehaviour:
       - ElementName: SFX_Enviroments
         ObjectType: 4
         guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
       - ElementName: chirriando_lejos_3_2
         ObjectType: 3
         guid: ab3185ac03077544a05f22465f5e9cf5
-      Path: Events\Default Work Unit\SFX_Enviroments\chirriando_lejos_3_2
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\chirriando_lejos_3_2
       maxAttenuation: 0
-      maxDuration: 5.13161
-      minDuration: 5.13161
+      maxDuration: 5.760037
+      minDuration: 0
+    - name: chirrido_lejos_3
+      guid: 540a9fde233e7a489f6e5235e0560c22
+      id: 1033164213
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
+      - ElementName: chirrido_lejos_3
+        ObjectType: 3
+        guid: 540a9fde233e7a489f6e5235e0560c22
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\chirrido_lejos_3
+      maxAttenuation: 0
+      maxDuration: 3.727083
+      minDuration: 0
+    - name: chirrido_lejos_largo
+      guid: 66c130eff405114aa53a13bd0b795740
+      id: 3343617841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
+      - ElementName: chirrido_lejos_largo
+        ObjectType: 3
+        guid: 66c130eff405114aa53a13bd0b795740
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\chirrido_lejos_largo
+      maxAttenuation: 0
+      maxDuration: 8.692208
+      minDuration: 0
     - name: choque_disparo_enemigo
       guid: 9cd8faa1f82c41478ecae64264cc02a4
       id: 4096684240
@@ -605,6 +694,256 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 6.825374
       minDuration: 6.825374
+    - name: golpe_puerta_chirrido_lejos
+      guid: e080b4cc7d760441a0b5d50304ba04e0
+      id: 668833963
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
+      - ElementName: golpe_puerta_chirrido_lejos
+        ObjectType: 3
+        guid: e080b4cc7d760441a0b5d50304ba04e0
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\golpe_puerta_chirrido_lejos
+      maxAttenuation: 0
+      maxDuration: 3.179749
+      minDuration: 0
+    - name: Grito_1
+      guid: 787927d0615ab94387a63374b3671918
+      id: 2898542032
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_1
+        ObjectType: 3
+        guid: 787927d0615ab94387a63374b3671918
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_1
+      maxAttenuation: 0
+      maxDuration: 8.418466
+      minDuration: 0
+    - name: Grito_2
+      guid: a73f75de81f59b4da02c18351aa15a22
+      id: 2898542035
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_2
+        ObjectType: 3
+        guid: a73f75de81f59b4da02c18351aa15a22
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_2
+      maxAttenuation: 0
+      maxDuration: 8.418466
+      minDuration: 0
+    - name: Grito_3
+      guid: fb3692ba9c535b449c8d83736133b34f
+      id: 2898542034
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_3
+        ObjectType: 3
+        guid: fb3692ba9c535b449c8d83736133b34f
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_3
+      maxAttenuation: 0
+      maxDuration: 7.576619
+      minDuration: 0
+    - name: Grito_4
+      guid: 648d2c9c5ab44e48aea9549c3f26c045
+      id: 2898542037
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_4
+        ObjectType: 3
+        guid: 648d2c9c5ab44e48aea9549c3f26c045
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_4
+      maxAttenuation: 0
+      maxDuration: 7.576619
+      minDuration: 0
+    - name: Grito_5
+      guid: 71c000eea78fd445b769704c2f7a825e
+      id: 2898542036
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_5
+        ObjectType: 3
+        guid: 71c000eea78fd445b769704c2f7a825e
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_5
+      maxAttenuation: 0
+      maxDuration: 11.364941
+      minDuration: 0
+    - name: Grito_6
+      guid: 765d5a3fc125bd4da65d678ee72f5083
+      id: 2898542039
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_6
+        ObjectType: 3
+        guid: 765d5a3fc125bd4da65d678ee72f5083
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_6
+      maxAttenuation: 0
+      maxDuration: 13.469544
+      minDuration: 0
+    - name: Grito_7
+      guid: dfe845d162921c47a3b80e98410d8f82
+      id: 2898542038
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_7
+        ObjectType: 3
+        guid: dfe845d162921c47a3b80e98410d8f82
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_7
+      maxAttenuation: 0
+      maxDuration: 7.576619
+      minDuration: 0
+    - name: Grito_8
+      guid: 8f79f72e966e7a41b72c972baad4369f
+      id: 2898542041
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_8
+        ObjectType: 3
+        guid: 8f79f72e966e7a41b72c972baad4369f
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_8
+      maxAttenuation: 0
+      maxDuration: 6.734772
+      minDuration: 0
+    - name: Grito_9
+      guid: cfc9a735f8a296468f918708a7fe2983
+      id: 2898542040
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      - ElementName: Grito_9
+        ObjectType: 3
+        guid: cfc9a735f8a296468f918708a7fe2983
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_9
+      maxAttenuation: 0
+      maxDuration: 7.576619
+      minDuration: 0
+    - name: Gritos Haloween
+      guid: 11fb9936de35d6468caf5b6133833726
+      id: 3385952226
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: SFX_Enviroments
+        ObjectType: 4
+        guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Gritos Haloween
+        ObjectType: 4
+        guid: 11fb9936de35d6468caf5b6133833726
+      Path: Events\Default Work Unit\SFX_Enviroments\Gritos Haloween
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: LIBRO
       guid: c5b0280b1ee537448dd1bca1a62c2f3a
       id: 2068852883
@@ -646,8 +985,8 @@ MonoBehaviour:
         guid: 7fac305156d16848a18826f9aaac7215
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_ataque
       maxAttenuation: 30
-      maxDuration: 0.821066
-      minDuration: 0.821066
+      maxDuration: 1.182313
+      minDuration: 0.675125
     - name: libro_chocando
       guid: 5b325f14a5beb44fbc45db1f4a3046c4
       id: 3662398675
@@ -669,8 +1008,8 @@ MonoBehaviour:
         guid: 5b325f14a5beb44fbc45db1f4a3046c4
       Path: Events\Default Work Unit\Enemies\LIBRO\libro_chocando
       maxAttenuation: 30
-      maxDuration: 0.886735
-      minDuration: 0.788209
+      maxDuration: 0.788209
+      minDuration: 0.604825
     - name: libro_defeated
       guid: 5ba765de7e48c4449ef01cc6e7801dbb
       id: 1219855736
@@ -951,6 +1290,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3
       minDuration: 3
+    - name: PickUp_nota_corta
+      guid: 5edd2397d1fe764a9ed36676243c86f3
+      id: 2435304568
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Player
+        ObjectType: 4
+        guid: 060b01513d7814499d8c53f78565248c
+      - ElementName: PickUp_nota_corta
+        ObjectType: 3
+        guid: 5edd2397d1fe764a9ed36676243c86f3
+      Path: Events\Default Work Unit\Player\PickUp_nota_corta
+      maxAttenuation: 0
+      maxDuration: 2.2
+      minDuration: 2.2
     - name: Player
       guid: 060b01513d7814499d8c53f78565248c
       id: 1069431850
@@ -1021,13 +1380,16 @@ MonoBehaviour:
       - ElementName: SFX_Enviroments
         ObjectType: 4
         guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
       - ElementName: puerta_chirriando_lejos
         ObjectType: 3
         guid: c77300fbb9e7a140959deaf8f02a9915
-      Path: Events\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos
       maxAttenuation: 0
-      maxDuration: 5.708194
-      minDuration: 4.8
+      maxDuration: 6.407231
+      minDuration: 0
     - name: puerta_chirriando_lejos2
       guid: 196ecbfcf9398f4da27087c2e40ceca1
       id: 863090050
@@ -1041,13 +1403,16 @@ MonoBehaviour:
       - ElementName: SFX_Enviroments
         ObjectType: 4
         guid: 76c8da62b6e26148b20682c9b015c8bb
+      - ElementName: Chiridos
+        ObjectType: 4
+        guid: be74d3e87d3a524db4cc522e7bb430bd
       - ElementName: puerta_chirriando_lejos2
         ObjectType: 3
         guid: 196ecbfcf9398f4da27087c2e40ceca1
-      Path: Events\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos2
+      Path: Events\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos2
       maxAttenuation: 0
-      maxDuration: 5.387818
-      minDuration: 4.036303
+      maxDuration: 6.047621
+      minDuration: 0
     - name: Repuesto1
       guid: 2d8e2e3154ed1f4da13e0e3715a4cc8f
       id: 1251048105
@@ -1214,9 +1579,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8e8a0eb684585b4bba3e30d6a33d21e0
       Path: Events\Default Work Unit\Enemies\SILLA\silla_golpe_suelo
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 0.801169
+      minDuration: 0.734307
     - name: silla_pataDelantera
       guid: 3cd7ff35bab04b44a1e155e2b5b46555
       id: 3130254335
@@ -1354,7 +1719,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 1847309535c3bd4983fc1a700ec2e7dc
     GuidInternal: 
-    m_lastTime: -8585461130649217452
+    m_lastTime: -8585455409120890491
     List:
     - name: Footsteps_Surface
       guid: fbb62a032c24a54787b4889d8f1ffc6a
@@ -1406,106 +1771,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Golpe_Libro_Surface
-      guid: 97e529201800f74c92c57033b3af1bb3
-      id: 2133740333
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1847309535c3bd4983fc1a700ec2e7dc
-      - ElementName: Golpe_Libro_Surface
-        ObjectType: 11
-        guid: 97e529201800f74c92c57033b3af1bb3
-      Path: Switches\Default Work Unit\Golpe_Libro_Surface
-      values:
-      - name: Pared_mueble
-        guid: c26e2e9f6b645643b0ba5b86fdba45b0
-        id: 3404187766
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 1847309535c3bd4983fc1a700ec2e7dc
-        - ElementName: Golpe_Libro_Surface
-          ObjectType: 11
-          guid: 97e529201800f74c92c57033b3af1bb3
-        - ElementName: Pared_mueble
-          ObjectType: 10
-          guid: c26e2e9f6b645643b0ba5b86fdba45b0
-      - name: Player
-        guid: d1933e11cc12ae45a6258990ecd06068
-        id: 1069431850
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 1847309535c3bd4983fc1a700ec2e7dc
-        - ElementName: Golpe_Libro_Surface
-          ObjectType: 11
-          guid: 97e529201800f74c92c57033b3af1bb3
-        - ElementName: Player
-          ObjectType: 10
-          guid: d1933e11cc12ae45a6258990ecd06068
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: Golpe_Pistola_Agua_Surface
-      guid: a030ca0cf0e6704791dcca10e8f054f5
-      id: 3794319880
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1847309535c3bd4983fc1a700ec2e7dc
-      - ElementName: Golpe_Pistola_Agua_Surface
-        ObjectType: 11
-        guid: a030ca0cf0e6704791dcca10e8f054f5
-      Path: Switches\Default Work Unit\Golpe_Pistola_Agua_Surface
-      values:
-      - name: Enemigo
-        guid: d897239a9292e64499e4cd58631c63cc
-        id: 2275937393
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 1847309535c3bd4983fc1a700ec2e7dc
-        - ElementName: Golpe_Pistola_Agua_Surface
-          ObjectType: 11
-          guid: a030ca0cf0e6704791dcca10e8f054f5
-        - ElementName: Enemigo
-          ObjectType: 10
-          guid: d897239a9292e64499e4cd58631c63cc
-      - name: Pared
-        guid: 0cb84a53e2d80d4a994c6b732378ffed
-        id: 3462533745
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 1847309535c3bd4983fc1a700ec2e7dc
-        - ElementName: Golpe_Pistola_Agua_Surface
-          ObjectType: 11
-          guid: a030ca0cf0e6704791dcca10e8f054f5
-        - ElementName: Pared
-          ObjectType: 10
-          guid: 0cb84a53e2d80d4a994c6b732378ffed
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1521,7 +1786,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000a0000000b0000000c0000000e0000000f0000001000000012000000130000002100000022000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000003b0000003c0000003e0000003f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

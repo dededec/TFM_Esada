@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="4139326460">
+		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="3476459356">
 			<ObjectPath>\SoundBanks\Default Work Unit\menu_principal</ObjectPath>
 			<ShortName>menu_principal</ShortName>
 			<Path>menu_principal.bnk</Path>
@@ -58,11 +58,35 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3996616780">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="723004024">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche" GUID="{E0C1F8EB-5E80-46B5-B827-1C2D33B3C130}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="883601427" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1_2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_2_38374C31.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952223308" Name="ambiente_noche_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_1" GUID="{4E2777DE-00CE-421B-948A-2289464D3605}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="16645949" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_38C4429A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="OneShot" DurationMin="44.799999" DurationMax="44.799999">
+					<IncludedMemoryFiles>
+						<File Id="1069630703" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3873181946" Name="cerrar_puerta" ObjectPath="\Events\Default Work Unit\Player\cerrar_puerta" GUID="{AFDAB545-E439-411D-9A3C-C6C2FE9A3211}" DurationType="OneShot" DurationMin="2.089237" DurationMax="2.345089">
 					<IncludedMemoryFiles>
 						<File Id="53606963" Language="SFX">
@@ -74,21 +98,49 @@
 						<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\chirriando_lejos_3" GUID="{05F58042-A880-495C-926D-E120B6655092}" DurationType="OneShot" DurationMin="3.366894" DurationMax="3.779210">
+				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirriando_lejos_3" GUID="{05F58042-A880-495C-926D-E120B6655092}" DurationType="OneShot" DurationMin="0.000000" DurationMax="4.242020">
 					<IncludedMemoryFiles>
 						<File Id="228469276" Language="SFX">
 							<ShortName>chirrio lejos corto 1.wav</ShortName>
 							<Path>SFX\chirrio lejos corto 1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\chirriando_lejos_3_2" GUID="{AC8531AB-0703-4475-A05F-22465F5E9CF5}" DurationType="OneShot" DurationMin="5.131610" DurationMax="5.131610">
+				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirriando_lejos_3_2" GUID="{AC8531AB-0703-4475-A05F-22465F5E9CF5}" DurationType="OneShot" DurationMin="0.000000" DurationMax="5.760037">
 					<IncludedMemoryFiles>
 						<File Id="706911643" Language="SFX">
 							<ShortName>chirrio lejos corto 2.wav</ShortName>
 							<Path>SFX\chirrio lejos corto 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1033164213" Name="chirrido_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirrido_lejos_3" GUID="{DE9F0A54-3E23-487A-9F6E-5235E0560C22}" DurationType="OneShot" DurationMin="0.000000" DurationMax="3.727083">
+					<IncludedMemoryFiles>
+						<File Id="699158859" Language="SFX">
+							<ShortName>chirrio lejos corto 3.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3343617841" Name="chirrido_lejos_largo" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirrido_lejos_largo" GUID="{EF30C166-05F4-4A11-A53A-13BD0B795740}" DurationType="OneShot" DurationMin="0.000000" DurationMax="8.692208">
+					<IncludedMemoryFiles>
+						<File Id="596209391" Language="SFX">
+							<ShortName>chirrio lejos largo.wav</ShortName>
+							<Path>SFX\chirrio lejos largo_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="4096684240" Name="choque_disparo_enemigo" ObjectPath="\Events\Default Work Unit\Player\choque_disparo_enemigo" GUID="{A1FAD89C-2CF8-4741-8ECA-E64264CC02A4}" DurationType="OneShot" DurationMin="0.304694" DurationMax="0.445329">
 					<IncludedMemoryFiles>
@@ -177,83 +229,121 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2898542032" Name="Grito_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_1" GUID="{D0277978-5A61-43B9-87A6-3374B3671918}" DurationType="OneShot" DurationMin="7.500000" DurationMax="7.500000">
+				<Event Id="668833963" Name="golpe_puerta_chirrido_lejos" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\golpe_puerta_chirrido_lejos" GUID="{CCB480E0-767D-4104-A0B5-D50304BA04E0}" DurationType="OneShot" DurationMin="0.000000" DurationMax="3.179749">
+					<IncludedMemoryFiles>
+						<File Id="94555320" Language="SFX">
+							<ShortName>golpe chirrido puerta lejos.wav</ShortName>
+							<Path>SFX\golpe chirrido puerta lejos_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542032" Name="Grito_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_1" GUID="{D0277978-5A61-43B9-87A6-3374B3671918}" DurationType="OneShot" DurationMin="0.000000" DurationMax="8.418466">
 					<IncludedMemoryFiles>
 						<File Id="328653772" Language="SFX">
 							<ShortName>gritos halloween_ 1.wav</ShortName>
 							<Path>SFX\gritos halloween_ 1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542035" Name="Grito_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_2" GUID="{DE753FA7-F581-4D9B-A02C-18351AA15A22}" DurationType="OneShot" DurationMin="7.500000" DurationMax="7.500000">
+				<Event Id="2898542035" Name="Grito_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_2" GUID="{DE753FA7-F581-4D9B-A02C-18351AA15A22}" DurationType="OneShot" DurationMin="0.000000" DurationMax="8.418466">
 					<IncludedMemoryFiles>
 						<File Id="659437505" Language="SFX">
 							<ShortName>gritos halloween_ 2.wav</ShortName>
 							<Path>SFX\gritos halloween_ 2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542034" Name="Grito_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_3" GUID="{BA9236FB-539C-445B-9C8D-83736133B34F}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+				<Event Id="2898542034" Name="Grito_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_3" GUID="{BA9236FB-539C-445B-9C8D-83736133B34F}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
 					<IncludedMemoryFiles>
 						<File Id="764167059" Language="SFX">
 							<ShortName>gritos halloween_ 3.wav</ShortName>
 							<Path>SFX\gritos halloween_ 3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542037" Name="Grito_4" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_4" GUID="{9C2C8D64-B45A-484E-AEA9-549C3F26C045}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+				<Event Id="2898542037" Name="Grito_4" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_4" GUID="{9C2C8D64-B45A-484E-AEA9-549C3F26C045}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
 					<IncludedMemoryFiles>
 						<File Id="381433966" Language="SFX">
 							<ShortName>gritos halloween_ 4.wav</ShortName>
 							<Path>SFX\gritos halloween_ 4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542036" Name="Grito_5" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_5" GUID="{EE00C071-8FA7-45D4-B769-704C2F7A825E}" DurationType="OneShot" DurationMin="10.125011" DurationMax="10.125011">
+				<Event Id="2898542036" Name="Grito_5" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_5" GUID="{EE00C071-8FA7-45D4-B769-704C2F7A825E}" DurationType="OneShot" DurationMin="0.000000" DurationMax="11.364941">
 					<IncludedMemoryFiles>
 						<File Id="141216616" Language="SFX">
 							<ShortName>gritos halloween_ 5.wav</ShortName>
 							<Path>SFX\gritos halloween_ 5_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542039" Name="Grito_6" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_6" GUID="{3F5A5D76-25C1-4DBD-A65D-678EE72F5083}" DurationType="OneShot" DurationMin="12.000000" DurationMax="12.000000">
+				<Event Id="2898542039" Name="Grito_6" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_6" GUID="{3F5A5D76-25C1-4DBD-A65D-678EE72F5083}" DurationType="OneShot" DurationMin="0.000000" DurationMax="13.469544">
 					<IncludedMemoryFiles>
 						<File Id="508591506" Language="SFX">
 							<ShortName>gritos halloween_ 6.wav</ShortName>
 							<Path>SFX\gritos halloween_ 6_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542038" Name="Grito_7" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_7" GUID="{D145E8DF-9262-471C-A3B8-0E98410D8F82}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+				<Event Id="2898542038" Name="Grito_7" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_7" GUID="{D145E8DF-9262-471C-A3B8-0E98410D8F82}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
 					<IncludedMemoryFiles>
 						<File Id="1066004049" Language="SFX">
 							<ShortName>gritos halloween_ 7.wav</ShortName>
 							<Path>SFX\gritos halloween_ 7_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542041" Name="Grito_8" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_8" GUID="{2EF7798F-6E96-417A-B72C-972BAAD4369F}" DurationType="OneShot" DurationMin="6.000000" DurationMax="6.000000">
+				<Event Id="2898542041" Name="Grito_8" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_8" GUID="{2EF7798F-6E96-417A-B72C-972BAAD4369F}" DurationType="OneShot" DurationMin="0.000000" DurationMax="6.734772">
 					<IncludedMemoryFiles>
 						<File Id="165249764" Language="SFX">
 							<ShortName>gritos halloween_ 8.wav</ShortName>
 							<Path>SFX\gritos halloween_ 8_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2898542040" Name="Grito_9" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_9" GUID="{35A7C9CF-A2F8-4696-8F91-8708A7FE2983}" DurationType="OneShot" DurationMin="6.750000" DurationMax="6.750000">
+				<Event Id="2898542040" Name="Grito_9" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_9" GUID="{35A7C9CF-A2F8-4696-8F91-8708A7FE2983}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
 					<IncludedMemoryFiles>
 						<File Id="801115799" Language="SFX">
 							<ShortName>gritos halloween_ 9.wav</ShortName>
 							<Path>SFX\gritos halloween_ 9_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
 					<IncludedMemoryFiles>
 						<File Id="365758720" Language="SFX">
 							<ShortName>libro golpe player_1_2.wav</ShortName>
-							<Path>SFX\libro golpe player_1_2_27BFF36A.wem</Path>
+							<Path>SFX\libro golpe player_1_2_D502E0B3.wem</Path>
 						</File>
 						<File Id="497011953" Language="SFX">
 							<ShortName>libro golpe player_2_2.wav</ShortName>
@@ -269,7 +359,7 @@
 						</File>
 						<File Id="729922704" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_1.wav</ShortName>
-							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_179FE242.wem</Path>
+							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_F0B41857.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -396,6 +486,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2435304568" Name="PickUp_nota_corta" ObjectPath="\Events\Default Work Unit\Player\PickUp_nota_corta" GUID="{9723DD5E-FED1-4A76-9ED3-6676243C86F3}" DurationType="OneShot" DurationMin="2.200000" DurationMax="2.200000">
+					<IncludedMemoryFiles>
+						<File Id="824662024" Language="SFX">
+							<ShortName>Recoger NOTA 4 (corta).wav</ShortName>
+							<Path>SFX\Recoger NOTA 4 (corta)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="41810451" Name="Player_Defeated" ObjectPath="\Events\Default Work Unit\Player\Player_Defeated" GUID="{1F02361A-6845-4C62-A79E-9746CE2D43ED}" DurationType="OneShot" DurationMin="1.002271" DurationMax="1.351723">
 					<IncludedMemoryFiles>
 						<File Id="41775480" Language="SFX">
@@ -519,21 +617,27 @@
 						<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos" GUID="{FB0073C7-E7B9-40A1-959D-EAF8F02A9915}" DurationType="OneShot" DurationMin="4.800000" DurationMax="5.708194">
+				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos" GUID="{FB0073C7-E7B9-40A1-959D-EAF8F02A9915}" DurationType="OneShot" DurationMin="0.000000" DurationMax="6.407231">
 					<IncludedMemoryFiles>
 						<File Id="44670585" Language="SFX">
 							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
 							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\puerta_chirriando_lejos2" GUID="{FCCB6E19-39F9-4D8F-A270-87C2E40CECA1}" DurationType="OneShot" DurationMin="4.036303" DurationMax="5.387818">
+				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos2" GUID="{FCCB6E19-39F9-4D8F-A270-87C2E40CECA1}" DurationType="OneShot" DurationMin="0.000000" DurationMax="6.047621">
 					<IncludedMemoryFiles>
 						<File Id="44670585" Language="SFX">
 							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
 							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.562517" DurationMax="1.142381">
 					<IncludedMemoryFiles>
@@ -611,7 +715,7 @@
 						</File>
 						<File Id="563858125" Language="SFX">
 							<ShortName>Silla_DEFEATED_golpesuelo_2-1.wav</ShortName>
-							<Path>SFX\Silla_DEFEATED_golpesuelo_2-1_0DAFA835.wem</Path>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_2-1_EDD12129.wem</Path>
 						</File>
 						<File Id="641358567" Language="SFX">
 							<ShortName>silla_Defeated_chirridopremuerte_3.wav</ShortName>
@@ -623,11 +727,11 @@
 						</File>
 						<File Id="786969096" Language="SFX">
 							<ShortName>Silla_DEFEATED_golpesuelo_3-1.wav</ShortName>
-							<Path>SFX\Silla_DEFEATED_golpesuelo_3-1_AD1665B8.wem</Path>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_3-1_10A5D0D5.wem</Path>
 						</File>
 						<File Id="1001956948" Language="SFX">
 							<ShortName>Silla_DEFEATED_golpesuelo_1-1.wav</ShortName>
-							<Path>SFX\Silla_DEFEATED_golpesuelo_1-1_0F69B21B.wem</Path>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_1-1_4662D8BF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -705,7 +809,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="3598656453">
+		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="2195474650">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Tutorial</ObjectPath>
 			<ShortName>Music_Tutorial</ShortName>
 			<Path>Music_Tutorial.bnk</Path>
@@ -748,7 +852,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="2284334509">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="2395895293">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
@@ -779,13 +883,14 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="3868980731">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2734994081">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
 				<AuxBus Id="1921000341" Name="Reverb_footsteps" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_footsteps" GUID="{F3052C66-CE7B-41A9-81D9-5E328E61E1C6}"/>
+				<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
 				<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
 			</IncludedAuxBusses>
 			<GameParameters>
@@ -793,7 +898,7 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="3505172793">
+		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="3784130031">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_MenuPrincipal</ObjectPath>
 			<ShortName>Music_MenuPrincipal</ShortName>
 			<Path>Music_MenuPrincipal.bnk</Path>
@@ -813,7 +918,7 @@
 			<ShortName>Music_The_End</ShortName>
 			<Path>Music_The_End.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="3756114454">
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="4185651891">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
 			<ShortName>Music_LVL2</ShortName>
 			<Path>Music_LVL2.bnk</Path>
@@ -864,7 +969,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="3508148263">
+		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="218461466">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>
 			<ShortName>Music_LVL1</ShortName>
 			<Path>Music_LVL1.bnk</Path>
