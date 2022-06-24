@@ -913,10 +913,20 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="1089142940">
+		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="1054619443">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_The_End</ObjectPath>
 			<ShortName>Music_The_End</ShortName>
 			<Path>Music_The_End.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3328924828" Name="Music_The_End" ObjectPath="\Events\Default Work Unit\Music\Music_The_End" GUID="{D1AD8E2F-11A5-482B-A87D-C1ECDBAFB4D7}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="380695143" Language="SFX">
+							<ShortName>MUSIC_The_End.wav</ShortName>
+							<Path>SFX\MUSIC_The_End_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="4185651891">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
