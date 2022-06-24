@@ -16,6 +16,8 @@ namespace TFMEsada
     public class PauseGame : MonoBehaviour
     {
         [SerializeField] private GameObject _uiPause;
+        [SerializeField] private GameObject _uiGameplay;
+        [SerializeField] private GameObject _uiDeath;
         [SerializeField] private ControlManager _controls;
         private InputAction _pauseUnpause;
 
@@ -46,6 +48,9 @@ namespace TFMEsada
         private void onGameStateChanged(GameState newState)
         {
             _uiPause.SetActive(newState == GameState.Paused);
+            _uiGameplay.SetActive(!(newState == GameState.Paused) && !_controls.IsDead);
+            _uiDeath.SetActive(!(newState == GameState.Paused) && _controls.IsDead);
+
             _controls.StopPlayer(newState == GameState.Paused);
         }
     }

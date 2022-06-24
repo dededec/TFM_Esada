@@ -17,6 +17,8 @@ namespace TFMEsada
     {
         #region Fields
 
+        [SerializeField] private GameObject _uiDeath;
+        [SerializeField] private GameObject _uiGameplay;
         private IAA_Player _controls;
         
 
@@ -31,6 +33,12 @@ namespace TFMEsada
                 return _controls;
             }
         }
+
+        public bool IsDead
+        {
+            get;
+            private set;
+        }
             
 	    #endregion
 	 
@@ -40,8 +48,6 @@ namespace TFMEsada
         {
             _controls = new IAA_Player();
         }
-
-        
 
         private void OnDestroy() 
         {
@@ -54,11 +60,12 @@ namespace TFMEsada
 
         public void PlayerDeath()
         {
-            //...
             GetComponentInChildren<Animator>().SetTrigger("IsDead");
             AkSoundEngine.PostEvent("Player_Defeated", this.gameObject);
             StopPlayer(true);
-            Debug.LogWarning("Muerte del jugador no implementada");
+            _uiDeath.SetActive(true);
+            _uiGameplay.SetActive(false);
+            IsDead = true;
         }
 
         public void TogglePlayerControls(bool value)
@@ -79,6 +86,7 @@ namespace TFMEsada
         // mientras el jugador esté muerto.
         public void StopPlayer(bool value)
         {
+            if(IsDead) return;
             if(value)
             {
                 Controls.Player.Disable();

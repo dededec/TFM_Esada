@@ -561,6 +561,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &97540527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4768240821275008889, guid: 13b4262cc5caddd4e9d1e0f807431359, type: 3}
+  m_PrefabInstance: {fileID: 4768240821320107734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &97540528 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4768240821275008870, guid: 13b4262cc5caddd4e9d1e0f807431359, type: 3}
@@ -6872,9 +6877,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1562632277}
     m_Modifications:
     - target: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _uiDeath
+      value: 
+      objectReference: {fileID: 97540527}
+    - target: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _uiPause
       value: 
       objectReference: {fileID: 749291766}
+    - target: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _uiGameplay
+      value: 
+      objectReference: {fileID: 724804663}
     - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _keyImage
       value: 
@@ -7974,6 +7987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiPause: {fileID: 749291766}
+  _uiGameplay: {fileID: 724804663}
+  _uiDeath: {fileID: 97540527}
   _controls: {fileID: 6128377949064555888}
 --- !u!114 &6128377949064555888 stripped
 MonoBehaviour:
