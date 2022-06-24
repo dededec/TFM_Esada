@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 6131480264925122101}
   - component: {fileID: 4570447893619424123}
   - component: {fileID: 2104465628}
+  - component: {fileID: 1590091814087082221}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -306,6 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354106e1c951e4d4891994e68a29075e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uiDeath: {fileID: 0}
+  _uiGameplay: {fileID: 0}
 --- !u!114 &1933474344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +338,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8192
   _victoryUI: {fileID: 0}
+  _gameplayUI: {fileID: 0}
+  _collectableImage: {fileID: 0}
+  _obtainedCollectableSprite: {fileID: 0}
   _keyImage: {fileID: 0}
+  hasCollectable: 0
 --- !u!114 &6131480264925122101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +393,22 @@ CapsuleCollider:
   m_Height: 2.017967
   m_Direction: 1
   m_Center: {x: 0, y: 0.99855626, z: 0}
+--- !u!114 &1590091814087082221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6128377947335776085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef94e273de0b554a9444e28b12db35b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiPause: {fileID: 0}
+  _uiGameplay: {fileID: 0}
+  _uiDeath: {fileID: 0}
+  _controls: {fileID: 1933474343}
 --- !u!1 &6128377947552414862
 GameObject:
   m_ObjectHideFlags: 0
