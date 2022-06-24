@@ -106,12 +106,14 @@ namespace TFMEsada
 
         private void buttonInteract(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             AkSoundEngine.PostEvent("Enter", this.gameObject);
             ExecuteEvents.Execute(_buttons[indexSelected].button.gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
         }
 
         private void changeSelection(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             var values = context.ReadValue<Vector2>();
             AkSoundEngine.PostEvent("Click", this.gameObject);
 

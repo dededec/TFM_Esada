@@ -141,17 +141,20 @@ namespace TFMEsada
 
         private void determineControl(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             _isMouse = context.control.name == _mouseDeltaName;
         }
 
         private void onRightButtonPress(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             _isRightButtonPressed = true;
             Cursor.lockState = CursorLockMode.Confined;
         }
 
         private void onRightButtonRelease(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             _isRightButtonPressed = false;
             Cursor.lockState = CursorLockMode.None;
         }

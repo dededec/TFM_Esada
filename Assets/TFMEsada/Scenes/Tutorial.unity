@@ -6940,6 +6940,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -173.42813
       objectReference: {fileID: 0}
+    - target: {fileID: 1590091814087082221, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _uiDeath
+      value: 
+      objectReference: {fileID: 97540527}
+    - target: {fileID: 1590091814087082221, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _uiPause
+      value: 
+      objectReference: {fileID: 749291766}
+    - target: {fileID: 1590091814087082221, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _uiGameplay
+      value: 
+      objectReference: {fileID: 724804663}
     - target: {fileID: 1686252512633461909, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 74.21351
@@ -7974,22 +7986,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6128377947335776084, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
   m_PrefabInstance: {fileID: 1498218369242119270}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6128377949064555884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6128377949064555882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef94e273de0b554a9444e28b12db35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _uiPause: {fileID: 749291766}
-  _uiGameplay: {fileID: 724804663}
-  _uiDeath: {fileID: 97540527}
-  _controls: {fileID: 6128377949064555888}
 --- !u!114 &6128377949064555888 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1933474343, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}

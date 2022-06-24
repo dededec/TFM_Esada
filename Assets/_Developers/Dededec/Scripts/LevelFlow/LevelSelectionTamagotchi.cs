@@ -150,6 +150,7 @@ namespace TFMEsada
 
         private void processScroll(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             float value = context.ReadValue<Vector2>().x;
             if(value > 0)
             {
@@ -171,6 +172,7 @@ namespace TFMEsada
 
         private void selectLevel(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             if(_selectedIndex <= currentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
             {
                 _gameFlowController.LoadScene(_levels[_selectedIndex].gameObject.name);
@@ -183,6 +185,7 @@ namespace TFMEsada
 
         private void CancelInput(InputAction.CallbackContext context)
         {
+            _controlManager.CheckScheme(context.control.device.name);
             Debug.Log("Se sale al menú.");
         }
 

@@ -15,6 +15,13 @@ namespace TFMEsada
 	/// </summary>
     public class ControlManager : MonoBehaviour
     {
+
+        public enum ControlScheme
+        {
+            MOUSE,
+            GAMEPAD,
+        }
+
         #region Fields
 
         [SerializeField] private GameObject _uiDeath;
@@ -32,6 +39,12 @@ namespace TFMEsada
             {
                 return _controls;
             }
+        }
+
+        public ControlScheme CurrentScheme 
+        { 
+            get; 
+            private set; 
         }
 
         public bool IsDead
@@ -98,6 +111,18 @@ namespace TFMEsada
                 Controls.Player.Enable();
                 Controls.Camera.Enable();
                 Controls.Interaction.Enable();
+            }
+        }
+
+        public void CheckScheme(string device)
+        {
+            if(device.Contains("Gamepad"))
+            {
+                CurrentScheme = ControlScheme.GAMEPAD;
+            }
+            else if(device.Contains("Mouse"))
+            {
+                CurrentScheme = ControlScheme.MOUSE;
             }
         }
 
