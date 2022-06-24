@@ -23,23 +23,45 @@ namespace TFMEsada
 
         private void Start() 
         {
-            GameStateManager.instance.onGameStateChanged += onGameStateChanged;
-
-            _pauseUnpause = _controls.Controls.UI.PauseUnpause;
-            _pauseUnpause.started += pauseUnpauseStarted;
-            _pauseUnpause.Enable();
-
+            assignControls();
         }
 
-        private void OnDestroy() 
+        private void OnEnable()
         {
-            GameStateManager.instance.onGameStateChanged -= onGameStateChanged;    
+            GameStateManager.instance.onGameStateChanged += onGameStateChanged;
+            assignControls();
+        }
+
+        private void OnDisable()
+        {
+            GameStateManager.instance.onGameStateChanged -= onGameStateChanged;
 
             _pauseUnpause.started -= pauseUnpauseStarted;
             _pauseUnpause.Disable();
         }
 
-        
+        private bool assignControls()
+        {
+
+            if (_controls.Controls == null)
+            {
+                return false;
+            }
+
+            if (_pauseUnpause != null)
+            {
+                return true;
+            }
+            else
+            {
+                _pauseUnpause = _controls.Controls.UI.PauseUnpause;
+                _pauseUnpause.started += pauseUnpauseStarted;
+                _pauseUnpause.Enable();
+                return true;
+            }
+        }
+
+
         private void pauseUnpauseStarted(InputAction.CallbackContext context)
         {
             _controls.CheckScheme(context.control.device.name);

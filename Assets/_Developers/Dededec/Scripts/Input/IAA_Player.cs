@@ -431,6 +431,14 @@ namespace TFMEsada
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Restart"",
+                    ""type"": ""Button"",
+                    ""id"": ""70ff9022-d52e-4400-9654-e01547f93e1d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -763,6 +771,28 @@ namespace TFMEsada
                     ""action"": ""PauseUnpause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d9611cdf-d630-4585-97f8-9a3ad8543141"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Restart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""04ba7652-2541-476f-b3f6-d474da6d9e89"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Restart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -848,6 +878,7 @@ namespace TFMEsada
             m_UI_Select = m_UI.FindAction("Select", throwIfNotFound: true);
             m_UI_Cancel = m_UI.FindAction("Cancel", throwIfNotFound: true);
             m_UI_PauseUnpause = m_UI.FindAction("PauseUnpause", throwIfNotFound: true);
+            m_UI_Restart = m_UI.FindAction("Restart", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -1024,6 +1055,7 @@ namespace TFMEsada
         private readonly InputAction m_UI_Select;
         private readonly InputAction m_UI_Cancel;
         private readonly InputAction m_UI_PauseUnpause;
+        private readonly InputAction m_UI_Restart;
         public struct UIActions
         {
             private @IAA_Player m_Wrapper;
@@ -1032,6 +1064,7 @@ namespace TFMEsada
             public InputAction @Select => m_Wrapper.m_UI_Select;
             public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
             public InputAction @PauseUnpause => m_Wrapper.m_UI_PauseUnpause;
+            public InputAction @Restart => m_Wrapper.m_UI_Restart;
             public InputActionMap Get() { return m_Wrapper.m_UI; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1053,6 +1086,9 @@ namespace TFMEsada
                     @PauseUnpause.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseUnpause;
                     @PauseUnpause.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseUnpause;
                     @PauseUnpause.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPauseUnpause;
+                    @Restart.started -= m_Wrapper.m_UIActionsCallbackInterface.OnRestart;
+                    @Restart.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnRestart;
+                    @Restart.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnRestart;
                 }
                 m_Wrapper.m_UIActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1069,6 +1105,9 @@ namespace TFMEsada
                     @PauseUnpause.started += instance.OnPauseUnpause;
                     @PauseUnpause.performed += instance.OnPauseUnpause;
                     @PauseUnpause.canceled += instance.OnPauseUnpause;
+                    @Restart.started += instance.OnRestart;
+                    @Restart.performed += instance.OnRestart;
+                    @Restart.canceled += instance.OnRestart;
                 }
             }
         }
@@ -1139,6 +1178,7 @@ namespace TFMEsada
             void OnSelect(InputAction.CallbackContext context);
             void OnCancel(InputAction.CallbackContext context);
             void OnPauseUnpause(InputAction.CallbackContext context);
+            void OnRestart(InputAction.CallbackContext context);
         }
     }
 }

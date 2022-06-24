@@ -178,6 +178,7 @@ namespace TFMEsada
 
         private void interact(InputAction.CallbackContext context)
         {   
+            _controlManager.CheckScheme(context.control.device.name);
             RaycastHit hit;
             if(RayCast(out hit, _range, _keyLayer))
             {

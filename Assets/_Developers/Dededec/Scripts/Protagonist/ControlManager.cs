@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace TFMEsada
@@ -18,21 +19,24 @@ namespace TFMEsada
 
         public enum ControlScheme
         {
-            MOUSE,
+            MOUSEKEYBOARD,
             GAMEPAD,
         }
 
         #region Fields
 
+        public class ControlSchemeEvent : UnityEvent<ControlScheme> { }
+        public ControlSchemeEvent onControlSchemeChanged = new ControlSchemeEvent();
+
         [SerializeField] private GameObject _uiDeath;
         [SerializeField] private GameObject _uiGameplay;
         private IAA_Player _controls;
-        
 
-	    #endregion
-	  
-	    #region Properties
-	  
+
+        #endregion
+
+        #region Properties
+
         public IAA_Player Controls
         {
             get
@@ -41,10 +45,10 @@ namespace TFMEsada
             }
         }
 
-        public ControlScheme CurrentScheme 
-        { 
-            get; 
-            private set; 
+        public ControlScheme CurrentScheme
+        {
+            get;
+            private set;
         }
 
         public bool IsDead
@@ -52,21 +56,22 @@ namespace TFMEsada
             get;
             private set;
         }
-            
-	    #endregion
-	 
-	    #region LifeCycle
-	  
-        private void Awake() 
+
+        #endregion
+
+        #region LifeCycle
+
+        private void Awake()
         {
             _controls = new IAA_Player();
+            CurrentScheme = ControlScheme.GAMEPAD;
         }
 
-        private void OnDestroy() 
+        private void OnDestroy()
         {
-            StopPlayer(true);            
+            StopPlayer(true);
         }
-      
+
         #endregion
 
         #region Public Methods
@@ -75,7 +80,7 @@ namespace TFMEsada
         {
             GetComponentInChildren<Animator>().SetTrigger("IsDead");
             AkSoundEngine.PostEvent("Player_Defeated", this.gameObject);
-            StopPlayer(true);
+            DeadPlayerControls();
             _uiDeath.SetActive(true);
             _uiGameplay.SetActive(false);
             IsDead = true;
@@ -83,7 +88,7 @@ namespace TFMEsada
 
         public void TogglePlayerControls(bool value)
         {
-            if(value)
+            if (value)
             {
                 Controls.Player.Enable();
                 Controls.Camera.Enable();
@@ -99,8 +104,8 @@ namespace TFMEsada
         // mientras el jugador esté muerto.
         public void StopPlayer(bool value)
         {
-            if(IsDead) return;
-            if(value)
+            if (IsDead) return;
+            if (value)
             {
                 Controls.Player.Disable();
                 Controls.Camera.Disable();
@@ -114,15 +119,29 @@ namespace TFMEsada
             }
         }
 
+        public void DeadPlayerControls()
+        {
+            if(IsDead) return;
+            Controls.Player.Disable();
+            Controls.Interaction.Disable();
+        }
+
         public void CheckScheme(string device)
         {
-            if(device.Contains("Gamepad"))
+            var scheme = CurrentScheme;
+            var dev = device.ToLower();
+            if (dev.Contains("gamepad"))
             {
                 CurrentScheme = ControlScheme.GAMEPAD;
             }
-            else if(device.Contains("Mouse"))
+            else if (dev.Contains("mouse") || dev.Contains("keyboard"))
             {
-                CurrentScheme = ControlScheme.MOUSE;
+                CurrentScheme = ControlScheme.MOUSEKEYBOARD;
+            }
+
+            if (scheme != CurrentScheme)
+            {
+                onControlSchemeChanged?.Invoke(CurrentScheme);
             }
         }
 

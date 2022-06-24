@@ -140,7 +140,11 @@ namespace TFMEsada
         private void FixedUpdate() 
         {
             var input = _move.ReadValue<Vector2>();
-            if(input.magnitude > 0) _controlManager.CheckScheme(_move.activeControl.device.name);
+            if(input.magnitude > 0) 
+            {
+                _controlManager.CheckScheme(_move.activeControl.device.name);
+            }
+            
             movement(input);
             rotation(input);
         }
