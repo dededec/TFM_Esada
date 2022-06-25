@@ -14,9 +14,8 @@ public class PuddleCollision : MonoBehaviour
     
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.gameObject.tag == "Enemy")
+        if(other.gameObject.tag == "Enemy" && other.name[0].ToString() != "B")
         {
-            print("a");
             other.GetComponent<ChairBehaviour>().fall();
             other.GetComponentInChildren<RunState>().fall();
         }

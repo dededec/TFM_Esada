@@ -14,24 +14,34 @@ public class BookColisionDetection : MonoBehaviour
     float x = 0f;
     float y = 0f;
 
+    private Rigidbody _rb;
+
     private void Awake() {
         _player = GameObject.Find("Player");
+        _rb = gameObject.GetComponent<Rigidbody>();
+        GameStateManager.instance.onGameStateChanged += onGameStateChanged;
     }
+
+     private void OnDestroy()
+    {
+        GameStateManager.instance.onGameStateChanged -= onGameStateChanged;
+    }
+
 
     private void Update() {
         Vector3 targetPosition = Vector3.forward;
 
-        if(moverse)
+        if(moverse && GameStateManager.instance.CurrentGameState != GameState.Paused)
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 4f, _player.transform.position.z), 1f * Time.deltaTime); 
 
         if(_flapIdle)
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 2, transform.position.z), 2 * Time.deltaTime);
+            if(GameStateManager.instance.CurrentGameState != GameState.Paused) transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 2, transform.position.z), 2 * Time.deltaTime);
             this.transform.LookAt(targetPosition);
         }
         else if(_player != null)
         {
-            if(_recolocate)
+            if(_recolocate && GameStateManager.instance.CurrentGameState != GameState.Paused)
             {
                 transform.GetComponent<Rigidbody>().useGravity = false;
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.transform.position.x, 3f, _player.transform.position.z), 1.5f * Time.deltaTime);
@@ -51,7 +61,7 @@ public class BookColisionDetection : MonoBehaviour
     private void OnCollisionEnter(Collision other) 
     {
         //CHOCO CONTRA EL PLAYER ESTANDO EN ATAQUE -> MUERTE DEL PLAYER
-        if(other.transform.tag == "Player" && bbt.taskAttack.inAttack)
+        if(other.transform.tag == "Player" && bbt.taskAttack.inAttack && !bbt.taskAttack.playerDead)
         {
             AkSoundEngine.PostEvent("libro_chocando", gameObject);
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
@@ -62,6 +72,7 @@ public class BookColisionDetection : MonoBehaviour
 
             _flapIdle = true;
             bbt.taskAttack.inAttack = false;
+            bbt.taskAttack.playerDead = true;
         }
 
         //CHOCO CONTRA OTRA COSA
@@ -94,7 +105,17 @@ public class BookColisionDetection : MonoBehaviour
         if(!_flapIdle) transform.GetComponent<Rigidbody>().useGravity = false;
         transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
-        yield return new WaitForSeconds(4f);
+        float timer = 0f;
+        while(timer < 4f) 
+        {
+            print("cooldown " + timer);
+            if(pausedCoroutines)
+                yield return null;
+            else
+                timer += Time.deltaTime;
+            yield return null;
+        }
+        //yield return new WaitForSeconds(4f);
 
         if(!_flapIdle)
         {
@@ -113,14 +134,29 @@ public class BookColisionDetection : MonoBehaviour
 
     bool moverse = false;
 
+    bool pausedCoroutines = false;
+
     IEnumerator preAttack()
     {
         transform.GetComponent<Rigidbody>().useGravity = false;
         bbt.gameObject.GetComponent<Animator>().SetBool("flap", true);
         
         moverse = true;
-        
-        yield return new WaitForSeconds(2f);
+        //while(!pauseCoroutines) yield return null;
+
+
+        float timer = 0f;
+        while(timer < 2f) 
+        {
+            print("Preattack " + timer);
+            if(pausedCoroutines)
+                yield return null;
+            else
+                timer += Time.deltaTime;
+            yield return null;
+        }
+
+        //yield return new WaitForSeconds(2f);
         bbt.checkInAttackRange.ready = true;
         moverse = false;
     }
@@ -128,5 +164,42 @@ public class BookColisionDetection : MonoBehaviour
     public void playAwake()
     {
         
+    }
+
+    Vector3 _pausedVelocity;
+    Vector3 _pausedAngularVelocity; 
+
+    public void pauseBook()
+    {
+        pausedCoroutines = true;
+        bbt.taskAttack.playerDead = true;
+        _pausedVelocity = _rb.velocity;
+        _pausedAngularVelocity = _rb.angularVelocity;
+        _rb.isKinematic = true;
+    }
+
+    public void resumeBook()
+    {
+        pausedCoroutines = false;
+        bbt.taskAttack.playerDead = false;
+        _rb.velocity = _pausedVelocity;
+        _rb.angularVelocity = _pausedAngularVelocity;
+        _rb.isKinematic = false;
+    }
+
+    private void onGameStateChanged(GameState newGameState)
+    {
+        print("a");
+        switch (GameStateManager.instance.CurrentGameState)
+        {
+            case GameState.Gameplay:
+                resumeBook();
+                break;
+            case GameState.Paused:
+                pauseBook();
+                break;
+            default:
+                break;
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace TFMEsada
 
         public class ControlSchemeEvent : UnityEvent<ControlScheme> { }
         public ControlSchemeEvent onControlSchemeChanged = new ControlSchemeEvent();
+        public bool PlayerDead = false;
 
         [SerializeField] private GameObject _uiDeath;
         [SerializeField] private GameObject _uiGameplay;
@@ -78,6 +79,7 @@ namespace TFMEsada
 
         public void PlayerDeath()
         {
+            PlayerDead = true;
             GetComponentInChildren<Animator>().SetTrigger("IsDead");
             AkSoundEngine.PostEvent("Player_Defeated", this.gameObject);
             DeadPlayerControls();

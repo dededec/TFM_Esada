@@ -12,6 +12,7 @@ public class TaskAttack : Node
     private GameObject _book;
     private GameObject _player;
     private float _force;
+    public bool playerDead = false;
     
     public TaskAttack(GameObject book, GameObject player, float force)
     {
@@ -22,19 +23,22 @@ public class TaskAttack : Node
 
     public override NodeState Evaluate()
     {
-        if(isAttacking)
+
+        if(!playerDead && !_player.GetComponent<ControlManager>().PlayerDead)
         {
-            _book.GetComponent<Animator>().SetBool("attacking", true);
-            _book.GetComponent<Rigidbody>().useGravity = true;
-            Vector3 playerPosModified = new Vector3(_player.transform.position.x, _player.transform.position.y + 3, _player.transform.position.z);
-            AkSoundEngine.StopAll(_book);
+            if(isAttacking)
+            {
+                _book.GetComponent<Animator>().SetBool("attacking", true);
+                _book.GetComponent<Rigidbody>().useGravity = true;
+                Vector3 playerPosModified = new Vector3(_player.transform.position.x, _player.transform.position.y + 3, _player.transform.position.z);
+                AkSoundEngine.StopAll(_book);
 
 
-            _book.GetComponent<Rigidbody>().velocity = (playerPosModified - _book.transform.position) * _force;
-            inAttack = true;
-            isAttacking = false;
-        }
-        
+                _book.GetComponent<Rigidbody>().velocity = (playerPosModified - _book.transform.position) * _force;
+                inAttack = true;
+                isAttacking = false;
+            }
+        }   
 
         state = NodeState.RUNNING;
         return state;

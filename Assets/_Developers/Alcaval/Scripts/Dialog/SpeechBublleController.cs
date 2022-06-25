@@ -11,7 +11,7 @@ namespace TFMEsada
     public class SpeechBublleController : MonoBehaviour
     {
         #region Fields
-        [SerializeField] private Camera _renderCamera;
+        [SerializeField] public Camera _renderCamera;
 
 
         private Transform _dialogPosition;

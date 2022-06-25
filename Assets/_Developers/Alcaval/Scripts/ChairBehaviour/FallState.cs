@@ -72,7 +72,6 @@ namespace TFMEsada
             toRun = true;
             yield return new WaitForSeconds(2f);
             _runState.canFall = true;
-            print("Se puede volver a caer");
             yield return null;
         }
 

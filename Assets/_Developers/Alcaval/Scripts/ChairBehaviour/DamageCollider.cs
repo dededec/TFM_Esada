@@ -10,6 +10,7 @@ public class DamageCollider : MonoBehaviour
     [SerializeField] public Collider _hitbox;
     public bool playerDead = false;
     [SerializeField] private Animator _animator;
+    private GameObject _player;
 
     #endregion
 
@@ -18,6 +19,7 @@ public class DamageCollider : MonoBehaviour
     private void Awake() {
         _hitbox.isTrigger = true;
         _hitbox.enabled = false;
+        _player = GameObject.Find("Player");
     }
 
     #endregion
@@ -26,7 +28,7 @@ public class DamageCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && !_player.GetComponent<ControlManager>().PlayerDead)
         {
             other.gameObject.GetComponent<ControlManager>().PlayerDeath();
             playerDead = true;

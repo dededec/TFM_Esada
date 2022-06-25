@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TFMEsada;
 
 public class Level2Controller : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class Level2Controller : MonoBehaviour
     [SerializeField] private Transform[] floorSpawnPoints;
     [SerializeField] private GameObject[] cameras;
     [SerializeField] private GameObject player;
+    
+    private GameObject _bubble;
+
+    private void Awake() {
+        _bubble = GameObject.Find("Bubble");
+    }
 
     public void UpdatePhone()
     {
@@ -71,11 +78,13 @@ public class Level2Controller : MonoBehaviour
         {
             cameras[0].SetActive(true);
             cameras[1].SetActive(false);
+            _bubble.GetComponent<SpeechBublleController>()._renderCamera = cameras[0].GetComponent<Camera>();
         }
         else
         {
             cameras[0].SetActive(false);
             cameras[1].SetActive(true);
+            _bubble.GetComponent<SpeechBublleController>()._renderCamera = cameras[1].GetComponent<Camera>();
         }
     }
 }
