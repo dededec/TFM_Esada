@@ -22,7 +22,7 @@ public class BookColisionDetection : MonoBehaviour
         GameStateManager.instance.onGameStateChanged += onGameStateChanged;
     }
 
-     private void OnDestroy()
+    private void OnDestroy()
     {
         GameStateManager.instance.onGameStateChanged -= onGameStateChanged;
     }
@@ -91,6 +91,7 @@ public class BookColisionDetection : MonoBehaviour
 
     public void death()
     {
+        gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().bookStop();
         AkSoundEngine.PostEvent("libro_defeated", gameObject);
         gameObject.GetComponent<Animator>().SetBool("dead", true);
         gameObject.GetComponent<Animator>().SetBool("flap", false);
@@ -108,7 +109,6 @@ public class BookColisionDetection : MonoBehaviour
         float timer = 0f;
         while(timer < 4f) 
         {
-            print("cooldown " + timer);
             if(pausedCoroutines)
                 yield return null;
             else
@@ -148,7 +148,6 @@ public class BookColisionDetection : MonoBehaviour
         float timer = 0f;
         while(timer < 2f) 
         {
-            print("Preattack " + timer);
             if(pausedCoroutines)
                 yield return null;
             else
@@ -171,6 +170,8 @@ public class BookColisionDetection : MonoBehaviour
 
     public void pauseBook()
     {
+        gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().bookStop();
+        gameObject.GetComponent<Animator>().speed = 0;
         pausedCoroutines = true;
         bbt.taskAttack.playerDead = true;
         _pausedVelocity = _rb.velocity;
@@ -180,6 +181,11 @@ public class BookColisionDetection : MonoBehaviour
 
     public void resumeBook()
     {
+        print("libros" + gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().numOfBooksAwake);
+        // if(gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().numOfBooksAwake < 0) 
+        //     gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().numOfBooksAwake = 0;
+        gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().bookAwake();
+        gameObject.GetComponent<Animator>().speed = 1;
         pausedCoroutines = false;
         bbt.taskAttack.playerDead = false;
         _rb.velocity = _pausedVelocity;
@@ -189,7 +195,6 @@ public class BookColisionDetection : MonoBehaviour
 
     private void onGameStateChanged(GameState newGameState)
     {
-        print("a");
         switch (GameStateManager.instance.CurrentGameState)
         {
             case GameState.Gameplay:

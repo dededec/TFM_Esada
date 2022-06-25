@@ -18,6 +18,7 @@ namespace TFMEsada
         // Variable that lets us and the script know if the agent is inRange of the player
         public bool inRangePlayer{ set; get; }
         public bool switchMode = false;
+        private GameObject _player;
 
         #endregion
 
@@ -27,11 +28,17 @@ namespace TFMEsada
         void Awake()
         {
             chairBehaviour = gameObject.transform.parent.parent.gameObject.GetComponent<ChairBehaviour>();
+            _player = GameObject.Find("Player");
         }
 
         #region Public Methods
         public override State RunCurrentState()
         {
+            if(_player.GetComponent<ControlManager>().PlayerDead)
+            {
+                return this;
+            }
+
             if(inRangePlayer)
             {
                 chairBehaviour.playAwake();

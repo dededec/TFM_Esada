@@ -53,7 +53,10 @@ public class CheckInAttackRange : Node
             {
                 if(!first)
                 {
-                    AkSoundEngine.PostEvent("libro_despierto", _bookPos.gameObject); first = true;
+                    first = true;
+                    Debug.Log("otra vez");
+                    _bookPos.gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().bookAwake();
+                    //AkSoundEngine.PostEvent("libro_despierto", _bookPos.gameObject); first = true;
                     bookColisionDetection.PreAttack();
                 } 
                 return state;

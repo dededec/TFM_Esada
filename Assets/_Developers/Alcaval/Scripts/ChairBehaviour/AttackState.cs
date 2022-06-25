@@ -36,6 +36,7 @@ namespace TFMEsada
 
         private void Awake() {
             player = GameObject.Find("Player");
+            
         }
 
         #region Public Methods
@@ -77,7 +78,16 @@ namespace TFMEsada
                 //AkSoundEngine.StopAll(animator.gameObject);
                 animator.SetTrigger("attack");
                 //AkSoundEngine.PostEvent("silla_atacando", animator.gameObject); // IGUAL TENEMOS QUE SONORIZAR DESDE ANIMACI�N
-                yield return new WaitForSeconds(1f);
+                float timer = 0f;
+                while(timer < 1f) 
+                {
+                    if(chairBehaviour.pausedCoroutines)
+                        yield return null;
+                    else
+                        timer += Time.deltaTime;
+                    yield return null;
+                }
+                //yield return new WaitForSeconds(1f);
                 _ableToAttack = false;
             }
         }
@@ -86,7 +96,16 @@ namespace TFMEsada
             animator.SetTrigger("awake");
             //AkSoundEngine.StopAll(animator.gameObject);
             //AkSoundEngine.PostEvent("silla_despierta", animator.gameObject); 
-            yield return new WaitForSeconds(_cooldown);
+            float timer = 0f;
+            while(timer < _cooldown) 
+            {
+                if(chairBehaviour.pausedCoroutines)
+                    yield return null;
+                else
+                    timer += Time.deltaTime;
+                yield return null;
+            }
+            //yield return new WaitForSeconds(_cooldown);
             _ableToAttack = true;
             finishedAttacking = true;
         }

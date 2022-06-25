@@ -34,6 +34,8 @@ namespace TFMEsada
 
         public bool fell = false;
         public bool justUp = false;
+
+        private ChairBehaviour cb;
         
 
         #endregion
@@ -45,6 +47,7 @@ namespace TFMEsada
             _navMeshAgent = GetComponentInParent<NavMeshAgent>();
             _playerPos = GameObject.Find("Player").gameObject.transform;
             _player = _playerPos.gameObject;
+            cb = gameObject.transform.parent.parent.gameObject.GetComponent<ChairBehaviour>();
         }
       
         #endregion
@@ -68,7 +71,7 @@ namespace TFMEsada
                 _idleState.inRangePlayer = false;
                 return _idleState;
             }
-            else if(inAttackRangePlayer)
+            else if(inAttackRangePlayer && !cb.pausedCoroutines)
             {
                 _navMeshAgent.isStopped = true;
                 //_chairTransform.gameObject.GetComponent<ChairBehaviour>().stopAwake();
@@ -76,9 +79,12 @@ namespace TFMEsada
             }
             else
             {
-                _navMeshAgent.isStopped = false;
-                _chairTransform.LookAt(_playerPos.transform);
-                _navMeshAgent.destination = _playerPos.transform.position;
+                if(!cb.pausedCoroutines)
+                {
+                    _navMeshAgent.isStopped = false;
+                    _chairTransform.LookAt(_playerPos.transform);
+                    _navMeshAgent.destination = _playerPos.transform.position;
+                }
                 return this;
             }
         }
@@ -130,7 +136,18 @@ namespace TFMEsada
             //ESTA SERIA LA LINEA QUE HAY QUE DESCOMENTAR PARA QUE SUENE EL RESBALARSE
             AkSoundEngine.PostEvent("silla_resbalando", gameObject);
             _animator.SetBool("falling", currentlyFalling);
-            yield return new WaitForSeconds(s);
+
+            float timer = 0f;
+            while(timer < s) 
+            {
+                if(cb.pausedCoroutines)
+                    yield return null;
+                else
+                    timer += Time.deltaTime;
+                yield return null;
+            }
+
+            //yield return new WaitForSeconds(s);
             currentlyFalling = false;
             _animator.SetBool("falling", currentlyFalling);
             StartCoroutine(UpCoroutine());
@@ -139,9 +156,27 @@ namespace TFMEsada
         IEnumerator UpCoroutine()
         {
             //_animator.SetTrigger("up");
-            yield return new WaitForSeconds(0.3f);
+            float timer = 0f;
+            while(timer < 0.3f) 
+            {
+                if(cb.pausedCoroutines)
+                    yield return null;
+                else
+                    timer += Time.deltaTime;
+                yield return null;
+            }
+            //yield return new WaitForSeconds(0.3f);
             _animator.ResetTrigger("up");
-            yield return new WaitForSeconds(3f);
+            timer = 0f;
+            while(timer < 3f) 
+            {
+                if(cb.pausedCoroutines)
+                    yield return null;
+                else
+                    timer += Time.deltaTime;
+                yield return null;
+            }
+            //yield return new WaitForSeconds(3f);
             canFall = true;
         }
 

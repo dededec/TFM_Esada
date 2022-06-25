@@ -18,6 +18,7 @@ namespace TFMEsada
         private NavMeshAgent _navMeshAgent;
         private bool dead = false;
         public uint idWalkSound;
+        private GameObject _player;
 	  
 	    #endregion
 	  
@@ -29,6 +30,15 @@ namespace TFMEsada
 	 
 	    #region LifeCycle
         
+        private void Awake() {
+            GameStateManager.instance.onGameStateChanged += onGameStateChanged;
+            _player = GameObject.Find("Player");
+        }
+
+        private void OnDestroy()
+        {
+            GameStateManager.instance.onGameStateChanged -= onGameStateChanged;
+        }
 
         private void Start() 
         {
@@ -38,7 +48,10 @@ namespace TFMEsada
         void Update() 
         {
             RunStateMachine();
-            
+            if(_player.GetComponent<ControlManager>().PlayerDead)
+            {
+                changeState(gameObject.GetComponentInChildren<IdleState>());
+            }
         }
       
         #endregion
@@ -67,18 +80,19 @@ namespace TFMEsada
 
         public void playAwake()
         {
-            idWalkSound = AkSoundEngine.PostEvent("silla_despierta", gameObject);
+            gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().chairAwake();
+            //idWalkSound = AkSoundEngine.PostEvent("silla_despierta", gameObject);
         }
 
         public void stopAwake()
         {
-            AkSoundEngine.StopPlayingID(idWalkSound);
+            gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().chairStop();
+            //AkSoundEngine.StopPlayingID(idWalkSound);
         }
 
         public void death()
         {
             stopAwake();
-            Debug.Log("Se murio la silla");
             AkSoundEngine.PostEvent("silla_defeated", gameObject);
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             gameObject.GetComponent<ChairBehaviour>().enabled = false;
@@ -113,7 +127,42 @@ namespace TFMEsada
         {
             AkSoundEngine.PostEvent("silla_pataTrasera", gameObject);
         }
+
+
             
         #endregion
+
+        public bool pausedCoroutines = false;
+        Vector3 _pausedVelocity;
+        Vector3 _pausedAngularVelocity; 
+
+        public void pauseChair()
+        {
+            gameObject.GetComponent<Animator>().speed = 0;
+            pausedCoroutines = true;
+            _navMeshAgent.isStopped = true;
+        }
+
+        public void resumeChair()
+        {
+            gameObject.GetComponent<Animator>().speed = 1;
+            pausedCoroutines = false;
+            _navMeshAgent.isStopped = false;
+        }
+
+        private void onGameStateChanged(GameState newGameState)
+        {
+            switch (GameStateManager.instance.CurrentGameState)
+            {
+                case GameState.Gameplay:
+                    resumeChair();
+                    break;
+                case GameState.Paused:
+                    pauseChair();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
