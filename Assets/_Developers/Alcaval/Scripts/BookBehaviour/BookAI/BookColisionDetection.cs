@@ -99,6 +99,7 @@ public class BookColisionDetection : MonoBehaviour
         gameObject.GetComponent<Rigidbody>().AddForce(Vector3.back * 5, ForceMode.Impulse);
         gameObject.GetComponent<BookBehaviourTree>().enabled = false;
         this.enabled = false;
+        StartCoroutine(postDeath());
     }
 
     IEnumerator cooldownCoroutine()
@@ -207,4 +208,10 @@ public class BookColisionDetection : MonoBehaviour
                 break;
         }
     }
+
+    IEnumerator postDeath()
+        {
+            yield return new WaitForSeconds(2f);
+            gameObject.SetActive(false);
+        }
 }

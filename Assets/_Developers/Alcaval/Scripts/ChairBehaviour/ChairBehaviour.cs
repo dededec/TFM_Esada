@@ -99,6 +99,7 @@ namespace TFMEsada
             gameObject.GetComponent<ChairBehaviour>().enabled = false;
             _navMeshAgent.isStopped = true;
             _animator.SetBool("falling", true);
+            StartCoroutine(postDeath());
             //Destroy(gameObject);
         }
 
@@ -164,6 +165,12 @@ namespace TFMEsada
                 default:
                     break;
             }
+        }
+
+        IEnumerator postDeath()
+        {
+            yield return new WaitForSeconds(2f);
+            gameObject.SetActive(false);
         }
     }
 }
