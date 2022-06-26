@@ -43,7 +43,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 7.77
+  m_Intensity: 14.24
   m_Range: 13.361789
   m_SpotAngle: 156.13472
   m_InnerSpotAngle: 81.35743
@@ -82,7 +82,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 5092198580048822563}
   - component: {fileID: 2004716737774544973}
   - component: {fileID: 8691003012960953624}
+  - component: {fileID: 2072443046701144207}
   m_Layer: 0
   m_Name: "l\xE1mpara_text"
   m_TagString: Untagged
@@ -121,9 +122,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5825321979138349615}
-  m_LocalRotation: {x: -0.52170074, y: -0.47731367, z: -0.47731355, w: 0.52170086}
+  m_LocalRotation: {x: -0.52170056, y: -0.47731394, z: -0.47731394, w: 0.52170056}
   m_LocalPosition: {x: -0.451, y: 4.08, z: 8.76}
-  m_LocalScale: {x: 28.240477, y: 28.240477, z: 28.240477}
+  m_LocalScale: {x: 28.240482, y: 28.240482, z: 28.240477}
   m_Children:
   - {fileID: 4922054136652952500}
   m_Father: {fileID: 0}
@@ -252,3 +253,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &2072443046701144207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825321979138349615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.045665722, y: 0.05943898, z: 0.08140285}
+  m_Center: {x: 0.0005268313, y: 0.0072495257, z: 0.016562609}

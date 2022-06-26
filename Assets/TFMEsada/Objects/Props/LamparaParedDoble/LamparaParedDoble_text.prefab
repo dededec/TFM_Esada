@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2923129419895093566}
   m_LocalRotation: {x: 0.9548127, y: 0, z: 0, w: 0.29720828}
-  m_LocalPosition: {x: 0.1383, y: -0.009399992, z: -0.022600004}
+  m_LocalPosition: {x: 0.1383, y: -0.008, z: -0.021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8492696726260177630}
@@ -82,7 +82,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -137,7 +137,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
-  m_Range: 10039.266
+  m_Range: 10025.84
   m_SpotAngle: 179
   m_InnerSpotAngle: 89.69427
   m_CookieSize: 10
@@ -175,7 +175,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 8492696726260177630}
   - component: {fileID: 4788387674875712891}
   - component: {fileID: 7320375182605132209}
+  - component: {fileID: 1661985326119034434}
   m_Layer: 0
   m_Name: LamparaParedDoble_text
   m_TagString: Untagged
@@ -269,3 +270,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1661985326119034434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121986077096935524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18766129, y: 0.0647753, z: 0.085110486}
+  m_Center: {x: 0.06780383, y: 0.0063608307, z: 0.021858357}
