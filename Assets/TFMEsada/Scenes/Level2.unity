@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1198043, g: 0.061956428, b: 0.34836188, a: 1}
+  m_IndirectSpecularColor: {r: 0.11528111, g: 0.054146834, b: 0.33805323, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -912,19 +912,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 128.86845
+      value: 116.46725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 80.14976
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 63.56683
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6999998
+      value: -0.69796
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.530109
+      value: 13.628
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.82
+      value: 16.886
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e38cde7a2d860d4b86c65defce5b86b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2573,7 +2581,7 @@ PrefabInstance:
     - target: {fileID: 1027608710986582911, guid: d146ead39eac80d43853e7a0038bcda8, type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 536238640}
+      objectReference: {fileID: 476633843}
     - target: {fileID: 1027608710986582911, guid: d146ead39eac80d43853e7a0038bcda8, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 28631
@@ -3502,6 +3510,42 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4768240821275008889, guid: 13b4262cc5caddd4e9d1e0f807431359, type: 3}
   m_PrefabInstance: {fileID: 1562610857}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &476633843
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 1920
+  m_Height: 1080
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 2
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &489644243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3569,6 +3613,10 @@ PrefabInstance:
       propertyPath: _controlManager
       value: 
       objectReference: {fileID: 514208896}
+    - target: {fileID: 9154607791422383544, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
+      propertyPath: _contentOfNote.Array.data[0]
+      value: Here it is! The tamagotchi!!
+      objectReference: {fileID: 0}
     - target: {fileID: 9154607791422383551, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: m_Name
       value: TamagochiNoteFinal
@@ -3969,42 +4017,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526582118}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!84 &536238640
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 1920
-  m_Height: 1080
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 2
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &540877428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4359,7 +4371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 536238640}
+  m_Texture: {fileID: 476633843}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5249,8 +5261,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693227755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.91, y: 13.55, z: 3.3003}
-  m_LocalScale: {x: 0.8260124, y: 1, z: 1.4160906}
+  m_LocalPosition: {x: 28.9316, y: 13.55, z: 3.3072}
+  m_LocalScale: {x: 0.84419566, y: 1, z: 1.4237477}
   m_Children: []
   m_Father: {fileID: 1292328964}
   m_RootOrder: 6
@@ -5288,7 +5300,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f40b4e9c16fb6154fae2b1691e42d591, type: 2}
+  - {fileID: 2100000, guid: 290b3883b2e602e48a32327fb21ee009, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6856,6 +6868,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.0158
       objectReference: {fileID: 0}
+    - target: {fileID: 5092198580048822563, guid: 3d5b91b8a03a5eb44926f92d59ada062, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.x
+      value: 0.000000017236886
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092198580048822563, guid: 3d5b91b8a03a5eb44926f92d59ada062, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.y
+      value: 0.00000000211061
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092198580048822563, guid: 3d5b91b8a03a5eb44926f92d59ada062, type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.z
+      value: 0.014043918
+      objectReference: {fileID: 0}
     - target: {fileID: 5825321979138349615, guid: 3d5b91b8a03a5eb44926f92d59ada062, type: 3}
       propertyPath: m_Name
       value: "l\xE1mpara_text (3)"
@@ -6870,7 +6894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6601260922417791125, guid: 3d5b91b8a03a5eb44926f92d59ada062, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.38
+      value: 4.41
       objectReference: {fileID: 0}
     - target: {fileID: 6601260922417791125, guid: 3d5b91b8a03a5eb44926f92d59ada062, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7699,7 +7723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023778577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.537, y: 1.08, z: -4.998}
+  m_LocalPosition: {x: -15.394, y: 1.149, z: -4.998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1513993921}
@@ -8129,6 +8153,10 @@ PrefabInstance:
       propertyPath: _controlManager
       value: 
       objectReference: {fileID: 514208896}
+    - target: {fileID: 9154607791422383544, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
+      propertyPath: _contentOfNote.Array.data[0]
+      value: Tape, a sewing kit and... nothing
+      objectReference: {fileID: 0}
     - target: {fileID: 9154607791422383551, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: m_Name
       value: TamagochiNote3
@@ -9007,6 +9035,10 @@ PrefabInstance:
       propertyPath: _controlManager
       value: 
       objectReference: {fileID: 514208896}
+    - target: {fileID: 9154607791422383544, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
+      propertyPath: _contentOfNote.Array.data[0]
+      value: Wait what... Something happened...
+      objectReference: {fileID: 0}
     - target: {fileID: 9154607791422383551, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: m_Name
       value: PhoneNote4
@@ -10970,6 +11002,10 @@ PrefabInstance:
       propertyPath: _controlManager
       value: 
       objectReference: {fileID: 514208896}
+    - target: {fileID: 9154607791422383544, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
+      propertyPath: _contentOfNote.Array.data[0]
+      value: I can put one half of the code, but nothing happens.
+      objectReference: {fileID: 0}
     - target: {fileID: 9154607791422383551, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: m_Name
       value: PhoneNote3
@@ -13095,6 +13131,10 @@ PrefabInstance:
       propertyPath: _controlManager
       value: 
       objectReference: {fileID: 514208896}
+    - target: {fileID: 9154607791422383544, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
+      propertyPath: _contentOfNote.Array.data[0]
+      value: There is nothing but a rat here.
+      objectReference: {fileID: 0}
     - target: {fileID: 9154607791422383551, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: m_Name
       value: TamagochiNote2
@@ -14077,6 +14117,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1855428979}
     m_Modifications:
+    - target: {fileID: 3671120777854781480, guid: a2edaf50053e1034882ba4b5943cff8b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 20391330f09730a4aa415c7b58c48ae2, type: 2}
     - target: {fileID: 5869907536127221876, guid: a2edaf50053e1034882ba4b5943cff8b, type: 3}
       propertyPath: m_Name
       value: Puerta2
@@ -14129,6 +14173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8730668372484378123, guid: a2edaf50053e1034882ba4b5943cff8b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2b98d789cc8b2f04baeb81ab64c108d2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2edaf50053e1034882ba4b5943cff8b, type: 3}
 --- !u!4 &1847839531 stripped
@@ -14563,7 +14611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879163065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.05, z: 0}
+  m_LocalPosition: {x: 0.98, y: -0.05, z: 0}
   m_LocalScale: {x: 0.1007, y: 0.1007, z: 0.1007}
   m_Children: []
   m_Father: {fileID: 349882306}
@@ -17655,13 +17703,28 @@ GameObject:
   - component: {fileID: 6190420636775878464}
   - component: {fileID: 3597981594759740129}
   - component: {fileID: 6512125509689501041}
-  m_Layer: 0
+  - component: {fileID: 2364541316026174781}
+  m_Layer: 10
   m_Name: BACK2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2364541316026174781
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2364541316026174780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7035108101041119769, guid: 8ddfe3bb812af9c4eb792d2d491ab8ef, type: 3}
 --- !u!33 &2407857928851951352
 MeshFilter:
   m_ObjectHideFlags: 0

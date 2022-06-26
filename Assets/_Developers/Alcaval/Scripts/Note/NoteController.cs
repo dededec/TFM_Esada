@@ -173,6 +173,7 @@ namespace TFMEsada
                 if(gameObject.name == "PhoneNote4")
                 {
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
+                    //CameraShaker.Instance.ShakeOnce(4f,4f,.1f,.1f);
                 }
             }
             else if(_currentDialog < _contentOfNote.Length && !Writing)

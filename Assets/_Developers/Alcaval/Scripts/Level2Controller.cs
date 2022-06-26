@@ -79,12 +79,14 @@ public class Level2Controller : MonoBehaviour
             cameras[0].SetActive(true);
             cameras[1].SetActive(false);
             _bubble.GetComponent<SpeechBublleController>()._renderCamera = cameras[0].GetComponent<Camera>();
+            player.transform.rotation *= Quaternion.AngleAxis( 180, transform.up); 
         }
         else
         {
             cameras[0].SetActive(false);
             cameras[1].SetActive(true);
             _bubble.GetComponent<SpeechBublleController>()._renderCamera = cameras[1].GetComponent<Camera>();
+            player.transform.rotation *= Quaternion.AngleAxis( 180, transform.up); 
         }
     }
 }
