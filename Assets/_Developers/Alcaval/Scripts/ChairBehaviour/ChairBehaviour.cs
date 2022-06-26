@@ -93,6 +93,7 @@ namespace TFMEsada
         public void death()
         {
             stopAwake();
+            dead = true;
             AkSoundEngine.PostEvent("silla_defeated", gameObject);
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             gameObject.GetComponent<ChairBehaviour>().enabled = false;
@@ -147,7 +148,7 @@ namespace TFMEsada
         {
             gameObject.GetComponent<Animator>().speed = 1;
             pausedCoroutines = false;
-            _navMeshAgent.isStopped = false;
+            if(!dead) _navMeshAgent.isStopped = false;
         }
 
         private void onGameStateChanged(GameState newGameState)
