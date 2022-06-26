@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3727379168472762185}
   m_LocalRotation: {x: 0.00000013767877, y: 0.7071068, z: -0.70710677, w: 0.00000013767878}
   m_LocalPosition: {x: -0.6873038, y: 0, z: -0.034454495}
-  m_LocalScale: {x: 0.06715844, y: 0.06715844, z: 0.06715844}
+  m_LocalScale: {x: 0.06715844, y: 0.118379824, z: 0.06715844}
   m_Children: []
   m_Father: {fileID: 8019816903380475521}
   m_RootOrder: 1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 20391330f09730a4aa415c7b58c48ae2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 22.697945, y: 6.490737, z: 36.939342}
-  m_Center: {x: -11.338577, y: 0.000007720609, z: -18.469671}
+  m_Size: {x: 22.697945, y: 1.4335699, z: 36.939342}
+  m_Center: {x: -11.338577, y: 0.00000772061, z: -18.469671}
 --- !u!95 &7549903823057341303
 Animator:
   serializedVersion: 3
@@ -142,7 +142,7 @@ Transform:
   m_GameObject: {fileID: 3918478439311061882}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 2.5934567}
   m_Children: []
   m_Father: {fileID: 8019816903380475521}
   m_RootOrder: 0
@@ -174,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2b98d789cc8b2f04baeb81ab64c108d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,7 +221,7 @@ Transform:
   m_GameObject: {fileID: 7207954402716075067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.32, y: 0.96, z: 3.09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1504173, y: 1.495575, z: 1}
   m_Children:
   - {fileID: 7266200409843343061}
   - {fileID: 5143489097464342471}

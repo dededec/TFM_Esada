@@ -2024,18 +2024,6 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2778825
-      objectReference: {fileID: 0}
-    - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4181259
-      objectReference: {fileID: 0}
-    - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.1046
-      objectReference: {fileID: 0}
-    - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7
       objectReference: {fileID: 0}
@@ -6596,7 +6584,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d4ac4f745952ce54695b1dd3036b3f35, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6503f59fc4a636d49b726f957b0674db, type: 2}
+      objectReference: {fileID: 2100000, guid: c4bbaa59d222a4a44837660b7312d14e, type: 2}
     - target: {fileID: 919132149155446097, guid: d4ac4f745952ce54695b1dd3036b3f35, type: 3}
       propertyPath: m_Name
       value: Puerta1
@@ -13138,37 +13126,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2127418165}
     m_Modifications:
-    - target: {fileID: 541458347036879975, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 20391330f09730a4aa415c7b58c48ae2, type: 2}
-    - target: {fileID: 5143489097464342471, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.118379824
-      objectReference: {fileID: 0}
-    - target: {fileID: 5501223061886724676, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2b98d789cc8b2f04baeb81ab64c108d2, type: 2}
     - target: {fileID: 7207954402716075067, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
       propertyPath: m_Name
       value: Puerta4
       objectReference: {fileID: 0}
-    - target: {fileID: 7266200409843343061, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.5934567
-      objectReference: {fileID: 0}
     - target: {fileID: 8019816903380475521, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
       propertyPath: m_RootOrder
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8019816903380475521, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1504173
-      objectReference: {fileID: 0}
-    - target: {fileID: 8019816903380475521, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.495575
       objectReference: {fileID: 0}
     - target: {fileID: 8019816903380475521, guid: 5034ba250647f22428773e0acf35da4a, type: 3}
       propertyPath: m_LocalPosition.x
