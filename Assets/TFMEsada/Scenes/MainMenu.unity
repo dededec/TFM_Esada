@@ -302,6 +302,9 @@ RectTransform:
   - {fileID: 1514393276}
   - {fileID: 1532527402}
   - {fileID: 1653444454}
+  - {fileID: 1616253692}
+  - {fileID: 1996761511}
+  - {fileID: 1524295713}
   m_Father: {fileID: 953187156}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -530,9 +533,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 369853201}
-  - {fileID: 1616253692}
-  - {fileID: 1996761511}
-  - {fileID: 1524295713}
   - {fileID: 6365624041031578587}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -589,8 +589,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gfc: {fileID: 2032184428}
   _uiAjustes: {fileID: 6365624041031578586}
+  _uiMenu: {fileID: 369853200}
   _selectorTitle: {fileID: 1616253691}
   _navigatorTitle: {fileID: 953187157}
+  _navigatorAjustes: {fileID: 6365624041031578580}
 --- !u!1 &1008258742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,17 +1271,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524295712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1211764368}
-  m_Father: {fileID: 953187156}
-  m_RootOrder: 3
+  m_Father: {fileID: 369853201}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -359.47}
+  m_AnchoredPosition: {x: -5.5338745, y: -356.7031}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524295714
@@ -1363,7 +1365,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1524295714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 953187158}
+        m_TargetAssemblyTypeName: TFMEsada.MainMenuFunctions, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1532527401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,16 +1498,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616253691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 953187156}
-  m_RootOrder: 1
+  m_Father: {fileID: 369853201}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -359.47}
+  m_AnchoredPosition: {x: -5.5338745, y: -356.7031}
   m_SizeDelta: {x: 286, y: 276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1616253693
@@ -1720,16 +1734,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996761510}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 953187156}
-  m_RootOrder: 2
+  m_Father: {fileID: 369853201}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 800.02, y: 410}
+  m_AnchoredPosition: {x: 794.4861, y: 412.7669}
   m_SizeDelta: {x: 320, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996761512
@@ -1778,8 +1792,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 953187158}
         m_TargetAssemblyTypeName: TFMEsada.MainMenuFunctions, Assembly-CSharp
-        m_MethodName: ToogleSettings
-        m_Mode: 6
+        m_MethodName: ToogleSettingsOn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2205,7 +2219,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6365624040299774100}
   m_OnClick:
     m_PersistentCalls:
@@ -2441,7 +2455,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6365624040393443827}
   m_OnClick:
     m_PersistentCalls:
@@ -2574,15 +2588,15 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6365624040826617899}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 953187158}
         m_TargetAssemblyTypeName: TFMEsada.MainMenuFunctions, Assembly-CSharp
-        m_MethodName: ToogleSettings
-        m_Mode: 6
+        m_MethodName: ToogleSettingsOff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2930,7 +2944,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6365624041031578586}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46e82c4df73833946bff54a99df356a3, type: 3}
   m_Name: 
@@ -3005,7 +3019,7 @@ RectTransform:
   m_Children:
   - {fileID: 8979387719754341273}
   m_Father: {fileID: 953187156}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3166,7 +3180,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6365624041476813236}
   m_OnClick:
     m_PersistentCalls:
@@ -3297,7 +3311,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 6365624041731245773}
   m_OnClick:
     m_PersistentCalls:
