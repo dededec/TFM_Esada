@@ -130,7 +130,6 @@ namespace TFMEsada
         {
             _controlManager.CheckScheme(context.control.device.name);
             var values = context.ReadValue<Vector2>();
-            AkSoundEngine.PostEvent("Click", this.gameObject);
 
             if(values.x > 0)
             {
@@ -149,14 +148,13 @@ namespace TFMEsada
             {
                 changeSelectorPosition(_buttons[indexSelected].transitions.down);
             }
-
-            indexSelected = _buttons.FindIndex(b => b.button.gameObject.GetComponent<RectTransform>().position == _selector.position);
         }
 
         private void changeSelectorPosition(RectTransform rect)
         {
             if (rect != null)
             {
+                AkSoundEngine.PostEvent("Click", this.gameObject);
                 _selector.position = rect.position;
                 _selector.sizeDelta = rect.sizeDelta + Vector2.right * _hmargin + Vector2.up * _vmargin;
                 
@@ -168,6 +166,8 @@ namespace TFMEsada
                 {
                     _selector.GetComponent<Image>().sprite = _bigSprite;
                 }
+
+                indexSelected = _buttons.FindIndex(b => b.button.gameObject.GetComponent<RectTransform>().position == _selector.position);
             }
         }
 
