@@ -45,6 +45,12 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private float _range;
 
+        [Tooltip("Layer in which to look for walls.")]
+        /// <summary>
+        /// Layer in which to look for walls.
+        /// </summary>
+        [SerializeField] private LayerMask _wallLayer;
+
         [Tooltip("Layer in which to look for keys.")]
         /// <summary>
         /// Layer in which to look for keys.
@@ -180,6 +186,9 @@ namespace TFMEsada
         {   
             _controlManager.CheckScheme(context.control.device.name);
             RaycastHit hit;
+            
+            if(RayCast(out hit, _range, _wallLayer)) return;
+
             if(RayCast(out hit, _range, _keyLayer))
             {
                 // Obtener llave.
