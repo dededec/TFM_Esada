@@ -175,6 +175,7 @@ namespace TFMEsada
             _controlManager.CheckScheme(context.control.device.name);
             if(_selectedIndex <= currentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
             {
+                AkSoundEngine.PostEvent("Entrar_nivel", this.gameObject);
                 _gameFlowController.LoadScene(_levels[_selectedIndex].gameObject.name);
             }
             else
@@ -186,11 +187,12 @@ namespace TFMEsada
         private void CancelInput(InputAction.CallbackContext context)
         {
             _controlManager.CheckScheme(context.control.device.name);
-            Debug.Log("Se sale al menú.");
+            _gameFlowController.LoadScene("MainMenu");
         }
 
         private IEnumerator crScroll(float value)
         {
+            AkSoundEngine.PostEvent("Click", this.gameObject);
             if((_selectedIndex == 0 && value < 0) || (_selectedIndex == _levels.Count - 1 && value > 0)) 
             {
                 yield break;

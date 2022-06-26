@@ -192,7 +192,7 @@ namespace TFMEsada
                 _rigidbody.MovePosition(_rigidbody.transform.position + _movementSpeed * Time.deltaTime * vertical * _rigidbody.transform.forward);
             }
 
-            _animator.SetFloat("Speed", Mathf.Abs(vertical));
+            _animator.SetFloat("Speed", vertical);
             _animator.SetBool("IsWalkingBackwards", vertical < 0f);
         }
 
