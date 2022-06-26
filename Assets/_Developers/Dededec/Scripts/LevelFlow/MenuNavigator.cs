@@ -36,6 +36,9 @@ namespace TFMEsada
             
         }
 
+        [SerializeField] private float _hmargin = 20f;
+        [SerializeField] private float _vmargin = 0f;
+
         #region Fields
 
         [SerializeField] private List<ButtonTransition> _buttons = new List<ButtonTransition>();
@@ -47,7 +50,7 @@ namespace TFMEsada
         private InputAction _uiSelect;
         private InputAction _uiNavigate;
         private bool _loadedControls = false;
-        private int indexSelected;
+        [SerializeField] private int indexSelected = 0;
 
         #endregion
 
@@ -143,7 +146,7 @@ namespace TFMEsada
             if (rect != null)
             {
                 _selector.position = rect.position;
-                _selector.sizeDelta = rect.sizeDelta + Vector2.right * 20f;
+                _selector.sizeDelta = rect.sizeDelta + Vector2.right * _hmargin + Vector2.up * _vmargin;
                 
                 if(rect.gameObject.name.StartsWith("small"))
                 {
