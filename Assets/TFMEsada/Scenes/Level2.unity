@@ -11278,6 +11278,18 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5286081896661610235, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
+      propertyPath: m_Size.x
+      value: 22.303354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286081896661610235, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6969751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286081896661610235, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
+      propertyPath: m_Center.y
+      value: -0.0000002231475
+      objectReference: {fileID: 0}
     - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
       propertyPath: m_RootOrder
       value: 8
