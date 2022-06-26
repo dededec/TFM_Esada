@@ -754,6 +754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e82c4df73833946bff54a99df356a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hmargin: 20
+  _vmargin: 0
   _buttons:
   - button: {fileID: 3926333787205070035}
     transitions:
@@ -792,10 +794,11 @@ MonoBehaviour:
       right: {fileID: 0}
       left: {fileID: 3926333786349562214}
   _selector: {fileID: 3926333786835462008}
-  _smallSprite: {fileID: 21300000, guid: 21b51e85691613c4e9111c6658189fe8, type: 3}
-  _bigSprite: {fileID: 21300000, guid: 106fb0ab0b5a6774a9cffdb296274502, type: 3}
+  _smallSprite: {fileID: 21300000, guid: 04a6d07fa54e16a4e9581ba1715fb7bd, type: 3}
+  _bigSprite: {fileID: 21300000, guid: 33bfbed44188e1f4986f4bbdf6395da5, type: 3}
   _controlManager: {fileID: 0}
   eventSystem: {fileID: 0}
+  indexSelected: 0
 --- !u!114 &3926333786707208969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,14 +884,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 106fb0ab0b5a6774a9cffdb296274502, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33bfbed44188e1f4986f4bbdf6395da5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -112,6 +112,18 @@ namespace TFMEsada
             _controlManager.CheckScheme(context.control.device.name);
             AkSoundEngine.PostEvent("Enter", this.gameObject);
             ExecuteEvents.Execute(_buttons[indexSelected].button.gameObject, new BaseEventData(eventSystem), ExecuteEvents.submitHandler);
+            StartCoroutine(moveTextButton());
+        }
+
+        private IEnumerator moveTextButton()
+        {
+            if(_buttons[indexSelected].button.gameObject.transform.childCount < 1) yield break;
+
+            var text = _buttons[indexSelected].button.gameObject.transform.GetChild(0).GetComponent<RectTransform>();
+
+            text.anchoredPosition += Vector2.down * 10f;
+            yield return new WaitForSeconds(0.1f);
+            text.anchoredPosition += Vector2.up * 10f;
         }
 
         private void changeSelection(InputAction.CallbackContext context)
