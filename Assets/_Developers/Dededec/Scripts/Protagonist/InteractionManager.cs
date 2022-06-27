@@ -202,6 +202,7 @@ namespace TFMEsada
             else if(RayCast(out hit, _range, _collectableLayer))
             {   
                 Debug.Log("Pillas coleccionable");
+                AkSoundEngine.PostEvent("PickUp_coleccionable", this.gameObject);
                 hasCollectable = true;
                 Destroy(hit.collider.gameObject);
                 return;
