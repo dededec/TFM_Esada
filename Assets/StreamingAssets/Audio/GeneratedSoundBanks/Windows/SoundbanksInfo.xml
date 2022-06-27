@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="3476459356">
+		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="1276182518">
 			<ObjectPath>\SoundBanks\Default Work Unit\menu_principal</ObjectPath>
 			<ShortName>menu_principal</ShortName>
 			<Path>menu_principal.bnk</Path>
@@ -32,11 +32,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="6.825374" DurationMax="6.825374">
+				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="2.069687" DurationMax="2.069687">
 					<IncludedMemoryFiles>
 						<File Id="794741404" Language="SFX">
 							<ShortName>Seleccionar mapa_R.wav</ShortName>
-							<Path>SFX\Seleccionar mapa_R_10C4C929.wem</Path>
+							<Path>SFX\Seleccionar mapa_R_CDBBE6FC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3092804715">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="2433284260">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -79,11 +79,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="OneShot" DurationMin="44.799999" DurationMax="44.799999">
+				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1069630703" Language="SFX">
 							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
-							<Path>SFX\AMBIENTE NOCHE 2_10C4C929.wem</Path>
+							<Path>SFX\AMBIENTE NOCHE 2_2F762C97.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -245,11 +245,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="6.825374" DurationMax="6.825374">
+				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="2.069687" DurationMax="2.069687">
 					<IncludedMemoryFiles>
 						<File Id="794741404" Language="SFX">
 							<ShortName>Seleccionar mapa_R.wav</ShortName>
-							<Path>SFX\Seleccionar mapa_R_10C4C929.wem</Path>
+							<Path>SFX\Seleccionar mapa_R_CDBBE6FC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -849,7 +849,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="2195474650">
+		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="1441936539">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Tutorial</ObjectPath>
 			<ShortName>Music_Tutorial</ShortName>
 			<Path>Music_Tutorial.bnk</Path>
@@ -860,29 +860,21 @@
 							<ShortName>PAD 3.wav</ShortName>
 							<Path>SFX\PAD 3_D79FB2B7.wem</Path>
 						</File>
+						<File Id="151383890" Language="SFX">
+							<ShortName>DOWNS &amp; UPS.wav</ShortName>
+							<Path>SFX\DOWNS &amp; UPS_D79FB2B7.wem</Path>
+						</File>
 						<File Id="510676643" Language="SFX">
 							<ShortName>PAD 2.wav</ShortName>
 							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
-						</File>
-						<File Id="538990284" Language="SFX">
-							<ShortName>UP CORTO.wav</ShortName>
-							<Path>SFX\UP CORTO_D79FB2B7.wem</Path>
 						</File>
 						<File Id="575158461" Language="SFX">
 							<ShortName>CHORUS EXALE.wav</ShortName>
 							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
 						</File>
-						<File Id="698884518" Language="SFX">
-							<ShortName>UP LARGO.wav</ShortName>
-							<Path>SFX\UP LARGO_D79FB2B7.wem</Path>
-						</File>
-						<File Id="717471477" Language="SFX">
-							<ShortName>DOWN CORTO.wav</ShortName>
-							<Path>SFX\DOWN CORTO_D79FB2B7.wem</Path>
-						</File>
-						<File Id="968385185" Language="SFX">
-							<ShortName>DOWN LARGO.wav</ShortName>
-							<Path>SFX\DOWN LARGO_D79FB2B7.wem</Path>
+						<File Id="835194910" Language="SFX">
+							<ShortName>RETORNOS TUT.wav</ShortName>
+							<Path>SFX\RETORNOS TUT_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1020362891" Language="SFX">
 							<ShortName>PAD 4.wav</ShortName>
@@ -892,7 +884,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="2395895293">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="3237137357">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
@@ -913,17 +905,17 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="OneShot" DurationMin="44.799999" DurationMax="44.799999">
+				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1069630703" Language="SFX">
 							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
-							<Path>SFX\AMBIENTE NOCHE 2_10C4C929.wem</Path>
+							<Path>SFX\AMBIENTE NOCHE 2_2F762C97.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2734994081">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1418036153">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -938,7 +930,7 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="3784130031">
+		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="1896635470">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_MenuPrincipal</ObjectPath>
 			<ShortName>Music_MenuPrincipal</ShortName>
 			<Path>Music_MenuPrincipal.bnk</Path>
@@ -953,7 +945,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="2177735725" GUID="{0A2F2C7B-0D09-406B-B015-47CEE83C6645}" Language="SFX" Hash="923238626">
+		<SoundBank Id="2177735725" GUID="{0A2F2C7B-0D09-406B-B015-47CEE83C6645}" Language="SFX" Hash="284268429">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Level</ObjectPath>
 			<ShortName>Music_Level</ShortName>
 			<Path>Music_Level.bnk</Path>
@@ -968,7 +960,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="1054619443">
+		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="442884439">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_The_End</ObjectPath>
 			<ShortName>Music_The_End</ShortName>
 			<Path>Music_The_End.bnk</Path>
@@ -983,7 +975,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="4185651891">
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="3668934548">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
 			<ShortName>Music_LVL2</ShortName>
 			<Path>Music_LVL2.bnk</Path>
@@ -998,33 +990,25 @@
 							<ShortName>PAD 1.wav</ShortName>
 							<Path>SFX\PAD 1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="151383890" Language="SFX">
+							<ShortName>DOWNS &amp; UPS.wav</ShortName>
+							<Path>SFX\DOWNS &amp; UPS_D79FB2B7.wem</Path>
+						</File>
+						<File Id="356093278" Language="SFX">
+							<ShortName>RETORNOS LVL2.wav</ShortName>
+							<Path>SFX\RETORNOS LVL2_D79FB2B7.wem</Path>
+						</File>
 						<File Id="510676643" Language="SFX">
 							<ShortName>PAD 2.wav</ShortName>
 							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
-						</File>
-						<File Id="538990284" Language="SFX">
-							<ShortName>UP CORTO.wav</ShortName>
-							<Path>SFX\UP CORTO_D79FB2B7.wem</Path>
 						</File>
 						<File Id="575158461" Language="SFX">
 							<ShortName>CHORUS EXALE.wav</ShortName>
 							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
 						</File>
-						<File Id="698884518" Language="SFX">
-							<ShortName>UP LARGO.wav</ShortName>
-							<Path>SFX\UP LARGO_D79FB2B7.wem</Path>
-						</File>
 						<File Id="709195926" Language="SFX">
 							<ShortName>BASS 1.wav</ShortName>
 							<Path>SFX\BASS 1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="717471477" Language="SFX">
-							<ShortName>DOWN CORTO.wav</ShortName>
-							<Path>SFX\DOWN CORTO_D79FB2B7.wem</Path>
-						</File>
-						<File Id="968385185" Language="SFX">
-							<ShortName>DOWN LARGO.wav</ShortName>
-							<Path>SFX\DOWN LARGO_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1020362891" Language="SFX">
 							<ShortName>PAD 4.wav</ShortName>
@@ -1034,7 +1018,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="218461466">
+		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="3330367621">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>
 			<ShortName>Music_LVL1</ShortName>
 			<Path>Music_LVL1.bnk</Path>
@@ -1049,33 +1033,25 @@
 							<ShortName>PAD 1.wav</ShortName>
 							<Path>SFX\PAD 1_D79FB2B7.wem</Path>
 						</File>
+						<File Id="151383890" Language="SFX">
+							<ShortName>DOWNS &amp; UPS.wav</ShortName>
+							<Path>SFX\DOWNS &amp; UPS_D79FB2B7.wem</Path>
+						</File>
+						<File Id="282251239" Language="SFX">
+							<ShortName>RETORNOS LVL1.wav</ShortName>
+							<Path>SFX\RETORNOS LVL1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="510676643" Language="SFX">
 							<ShortName>PAD 2.wav</ShortName>
 							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
-						</File>
-						<File Id="538990284" Language="SFX">
-							<ShortName>UP CORTO.wav</ShortName>
-							<Path>SFX\UP CORTO_D79FB2B7.wem</Path>
 						</File>
 						<File Id="575158461" Language="SFX">
 							<ShortName>CHORUS EXALE.wav</ShortName>
 							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
 						</File>
-						<File Id="698884518" Language="SFX">
-							<ShortName>UP LARGO.wav</ShortName>
-							<Path>SFX\UP LARGO_D79FB2B7.wem</Path>
-						</File>
 						<File Id="709195926" Language="SFX">
 							<ShortName>BASS 1.wav</ShortName>
 							<Path>SFX\BASS 1_D79FB2B7.wem</Path>
-						</File>
-						<File Id="717471477" Language="SFX">
-							<ShortName>DOWN CORTO.wav</ShortName>
-							<Path>SFX\DOWN CORTO_D79FB2B7.wem</Path>
-						</File>
-						<File Id="968385185" Language="SFX">
-							<ShortName>DOWN LARGO.wav</ShortName>
-							<Path>SFX\DOWN LARGO_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1020362891" Language="SFX">
 							<ShortName>PAD 4.wav</ShortName>

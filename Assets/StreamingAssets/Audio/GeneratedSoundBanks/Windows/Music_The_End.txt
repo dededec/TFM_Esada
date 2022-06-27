@@ -1,6 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3328924828	Music_The_End			\Default Work Unit\Music\Music_The_End	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music_States	
+
+State	ID	Name	State Group			Notes
+	394898390	Menu_Inicio	Music_States			
+	529726532	End	Music_States			
+	748895195	None	Music_States			
+	2397100949	Lvl_1	Music_States			
+	2397100950	Lvl_2	Music_States			
+	3762955427	Tutorial	Music_States			
+	4203375351	Menu_Select	Music_States			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	380695143	MUSIC_The_End	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\MUSIC_The_End_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\THE END\MUSIC_The_End\MUSIC_The_End		8731864
 
