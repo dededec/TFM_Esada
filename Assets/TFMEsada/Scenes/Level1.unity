@@ -18168,7 +18168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6222901167734638111, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _ammo
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6222901167734638111, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _ammoSlider
