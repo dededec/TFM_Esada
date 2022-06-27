@@ -187,7 +187,7 @@ namespace TFMEsada
         public void OnShootingAnimation()
         {
             AkSoundEngine.PostEvent("Disparar_pistola_agua", this.gameObject);
-            Instantiate(_bullet, _shootPosition.position, transform.rotation);
+            StartCoroutine(crShoot());
         }
 
         public void OnShootingPuddleAnimation()
@@ -249,6 +249,12 @@ namespace TFMEsada
             }
 
             puddle.localScale = Vector3.one;
+        }
+
+        private IEnumerator crShoot()
+        {
+            Instantiate(_bullet, _shootPosition.position, transform.rotation);
+            yield return new WaitForSeconds(0.5f);
         }
 
         private bool assignControls()

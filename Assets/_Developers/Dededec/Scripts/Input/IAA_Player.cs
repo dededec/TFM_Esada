@@ -35,6 +35,14 @@ namespace TFMEsada
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""SlowTap,Tap""
+                },
+                {
+                    ""name"": ""Restart"",
+                    ""type"": ""Button"",
+                    ""id"": ""fe483ffe-121d-45e8-bcdd-9da4d099c91c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold(duration=1)""
                 }
             ],
             ""bindings"": [
@@ -255,6 +263,28 @@ namespace TFMEsada
                     ""processors"": """",
                     ""groups"": ""XR"",
                     ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a6df18e-8561-4562-bc59-1b789edbf11e"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Restart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d58866ae-ae76-417a-979f-8fc934dc8243"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Restart"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -864,6 +894,7 @@ namespace TFMEsada
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+            m_Player_Restart = m_Player.FindAction("Restart", throwIfNotFound: true);
             // Camera
             m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
             m_Camera_Zoom = m_Camera.FindAction("Zoom", throwIfNotFound: true);
@@ -930,12 +961,14 @@ namespace TFMEsada
         private IPlayerActions m_PlayerActionsCallbackInterface;
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_Shoot;
+        private readonly InputAction m_Player_Restart;
         public struct PlayerActions
         {
             private @IAA_Player m_Wrapper;
             public PlayerActions(@IAA_Player wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Player_Move;
             public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
+            public InputAction @Restart => m_Wrapper.m_Player_Restart;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -951,6 +984,9 @@ namespace TFMEsada
                     @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                     @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                     @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
+                    @Restart.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestart;
+                    @Restart.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestart;
+                    @Restart.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestart;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -961,6 +997,9 @@ namespace TFMEsada
                     @Shoot.started += instance.OnShoot;
                     @Shoot.performed += instance.OnShoot;
                     @Shoot.canceled += instance.OnShoot;
+                    @Restart.started += instance.OnRestart;
+                    @Restart.performed += instance.OnRestart;
+                    @Restart.canceled += instance.OnRestart;
                 }
             }
         }
@@ -1161,6 +1200,7 @@ namespace TFMEsada
         {
             void OnMove(InputAction.CallbackContext context);
             void OnShoot(InputAction.CallbackContext context);
+            void OnRestart(InputAction.CallbackContext context);
         }
         public interface ICameraActions
         {

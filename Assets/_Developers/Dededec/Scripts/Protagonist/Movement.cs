@@ -7,6 +7,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
+using UnityEngine.SceneManagement;
 
 namespace TFMEsada
 {
@@ -60,10 +62,12 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private ControlManager _controlManager;
         private InputAction _move;
+        private InputAction _restart;
 
         [SerializeField] private Animator _animator;
+        [SerializeField] private GameFlowController _gfc;
 
-	    #endregion
+        #endregion
 
         #region Properties
 
@@ -153,7 +157,12 @@ namespace TFMEsada
 
         #region Public Methods
 
-        public void StopControls() => _move.Disable();
+        public void StopControls()
+        {
+            _move.Disable();
+            _restart.performed -= restart;
+            _restart.Disable();
+        } 
 
         #endregion
 
@@ -205,6 +214,14 @@ namespace TFMEsada
             }
         }
 
+        private void restart(InputAction.CallbackContext context)
+        {
+            if(context.interaction is HoldInteraction)
+            {
+                _gfc.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+
         private bool assignControls()
         {
             if(_controlManager.Controls == null)
@@ -215,6 +232,10 @@ namespace TFMEsada
             {
                 _move = _controlManager.Controls.Player.Move;
                 _move.Enable();
+
+                _restart = _controlManager.Controls.Player.Restart;
+                _restart.performed += restart;
+                _restart.Enable();
                 return true;
             }
         }

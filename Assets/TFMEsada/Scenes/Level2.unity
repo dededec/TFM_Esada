@@ -10713,6 +10713,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1202975928}
     - target: {fileID: 6128377947335776083, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _gfc
+      value: 
+      objectReference: {fileID: 1073174100}
+    - target: {fileID: 6128377947335776083, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _collisionSize
       value: 0.441
       objectReference: {fileID: 0}

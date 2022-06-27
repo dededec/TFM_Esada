@@ -108,6 +108,18 @@ namespace TFMEsada
             }
         }
 
+        public void TogglePlayerMovement(bool value)
+        {
+            if (value)
+            {
+                Controls.Player.Enable();
+            }
+            else
+            {
+                Controls.Player.Disable();
+            }
+        }
+
         // Paro Interaction para que no pueda interactuar con objetos
         // mientras el jugador esté muerto.
         public void StopPlayer(bool value)

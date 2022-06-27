@@ -18099,6 +18099,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6128377947335776083, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
+      propertyPath: _gfc
+      value: 
+      objectReference: {fileID: 1080462384}
+    - target: {fileID: 6128377947335776083, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _collisionMask.m_Bits
       value: 20353
       objectReference: {fileID: 0}
