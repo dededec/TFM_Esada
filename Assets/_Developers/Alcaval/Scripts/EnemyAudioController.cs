@@ -32,7 +32,12 @@ public class EnemyAudioController : MonoBehaviour
     public void chairStop()
     {
         numOfChairsAwake--;
-        if(numOfChairsAwake <= 0) AkSoundEngine.StopPlayingID(idWalkSound);
+        int a = 0;
+        foreach(GameObject g in chairs)
+        {
+            if(g != null) a++;
+        }
+        if(numOfChairsAwake <= 0 || a == 0) AkSoundEngine.StopPlayingID(idWalkSound);
     }
 
     public void bookAwake()

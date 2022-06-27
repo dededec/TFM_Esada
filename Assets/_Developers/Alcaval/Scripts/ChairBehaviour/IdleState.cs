@@ -17,6 +17,7 @@ namespace TFMEsada
         [SerializeField] private ChairBehaviour chairBehaviour;
         // Variable that lets us and the script know if the agent is inRange of the player
         public bool inRangePlayer{ set; get; }
+        bool first = false;
         public bool switchMode = false;
         private GameObject _player;
 
@@ -39,8 +40,9 @@ namespace TFMEsada
                 return this;
             }
 
-            if(inRangePlayer)
+            if(inRangePlayer && !first)
             {
+                first = true;
                 chairBehaviour.playAwake();
                 return _runState;
             }
