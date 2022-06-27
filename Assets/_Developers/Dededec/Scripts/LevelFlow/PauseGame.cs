@@ -65,7 +65,7 @@ namespace TFMEsada
         private void pauseUnpauseStarted(InputAction.CallbackContext context)
         {
             _controls.CheckScheme(context.control.device.name);
-            GameStateManager.instance.SetState(GameStateManager.instance.CurrentGameState == GameState.Gameplay ? GameState.Paused : GameState.Gameplay);
+            GameStateManager.instance.SetState(GameStateManager.instance.CurrentGameState == GameState.Gameplay || GameStateManager.instance.CurrentGameState == GameState.BeginLevel ? GameState.Paused : GameState.Gameplay);
         }
 
         private void onGameStateChanged(GameState newState)

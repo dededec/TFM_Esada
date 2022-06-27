@@ -161,11 +161,6 @@ public class BookColisionDetection : MonoBehaviour
         moverse = false;
     }
 
-    public void playAwake()
-    {
-        
-    }
-
     Vector3 _pausedVelocity;
     Vector3 _pausedAngularVelocity; 
 

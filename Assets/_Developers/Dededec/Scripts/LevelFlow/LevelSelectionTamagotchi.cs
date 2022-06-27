@@ -186,6 +186,8 @@ namespace TFMEsada
 
         private void CancelInput(InputAction.CallbackContext context)
         {
+            if(gameObject != null || gameObject.active) AkSoundEngine.StopAll();
+            print("vaya");
             _controlManager.CheckScheme(context.control.device.name);
             _gameFlowController.LoadScene("MainMenu");
         }

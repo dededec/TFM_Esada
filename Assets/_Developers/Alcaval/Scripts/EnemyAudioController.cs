@@ -38,14 +38,21 @@ public class EnemyAudioController : MonoBehaviour
     public void bookAwake()
     {
         numOfBooksAwake++;
+        print("Antes" + numOfBooksAwake);
         if(numOfBooksAwake == 1)
+        {
+            print("durante");
             idBookSound = AkSoundEngine.PostEvent("libro_despierto", gameObject);
+            print(AkSoundEngine.GetEventIDFromPlayingID(idBookSound));
+        } 
+        print("Despues" + numOfBooksAwake);
     }
 
     public void bookStop()
     {
+
         numOfBooksAwake--;
-        if(numOfChairsAwake <= 0) AkSoundEngine.StopPlayingID(idBookSound);
+        if(numOfChairsAwake <= 0) AkSoundEngine.StopPlayingID(idBookSound); print("ah");
     }
 
     public void pauseAnySound()

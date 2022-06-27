@@ -143,7 +143,7 @@ namespace TFMEsada
         {
             gameObject.GetComponent<Animator>().speed = 0;
             pausedCoroutines = true;
-            _navMeshAgent.isStopped = true;
+            if(gameObject.active) _navMeshAgent.isStopped = true;
         }
 
         public void resumeChair()

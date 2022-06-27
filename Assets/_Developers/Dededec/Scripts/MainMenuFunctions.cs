@@ -25,7 +25,9 @@ namespace TFMEsada
         public void StartGame()
         {
             // Trigger de texto
+            AkSoundEngine.StopAll();
             _gfc.LoadScene("LevelSelection");
+            
         }
 
         public void ToogleSettingsOn()
