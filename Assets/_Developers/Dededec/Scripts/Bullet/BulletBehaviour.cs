@@ -94,8 +94,10 @@ namespace TFMEsada
                     ResumeRigidbody();
                     break;
                 case GameState.Paused:
+                case GameState.EndLevel:
                     PauseRigidbody();
                     break;
+                    
                 default:
                     break;
             }

@@ -74,7 +74,7 @@ namespace TFMEsada
             _uiGameplay.SetActive(!(newState == GameState.Paused) && !_controls.IsDead);
             _uiDeath.SetActive(!(newState == GameState.Paused) && _controls.IsDead);
 
-            _controls.StopPlayer(newState == GameState.Paused);
+            _controls.StopPlayer(newState == GameState.Paused || newState == GameState.EndLevel);
         }
     }
 }

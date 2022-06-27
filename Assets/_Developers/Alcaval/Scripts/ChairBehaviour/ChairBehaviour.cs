@@ -31,6 +31,7 @@ namespace TFMEsada
 	    #region LifeCycle
         
         private void Awake() {
+            _navMeshAgent = GetComponentInParent<NavMeshAgent>();
             GameStateManager.instance.onGameStateChanged += onGameStateChanged;
             _player = GameObject.Find("Player");
         }
@@ -160,6 +161,7 @@ namespace TFMEsada
                     resumeChair();
                     break;
                 case GameState.Paused:
+                case GameState.EndLevel:
                     pauseChair();
                     break;
                 default:

@@ -263,9 +263,10 @@ namespace TFMEsada
 
         private void victory()
         {
+            GameStateManager.instance.SetState(GameState.EndLevel);
             _victoryUI.SetActive(true);
             _gameplayUI.SetActive(false);
-            _controlManager.TogglePlayerControls(false);
+            //_controlManager.TogglePlayerControls(false);
 
             /*
             Esto se podría hacer escalable si tuviesemos una convención

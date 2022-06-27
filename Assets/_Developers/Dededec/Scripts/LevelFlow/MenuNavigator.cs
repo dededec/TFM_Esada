@@ -156,6 +156,7 @@ namespace TFMEsada
             {
                 AkSoundEngine.PostEvent("Click", this.gameObject);
                 _selector.position = rect.position;
+                indexSelected = _buttons.FindIndex(b => b.button.gameObject.GetComponent<RectTransform>().position == _selector.position);
                 _selector.sizeDelta = rect.sizeDelta + Vector2.right * _hmargin + Vector2.up * _vmargin;
                 
                 if(rect.gameObject.name.StartsWith("small"))
@@ -167,7 +168,6 @@ namespace TFMEsada
                     _selector.GetComponent<Image>().sprite = _bigSprite;
                 }
 
-                indexSelected = _buttons.FindIndex(b => b.button.gameObject.GetComponent<RectTransform>().position == _selector.position);
             }
         }
 

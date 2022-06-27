@@ -202,6 +202,7 @@ public class BookColisionDetection : MonoBehaviour
                 resumeBook();
                 break;
             case GameState.Paused:
+            case GameState.EndLevel:
                 pauseBook();
                 break;
             default:

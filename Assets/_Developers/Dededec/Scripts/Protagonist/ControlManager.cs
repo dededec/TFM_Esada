@@ -64,8 +64,14 @@ namespace TFMEsada
 
         private void Awake()
         {
+            //GameStateManager.instance.SetState(GameState.Gameplay);
             _controls = new IAA_Player();
             CurrentScheme = ControlScheme.GAMEPAD;
+        }
+
+        private void Start() 
+        {
+            GameStateManager.instance.SetState(GameState.Gameplay);
         }
 
         private void OnDestroy()
