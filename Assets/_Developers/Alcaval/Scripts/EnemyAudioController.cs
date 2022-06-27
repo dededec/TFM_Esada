@@ -37,7 +37,6 @@ public class EnemyAudioController : MonoBehaviour
 
     public void bookAwake()
     {
-        //print("doesnt make sense");
         numOfBooksAwake++;
         if(numOfBooksAwake == 1)
             idBookSound = AkSoundEngine.PostEvent("libro_despierto", gameObject);

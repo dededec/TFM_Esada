@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 namespace TFMEsada
 {
@@ -17,12 +18,24 @@ namespace TFMEsada
         private Transform _dialogPosition;
         private Transform _leftLimit;
         private Transform _rightLimit;
+        private ControlManager cm;
+        private TextMeshProUGUI interactText;
 	  
 	    #endregion
 	 
 	    #region LifeCycle
+        private void OnEnable() {
+            cm.onControlSchemeChanged.AddListener(changeText);    
+        }
+
+        private void Awake() {
+            cm = GameObject.Find("Player").GetComponentInChildren<ControlManager>(); 
+        }
 
         private void Start() {
+            interactText = GameObject.Find("PressProp").GetComponentInChildren<TextMeshProUGUI>();
+            interactText.gameObject.SetActive(false);
+            changeText(cm.CurrentScheme);
             _dialogPosition = GameObject.FindGameObjectWithTag("DialogPosition").transform;
             _leftLimit = GameObject.FindGameObjectWithTag("LeftLimit").transform;
             _rightLimit = GameObject.FindGameObjectWithTag("RightLimit").transform;
@@ -49,5 +62,17 @@ namespace TFMEsada
         }
       
         #endregion
+
+        private void changeText(ControlManager.ControlScheme scheme)
+        {
+            if(scheme == ControlManager.ControlScheme.MOUSEKEYBOARD)
+            {
+                interactText.text = "E";
+            }
+            else if(scheme == ControlManager.ControlScheme.GAMEPAD)
+            {
+                interactText.text = "X";
+            }
+        }
     }
 }

@@ -71,7 +71,7 @@ namespace TFMEsada
 
         private void Start() 
         {
-            GameStateManager.instance.SetState(GameState.Gameplay);
+            GameStateManager.instance.SetState(GameState.BeginLevel);
         }
 
         private void OnDestroy()

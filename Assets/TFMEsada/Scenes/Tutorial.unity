@@ -7284,58 +7284,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2401819003796308644, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819003796308645, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_margin.w
-      value: -16.916857
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819003796308645, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_margin.y
-      value: 22.272387
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819003796308645, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 7315894116934586167, guid: 013127bf05daa9648a69eaddba68750e, type: 2}
-    - target: {fileID: 2401819003796308645, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819003796308647, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819004684882713, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819004684882726, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819004684882726, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819004684882726, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819004684882727, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401819004684882727, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 84ac33f5f3813774db0cd2020b305f58, type: 3}
-    - target: {fileID: 2401819004684882727, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2401819005387573489, guid: 831ed894b2bf5c940a2bb003fec6dc6b, type: 3}
       propertyPath: _renderCamera
       value: 

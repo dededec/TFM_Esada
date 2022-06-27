@@ -91,6 +91,7 @@ namespace TFMEsada
         {
             switch (GameStateManager.instance.CurrentGameState)
             {
+                case GameState.BeginLevel:
                 case GameState.Gameplay:
                     ResumeRigidbody();
                     break;

@@ -180,12 +180,12 @@ public class BookColisionDetection : MonoBehaviour
         _rb.isKinematic = true;
     }
 
-    public void resumeBook()
+    public void resumeBook(bool awake)
     {
         print("libros" + gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().numOfBooksAwake);
         // if(gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().numOfBooksAwake < 0) 
         //     gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().numOfBooksAwake = 0;
-        gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().bookAwake();
+        if(awake) gameObject.transform.parent.gameObject.GetComponent<EnemyAudioController>().bookAwake();
         gameObject.GetComponent<Animator>().speed = 1;
         pausedCoroutines = false;
         bbt.taskAttack.playerDead = false;
@@ -198,8 +198,11 @@ public class BookColisionDetection : MonoBehaviour
     {
         switch (GameStateManager.instance.CurrentGameState)
         {
+            case GameState.BeginLevel:
+                resumeBook(false);
+                break;
             case GameState.Gameplay:
-                resumeBook();
+                resumeBook(true);
                 break;
             case GameState.Paused:
             case GameState.EndLevel:
