@@ -4521,10 +4521,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: -4452055818617705245, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff1b1f5e4a824264fbf31bb81efc5938, type: 2}
     - target: {fileID: -4370111678170979691, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: -4020924224465817570, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb7daba1f53693c47aea0e8b2d709bad, type: 2}
+    - target: {fileID: -2981435889020785820, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ac6bc6698592442448c6a4ea7186da47, type: 2}
     - target: {fileID: 919132149155446097, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
       propertyPath: m_Name
       value: Tamagotchi
@@ -4545,6 +4557,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 5649864729656009488, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff1b1f5e4a824264fbf31bb81efc5938, type: 2}
+    - target: {fileID: 6549128881841834247, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff1b1f5e4a824264fbf31bb81efc5938, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
 --- !u!1 &1545349412 stripped

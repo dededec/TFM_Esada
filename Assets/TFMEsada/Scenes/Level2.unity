@@ -3208,14 +3208,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -123.298
       objectReference: {fileID: 0}
+    - target: {fileID: -4452055818617705245, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e1511b2152d658644bb5b9e5d628486f, type: 2}
     - target: {fileID: -4020924224465817570, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6ca13a3afcebf974584557d5a4ec33c7, type: 2}
+      objectReference: {fileID: 2100000, guid: 6e43033d4ca719247a89401fd30691e4, type: 2}
     - target: {fileID: -2981435889020785820, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 017d2cc58605c64449288ad82856c3d0, type: 2}
+      objectReference: {fileID: 2100000, guid: 12fe7c0355be64e4ba0f91345bbdc59e, type: 2}
     - target: {fileID: 919132149155446097, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
       propertyPath: m_Name
       value: Tamagotchi
@@ -3224,6 +3228,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5649864729656009488, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e1511b2152d658644bb5b9e5d628486f, type: 2}
+    - target: {fileID: 6549128881841834247, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e1511b2152d658644bb5b9e5d628486f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
 --- !u!1 &450540358 stripped
