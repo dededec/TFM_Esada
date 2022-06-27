@@ -2867,6 +2867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_LevelCompleted
       objectReference: {fileID: 0}
+    - target: {fileID: 2901654401559104452, guid: 0c0cf1b8012838d4888cb78ab10d66c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2901654401559104457, guid: 0c0cf1b8012838d4888cb78ab10d66c3, type: 3}
       propertyPath: _bigSprite
       value: 

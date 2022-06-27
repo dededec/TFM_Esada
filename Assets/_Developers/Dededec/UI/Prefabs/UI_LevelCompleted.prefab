@@ -613,10 +613,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level Completed
+  m_text: LEVEL COMPLETED
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 013127bf05daa9648a69eaddba68750e, type: 2}
+  m_sharedMaterial: {fileID: 7315894116934586167, guid: 013127bf05daa9648a69eaddba68750e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -954,6 +954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46e82c4df73833946bff54a99df356a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hmargin: 20
+  _vmargin: 0
   _buttons:
   - button: {fileID: 2901654401523520290}
     transitions:
@@ -968,8 +970,11 @@ MonoBehaviour:
       right: {fileID: 0}
       left: {fileID: 2901654401523520291}
   _selector: {fileID: 2901654401284406390}
+  _smallSprite: {fileID: 21300000, guid: 33bfbed44188e1f4986f4bbdf6395da5, type: 3}
+  _bigSprite: {fileID: 21300000, guid: 04a6d07fa54e16a4e9581ba1715fb7bd, type: 3}
   _controlManager: {fileID: 0}
   eventSystem: {fileID: 0}
+  indexSelected: 0
 --- !u!1001 &2901654400628673847
 PrefabInstance:
   m_ObjectHideFlags: 0
