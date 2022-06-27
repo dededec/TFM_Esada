@@ -463,7 +463,7 @@ PrefabInstance:
     - target: {fileID: 6459909240692254086, guid: f94364a7f92ce0849bed7cf501f5b376, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 1816445291}
+      objectReference: {fileID: 1166178365}
     - target: {fileID: 6459909240692254089, guid: f94364a7f92ce0849bed7cf501f5b376, type: 3}
       propertyPath: bookColisionDetection
       value: 
@@ -14728,11 +14728,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d146ead39eac80d43853e7a0038bcda8, type: 3}
---- !u!1 &1816445291 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 45990770, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
-  m_PrefabInstance: {fileID: 2143603404}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1820897748
 GameObject:
   m_ObjectHideFlags: 0
@@ -17305,8 +17300,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.6062117, y: 13.3604, z: 10.4025545}
-  m_Center: {x: 0.08658591, y: 0, z: -2.5294623}
+  m_Size: {x: 10.031664, y: 13.3604, z: 10.4025545}
+  m_Center: {x: -1.6261402, y: 0, z: -2.5294623}
 --- !u!1 &2052364736
 GameObject:
   m_ObjectHideFlags: 0

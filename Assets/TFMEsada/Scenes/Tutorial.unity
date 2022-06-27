@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f17f63ad3169eb642a3ddc69fcdef83f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2bdc67735e6938345aa86f0379601ce0, type: 2}
     - target: {fileID: 919132149155446097, guid: f17f63ad3169eb642a3ddc69fcdef83f, type: 3}
       propertyPath: m_Name
       value: CuadroOvalo (2)
@@ -3883,6 +3887,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5b558972feabc82479d4cad418a41a1f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c11720e902bd6445b898df0521a3ae0, type: 2}
     - target: {fileID: 919132149155446097, guid: 5b558972feabc82479d4cad418a41a1f, type: 3}
       propertyPath: m_Name
       value: CuadroHex
@@ -6063,6 +6071,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9f9559c114b0a174ba36237956f87d8d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b7963bcde8044c84cbf35d2829fe8738, type: 2}
     - target: {fileID: 919132149155446097, guid: 9f9559c114b0a174ba36237956f87d8d, type: 3}
       propertyPath: m_Name
       value: cuadroRect
