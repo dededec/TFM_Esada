@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lockedTexture: {fileID: 2800000, guid: e77dc3e1e57edcb4daab69a95a006fb1, type: 3}
-  _unlockedTexture: {fileID: 2800000, guid: 8975b3db960d5604e80a4603a33a10df, type: 3}
+  _unlockedTexture: {fileID: 2800000, guid: 34f8ae05e6bdc334d89a5cfc3c25a179, type: 3}
   _bodyRenderer: {fileID: 1894718561}
   _buttonRenderer: {fileID: 1412029429}
   _screenRenderer: {fileID: 1343310327}
