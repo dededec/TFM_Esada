@@ -10,13 +10,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	1142560233	PickUp_coleccionable			\Default Work Unit\Player\PickUp_coleccionable	
 	1219855736	libro_defeated			\Default Work Unit\Enemies\LIBRO\libro_defeated	
 	1233512512	PickUp_nota			\Default Work Unit\Player\PickUp_nota	
+	1251048105	Repuesto1			\Default Work Unit\Menú Principal\Repuesto1	
+	1251048106	Repuesto2			\Default Work Unit\Menú Principal\Repuesto2	
+	1584507803	Click			\Default Work Unit\Menú Principal\Click	
 	1708516226	silla_despierta			\Default Work Unit\Enemies\SILLA\silla_despierta	
 	1730208058	Player_Footsteps			\Default Work Unit\Player\Player_Footsteps	
+	1827304574	Entrar_nivel			\Default Work Unit\Menú Principal\Entrar_nivel	
 	1881438433	libro_despierto			\Default Work Unit\Enemies\LIBRO\libro_despierto	
 	2147937880	phone_chungo			\Default Work Unit\SFX_Enviroments\phone_chungo	
 	2170274192	puerta_chirriando_lejos			\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos	
 	2335088272	choque_disparo_pared			\Default Work Unit\Player\choque_disparo_pared	
 	2363885649	libro_ataque			\Default Work Unit\Enemies\LIBRO\libro_ataque	
+	2368844905	Enter			\Default Work Unit\Menú Principal\Enter	
 	2435304568	PickUp_nota_corta			\Default Work Unit\Player\PickUp_nota_corta	
 	2665470364	silla_resbalando			\Default Work Unit\Enemies\SILLA\silla_resbalando	
 	2898542032	Grito_1			\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_1	
@@ -56,7 +61,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	16645949	AMBIENTE NOCHE 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\AMBIENTE NOCHE 1_38C4429A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Ambientes Generales\AMBIENTE NOCHE 1		9031808
 	36118933	FOOTSTEPS_normal_3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\FOOTSTEPS\NORMAL\FOOTSTEPS_normal_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\FOOTSTEPS\NORMAL\FOOTSTEPS_normal_3		107840
 	41775480	golpesuelo_playerdefeated_4-1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\golpesuelo_playerdefeated_4-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player_DEFEATED\golpesuelo_playerdefeated\golpesuelo_playerdefeated_4-1		143392
-	44670585	PUERTA CHIRRIANDO LEJOS	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Env Triggeados\Chirridos\PUERTA CHIRRIANDO LEJOS		846784
+	44670585	PUERTA CHIRRIANDO LEJOS_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Env Triggeados\Chirridos\PUERTA CHIRRIANDO LEJOS_2		846784
 	53606963	cerrar puerta-1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\cerrar puerta-1_5B4591CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\PICK UPS\cerrar puerta-1		390520
 	59365415	silla pasos traseros _3(singalope)	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla pasos traseros _3(singalope)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\SILLA\SILLA_ATACANDO\Silla MOVIMIENTO\Patas traseras sin galope\silla pasos traseros _3(singalope)		188196
 	61837310	Pick Up llave 5	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Pick Up llave 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\PICK UPS\Pick Up llave 5		609536
@@ -75,6 +80,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	135008941	FOOTSTEPS_charco_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\CHARCO\FOOTSTEPS_charco_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\FOOTSTEPS\CHARCO\CHARCO\FOOTSTEPS_charco_2		118988
 	141216616	gritos halloween_ 5	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\gritos halloween_ 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Env Triggeados\Gritos Halloween\gritos halloween_ 5		1786116
 	161816004	libro despertando_3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_3		136036
+	163710660	Enter_R	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Enter_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Enter_R		341152
 	165249764	gritos halloween_ 8	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\gritos halloween_ 8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Env Triggeados\Gritos Halloween\gritos halloween_ 8		1058464
 	172712685	LIBRO_Defeated_revoloteo_3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\LIBRO_Defeated_revoloteo_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\LIBRO\LIBRO_DEFEATED\Libro_defeated_revoloteo\LIBRO_Defeated_revoloteo_3		264664
 	173152896	silla pasos delanteros_3(sin galope)	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla pasos delanteros_3(sin galope)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\SILLA\SILLA_ATACANDO\Silla MOVIMIENTO\Patas delanteras sin galope\silla pasos delanteros_3(sin galope)		176464
@@ -132,10 +138,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	725653774	GOLPE PISTOLA PARED (FALLAR) 3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\ATTACK PLAYER\GOLPE DISPARO 1\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 3		99292
 	729922704	libro golpe pared_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_F0B41857.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\LIBRO\LIBRO_ATACANDO\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1		106756
 	748780595	silla_Defeated_chirridopremuerte_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla_Defeated_chirridopremuerte_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\SILLA\SILLA_DEFEATED\silla_defeated_presuelo\silla_Defeated_chirridopremuerte_2		105904
+	752907907	Click_R	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Click_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Click_R		413504
 	764167059	gritos halloween_ 3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\gritos halloween_ 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Env Triggeados\Gritos Halloween\gritos halloween_ 3		1190764
 	779019468	GOLPE PISTOLA PARED (FALLAR) 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\ATTACK PLAYER\GOLPE DISPARO 1\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 2		95156
 	786717312	gotas salpicando 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\gotas salpicando 1_B04FAEA9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\ATTACK PLAYER\AGUA SALPICANDO\gotas salpicando 1		179324
 	786969096	Silla_DEFEATED_golpesuelo_3-1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla_DEFEATED_golpesuelo_3-1_10A5D0D5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\SILLA\SILLA_DEFEATED\silla_Defeated_golpesuelo\Silla_DEFEATED_golpesuelo_3-1		134248
+	793015402	Repuesto_1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Repuesto_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Repuesto_1		529264
+	794741404	Seleccionar mapa_R	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Seleccionar mapa_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Seleccionar mapa_R		1204060
 	796425651	silla resbalando 3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\silla resbalando 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\SILLA\SILLA RESBALANDO\silla resbalando 3		168072
 	801115799	gritos halloween_ 9	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\gritos halloween_ 9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Env Triggeados\Gritos Halloween\gritos halloween_ 9		1190764
 	808368439	Sonido Lámpara	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Sonido Lámpara_4317B8A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enviroments\Sonido Lámpara		3583956
@@ -160,6 +169,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	937332557	libro_DEFEATED_golpesuelo_2-1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\libro_DEFEATED_golpesuelo_2-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\LIBRO\LIBRO_DEFEATED\libro_DEFEATED_golpesuelo\libro_DEFEATED_golpesuelo_2-1		116860
 	940266622	gotas salpicando 6	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\gotas salpicando 6_6188D792.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\ATTACK PLAYER\AGUA SALPICANDO\gotas salpicando 6		77496
 	946225320	libro despertando_6	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Libro Despertando\libro despertando_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\LIBRO\LIBRO_ATACANDO\Libro DESPERTANDO\libro despertando_6		136036
+	967099509	Repuesto_2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Repuesto_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Menú Principal\Repuesto_2		529264
 	982937878	golpesuelo_playerdefeated_1-1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\golpesuelo_playerdefeated_1-1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player_DEFEATED\golpesuelo_playerdefeated\golpesuelo_playerdefeated_1-1		185588
 	989562857	Creaks 6	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\CREAKS\Creaks 6_34A80D42.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\CREAKS\Creaks 6		178248
 	1001956948	Silla_DEFEATED_golpesuelo_1-1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\Silla_DEFEATED_golpesuelo_1-1_4662D8BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\SILLA\SILLA_DEFEATED\silla_Defeated_golpesuelo\Silla_DEFEATED_golpesuelo_1-1		141388

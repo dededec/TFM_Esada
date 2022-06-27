@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d50506078fda0e429e281a648e16f448
     GuidInternal: 
-    m_lastTime: -8585455322876625047
+    m_lastTime: -8585452822507627534
     List:
     - name: ambientes
       guid: 33cbe0db57c60d49b80d1a8db8494aeb
@@ -212,6 +212,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 4ff40a21735395468029a723cff3def8
       Path: SoundBanks\Default Work Unit\MUSIC
+    - name: Music_Level
+      guid: 7b2c2f0a090d6b40b01547cee83c6645
+      id: 2177735725
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d50506078fda0e429e281a648e16f448
+      - ElementName: MUSIC
+        ObjectType: 4
+        guid: 4ff40a21735395468029a723cff3def8
+      - ElementName: Music_Level
+        ObjectType: 7
+        guid: 7b2c2f0a090d6b40b01547cee83c6645
+      Path: SoundBanks\Default Work Unit\MUSIC\Music_Level
     - name: Music_LVL1
       guid: 25a7de18d6606249a22915203b58dfb0
       id: 3380345082
@@ -323,7 +340,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
     GuidInternal: 
-    m_lastTime: -8585455328273670422
+    m_lastTime: -8585452810504728503
     List:
     - name: ambiente_noche
       guid: ebf8c1e0805eb546b8271c2d33b3c130
@@ -1110,6 +1127,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music_Level
+      guid: 471515dcc2bacc44bbc33f7f901d4662
+      id: 2177735725
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fbc9fa7bdb5c0c4696bee2af2f8d1599
+      - ElementName: Music
+        ObjectType: 4
+        guid: bc3a10ed8f57e44eaddb365239aabbe1
+      - ElementName: Music_Level
+        ObjectType: 3
+        guid: 471515dcc2bacc44bbc33f7f901d4662
+      Path: Events\Default Work Unit\Music\Music_Level
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music_LVL1
       guid: 4a89cd709ea62f46b2744ad3289eb087
       id: 3380345082
@@ -1786,7 +1823,7 @@ MonoBehaviour:
     m_lastTime: -8585489082254775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000003b0000003c0000003e0000003f000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000c0000000e0000000f000000120000003b0000003c0000003e0000003f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

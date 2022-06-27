@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3720324181">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="307169938">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -174,6 +174,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\Menú Principal\Click" GUID="{A3AA9371-2089-4B82-8654-5969A090BAAB}" DurationType="OneShot" DurationMin="2.343764" DurationMax="2.343764">
+					<IncludedMemoryFiles>
+						<File Id="752907907" Language="SFX">
+							<ShortName>Click_R.wav</ShortName>
+							<Path>SFX\Click_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3397744248" Name="cruzar_puerta" ObjectPath="\Events\Default Work Unit\Player\cruzar_puerta" GUID="{34D4ECC1-A067-4953-BDD4-EE33E3263F76}" DurationType="OneShot" DurationMin="1.495222" DurationMax="1.678330">
 					<IncludedMemoryFiles>
 						<File Id="820212478" Language="SFX">
@@ -226,6 +234,22 @@
 						<File Id="940266622" Language="SFX">
 							<ShortName>gotas salpicando 6.wav</ShortName>
 							<Path>SFX\gotas salpicando 6_6188D792.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2368844905" Name="Enter" ObjectPath="\Events\Default Work Unit\Menú Principal\Enter" GUID="{45234011-BFE1-4924-B2BA-20234240D2D9}" DurationType="OneShot" DurationMin="1.933605" DurationMax="1.933605">
+					<IncludedMemoryFiles>
+						<File Id="163710660" Language="SFX">
+							<ShortName>Enter_R.wav</ShortName>
+							<Path>SFX\Enter_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="6.825374" DurationMax="6.825374">
+					<IncludedMemoryFiles>
+						<File Id="794741404" Language="SFX">
+							<ShortName>Seleccionar mapa_R.wav</ShortName>
+							<Path>SFX\Seleccionar mapa_R_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -639,6 +663,22 @@
 						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="1251048105" Name="Repuesto1" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto1" GUID="{312E8E2D-ED54-4D1F-A13E-0E3715A4CC8F}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="793015402" Language="SFX">
+							<ShortName>Repuesto_1.wav</ShortName>
+							<Path>SFX\Repuesto_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1251048106" Name="Repuesto2" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto2" GUID="{4E1EEE10-D9B8-4D20-897A-AA997C15F960}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="967099509" Language="SFX">
+							<ShortName>Repuesto_2.wav</ShortName>
+							<Path>SFX\Repuesto_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.562517" DurationMax="1.142381">
 					<IncludedMemoryFiles>
 						<File Id="313251693" Language="SFX">
@@ -904,6 +944,21 @@
 			<Path>Music_MenuPrincipal.bnk</Path>
 			<IncludedEvents>
 				<Event Id="17986547" Name="Music_Menu_Principal" ObjectPath="\Events\Default Work Unit\Music\Music_Menu_Principal" GUID="{A40D3DFD-7E2B-4A39-AB61-6A319A1C8D19}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="362553558" Language="SFX">
+							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
+							<Path>SFX\MUSIC_Menu_Principal_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2177735725" GUID="{0A2F2C7B-0D09-406B-B015-47CEE83C6645}" Language="SFX" Hash="923238626">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Level</ObjectPath>
+			<ShortName>Music_Level</ShortName>
+			<Path>Music_Level.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2177735725" Name="Music_Level" ObjectPath="\Events\Default Work Unit\Music\Music_Level" GUID="{DC151547-BAC2-44CC-BBC3-3F7F901D4662}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="362553558" Language="SFX">
 							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
