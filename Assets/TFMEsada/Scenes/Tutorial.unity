@@ -6738,7 +6738,7 @@ PrefabInstance:
     - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _obtainedCollectableSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 77716e4631ca8904aa6a11d31eadfd1c, type: 3}
+      objectReference: {fileID: 21300000, guid: 032a13bde06d87b43868685983c86715, type: 3}
     - target: {fileID: 223569802140891314, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 14.42628
@@ -7310,9 +7310,17 @@ PrefabInstance:
       value: UI_LevelCompleted
       objectReference: {fileID: 0}
     - target: {fileID: 2901654401559104457, guid: 0c0cf1b8012838d4888cb78ab10d66c3, type: 3}
+      propertyPath: _bigSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 04a6d07fa54e16a4e9581ba1715fb7bd, type: 3}
+    - target: {fileID: 2901654401559104457, guid: 0c0cf1b8012838d4888cb78ab10d66c3, type: 3}
       propertyPath: eventSystem
       value: 
       objectReference: {fileID: 1572740276}
+    - target: {fileID: 2901654401559104457, guid: 0c0cf1b8012838d4888cb78ab10d66c3, type: 3}
+      propertyPath: _smallSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 33bfbed44188e1f4986f4bbdf6395da5, type: 3}
     - target: {fileID: 2901654401559104457, guid: 0c0cf1b8012838d4888cb78ab10d66c3, type: 3}
       propertyPath: _controlManager
       value: 

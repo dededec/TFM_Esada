@@ -10711,7 +10711,7 @@ PrefabInstance:
     - target: {fileID: 1933474344, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _obtainedCollectableSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 77716e4631ca8904aa6a11d31eadfd1c, type: 3}
+      objectReference: {fileID: 21300000, guid: 746ef5429d87f9d40997efb373959c2e, type: 3}
     - target: {fileID: 1590091814087082221, guid: 111cf6acdfd79e84ea508e3981715e75, type: 3}
       propertyPath: _uiDeath
       value: 
