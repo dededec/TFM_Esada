@@ -112,8 +112,8 @@ namespace TFMEsada
         public int Ammo
         {
             get
-            { 
-                return _ammo; 
+            {
+                return _ammo;
             }
 
             private set
@@ -123,12 +123,12 @@ namespace TFMEsada
                     throw new ArgumentOutOfRangeException($"{nameof(value)} must be greater than 0");
                 }
                 else
-                {                    
-                    if(_ammoSlider != null)
+                {
+                    if (_ammoSlider != null)
                     {
                         // value = _ammo + x => x = value - _ammo
                         // Debug.Log("WATER: " + (0.5f * (float) (value - _ammo)));
-                        _ammoSlider.Water += (0.5f * (float) (value - _ammo));
+                        _ammoSlider.Water += (0.5f * (float)(value - _ammo));
                     }
 
                     _ammo = value;
@@ -155,7 +155,7 @@ namespace TFMEsada
         this script's OnEnable() function will execute BEFORE ControlManager's Awake() function.
         For reference: https://forum.unity.com/threads/onenable-before-awake.361429/
         */
-        private void Start() 
+        private void Start()
         {
             assignControls();
         }
@@ -208,7 +208,7 @@ namespace TFMEsada
                 return;
             }
 
-            if(Ammo < _normalCost)
+            if (Ammo < _normalCost)
             {
                 Debug.Log("You can't shoot, not enough ammo.");
                 return;
@@ -226,12 +226,12 @@ namespace TFMEsada
                 return;
             }
 
-            if(Ammo < _puddleCost)
+            if (Ammo < _puddleCost)
             {
                 Debug.Log("You can't shoot, not enough ammo.");
                 return;
             }
-            
+
             _animator.SetTrigger("IsShootingPuddle");
             Ammo -= _puddleCost;
         }
@@ -241,9 +241,9 @@ namespace TFMEsada
             var puddle = Instantiate(_puddle, _puddlePosition.position, transform.rotation).transform;
             var duracion = 0.8f;
             float ogScale = puddle.localScale.x;
-            for(float i=0; i < duracion; i+=Time.deltaTime )
+            for (float i = 0; i < duracion; i += Time.deltaTime)
             {
-                float newScale = Mathf.Lerp(ogScale, 1f, i/duracion);
+                float newScale = Mathf.Lerp(ogScale, 1f, i / duracion);
                 puddle.localScale = Vector3.one * newScale;
                 yield return null;
             }
@@ -263,8 +263,8 @@ namespace TFMEsada
             {
                 return false;
             }
-            
-            if(_shoot != null)
+
+            if (_shoot != null)
             {
                 return true;
             }

@@ -71,6 +71,7 @@ namespace TFMEsada
 
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("Collision with: " + other.gameObject.name);
             if (other.tag == "Enemy")
             {
                 AkSoundEngine.PostEvent("choque_disparo_enemigo", this.gameObject);
