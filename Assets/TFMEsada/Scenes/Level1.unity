@@ -1408,6 +1408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Pausa
       objectReference: {fileID: 0}
+    - target: {fileID: 3926333786707208966, guid: cacc781817701224a972c16ed6f8b33d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3926333786707208967, guid: cacc781817701224a972c16ed6f8b33d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18332,7 +18336,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
