@@ -197,8 +197,8 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.48333332
-    functionName: 
+  - time: 0
+    functionName: OnDoorClose
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class DoorSoundController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OnDoorClose()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        AkSoundEngine.PostEvent("cerrar_puerta", this.gameObject);
     }
 }
