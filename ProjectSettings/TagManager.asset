@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bubble
+  - DialogPosition
+  - LeftLimit
+  - RightLimit
+  - ReadPropButton
+  - Enemy
+  - Note
+  - FX
+  - Ground
+  - AI
+  - Level2Controller
+  - light
   layers:
   - Default
   - TransparentFX
@@ -11,15 +23,15 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Key
+  - Door
+  - Wall
+  - Props
+  - FX
+  - Collectable
+  - Ending
   - 
   - 
   - 
