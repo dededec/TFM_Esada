@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Usuario\Documents\GITHUB (proyectos nube)\TFM_Esada\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="246877050">
+			<ObjectPath>\SoundBanks\Default Work Unit\menu_principal</ObjectPath>
+			<ShortName>menu_principal</ShortName>
+			<Path>menu_principal.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\Menú Principal\Click" GUID="{A3AA9371-2089-4B82-8654-5969A090BAAB}" DurationType="OneShot" DurationMin="2.343764" DurationMax="2.343764">
+					<IncludedMemoryFiles>
+						<File Id="752907907" Language="SFX">
+							<ShortName>Click_R.wav</ShortName>
+							<Path>SFX\Click_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2368844905" Name="Enter" ObjectPath="\Events\Default Work Unit\Menú Principal\Enter" GUID="{45234011-BFE1-4924-B2BA-20234240D2D9}" DurationType="OneShot" DurationMin="1.933605" DurationMax="1.933605">
+					<IncludedMemoryFiles>
+						<File Id="163710660" Language="SFX">
+							<ShortName>Enter_R.wav</ShortName>
+							<Path>SFX\Enter_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="2.069687" DurationMax="2.069687">
+					<IncludedMemoryFiles>
+						<File Id="794741404" Language="SFX">
+							<ShortName>Seleccionar mapa_R.wav</ShortName>
+							<Path>SFX\Seleccionar mapa_R_122E2035.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1251048105" Name="Repuesto1" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto1" GUID="{312E8E2D-ED54-4D1F-A13E-0E3715A4CC8F}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="793015402" Language="SFX">
+							<ShortName>Repuesto_1.wav</ShortName>
+							<Path>SFX\Repuesto_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1251048106" Name="Repuesto2" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto2" GUID="{4E1EEE10-D9B8-4D20-897A-AA997C15F960}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="967099509" Language="SFX">
+							<ShortName>Repuesto_2.wav</ShortName>
+							<Path>SFX\Repuesto_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="2641652496">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche" GUID="{E0C1F8EB-5E80-46B5-B827-1C2D33B3C130}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="883601427" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1_2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_2_38374C31.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952223308" Name="ambiente_noche_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_1" GUID="{4E2777DE-00CE-421B-948A-2289464D3605}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="16645949" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_38C4429A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1069630703" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 2_39F69556.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3873181946" Name="cerrar_puerta" ObjectPath="\Events\Default Work Unit\Player\cerrar_puerta" GUID="{AFDAB545-E439-411D-9A3C-C6C2FE9A3211}" DurationType="OneShot" DurationMin="2.089237" DurationMax="2.345089">
+					<IncludedMemoryFiles>
+						<File Id="53606963" Language="SFX">
+							<ShortName>cerrar puerta-1.wav</ShortName>
+							<Path>SFX\cerrar puerta-1_5B4591CF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4115248352" Name="chirriando_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirriando_lejos_3" GUID="{05F58042-A880-495C-926D-E120B6655092}" DurationType="OneShot" DurationMin="0.000000" DurationMax="4.242020">
+					<IncludedMemoryFiles>
+						<File Id="228469276" Language="SFX">
+							<ShortName>chirrio lejos corto 1.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3291383135" Name="chirriando_lejos_3_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirriando_lejos_3_2" GUID="{AC8531AB-0703-4475-A05F-22465F5E9CF5}" DurationType="OneShot" DurationMin="0.000000" DurationMax="5.760037">
+					<IncludedMemoryFiles>
+						<File Id="706911643" Language="SFX">
+							<ShortName>chirrio lejos corto 2.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1033164213" Name="chirrido_lejos_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirrido_lejos_3" GUID="{DE9F0A54-3E23-487A-9F6E-5235E0560C22}" DurationType="OneShot" DurationMin="0.000000" DurationMax="3.727083">
+					<IncludedMemoryFiles>
+						<File Id="699158859" Language="SFX">
+							<ShortName>chirrio lejos corto 3.wav</ShortName>
+							<Path>SFX\chirrio lejos corto 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3343617841" Name="chirrido_lejos_largo" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\chirrido_lejos_largo" GUID="{EF30C166-05F4-4A11-A53A-13BD0B795740}" DurationType="OneShot" DurationMin="0.000000" DurationMax="8.692208">
+					<IncludedMemoryFiles>
+						<File Id="596209391" Language="SFX">
+							<ShortName>chirrio lejos largo.wav</ShortName>
+							<Path>SFX\chirrio lejos largo_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4096684240" Name="choque_disparo_enemigo" ObjectPath="\Events\Default Work Unit\Player\choque_disparo_enemigo" GUID="{A1FAD89C-2CF8-4741-8ECA-E64264CC02A4}" DurationType="OneShot" DurationMin="0.304694" DurationMax="0.445329">
+					<IncludedMemoryFiles>
+						<File Id="66190209" Language="SFX">
+							<ShortName>GOLPE PISTOLA ENEMY 1.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA ENEMY 1_10C4C929.wem</Path>
+						</File>
+						<File Id="131924372" Language="SFX">
+							<ShortName>GOLPE PISTOLA ENEMY 3.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA ENEMY 3_10C4C929.wem</Path>
+						</File>
+						<File Id="656262915" Language="SFX">
+							<ShortName>GOLPE PISTOLA ENEMY 2.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA ENEMY 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2335088272" Name="choque_disparo_pared" ObjectPath="\Events\Default Work Unit\Player\choque_disparo_pared" GUID="{0BC24F9A-A9A8-4A1B-986B-325FF94FED2B}" DurationType="OneShot" DurationMin="0.539070" DurationMax="0.562517">
+					<IncludedMemoryFiles>
+						<File Id="96239085" Language="SFX">
+							<ShortName>GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 1.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 1_10C4C929.wem</Path>
+						</File>
+						<File Id="725653774" Language="SFX">
+							<ShortName>GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 3.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 3_10C4C929.wem</Path>
+						</File>
+						<File Id="779019468" Language="SFX">
+							<ShortName>GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 2.wav</ShortName>
+							<Path>SFX\GOLPE PISTOLA PARED (FALLAR)\GOLPE PISTOLA PARED (FALLAR) 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\Menú Principal\Click" GUID="{A3AA9371-2089-4B82-8654-5969A090BAAB}" DurationType="OneShot" DurationMin="2.343764" DurationMax="2.343764">
+					<IncludedMemoryFiles>
+						<File Id="752907907" Language="SFX">
+							<ShortName>Click_R.wav</ShortName>
+							<Path>SFX\Click_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3397744248" Name="cruzar_puerta" ObjectPath="\Events\Default Work Unit\Player\cruzar_puerta" GUID="{34D4ECC1-A067-4953-BDD4-EE33E3263F76}" DurationType="OneShot" DurationMin="1.495222" DurationMax="1.678330">
+					<IncludedMemoryFiles>
+						<File Id="820212478" Language="SFX">
+							<ShortName>abrir_cruzar puerta-2.wav</ShortName>
+							<Path>SFX\abrir_cruzar puerta-2_1A89E982.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4002975042" Name="Disparar_charco" ObjectPath="\Events\Default Work Unit\Player\Disparar_charco" GUID="{9CF41E98-04D3-480D-8905-080A1DDD80CF}" DurationType="OneShot" DurationMin="0.934354" DurationMax="0.934354">
+					<IncludedMemoryFiles>
+						<File Id="4934995" Language="SFX">
+							<ShortName>pistola agua golpe superficie 1.wav</ShortName>
+							<Path>SFX\pistola agua golpe superficie 1_10C4C929.wem</Path>
+						</File>
+						<File Id="1025669054" Language="SFX">
+							<ShortName>pistola agua golpe superficie 2.wav</ShortName>
+							<Path>SFX\pistola agua golpe superficie 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3611330879" Name="Disparar_pistola_agua" ObjectPath="\Events\Default Work Unit\Player\Disparar_pistola_agua" GUID="{A3841958-C0BE-426C-A5BC-5F3252BE019D}" DurationType="OneShot" DurationMin="0.738958" DurationMax="1.316214">
+					<IncludedMemoryFiles>
+						<File Id="428210128" Language="SFX">
+							<ShortName>gotas salpicando 2.wav</ShortName>
+							<Path>SFX\gotas salpicando 2_9C6AAFB9.wem</Path>
+						</File>
+						<File Id="475707100" Language="SFX">
+							<ShortName>gotas salpicando 3.wav</ShortName>
+							<Path>SFX\gotas salpicando 3_8B82A490.wem</Path>
+						</File>
+						<File Id="502985428" Language="SFX">
+							<ShortName>gotas salpicando 5.wav</ShortName>
+							<Path>SFX\gotas salpicando 5_C599F91C.wem</Path>
+						</File>
+						<File Id="786717312" Language="SFX">
+							<ShortName>gotas salpicando 1.wav</ShortName>
+							<Path>SFX\gotas salpicando 1_B04FAEA9.wem</Path>
+						</File>
+						<File Id="932744705" Language="SFX">
+							<ShortName>gotas salpicando 4.wav</ShortName>
+							<Path>SFX\gotas salpicando 4_2C296BF9.wem</Path>
+						</File>
+						<File Id="934545693" Language="SFX">
+							<ShortName>DISPARO PISTOLA AGUA_2.wav</ShortName>
+							<Path>SFX\DISPARO PISTOLA AGUA_2_10C4C929.wem</Path>
+						</File>
+						<File Id="940266622" Language="SFX">
+							<ShortName>gotas salpicando 6.wav</ShortName>
+							<Path>SFX\gotas salpicando 6_6188D792.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2368844905" Name="Enter" ObjectPath="\Events\Default Work Unit\Menú Principal\Enter" GUID="{45234011-BFE1-4924-B2BA-20234240D2D9}" DurationType="OneShot" DurationMin="1.933605" DurationMax="1.933605">
+					<IncludedMemoryFiles>
+						<File Id="163710660" Language="SFX">
+							<ShortName>Enter_R.wav</ShortName>
+							<Path>SFX\Enter_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1827304574" Name="Entrar_nivel" ObjectPath="\Events\Default Work Unit\Menú Principal\Entrar_nivel" GUID="{CF224FCE-8562-47BE-98C1-800F57029734}" DurationType="OneShot" DurationMin="2.069687" DurationMax="2.069687">
+					<IncludedMemoryFiles>
+						<File Id="794741404" Language="SFX">
+							<ShortName>Seleccionar mapa_R.wav</ShortName>
+							<Path>SFX\Seleccionar mapa_R_122E2035.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="668833963" Name="golpe_puerta_chirrido_lejos" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\golpe_puerta_chirrido_lejos" GUID="{CCB480E0-767D-4104-A0B5-D50304BA04E0}" DurationType="OneShot" DurationMin="0.000000" DurationMax="3.179749">
+					<IncludedMemoryFiles>
+						<File Id="94555320" Language="SFX">
+							<ShortName>golpe chirrido puerta lejos.wav</ShortName>
+							<Path>SFX\golpe chirrido puerta lejos_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542032" Name="Grito_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_1" GUID="{D0277978-5A61-43B9-87A6-3374B3671918}" DurationType="OneShot" DurationMin="0.000000" DurationMax="8.418466">
+					<IncludedMemoryFiles>
+						<File Id="328653772" Language="SFX">
+							<ShortName>gritos halloween_ 1.wav</ShortName>
+							<Path>SFX\gritos halloween_ 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542035" Name="Grito_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_2" GUID="{DE753FA7-F581-4D9B-A02C-18351AA15A22}" DurationType="OneShot" DurationMin="0.000000" DurationMax="8.418466">
+					<IncludedMemoryFiles>
+						<File Id="659437505" Language="SFX">
+							<ShortName>gritos halloween_ 2.wav</ShortName>
+							<Path>SFX\gritos halloween_ 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542034" Name="Grito_3" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_3" GUID="{BA9236FB-539C-445B-9C8D-83736133B34F}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
+					<IncludedMemoryFiles>
+						<File Id="764167059" Language="SFX">
+							<ShortName>gritos halloween_ 3.wav</ShortName>
+							<Path>SFX\gritos halloween_ 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542037" Name="Grito_4" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_4" GUID="{9C2C8D64-B45A-484E-AEA9-549C3F26C045}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
+					<IncludedMemoryFiles>
+						<File Id="381433966" Language="SFX">
+							<ShortName>gritos halloween_ 4.wav</ShortName>
+							<Path>SFX\gritos halloween_ 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542036" Name="Grito_5" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_5" GUID="{EE00C071-8FA7-45D4-B769-704C2F7A825E}" DurationType="OneShot" DurationMin="0.000000" DurationMax="11.364941">
+					<IncludedMemoryFiles>
+						<File Id="141216616" Language="SFX">
+							<ShortName>gritos halloween_ 5.wav</ShortName>
+							<Path>SFX\gritos halloween_ 5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542039" Name="Grito_6" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_6" GUID="{3F5A5D76-25C1-4DBD-A65D-678EE72F5083}" DurationType="OneShot" DurationMin="0.000000" DurationMax="13.469544">
+					<IncludedMemoryFiles>
+						<File Id="508591506" Language="SFX">
+							<ShortName>gritos halloween_ 6.wav</ShortName>
+							<Path>SFX\gritos halloween_ 6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542038" Name="Grito_7" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_7" GUID="{D145E8DF-9262-471C-A3B8-0E98410D8F82}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
+					<IncludedMemoryFiles>
+						<File Id="1066004049" Language="SFX">
+							<ShortName>gritos halloween_ 7.wav</ShortName>
+							<Path>SFX\gritos halloween_ 7_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542041" Name="Grito_8" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_8" GUID="{2EF7798F-6E96-417A-B72C-972BAAD4369F}" DurationType="OneShot" DurationMin="0.000000" DurationMax="6.734772">
+					<IncludedMemoryFiles>
+						<File Id="165249764" Language="SFX">
+							<ShortName>gritos halloween_ 8.wav</ShortName>
+							<Path>SFX\gritos halloween_ 8_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2898542040" Name="Grito_9" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Gritos Haloween\Grito_9" GUID="{35A7C9CF-A2F8-4696-8F91-8708A7FE2983}" DurationType="OneShot" DurationMin="0.000000" DurationMax="7.576619">
+					<IncludedMemoryFiles>
+						<File Id="801115799" Language="SFX">
+							<ShortName>gritos halloween_ 9.wav</ShortName>
+							<Path>SFX\gritos halloween_ 9_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
+					<IncludedMemoryFiles>
+						<File Id="365758720" Language="SFX">
+							<ShortName>libro golpe player_1_2.wav</ShortName>
+							<Path>SFX\libro golpe player_1_2_D502E0B3.wem</Path>
+						</File>
+						<File Id="497011953" Language="SFX">
+							<ShortName>libro golpe player_2_2.wav</ShortName>
+							<Path>SFX\libro golpe player_2_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.604825" DurationMax="0.788209">
+					<IncludedMemoryFiles>
+						<File Id="314523489" Language="SFX">
+							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_2.wav</ShortName>
+							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_2_10C4C929.wem</Path>
+						</File>
+						<File Id="729922704" Language="SFX">
+							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_1.wav</ShortName>
+							<Path>SFX\Libro GOLPEANDO\libro golpe pared\libro golpe pared_1_F0B41857.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
+					<IncludedMemoryFiles>
+						<File Id="100102044" Language="SFX">
+							<ShortName>Libro_Defeated_3.wav</ShortName>
+							<Path>SFX\Libro_Defeated_3_10C4C929.wem</Path>
+						</File>
+						<File Id="106817344" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_2.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_2_10C4C929.wem</Path>
+						</File>
+						<File Id="172712685" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_3.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_3_10C4C929.wem</Path>
+						</File>
+						<File Id="377092234" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_1.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_1_10C4C929.wem</Path>
+						</File>
+						<File Id="404312212" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_5.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_5_10C4C929.wem</Path>
+						</File>
+						<File Id="553849205" Language="SFX">
+							<ShortName>Libro_Defeated_1.wav</ShortName>
+							<Path>SFX\Libro_Defeated_1_10C4C929.wem</Path>
+						</File>
+						<File Id="568553960" Language="SFX">
+							<ShortName>libro_DEFEATED_golpesuelo_1-1.wav</ShortName>
+							<Path>SFX\libro_DEFEATED_golpesuelo_1-1_10C4C929.wem</Path>
+						</File>
+						<File Id="654132551" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_4.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_4_10C4C929.wem</Path>
+						</File>
+						<File Id="720591902" Language="SFX">
+							<ShortName>LIBRO_Defeated_revoloteo_6.wav</ShortName>
+							<Path>SFX\LIBRO_Defeated_revoloteo_6_10C4C929.wem</Path>
+						</File>
+						<File Id="856802978" Language="SFX">
+							<ShortName>Libro_Defeated_2.wav</ShortName>
+							<Path>SFX\Libro_Defeated_2_10C4C929.wem</Path>
+						</File>
+						<File Id="937332557" Language="SFX">
+							<ShortName>libro_DEFEATED_golpesuelo_2-1.wav</ShortName>
+							<Path>SFX\libro_DEFEATED_golpesuelo_2-1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" MaxAttenuation="30.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="161816004" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_3.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_3_10C4C929.wem</Path>
+						</File>
+						<File Id="378540908" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_5.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_5_10C4C929.wem</Path>
+						</File>
+						<File Id="425246434" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_2.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_2_10C4C929.wem</Path>
+						</File>
+						<File Id="585887816" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_4.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_4_10C4C929.wem</Path>
+						</File>
+						<File Id="809543815" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_1.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_1_10C4C929.wem</Path>
+						</File>
+						<File Id="898611541" Language="SFX">
+							<ShortName>Libro MOVIMIENTO ATACAR_4.wav</ShortName>
+							<Path>SFX\Libro MOVIMIENTO ATACAR_4_046F922B.wem</Path>
+						</File>
+						<File Id="946225320" Language="SFX">
+							<ShortName>Libro Despertando\libro despertando_6.wav</ShortName>
+							<Path>SFX\Libro Despertando\libro despertando_6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="834445282" Name="luz_chisporroteo" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\luz_chisporroteo" GUID="{5032B2F3-1196-456F-A6F9-6BA5A80906AD}" MaxAttenuation="10.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="808368439" Language="SFX">
+							<ShortName>Sonido Lámpara.wav</ShortName>
+							<Path>SFX\Sonido Lámpara_4317B8A5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2147937880" Name="phone_chungo" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\phone_chungo" GUID="{5159E5A5-368B-4F22-B363-75D79C6AF12C}" MaxAttenuation="20.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="105782368" Language="SFX">
+							<ShortName>teléfono chungo.wav</ShortName>
+							<Path>SFX\teléfono chungo_C5579977.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1142560233" Name="PickUp_coleccionable" ObjectPath="\Events\Default Work Unit\Player\PickUp_coleccionable" GUID="{2A93A1A7-5C54-493A-BA84-4F0EBE83ED3B}" DurationType="OneShot" DurationMin="2.532972" DurationMax="2.532972">
+					<IncludedMemoryFiles>
+						<File Id="327271074" Language="SFX">
+							<ShortName>Pick Up Tamagochi.wav</ShortName>
+							<Path>SFX\Pick Up Tamagochi_231E0D83.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3179460290" Name="PickUp_llave" ObjectPath="\Events\Default Work Unit\Player\PickUp_llave" GUID="{CADEE4DD-F75C-4D87-BE4F-6F0A3BBA9BDE}" DurationType="OneShot" DurationMin="3.455057" DurationMax="3.455057">
+					<IncludedMemoryFiles>
+						<File Id="61837310" Language="SFX">
+							<ShortName>Pick Up llave 5.wav</ShortName>
+							<Path>SFX\Pick Up llave 5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1233512512" Name="PickUp_nota" ObjectPath="\Events\Default Work Unit\Player\PickUp_nota" GUID="{0A984672-2A1B-4E17-9EAE-D5F73A26D062}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="1040978422" Language="SFX">
+							<ShortName>Recoger NOTA 4.wav</ShortName>
+							<Path>SFX\Recoger NOTA 4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2435304568" Name="PickUp_nota_corta" ObjectPath="\Events\Default Work Unit\Player\PickUp_nota_corta" GUID="{9723DD5E-FED1-4A76-9ED3-6676243C86F3}" DurationType="OneShot" DurationMin="2.200000" DurationMax="2.200000">
+					<IncludedMemoryFiles>
+						<File Id="824662024" Language="SFX">
+							<ShortName>Recoger NOTA 4 (corta).wav</ShortName>
+							<Path>SFX\Recoger NOTA 4 (corta)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="41810451" Name="Player_Defeated" ObjectPath="\Events\Default Work Unit\Player\Player_Defeated" GUID="{1F02361A-6845-4C62-A79E-9746CE2D43ED}" DurationType="OneShot" DurationMin="1.002271" DurationMax="1.351723">
+					<IncludedMemoryFiles>
+						<File Id="41775480" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_4-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_4-1_10C4C929.wem</Path>
+						</File>
+						<File Id="195420344" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_3-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_3-1_10C4C929.wem</Path>
+						</File>
+						<File Id="680633966" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_2-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_2-1_10C4C929.wem</Path>
+						</File>
+						<File Id="835404236" Language="SFX">
+							<ShortName>Player_Defeated_NUEVO.wav</ShortName>
+							<Path>SFX\Player_Defeated_NUEVO_4260DA11.wem</Path>
+						</File>
+						<File Id="885320126" Language="SFX">
+							<ShortName>Player_Defeated_NUEVO 2.wav</ShortName>
+							<Path>SFX\Player_Defeated_NUEVO 2_10C4C929.wem</Path>
+						</File>
+						<File Id="982937878" Language="SFX">
+							<ShortName>golpesuelo_playerdefeated_1-1.wav</ShortName>
+							<Path>SFX\golpesuelo_playerdefeated_1-1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1730208058" Name="Player_Footsteps" ObjectPath="\Events\Default Work Unit\Player\Player_Footsteps" GUID="{4601564B-5A3A-4E27-AB9B-88A1C634EF7C}" DurationType="OneShot" DurationMin="0.610975" DurationMax="1.573699">
+					<IncludedMemoryFiles>
+						<File Id="36118933" Language="SFX">
+							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\NORMAL\FOOTSTEPS_normal_3_10C4C929.wem</Path>
+						</File>
+						<File Id="81991429" Language="SFX">
+							<ShortName>CREAKS\Creaks 3.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 3_A12BC6E6.wem</Path>
+						</File>
+						<File Id="94848625" Language="SFX">
+							<ShortName>CHARCO\FOOTSTEPS_charco_3.wav</ShortName>
+							<Path>SFX\CHARCO\FOOTSTEPS_charco_3_10C4C929.wem</Path>
+						</File>
+						<File Id="116516013" Language="SFX">
+							<ShortName>CREAKS\Creaks 4.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 4_77B283CD.wem</Path>
+						</File>
+						<File Id="135008941" Language="SFX">
+							<ShortName>CHARCO\FOOTSTEPS_charco_2.wav</ShortName>
+							<Path>SFX\CHARCO\FOOTSTEPS_charco_2_10C4C929.wem</Path>
+						</File>
+						<File Id="369893605" Language="SFX">
+							<ShortName>CREAKS\Creaks 11.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 11_FB6039BE.wem</Path>
+						</File>
+						<File Id="411621258" Language="SFX">
+							<ShortName>CREAKS\Creaks 5.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 5_F8A4F6FF.wem</Path>
+						</File>
+						<File Id="468651632" Language="SFX">
+							<ShortName>CREAKS\Creaks 10.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 10_8DD9B04B.wem</Path>
+						</File>
+						<File Id="480809404" Language="SFX">
+							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\NORMAL\FOOTSTEPS_normal_1_10C4C929.wem</Path>
+						</File>
+						<File Id="638508202" Language="SFX">
+							<ShortName>CHARCO\FOOTSTEPS_charco_1.wav</ShortName>
+							<Path>SFX\CHARCO\FOOTSTEPS_charco_1_10C4C929.wem</Path>
+						</File>
+						<File Id="657174402" Language="SFX">
+							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\NORMAL\FOOTSTEPS_normal_2_10C4C929.wem</Path>
+						</File>
+						<File Id="709888846" Language="SFX">
+							<ShortName>CREAKS\Creaks 12.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 12_2856EFB2.wem</Path>
+						</File>
+						<File Id="866468345" Language="SFX">
+							<ShortName>CHARCO\FOOTSTEPS_charco_4.wav</ShortName>
+							<Path>SFX\CHARCO\FOOTSTEPS_charco_4_10C4C929.wem</Path>
+						</File>
+						<File Id="879695477" Language="SFX">
+							<ShortName>CREAKS\Creaks 1.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 1_ABF0433C.wem</Path>
+						</File>
+						<File Id="989562857" Language="SFX">
+							<ShortName>CREAKS\Creaks 6.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 6_34A80D42.wem</Path>
+						</File>
+						<File Id="1048076172" Language="SFX">
+							<ShortName>CREAKS\Creaks 9.wav</ShortName>
+							<Path>SFX\CREAKS\Creaks 9_81F6E269.wem</Path>
+						</File>
+						<File Id="1064420680" Language="SFX">
+							<ShortName>FOOTSTEPS\NORMAL\FOOTSTEPS_normal_4.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\NORMAL\FOOTSTEPS_normal_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E74CBD1E-CE31-4361-AC2E-6FF872D17ABF}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C06E316A-CDF6-4C3B-B1A2-1C47A8DACF94}">
+							<Media>
+								<File Id="94848625"/>
+								<File Id="135008941"/>
+								<File Id="638508202"/>
+								<File Id="866468345"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E74CBD1E-CE31-4361-AC2E-6FF872D17ABF}">
+							<Media>
+								<File Id="36118933"/>
+								<File Id="480809404"/>
+								<File Id="657174402"/>
+								<File Id="1064420680"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1921000341" Name="Reverb_footsteps" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_footsteps" GUID="{F3052C66-CE7B-41A9-81D9-5E328E61E1C6}"/>
+						<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2170274192" Name="puerta_chirriando_lejos" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos" GUID="{FB0073C7-E7B9-40A1-959D-EAF8F02A9915}" DurationType="OneShot" DurationMin="0.000000" DurationMax="6.407231">
+					<IncludedMemoryFiles>
+						<File Id="44670585" Language="SFX">
+							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
+							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="863090050" Name="puerta_chirriando_lejos2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\Chiridos\puerta_chirriando_lejos2" GUID="{FCCB6E19-39F9-4D8F-A270-87C2E40CECA1}" DurationType="OneShot" DurationMin="0.000000" DurationMax="6.047621">
+					<IncludedMemoryFiles>
+						<File Id="44670585" Language="SFX">
+							<ShortName>PUERTA CHIRRIANDO LEJOS.wav</ShortName>
+							<Path>SFX\PUERTA CHIRRIANDO LEJOS_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1251048105" Name="Repuesto1" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto1" GUID="{312E8E2D-ED54-4D1F-A13E-0E3715A4CC8F}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="793015402" Language="SFX">
+							<ShortName>Repuesto_1.wav</ShortName>
+							<Path>SFX\Repuesto_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1251048106" Name="Repuesto2" ObjectPath="\Events\Default Work Unit\Menú Principal\Repuesto2" GUID="{4E1EEE10-D9B8-4D20-897A-AA997C15F960}" DurationType="OneShot" DurationMin="3.000000" DurationMax="3.000000">
+					<IncludedMemoryFiles>
+						<File Id="967099509" Language="SFX">
+							<ShortName>Repuesto_2.wav</ShortName>
+							<Path>SFX\Repuesto_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="277151048" Name="silla_atacando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_atacando" GUID="{31DBB5AE-4A73-47F6-B517-05C4B053DB5F}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.562517" DurationMax="1.142381">
+					<IncludedMemoryFiles>
+						<File Id="313251693" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_1.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_1_10C4C929.wem</Path>
+						</File>
+						<File Id="535653452" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_8.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_8_10C4C929.wem</Path>
+						</File>
+						<File Id="680002340" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_6.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_6_10C4C929.wem</Path>
+						</File>
+						<File Id="702119830" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_7.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_7_10C4C929.wem</Path>
+						</File>
+						<File Id="842156914" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_3.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1039147241" Language="SFX">
+							<ShortName>Silla Ataque\ATAQUE SILLA_4.wav</ShortName>
+							<Path>SFX\Silla Ataque\ATAQUE SILLA_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="390506615" Name="silla_defeated" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_defeated" GUID="{6A7761F3-7135-40E1-B37E-153EE63C1F4B}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.769933" DurationMax="1.016889">
+					<IncludedMemoryFiles>
+						<File Id="510553907" Language="SFX">
+							<ShortName>Silla_Defeated_3.wav</ShortName>
+							<Path>SFX\Silla_Defeated_3_EEC69130.wem</Path>
+						</File>
+						<File Id="696021381" Language="SFX">
+							<ShortName>Silla_Defeated_1.wav</ShortName>
+							<Path>SFX\Silla_Defeated_1_D3897DA5.wem</Path>
+						</File>
+						<File Id="871172369" Language="SFX">
+							<ShortName>Silla_Defeated_2.wav</ShortName>
+							<Path>SFX\Silla_Defeated_2_75D8CC9F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1708516226" Name="silla_despierta" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_despierta" GUID="{8FF3DAFA-8DD3-4427-83C6-F33085ECFE7B}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.879187" DurationMax="1.592109">
+					<IncludedMemoryFiles>
+						<File Id="68270176" Language="SFX">
+							<ShortName>SILLA PREATTACK.wav</ShortName>
+							<Path>SFX\SILLA PREATTACK_973032F4.wem</Path>
+						</File>
+						<File Id="86589264" Language="SFX">
+							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_3.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_3_10C4C929.wem</Path>
+						</File>
+						<File Id="484221412" Language="SFX">
+							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_2.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_2_10C4C929.wem</Path>
+						</File>
+						<File Id="630096068" Language="SFX">
+							<ShortName>silla_Despierta_preataque\silla_Despierta_preataque_1.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque\silla_Despierta_preataque_1_10C4C929.wem</Path>
+						</File>
+						<File Id="820011558" Language="SFX">
+							<ShortName>silla_Despierta_preataque_4.wav</ShortName>
+							<Path>SFX\silla_Despierta_preataque_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3379905959" Name="silla_golpe_suelo" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_golpe_suelo" GUID="{B60E8A8E-5884-4B5B-BA3E-30D6A33D21E0}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.734307" DurationMax="0.801169">
+					<IncludedMemoryFiles>
+						<File Id="446715020" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_1.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_1_10C4C929.wem</Path>
+						</File>
+						<File Id="563858125" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_2-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_2-1_EDD12129.wem</Path>
+						</File>
+						<File Id="641358567" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_3.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_3_10C4C929.wem</Path>
+						</File>
+						<File Id="748780595" Language="SFX">
+							<ShortName>silla_Defeated_chirridopremuerte_2.wav</ShortName>
+							<Path>SFX\silla_Defeated_chirridopremuerte_2_10C4C929.wem</Path>
+						</File>
+						<File Id="786969096" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_3-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_3-1_10A5D0D5.wem</Path>
+						</File>
+						<File Id="1001956948" Language="SFX">
+							<ShortName>Silla_DEFEATED_golpesuelo_1-1.wav</ShortName>
+							<Path>SFX\Silla_DEFEATED_golpesuelo_1-1_4662D8BF.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3130254335" Name="silla_pataDelantera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataDelantera" GUID="{35FFD73C-B0BA-444B-A1E1-55E2B5B46555}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.887343" DurationMax="1.262782">
+					<IncludedMemoryFiles>
+						<File Id="173152896" Language="SFX">
+							<ShortName>silla pasos delanteros_3(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_3(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="359971893" Language="SFX">
+							<ShortName>silla pasos delanteros_1(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_1(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="488484624" Language="SFX">
+							<ShortName>silla pasos delanteros_2(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_2(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="809598574" Language="SFX">
+							<ShortName>silla pasos delanteros_4(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_4(sin galope)_10C4C929.wem</Path>
+						</File>
+						<File Id="1047343331" Language="SFX">
+							<ShortName>silla pasos delanteros_5(sin galope).wav</ShortName>
+							<Path>SFX\silla pasos delanteros_5(sin galope)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4169820343" Name="silla_pataTrasera" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_pataTrasera" GUID="{44A84327-71FB-49B6-A20F-E345E50D1703}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.950151" DurationMax="1.262782">
+					<IncludedMemoryFiles>
+						<File Id="59365415" Language="SFX">
+							<ShortName>silla pasos traseros _3(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _3(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="234010317" Language="SFX">
+							<ShortName>silla pasos traseros _2(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _2(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="406925627" Language="SFX">
+							<ShortName>silla pasos traseros _4(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _4(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="547163449" Language="SFX">
+							<ShortName>silla pasos traseros _1(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _1(singalope)_10C4C929.wem</Path>
+						</File>
+						<File Id="692954387" Language="SFX">
+							<ShortName>silla pasos traseros _5(singalope).wav</ShortName>
+							<Path>SFX\silla pasos traseros _5(singalope)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2665470364" Name="silla_resbalando" ObjectPath="\Events\Default Work Unit\Enemies\SILLA\silla_resbalando" GUID="{E8B9A69D-C2E2-457C-9763-081A3DD19150}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.908209" DurationMax="1.165896">
+					<IncludedMemoryFiles>
+						<File Id="796425651" Language="SFX">
+							<ShortName>silla resbalando 3.wav</ShortName>
+							<Path>SFX\silla resbalando 3_10C4C929.wem</Path>
+						</File>
+						<File Id="824836721" Language="SFX">
+							<ShortName>silla resbalando 2.wav</ShortName>
+							<Path>SFX\silla resbalando 2_10C4C929.wem</Path>
+						</File>
+						<File Id="899329355" Language="SFX">
+							<ShortName>silla resbalando 1.wav</ShortName>
+							<Path>SFX\silla resbalando 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="1162743606" Name="Footsteps_Surface" ObjectPath="\Switches\Default Work Unit\Footsteps_Surface" GUID="{032AB6FB-242C-47A5-87B4-889D8F1FFC6A}">
+					<Switches>
+						<Switch Id="1160234136" Name="Normal" ObjectPath="\Switches\Default Work Unit\Footsteps_Surface\Normal" GUID="{E74CBD1E-CE31-4361-AC2E-6FF872D17ABF}"/>
+						<Switch Id="57390691" Name="Charco" ObjectPath="\Switches\Default Work Unit\Footsteps_Surface\Charco" GUID="{C06E316A-CDF6-4C3B-B1A2-1C47A8DACF94}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="931250475" GUID="{D6C9DDEC-05CD-4930-B5DB-2BF57AAE3ED9}" Language="SFX" Hash="1441936539">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Tutorial</ObjectPath>
+			<ShortName>Music_Tutorial</ShortName>
+			<Path>Music_Tutorial.bnk</Path>
+			<IncludedEvents>
+				<Event Id="931250475" Name="Music_Tutorial" ObjectPath="\Events\Default Work Unit\Music\Music_Tutorial" GUID="{5512BB91-C5F7-42AE-A014-CDB524295B8F}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="65425077" Language="SFX">
+							<ShortName>PAD 3.wav</ShortName>
+							<Path>SFX\PAD 3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="151383890" Language="SFX">
+							<ShortName>DOWNS &amp; UPS.wav</ShortName>
+							<Path>SFX\DOWNS &amp; UPS_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510676643" Language="SFX">
+							<ShortName>PAD 2.wav</ShortName>
+							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="575158461" Language="SFX">
+							<ShortName>CHORUS EXALE.wav</ShortName>
+							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
+						</File>
+						<File Id="835194910" Language="SFX">
+							<ShortName>RETORNOS TUT.wav</ShortName>
+							<Path>SFX\RETORNOS TUT_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1020362891" Language="SFX">
+							<ShortName>PAD 4.wav</ShortName>
+							<Path>SFX\PAD 4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="3749243280">
+			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
+			<ShortName>ambientes</ShortName>
+			<Path>ambientes.bnk</Path>
+			<IncludedEvents>
+				<Event Id="343718480" Name="ambiente_noche" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche" GUID="{E0C1F8EB-5E80-46B5-B827-1C2D33B3C130}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="883601427" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1_2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_2_38374C31.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952223308" Name="ambiente_noche_1" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_1" GUID="{4E2777DE-00CE-421B-948A-2289464D3605}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="16645949" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 1.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 1_38C4429A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3952223311" Name="ambiente_noche_2" ObjectPath="\Events\Default Work Unit\SFX_Enviroments\ambiente_noche_2" GUID="{23641F24-4E60-40ED-80D1-26F3650F6DD3}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1069630703" Language="SFX">
+							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
+							<Path>SFX\AMBIENTE NOCHE 2_39F69556.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1418036153">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="854529873" Name="Reverb_Puerta" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Puerta" GUID="{6CE2CD3E-B08A-4DC2-B683-017E38135D7C}"/>
+				<AuxBus Id="1921000341" Name="Reverb_footsteps" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_footsteps" GUID="{F3052C66-CE7B-41A9-81D9-5E328E61E1C6}"/>
+				<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
+				<AuxBus Id="3686193383" Name="Reverb_Creaks" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Creaks" GUID="{EA7B2E02-7C72-4862-B20B-5B28C9B30286}"/>
+			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="Music_Volume" ObjectPath="\Game Parameters\Default Work Unit\Music_Volume" GUID="{F480098A-4B6B-4076-BC22-0AEA7AAAB16F}"/>
+				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume" GUID="{973CAD17-5688-4742-A859-B60CFAABBFB7}"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1667785198" GUID="{93762446-89A1-4F19-B3A5-A660B4F5FE80}" Language="SFX" Hash="1896635470">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_MenuPrincipal</ObjectPath>
+			<ShortName>Music_MenuPrincipal</ShortName>
+			<Path>Music_MenuPrincipal.bnk</Path>
+			<IncludedEvents>
+				<Event Id="17986547" Name="Music_Menu_Principal" ObjectPath="\Events\Default Work Unit\Music\Music_Menu_Principal" GUID="{A40D3DFD-7E2B-4A39-AB61-6A319A1C8D19}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="362553558" Language="SFX">
+							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
+							<Path>SFX\MUSIC_Menu_Principal_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2177735725" GUID="{0A2F2C7B-0D09-406B-B015-47CEE83C6645}" Language="SFX" Hash="284268429">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_Level</ObjectPath>
+			<ShortName>Music_Level</ShortName>
+			<Path>Music_Level.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2177735725" Name="Music_Level" ObjectPath="\Events\Default Work Unit\Music\Music_Level" GUID="{DC151547-BAC2-44CC-BBC3-3F7F901D4662}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="362553558" Language="SFX">
+							<ShortName>MUSIC_Menu_Principal.wav</ShortName>
+							<Path>SFX\MUSIC_Menu_Principal_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="553702199">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_The_End</ObjectPath>
+			<ShortName>Music_The_End</ShortName>
+			<Path>Music_The_End.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3328924828" Name="Music_The_End" ObjectPath="\Events\Default Work Unit\Music\Music_The_End" GUID="{D1AD8E2F-11A5-482B-A87D-C1ECDBAFB4D7}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="380695143" Language="SFX">
+							<ShortName>MUSIC_The_End.wav</ShortName>
+							<Path>SFX\MUSIC_The_End_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="3562125226">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
+			<ShortName>Music_LVL2</ShortName>
+			<Path>Music_LVL2.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3380345081" Name="Music_LVL2" ObjectPath="\Events\Default Work Unit\Music\Music_LVL2" GUID="{59FBB775-4A87-49E2-A5B3-DDA794F641BC}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="147219979" Language="SFX">
+							<ShortName>PAD 1.wav</ShortName>
+							<Path>SFX\PAD 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="151383890" Language="SFX">
+							<ShortName>DOWNS &amp; UPS.wav</ShortName>
+							<Path>SFX\DOWNS &amp; UPS_D79FB2B7.wem</Path>
+						</File>
+						<File Id="356093278" Language="SFX">
+							<ShortName>RETORNOS LVL2.wav</ShortName>
+							<Path>SFX\RETORNOS LVL2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="421744656" Language="SFX">
+							<ShortName>BASS 2 mono.wav</ShortName>
+							<Path>SFX\BASS 2 mono_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510676643" Language="SFX">
+							<ShortName>PAD 2.wav</ShortName>
+							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="575158461" Language="SFX">
+							<ShortName>CHORUS EXALE.wav</ShortName>
+							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1020362891" Language="SFX">
+							<ShortName>PAD 4.wav</ShortName>
+							<Path>SFX\PAD 4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="147500374">
+			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>
+			<ShortName>Music_LVL1</ShortName>
+			<Path>Music_LVL1.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3380345082" Name="Music_LVL1" ObjectPath="\Events\Default Work Unit\Music\Music_LVL1" GUID="{70CD894A-A69E-462F-B274-4AD3289EB087}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="65425077" Language="SFX">
+							<ShortName>PAD 3.wav</ShortName>
+							<Path>SFX\PAD 3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="147219979" Language="SFX">
+							<ShortName>PAD 1.wav</ShortName>
+							<Path>SFX\PAD 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="151383890" Language="SFX">
+							<ShortName>DOWNS &amp; UPS.wav</ShortName>
+							<Path>SFX\DOWNS &amp; UPS_D79FB2B7.wem</Path>
+						</File>
+						<File Id="282251239" Language="SFX">
+							<ShortName>RETORNOS LVL1.wav</ShortName>
+							<Path>SFX\RETORNOS LVL1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="510676643" Language="SFX">
+							<ShortName>PAD 2.wav</ShortName>
+							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="575158461" Language="SFX">
+							<ShortName>CHORUS EXALE.wav</ShortName>
+							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
+						</File>
+						<File Id="851749221" Language="SFX">
+							<ShortName>BASS 1 mono.wav</ShortName>
+							<Path>SFX\BASS 1 mono_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1020362891" Language="SFX">
+							<ShortName>PAD 4.wav</ShortName>
+							<Path>SFX\PAD 4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

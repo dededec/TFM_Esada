@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3380345082	Music_LVL1			\Default Work Unit\Music\Music_LVL1	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music_States	
+
+State	ID	Name	State Group			Notes
+	394898390	Menu_Inicio	Music_States			
+	529726532	End	Music_States			
+	748895195	None	Music_States			
+	2397100949	Lvl_1	Music_States			
+	2397100950	Lvl_2	Music_States			
+	3762955427	Tutorial	Music_States			
+	4203375351	Menu_Select	Music_States			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	65425077	PAD 3	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\PAD 3		8467264
+	147219979	PAD 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\PAD 1		8467264
+	151383890	DOWNS & UPS	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\DOWNS & UPS_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\DOWNS & UPS		8467264
+	282251239	RETORNOS LVL1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\RETORNOS LVL1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\RETORNOS LVL1		1058464
+	510676643	PAD 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\PAD 2		8467264
+	575158461	CHORUS EXALE	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\CHORUS EXALE_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\CHORUS EXALE		8467264
+	851749221	BASS 1 mono	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\BASS 1 mono_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\BASS 1 mono		8467264
+	1020362891	PAD 4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\PAD 4		8467264
+

@@ -1,0 +1,37 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music_States	
+
+State	ID	Name	State Group			Notes
+	394898390	Menu_Inicio	Music_States			
+	529726532	End	Music_States			
+	748895195	None	Music_States			
+	2397100949	Lvl_1	Music_States			
+	2397100950	Lvl_2	Music_States			
+	3762955427	Tutorial	Music_States			
+	4203375351	Menu_Select	Music_States			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1006694123	Music_Volume			\Default Work Unit\Music_Volume	
+	1564184899	SFX_Volume			\Default Work Unit\SFX_Volume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	652170608	SFX Volume			\Default Work Unit\Master Audio Bus\SFX Volume	
+	1599690472	Music Volume			\Default Work Unit\Master Audio Bus\Music Volume	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	854529873	Reverb_Puerta			\Default Work Unit\Master Audio Bus\Reverb_Puerta	
+	1921000341	Reverb_footsteps			\Default Work Unit\Master Audio Bus\Reverb_footsteps	
+	3556902431	Reverb_triggers			\Default Work Unit\Master Audio Bus\Reverb_triggers	
+	3686193383	Reverb_Creaks			\Default Work Unit\Master Audio Bus\Reverb_Creaks	
+
+Effect plug-ins	ID	Name	Type				Notes
+	4496003	Dirty_Washing_Machine	Wwise RoomVerb			
+	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+	2791153688	Hall_Small	Wwise RoomVerb			
+	3559982155	Hall_Stop_Screaming	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
