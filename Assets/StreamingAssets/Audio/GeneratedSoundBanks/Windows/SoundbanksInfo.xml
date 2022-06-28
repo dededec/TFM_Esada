@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1941691681">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1784320523">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -363,7 +363,7 @@
 						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
 					<IncludedMemoryFiles>
 						<File Id="365758720" Language="SFX">
 							<ShortName>libro golpe player_1_2.wav</ShortName>
@@ -375,7 +375,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" DurationType="OneShot" DurationMin="0.604825" DurationMax="0.788209">
+				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.604825" DurationMax="0.788209">
 					<IncludedMemoryFiles>
 						<File Id="314523489" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_2.wav</ShortName>
@@ -387,7 +387,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
+				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
 					<IncludedMemoryFiles>
 						<File Id="100102044" Language="SFX">
 							<ShortName>Libro_Defeated_3.wav</ShortName>
@@ -435,7 +435,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="Infinite">
+				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="161816004" Language="SFX">
 							<ShortName>Libro Despertando\libro despertando_3.wav</ShortName>
