@@ -186,10 +186,8 @@ namespace TFMEsada
         {   
             _controlManager.CheckScheme(context.control.device.name);
             RaycastHit hit;
-            
-            if(RayCast(out hit, _range, _wallLayer)) return;
 
-            if(RayCast(out hit, _range, _keyLayer))
+            if(RayCast(out hit, _range, _keyLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
             {
                 // Obtener llave.
                 Debug.Log("Apañaste llave.");
@@ -199,7 +197,7 @@ namespace TFMEsada
                 Destroy(hit.collider.gameObject);
                 return;
             }
-            else if(RayCast(out hit, _range, _collectableLayer))
+            else if(RayCast(out hit, _range, _collectableLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
             {   
                 Debug.Log("Pillas coleccionable");
                 AkSoundEngine.PostEvent("PickUp_coleccionable", this.gameObject);
@@ -207,7 +205,7 @@ namespace TFMEsada
                 Destroy(hit.collider.gameObject);
                 return;
             }
-            else if(RayCast(out hit, _range, _doorLayer))
+            else if(RayCast(out hit, _range, _doorLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
             {
                 AkSoundEngine.PostEvent("cruzar_puerta", gameObject);
                 var sign = Mathf.Sign(Vector3.SignedAngle(hit.collider.gameObject.transform.right, transform.forward, Vector3.up));
@@ -215,7 +213,7 @@ namespace TFMEsada
                 if(hit.collider.gameObject.name == "SecondFloorDoor") level2Controller.TeleportPlayer(1); 
                 if(hit.collider.gameObject.name == "FirstFloorDoor") level2Controller.TeleportPlayer(0);
             }
-            else if(RayCast(out hit, _range, _endingLayer))
+            else if(RayCast(out hit, _range, _endingLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
             {
                 // Abrir puerta si hay llave.
                 if(_keyCount > 0)
@@ -226,8 +224,10 @@ namespace TFMEsada
                 }
                 return;
             }
-
-            Debug.Log("No se pilla nada");
+            else
+            {
+                Debug.Log("No se pilla nada");
+            }
         }
 
         private IEnumerator crObtainKey()
@@ -306,6 +306,11 @@ namespace TFMEsada
         private bool RayCast(out RaycastHit hit, float range, LayerMask layerMask)
         {
             return Physics.Raycast(transform.position + transform.up, transform.forward, out hit, range, layerMask, QueryTriggerInteraction.Collide);
+        }
+
+        private bool LineCast(GameObject b, LayerMask layerMask)
+        {
+            return Physics.Linecast(transform.position + transform.up, b.transform.position, layerMask);
         }
 	   
         #endregion
