@@ -54,6 +54,7 @@ namespace TFMEsada
 
         private void RestartLevel(InputAction.CallbackContext context)
         {
+            AkSoundEngine.StopAll();
             _gfc.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
