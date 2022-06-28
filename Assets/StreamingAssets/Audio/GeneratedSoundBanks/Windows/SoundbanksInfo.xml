@@ -960,7 +960,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="442884439">
+		<SoundBank Id="3328924828" GUID="{76105D94-5111-49EB-A65C-5B16D92C25A2}" Language="SFX" Hash="553702199">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_The_End</ObjectPath>
 			<ShortName>Music_The_End</ShortName>
 			<Path>Music_The_End.bnk</Path>
