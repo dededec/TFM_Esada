@@ -30,12 +30,6 @@ namespace TFMEsada
         /// </summary>
         [SerializeField] private ControlManager _controlManager;
         private InputAction _interact;
-
-        [Tooltip("NoteController script to manage note reading.")]
-        /// <summary>
-        /// NoteController script to manage note reading.
-        /// </summary>
-        [SerializeField] private NoteController _noteController;
         
 
         [Header("Range and layers")]
@@ -44,12 +38,6 @@ namespace TFMEsada
         /// Range in which the player can pick a key or open a locked door.
         /// </summary>
         [SerializeField] private float _range;
-
-        [Tooltip("Layer in which to look for walls.")]
-        /// <summary>
-        /// Layer in which to look for walls.
-        /// </summary>
-        [SerializeField] private LayerMask _wallLayer;
 
         [Tooltip("Layer in which to look for keys.")]
         /// <summary>
@@ -187,7 +175,7 @@ namespace TFMEsada
             _controlManager.CheckScheme(context.control.device.name);
             RaycastHit hit;
 
-            if(RayCast(out hit, _range, _keyLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
+            if(RayCast(out hit, _range, _keyLayer))
             {
                 // Obtener llave.
                 Debug.Log("Apañaste llave.");
@@ -197,7 +185,7 @@ namespace TFMEsada
                 Destroy(hit.collider.gameObject);
                 return;
             }
-            else if(RayCast(out hit, _range, _collectableLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
+            else if(RayCast(out hit, _range, _collectableLayer))
             {   
                 Debug.Log("Pillas coleccionable");
                 AkSoundEngine.PostEvent("PickUp_coleccionable", this.gameObject);
@@ -205,7 +193,7 @@ namespace TFMEsada
                 Destroy(hit.collider.gameObject);
                 return;
             }
-            else if(RayCast(out hit, _range, _doorLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
+            else if(RayCast(out hit, _range, _doorLayer))
             {
                 AkSoundEngine.PostEvent("cruzar_puerta", gameObject);
                 var sign = Mathf.Sign(Vector3.SignedAngle(hit.collider.gameObject.transform.right, transform.forward, Vector3.up));
@@ -213,7 +201,7 @@ namespace TFMEsada
                 if(hit.collider.gameObject.name == "SecondFloorDoor") level2Controller.TeleportPlayer(1); 
                 if(hit.collider.gameObject.name == "FirstFloorDoor") level2Controller.TeleportPlayer(0);
             }
-            else if(RayCast(out hit, _range, _endingLayer) && !LineCast(hit.collider.gameObject, _wallLayer))
+            else if(RayCast(out hit, _range, _endingLayer))
             {
                 // Abrir puerta si hay llave.
                 if(_keyCount > 0)
@@ -306,11 +294,6 @@ namespace TFMEsada
         private bool RayCast(out RaycastHit hit, float range, LayerMask layerMask)
         {
             return Physics.Raycast(transform.position + transform.up, transform.forward, out hit, range, layerMask, QueryTriggerInteraction.Collide);
-        }
-
-        private bool LineCast(GameObject b, LayerMask layerMask)
-        {
-            return Physics.Linecast(transform.position + transform.up, b.transform.position, layerMask);
         }
 	   
         #endregion
