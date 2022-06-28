@@ -115,8 +115,8 @@ namespace TFMEsada
             _selectControls.started -= selectLevel; 
             _selectControls.Disable();
 
-            _selectControls.started -= CancelInput; 
-            _selectControls.Disable();
+            _cancelControls.started -= CancelInput; 
+            _cancelControls.Disable();
         }
       
         #endregion
@@ -172,6 +172,8 @@ namespace TFMEsada
 
         private void selectLevel(InputAction.CallbackContext context)
         {
+            if(_scrollCoroutine != null) return;
+            
             _controlManager.CheckScheme(context.control.device.name);
             if(_selectedIndex <= currentLevelIndex) // _selectedIndex <= CURRENTLEVELINDEX
             {
@@ -186,8 +188,7 @@ namespace TFMEsada
 
         private void CancelInput(InputAction.CallbackContext context)
         {
-            if(gameObject != null || gameObject.active) AkSoundEngine.StopAll();
-            print("vaya");
+            AkSoundEngine.StopAll();
             _controlManager.CheckScheme(context.control.device.name);
             _gameFlowController.LoadScene("MainMenu");
         }
