@@ -136,6 +136,8 @@ namespace TFMEsada
         #region Public Methods
 
         bool tamagochi = false;
+        static bool n1 = false;
+        static bool n2 = false;  
 
         public void readNote(InputAction.CallbackContext context)
         {
@@ -171,8 +173,15 @@ namespace TFMEsada
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdateTamagochiQuest();
                 }
 
-                if(gameObject.name == "PhoneNote1" || gameObject.name == "PhoneNote2")
+                if(gameObject.name == "PhoneNote1" && !n1)
                 {
+                    n1 = true;
+                    GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
+                }
+
+                if(gameObject.name == "PhoneNote2" && !n2)
+                {
+                    n2 = true;
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
                 }
                 
