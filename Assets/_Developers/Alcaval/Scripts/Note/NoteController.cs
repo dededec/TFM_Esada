@@ -135,16 +135,18 @@ namespace TFMEsada
 
         #region Public Methods
 
+        bool tamagochi = false;
+
         public void readNote(InputAction.CallbackContext context)
         {
-            if(!_inReadingRange) return;
+            if(!_inReadingRange || tamagochi) return;
 
             if(Writing)
             {
                 _tw.FinishSentence();
                 Writing = false;
             }
-            else if(_currentDialog == _contentOfNote.Length && !Writing)
+            else if(_currentDialog == _contentOfNote.Length && !Writing && !tamagochi)
             {
                 _pressButtonProp.SetActive(true);
                 _speechBubble.transform.GetChild(1).GetComponent<TMP_Text>().text = "";
@@ -162,6 +164,10 @@ namespace TFMEsada
 
                 if(gameObject.name == "TamagochiNoteFinal")
                 {
+                    gameObject.SetActive(false);
+                    _pressButtonProp.SetActive(false);
+                    tamagochi = true;
+                    print("se entra");
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdateTamagochiQuest();
                 }
 
