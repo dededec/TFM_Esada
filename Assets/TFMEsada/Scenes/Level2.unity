@@ -2824,11 +2824,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e1511b2152d658644bb5b9e5d628486f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
---- !u!1 &450540358 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
-  m_PrefabInstance: {fileID: 450540357}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &450540359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2bf16b1085a015047b6943a8e21dded4, type: 3}
@@ -3177,7 +3172,7 @@ PrefabInstance:
       objectReference: {fileID: 514208896}
     - target: {fileID: 9154607791422383544, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: _contentOfNote.Array.data[0]
-      value: Here it is! The tamagotchi!!
+      value: Here it is! The Motogotchi!!
       objectReference: {fileID: 0}
     - target: {fileID: 9154607791422383551, guid: bd821f5d294eb2e4ab2eb7f5ac43cf03, type: 3}
       propertyPath: m_Name
@@ -6490,7 +6485,7 @@ MonoBehaviour:
   - {fileID: 1669414878}
   - {fileID: 1148593457}
   - {fileID: 489644244}
-  tamagochi: {fileID: 450540358}
+  tamagochi: {fileID: 1057752433}
   floorSpawnPoints:
   - {fileID: 1023778578}
   - {fileID: 349882306}
@@ -10575,8 +10570,12 @@ PrefabInstance:
       value: 1.1957
       objectReference: {fileID: 0}
     - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.585832
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.7
+      value: -22.825
       objectReference: {fileID: 0}
     - target: {fileID: 5679415194979767350, guid: 56c4b0b673e91cd47ae840be25f8290f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12773,8 +12772,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726337877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.106, y: 0, z: -21.0894}
-  m_LocalScale: {x: 2.1159728, y: 1, z: 0.5493562}
+  m_LocalPosition: {x: 13.106, y: 0, z: -21.089}
+  m_LocalScale: {x: 2.1159728, y: 1, z: 0.54402196}
   m_Children: []
   m_Father: {fileID: 1292328964}
   m_RootOrder: 3
