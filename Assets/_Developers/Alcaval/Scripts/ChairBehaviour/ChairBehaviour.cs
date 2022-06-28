@@ -175,5 +175,10 @@ namespace TFMEsada
             yield return new WaitForSeconds(2f);
             gameObject.SetActive(false);
         }
+
+        public void fallSound()
+        {
+            AkSoundEngine.PostEvent("silla_golpe_suelo", gameObject);
+        }
     }
 }
