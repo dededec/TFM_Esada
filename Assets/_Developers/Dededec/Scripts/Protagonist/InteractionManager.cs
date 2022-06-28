@@ -253,6 +253,7 @@ namespace TFMEsada
         private void victory()
         {
             GameStateManager.instance.SetState(GameState.EndLevel);
+            AkSoundEngine.StopAll();
             _victoryUI.SetActive(true);
             _gameplayUI.SetActive(false);
             //_controlManager.TogglePlayerControls(false);
