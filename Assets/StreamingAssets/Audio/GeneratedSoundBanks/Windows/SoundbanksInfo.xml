@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="1276182518">
+		<SoundBank Id="169596267" GUID="{9D2DD2CF-4AD1-4CC2-B5CA-A17075216E74}" Language="SFX" Hash="246877050">
 			<ObjectPath>\SoundBanks\Default Work Unit\menu_principal</ObjectPath>
 			<ShortName>menu_principal</ShortName>
 			<Path>menu_principal.bnk</Path>
@@ -36,7 +36,7 @@
 					<IncludedMemoryFiles>
 						<File Id="794741404" Language="SFX">
 							<ShortName>Seleccionar mapa_R.wav</ShortName>
-							<Path>SFX\Seleccionar mapa_R_CDBBE6FC.wem</Path>
+							<Path>SFX\Seleccionar mapa_R_122E2035.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -58,7 +58,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="3623958926">
+		<SoundBank Id="393239870" GUID="{7E2ED4F5-39A7-42F2-B0D3-6B408D01A787}" Language="SFX" Hash="1241098619">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -83,7 +83,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1069630703" Language="SFX">
 							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
-							<Path>SFX\AMBIENTE NOCHE 2_2F762C97.wem</Path>
+							<Path>SFX\AMBIENTE NOCHE 2_39F69556.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -249,7 +249,7 @@
 					<IncludedMemoryFiles>
 						<File Id="794741404" Language="SFX">
 							<ShortName>Seleccionar mapa_R.wav</ShortName>
-							<Path>SFX\Seleccionar mapa_R_CDBBE6FC.wem</Path>
+							<Path>SFX\Seleccionar mapa_R_122E2035.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -363,7 +363,7 @@
 						<AuxBus Id="3556902431" Name="Reverb_triggers" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_triggers" GUID="{8957DABB-5F1C-44D2-B7CF-98FA7468AECF}"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
+				<Event Id="2363885649" Name="libro_ataque" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_ataque" GUID="{5130AC7F-D156-4868-A188-26F9AAAC7215}" DurationType="OneShot" DurationMin="0.675125" DurationMax="1.182313">
 					<IncludedMemoryFiles>
 						<File Id="365758720" Language="SFX">
 							<ShortName>libro golpe player_1_2.wav</ShortName>
@@ -375,7 +375,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="0.604825" DurationMax="0.788209">
+				<Event Id="3662398675" Name="libro_chocando" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_chocando" GUID="{145F325B-BEA5-4FB4-BC45-DB1F4A3046C4}" DurationType="OneShot" DurationMin="0.604825" DurationMax="0.788209">
 					<IncludedMemoryFiles>
 						<File Id="314523489" Language="SFX">
 							<ShortName>Libro GOLPEANDO\libro golpe pared\libro golpe pared_2.wav</ShortName>
@@ -387,7 +387,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" MaxAttenuation="30.000000" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
+				<Event Id="1219855736" Name="libro_defeated" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_defeated" GUID="{DE65A75B-487E-44C4-9EF0-1CC6E7801DBB}" DurationType="OneShot" DurationMin="1.125011" DurationMax="1.500000">
 					<IncludedMemoryFiles>
 						<File Id="100102044" Language="SFX">
 							<ShortName>Libro_Defeated_3.wav</ShortName>
@@ -435,7 +435,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" MaxAttenuation="30.000000" DurationType="Infinite">
+				<Event Id="1881438433" Name="libro_despierto" ObjectPath="\Events\Default Work Unit\Enemies\LIBRO\libro_despierto" GUID="{6A220D51-1344-4202-8A03-00E0395E1A0A}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="161816004" Language="SFX">
 							<ShortName>Libro Despertando\libro despertando_3.wav</ShortName>
@@ -884,7 +884,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="3237137357">
+		<SoundBank Id="1014953671" GUID="{DBE0CB33-C657-490D-B80D-1A8DB8494AEB}" Language="SFX" Hash="3749243280">
 			<ObjectPath>\SoundBanks\Default Work Unit\ambientes</ObjectPath>
 			<ShortName>ambientes</ShortName>
 			<Path>ambientes.bnk</Path>
@@ -909,7 +909,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1069630703" Language="SFX">
 							<ShortName>AMBIENTE NOCHE 2.wav</ShortName>
-							<Path>SFX\AMBIENTE NOCHE 2_2F762C97.wem</Path>
+							<Path>SFX\AMBIENTE NOCHE 2_39F69556.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -975,17 +975,13 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="3668934548">
+		<SoundBank Id="3380345081" GUID="{1738F07F-1EAA-4949-819E-C40407F838C4}" Language="SFX" Hash="3562125226">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL2</ObjectPath>
 			<ShortName>Music_LVL2</ShortName>
 			<Path>Music_LVL2.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3380345081" Name="Music_LVL2" ObjectPath="\Events\Default Work Unit\Music\Music_LVL2" GUID="{59FBB775-4A87-49E2-A5B3-DDA794F641BC}" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="45085917" Language="SFX">
-							<ShortName>BASS 2.wav</ShortName>
-							<Path>SFX\BASS 2_D79FB2B7.wem</Path>
-						</File>
 						<File Id="147219979" Language="SFX">
 							<ShortName>PAD 1.wav</ShortName>
 							<Path>SFX\PAD 1_D79FB2B7.wem</Path>
@@ -998,6 +994,10 @@
 							<ShortName>RETORNOS LVL2.wav</ShortName>
 							<Path>SFX\RETORNOS LVL2_D79FB2B7.wem</Path>
 						</File>
+						<File Id="421744656" Language="SFX">
+							<ShortName>BASS 2 mono.wav</ShortName>
+							<Path>SFX\BASS 2 mono_D79FB2B7.wem</Path>
+						</File>
 						<File Id="510676643" Language="SFX">
 							<ShortName>PAD 2.wav</ShortName>
 							<Path>SFX\PAD 2_D79FB2B7.wem</Path>
@@ -1005,10 +1005,6 @@
 						<File Id="575158461" Language="SFX">
 							<ShortName>CHORUS EXALE.wav</ShortName>
 							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
-						</File>
-						<File Id="709195926" Language="SFX">
-							<ShortName>BASS 1.wav</ShortName>
-							<Path>SFX\BASS 1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1020362891" Language="SFX">
 							<ShortName>PAD 4.wav</ShortName>
@@ -1018,7 +1014,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="3330367621">
+		<SoundBank Id="3380345082" GUID="{18DEA725-60D6-4962-A229-15203B58DFB0}" Language="SFX" Hash="147500374">
 			<ObjectPath>\SoundBanks\Default Work Unit\MUSIC\Music_LVL1</ObjectPath>
 			<ShortName>Music_LVL1</ShortName>
 			<Path>Music_LVL1.bnk</Path>
@@ -1049,9 +1045,9 @@
 							<ShortName>CHORUS EXALE.wav</ShortName>
 							<Path>SFX\CHORUS EXALE_D79FB2B7.wem</Path>
 						</File>
-						<File Id="709195926" Language="SFX">
-							<ShortName>BASS 1.wav</ShortName>
-							<Path>SFX\BASS 1_D79FB2B7.wem</Path>
+						<File Id="851749221" Language="SFX">
+							<ShortName>BASS 1 mono.wav</ShortName>
+							<Path>SFX\BASS 1 mono_D79FB2B7.wem</Path>
 						</File>
 						<File Id="1020362891" Language="SFX">
 							<ShortName>PAD 4.wav</ShortName>

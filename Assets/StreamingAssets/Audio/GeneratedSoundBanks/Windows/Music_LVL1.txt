@@ -20,6 +20,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	282251239	RETORNOS LVL1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\RETORNOS LVL1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\RETORNOS LVL1		1058464
 	510676643	PAD 2	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\PAD 2		8467264
 	575158461	CHORUS EXALE	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\CHORUS EXALE_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\CHORUS EXALE		8467264
-	709195926	BASS 1	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\BASS 1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\BASS 1		8467264
+	851749221	BASS 1 mono	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\BASS 1 mono_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\BASS 1 mono		8467264
 	1020362891	PAD 4	C:\Users\Usuario\Documents\TFM\WWISE TFM ESADA\.cache\Windows\SFX\PAD 4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LVL 1\LVL 1 Music\PAD 4		8467264
 
