@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameFlowController: {fileID: 0}
-  _nextLevel: Level1
+  _nextLevel: Level2
 --- !u!114 &2901654401559104457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,8 +970,8 @@ MonoBehaviour:
       right: {fileID: 0}
       left: {fileID: 2901654401523520291}
   _selector: {fileID: 2901654401284406390}
-  _smallSprite: {fileID: 21300000, guid: 33bfbed44188e1f4986f4bbdf6395da5, type: 3}
-  _bigSprite: {fileID: 21300000, guid: 04a6d07fa54e16a4e9581ba1715fb7bd, type: 3}
+  _smallSprite: {fileID: 21300000, guid: 04a6d07fa54e16a4e9581ba1715fb7bd, type: 3}
+  _bigSprite: {fileID: 21300000, guid: 33bfbed44188e1f4986f4bbdf6395da5, type: 3}
   _controlManager: {fileID: 0}
   eventSystem: {fileID: 0}
   indexSelected: 0

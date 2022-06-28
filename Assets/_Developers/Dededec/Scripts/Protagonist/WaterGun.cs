@@ -178,7 +178,7 @@ namespace TFMEsada
         public void Shoot(InputAction.CallbackContext context)
         {
             _controlManager.CheckScheme(context.control.device.name);
-            if (context.interaction is SlowTapInteraction)
+            if (context.interaction is HoldInteraction)
                 shootPuddle();
             else
                 shootNormal();
