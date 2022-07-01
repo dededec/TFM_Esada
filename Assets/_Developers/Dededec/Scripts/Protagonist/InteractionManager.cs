@@ -82,6 +82,8 @@ namespace TFMEsada
 
         [SerializeField] private bool hasCollectable = false;
 
+        private bool isControlLoaded = false;
+
 	    #endregion
 
         #region Properties
@@ -118,6 +120,7 @@ namespace TFMEsada
 
         private void OnEnable() 
         {
+            if(isControlLoaded) return;
             assignControls();
         }
 
@@ -128,6 +131,7 @@ namespace TFMEsada
         */
         private void Start() 
         {
+            if(isControlLoaded) return;
             assignControls();
         }
 
@@ -149,6 +153,7 @@ namespace TFMEsada
         {
             _interact.started -= interact;
             _interact.Disable();
+            isControlLoaded = false;
         }
 
         #endregion
@@ -166,6 +171,7 @@ namespace TFMEsada
                 _interact = _controlManager.Controls.Interaction.Interact;
                 _interact.started += interact;
                 _interact.Enable();
+                isControlLoaded = true;
                 return true;
             }
         }

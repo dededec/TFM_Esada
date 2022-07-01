@@ -25,6 +25,7 @@ public class Level2Controller : MonoBehaviour
 
     public void UpdatePhone()
     {
+        Debug.Log("SE UPDATEA PHONE");
         phoneState++;
         if(phoneState == 1)
         {

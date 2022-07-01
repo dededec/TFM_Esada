@@ -34,7 +34,7 @@ namespace TFMEsada
                     ""id"": ""2d96598c-a775-4b81-a2ca-fda8836d94be"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Tap,Hold""
+                    ""interactions"": ""Tap(pressPoint=0.25),Hold""
                 },
                 {
                     ""name"": ""Restart"",

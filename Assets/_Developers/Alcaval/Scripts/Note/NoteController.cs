@@ -47,6 +47,12 @@ namespace TFMEsada
             _tw = gameObject.GetComponent<TextWriter>();
         }
 
+        private void OnDestroy() 
+        {
+            n1 = false;
+            n2 = false;
+        }
+
         private void Start() 
         {
             assignControls();
@@ -158,6 +164,8 @@ namespace TFMEsada
                 _inReadingRange = true;
                 Writing = false;
                 GameObject.Find("Player").GetComponent<ControlManager>().TogglePlayerControls(true);
+                Debug.Log("Nombre de la nota: " + gameObject.name);
+                Debug.Log("n2: " + n2);
                 
                 if(gameObject.name == "TamagochiNote1")
                 {
@@ -175,12 +183,14 @@ namespace TFMEsada
 
                 if(gameObject.name == "PhoneNote1" && !n1)
                 {
+                    Debug.Log("Nota 1 leida");
                     n1 = true;
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
                 }
 
                 if(gameObject.name == "PhoneNote2" && !n2)
                 {
+                    Debug.Log("Nota 2 leida");
                     n2 = true;
                     GameObject.FindGameObjectWithTag("Level2Controller").gameObject.GetComponent<Level2Controller>().UpdatePhone();
                 }
